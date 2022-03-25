@@ -1,28 +1,16 @@
 name: Chmouel Boudjnah
 dp: https://github.com/chmouel.png
 description: "
+  <div class='centered'>
+    <a href='http://blog.chmouel.com' target='_blank'>Home</a>&nbsp;
+    <a href='https://photos.chmouel.com' target='_blank'>Photos</a>&nbsp;
+    <a href='https://twitter.com/chmouel' target='_blank'>Twitter</a>&nbsp;
+    <a href='https://github.com/chmouel' target='_blank'>Github</a>&nbsp;
+    <a href='https://app.strava.com/athletes/126695' target='_blank'>Strava</a>&nbsp;
+    <a href='https://redhat.com' target='_blank'>Work</a>
+  </div>
+  <br/>
   <p>
     Chmouel Boudjnah's Blog - OpenSource Developer Diary
   </p>
-  <br/>
-  <div>
-    &nbsp;
-    <a href='http://blog.chmouel.com' target='_blank'>Home</a> |
-    <a href='https://photos.chmouel.com' target='_blank'>Photos</a> |
-    <a href='https://twitter.com/chmouel' target='_blank'>Twitter</a> |
-    <a href='https://github.com/chmouel' target='_blank'>Github</a> |
-    <a href='https://app.strava.com/athletes/126695' target='_blank'>Strava</a> |
-    <a href='https://redhat.com' target='_blank'>Work</a>
-  </div>
 "
-contact:
-  - title: linkedin
-    url: https://www.linkedin.com/in/srsmaurya
-  - title: github
-    url: https://github.com/sharadcodes
-  - title: twitter
-    url: https://twitter.com/sharadcodes
-  - title: dev
-    url: https://dev.to/sharadcodes
-  - title: email
-    url: mailto:me@example.com

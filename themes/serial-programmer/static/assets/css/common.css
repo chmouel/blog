@@ -22,3 +22,16 @@ hr {
 .footer a, a:hover {
     color: cyan
 }
+
+span.fontawesome-inline-svg {
+  display: inline-block;
+  height: 0.9em;
+  width: 0.9em;
+  top: 0.1em;
+  position: relative;
+}
+
+.centered {
+    width: 100%;
+    text-align: center;
+}
