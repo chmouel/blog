@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  <body>
+    <main>
+      {{ partial "bio.html" . }}
+      <section class="articles">
+        {{ $paginator := (.Paginate ( where site.RegularPages "Section" "posts" ).ByDate.Reverse) }}
+        {{ range $paginator.Pages -}}
+        <article class="article">
+          <h2 class="article-title">
+            <a href="{{ .Permalink }}" title="{{ .Title }}">{{- .Title | markdownify }} </a>
+          </h2>
+          <small class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</small>
+          <div class="tags">
+            {{ range .Params.Tags }}
+            <a href="{{site.BaseURL}}tags/{{ . }}" class="tag">{{ . }}</a>
+            {{ end }}
+          </div>
+          <summary class="summary">
+            {{ .Summary | markdownify }}
+            <br/>
+            <div class="readmore">
+              <a href="{{.Permalink}}" title="{{ .Title }}">Read More</a>
+            </div>
+          </summary>
+        </article>
+        {{ end }}
+      </section>
+      {{ partial "pagination.html" . }}
+      {{ partial "footer.html" . }}
+    </main>
+  </body>
+</html>

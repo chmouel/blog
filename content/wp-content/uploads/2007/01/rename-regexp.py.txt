@@ -1,0 +1,41 @@
+#!python
+import re
+from sys import exit, argv
+from os import listdir, rename
+
+test = False
+
+try:
+    if argv[1] == "-t":
+        test = True
+        argv.remove("-t")
+except:
+    pass
+
+if len(argv) < 2:
+    print "Please: OLDPREFIX NEWPREFIX"
+    exit(1)
+
+old_prefix = argv[1]
+new_prefix = argv[2]
+
+try:
+    dir = argv[3]
+    while dir[-1] == "/": dir = dir[0:-1]
+except IndexError:
+    dir = "."
+
+files = listdir(dir)
+if len(files) == 0:
+    print "No files here"
+    exit(1)
+
+for file in files:
+    newfile = re.sub(old_prefix, new_prefix, file)
+    if newfile[-3:] == 'JPG': newfile = newfile[0:-3] + "jpg"
+    if newfile[-3:] == 'MPG': newfile = newfile[0:-3] + "mpg"
+    if file != newfile:
+        print file + " => " + newfile
+        if not test:
+            rename(dir + "/" + file, dir + "/" + newfile )
+

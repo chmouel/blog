@@ -1,0 +1,26 @@
+---
+title: "Chmouel's blog"
+baseURL: ""
+theme: "serial-programmer/"
+languageCode: "en-GB"
+defaultContentLanguage: "en"
+pluralizelisttitles: false
+removePathAccents: true
+paginate: 10
+paginatePath: "page"
+rssLimit: 20
+author:
+  name: "Chmouel Boudjnah"
+  url: "https://twitter.com/chmouel"
+  avatar: "https://github.com/chmouel.png"
+
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: ["HTML", "RSS", "JSON", "SearchIndex"]
+  section: ["HTML", "RSS", "JSON"]
