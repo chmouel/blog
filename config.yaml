@@ -1,6 +1,6 @@
 ---
 title: "Chmouel's blog"
-baseURL: ""
+baseURL: "https://blog.chmouel.com"
 theme: "serial-programmer/"
 languageCode: "en-GB"
 defaultContentLanguage: "en"
