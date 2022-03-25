@@ -5,16 +5,16 @@ description: "
     Chmouel Boudjnah's Blog - OpenSource Developer Diary
   </p>
   <br/>
-  <p>
+  <div>
+    &nbsp;
+    <a href='http://blog.chmouel.com' target='_blank'>Home</a> |
     <a href='https://photos.chmouel.com' target='_blank'>Photos</a> |
     <a href='https://twitter.com/chmouel' target='_blank'>Twitter</a> |
     <a href='https://github.com/chmouel' target='_blank'>Github</a> |
-    <a href='http://www.linkedin.com/in/chmouel' target='_blank'>Linkedin</a> |
     <a href='https://app.strava.com/athletes/126695' target='_blank'>Strava</a> |
     <a href='https://redhat.com' target='_blank'>Work</a>
-  </P>
+  </div>
 "
-email: dev_sharad@outlook.com
 contact:
   - title: linkedin
     url: https://www.linkedin.com/in/srsmaurya

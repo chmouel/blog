@@ -71,7 +71,7 @@ main {
 
 
 .article-header {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .article-title {
   font-size: 2.4rem;
@@ -80,8 +80,11 @@ main {
 }
 
 .article .date {
-  display: block;
   font-size: 0.8rem;
+  width: 100%;
+  height: 50%;
+  text-align: rightce;
+  color: #68838b;
 }
 .tags {
   display: flex;
