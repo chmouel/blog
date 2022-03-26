@@ -8,7 +8,7 @@ There is a lot of zsh plugin manager around :
 
 <https://github.com/unixorn/awesome-zsh-plugins#frameworks>
 
-They allow you to add cool new features to your shell easily and for authors to
+They all allows you to add cool new features to your shell easily and for authors to
 easily share their plugin with users and frameworks.
 
 A lot of people are probably using frameworks like `oh-my-zsh` which does
