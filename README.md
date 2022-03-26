@@ -1,4 +1,4 @@
-# blog
+# Chmouel's Blog
 Chmouel's Blog source
 
 - Hugo based converted from a old wordpress blog...
