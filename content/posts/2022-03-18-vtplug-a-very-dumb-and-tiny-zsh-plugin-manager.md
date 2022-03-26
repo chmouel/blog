@@ -8,24 +8,22 @@ There is a lot of zsh plugin manager around :
 
 <https://github.com/unixorn/awesome-zsh-plugins#frameworks>
 
-They all allows you to add cool new features to your shell easily and for authors to
+They all allow you to add cool new features to your shell easily and for authors to
 easily share their plugin with users and frameworks.
 
-A lot of people are probably using frameworks like `oh-my-zsh` which does
+While a lot of people are probably using frameworks like `oh-my-zsh` which does
 everything for them with minimal setup.
 
 But since I have been using zsh since [much before][1] than those frameworks
-existed I always ran my custom config.
+existed, I always ran my custom config.
 
-Historically I went for the "default" one (or it seemed that way at the time)
-called `zplug`. It allows you to specify the plugins you want and manage them
-easily. But `zplug` is a whole lot more things, it offers many more features
+Historically, I went for the "default" one (or it seemed that way at the time) called `zplug`. It allows you to specify the plugins you want and manage them easily. But `zplug` is a lot more things, it offers many more features
 like installing binary from the internet manage some configuration edge cases
-and other things. And it slowwws, I didn't realise it at first but more I used
-it and more I realised that opening a shell would take me a second or two
-sometime. Moreover last release was 5 years ago.
+and other things. And it slowwws, I didn't realize it at first but more I used
+it and more I realized that opening a shell would take me a second or two
+sometime. Moreover, last release was 5 years ago.
 
-I looked a bit more into it and figured it was actuallly pretty simple to dumb
+I looked a bit more into it and figured it was actually pretty simple to dumb
 it down and write my own. So I wrote one and called it `"vtplug"` for "very tiny
 plugin manager" and since it's so small it can be installed directly by copying
 it in your config as function from here :
@@ -49,7 +47,7 @@ ZSH_PLUGINS=(
 it currently only support public github based plugins so effectively add the
 `https://github.com/` to the repo/owner specified in ZSHZ_PLUGINS variable.
 
-you then may want to add some configuration of the plugin right after like this,
+You then may want to add some configuration of the plugin right after, like this,
 I have those by you may want to have a look at each plugin READMEs to see which
 settings you may want to set :
 
@@ -74,11 +72,13 @@ if it wasn't checked out before.
 
 If you need to update the plugin you just do a :
 
-    vtplug -u
+```shell
+vtplug -u
+```
 
 and it will run a `git pull` in those repos.
 
-it's simple as that and load in miliseconds.
+It's simple as that, and load in milliseconds.
 
 My whole zsh config is located here if you want to have a look:
 
@@ -86,7 +86,7 @@ My whole zsh config is located here if you want to have a look:
 
 If you really want a plugin manger that does much more and probably more
 flexible, perhaps look at [`antidote`][2] which seems to be pretty fast and
-featureful.
+feature full.
 
  [1]: https://zsh.sourceforge.io/Etc/changelog-4.0.html
  [2]: https://getantidote.github.io/
