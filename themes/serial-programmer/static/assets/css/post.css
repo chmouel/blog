@@ -77,6 +77,7 @@ main {
   font-size: 2.4rem;
   margin-bottom: 0.6rem;
   line-height: 140%;
+  color: #bd93f9;
 }
 
 .article .date {
@@ -84,8 +85,8 @@ main {
   width: 100%;
   height: 50%;
   text-align: rightce;
-  color: #68838b;
 }
+
 .tags {
   display: flex;
   flex-direction: row;
@@ -188,9 +189,11 @@ main {
 }
 
 .content pre {
-  background: var(--gray-3) !important;
-  padding: 1rem 2rem;
+  /* background: var(--gray-6) !important; */
+  padding-left: 10px;
   margin-bottom: 1.75rem;
+  border: 0.5px solid #bd93f9;
+  border-radius: 5px;
 }
 
 .content code {

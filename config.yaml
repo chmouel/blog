@@ -24,3 +24,10 @@ outputFormats:
 outputs:
   home: ["HTML", "RSS", "JSON", "SearchIndex"]
   section: ["HTML", "RSS", "JSON"]
+
+markup:
+  highlight:
+    style: dracula
+    lineNumbersInTable: false
+    tabWidth: 2
+    guessSyntax: true

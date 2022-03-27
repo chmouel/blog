@@ -1,4 +1,7 @@
-alll: sync
+alll: generate
 
-sync:
-	@hugo --gc --minify && rsync -aPuz public/ kodi:/media/bigdisk/www/blog/ --exclude wp-content/uploads/
+generate:
+	@hugo --gc --minify
+
+dev:
+	@hugo server -D

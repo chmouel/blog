@@ -2,7 +2,7 @@ name: Chmouel Boudjnah
 dp: https://github.com/chmouel.png
 description: "
   <div class='centered'>
-    <a href='http://blog.chmouel.com' target='_blank'>Home</a>&nbsp;
+    <a href='/' target='_blank'>Home</a>&nbsp;
     <a href='https://photos.chmouel.com' target='_blank'>Photos</a>&nbsp;
     <a href='https://twitter.com/chmouel' target='_blank'>Twitter</a>&nbsp;
     <a href='https://github.com/chmouel' target='_blank'>Github</a>&nbsp;
@@ -11,6 +11,6 @@ description: "
   </div>
   <br/>
   <p>
-    Chmouel Boudjnah's Blog - OpenSource Developer Diary
+    Chmouel Boudjnah's OpenSource developer Blog
   </p>
 "
