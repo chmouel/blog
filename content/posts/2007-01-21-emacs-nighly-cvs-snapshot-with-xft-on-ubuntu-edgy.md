@@ -89,6 +89,5 @@ When running build.sh it should produce binary in build/* with xft enabled by de
 
 One screenshot :
 
-[<img src="http://www.chmouel.com/blog/wp-content/uploads/2007/01/emacs-snapshot-xft.png" alt="Screenshot of Emacs snapshot with XFT" width="80%" />][1]
+[Emacs XFT](/wp-content/uploads/2007/01/emacs-snapshot-xft.png)
 
- [1]: http://www.chmouel.com/blog/wp-content/uploads/2007/01/emacs-snapshot-xft.png "Screenshot of Emacs snapshot with XFT"
