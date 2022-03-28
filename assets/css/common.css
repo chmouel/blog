@@ -1,0 +1,37 @@
+.content a {
+  color: cyan;
+  border-bottom: 1px solid cyan;
+}
+
+hr {
+	border-top: 2px dashed var(--white-2)!important;
+	border-bottom: none!important;
+	border-left: none!important;
+	border-right: none!important;
+	margin-bottom: 1.75rem!important;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+}
+.footer p {
+    font-size: 0.rem;
+}
+
+.footer a, a:hover {
+    color: cyan
+}
+
+span.fontawesome-inline-svg {
+  display: inline-block;
+  height: 0.9em;
+  width: 0.9em;
+  top: 0.1em;
+  position: relative;
+}
+
+.centered {
+    width: 100%;
+    text-align: center;
+}
