@@ -12,7 +12,7 @@ rssLimit: 20
 author:
   name: "Chmouel Boudjnah"
   url: "https://twitter.com/chmouel"
-  avatar: "https://github.com/chmouel.png"
+  avatar: "https://chmouel.com/chmouel.png"
 
 outputFormats:
   SearchIndex:
