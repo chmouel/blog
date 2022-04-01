@@ -1,0 +1,257 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Mass editing firewall on Rackspace Cloud. | Chmouel's blog</title><meta name=keywords content="Cloud,Rackspace"><meta name=description content="A lot of our customers in Rackspace cloud has been asking how to mass edit firewalls of servers when you have multiple servers without doing it manually.
+Part of my cloudservers-api-demo I have written a simple firewall scripts abstracting the Operating System firewall software to allow/enable/disable the firewall and ports/networks.
+The script has been kept very simple by design and currently allow only to :
+   <p style=&#34;display: inline !"><meta name=author content><link rel=canonical href=https://blog.chmouel.com/2011/05/05/mass-editing-firewall-on-rackspace-cloud/><link crossorigin=anonymous href=/assets/css/stylesheet.min.5a5d567b690246c4eb15b9f0c3d47bef28df71173b90a626c03708a628d3193d.css integrity="sha256-Wl1We2kCRsTrFbnww9R77yjfcRc7kKYmwDcIpijTGT0=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://blog.chmouel.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.chmouel.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.chmouel.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.chmouel.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.chmouel.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:title" content="Mass editing firewall on Rackspace Cloud."><meta property="og:description" content="A lot of our customers in Rackspace cloud has been asking how to mass edit firewalls of servers when you have multiple servers without doing it manually.
+Part of my cloudservers-api-demo I have written a simple firewall scripts abstracting the Operating System firewall software to allow/enable/disable the firewall and ports/networks.
+The script has been kept very simple by design and currently allow only to :
+   <p style=&#34;display: inline !"><meta property="og:type" content="article"><meta property="og:url" content="https://blog.chmouel.com/2011/05/05/mass-editing-firewall-on-rackspace-cloud/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2011-05-05T22:12:42+00:00"><meta property="article:modified_time" content="2011-05-05T22:12:42+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Mass editing firewall on Rackspace Cloud."><meta name=twitter:description content="A lot of our customers in Rackspace cloud has been asking how to mass edit firewalls of servers when you have multiple servers without doing it manually.
+Part of my cloudservers-api-demo I have written a simple firewall scripts abstracting the Operating System firewall software to allow/enable/disable the firewall and ports/networks.
+The script has been kept very simple by design and currently allow only to :
+   <p style=&#34;display: inline !"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.chmouel.com/posts/"},{"@type":"ListItem","position":2,"name":"Mass editing firewall on Rackspace Cloud.","item":"https://blog.chmouel.com/2011/05/05/mass-editing-firewall-on-rackspace-cloud/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Mass editing firewall on Rackspace Cloud.","name":"Mass editing firewall on Rackspace Cloud.","description":"A lot of our customers in Rackspace cloud has been asking how to mass edit firewalls of servers when you have multiple servers without doing it manually.\nPart of my cloudservers-api-demo I have written a simple firewall scripts abstracting the Operating System firewall software to allow/enable/disable the firewall and ports/networks.\nThe script has been kept very simple by design and currently allow only to :\n   \u0026lt;p style=\u0026quot;display: inline !","keywords":["Cloud","Rackspace"],"articleBody":"A lot of our customers in Rackspace cloud has been asking how to mass edit firewalls of servers when you have multiple servers without doing it manually.\nPart of my cloudservers-api-demo I have written a simple firewall scripts abstracting the Operating System firewall software to allow/enable/disable the firewall and ports/networks.\nThe script has been kept very simple by design and currently allow only to :\n   enable the firewall    disable the firewall    allow or disallow a port or a network    see firewall status     PREREQUISITES    A management server under Ubuntu maverick.    A supported Operating System for clients which includes :    Debian.    Ubuntu.    RHEL.    Fedora    My patched python-cloudservers library (see below for installs).    Your SSH key installed on all VM for root users.     Install    After you have kicked a VM with a Ubuntu maverick and connected to it as root you want first execute intall some prereq packages :    apt-get update \u0026\u0026 apt-get -y install python-stdeb git  checkout my python-cloudservers library : git clone git://github.com/chmouel/python-cloudservers.git  after being checked-out you will go into the python-cloudservers directory which has just been created and do this : cd python-cloudservers/  python setup.py install  this should automatically install all the dependences.  Now you can install my api-demo which include the firewall script : cd ../  git clone git://github.com/chmouel/cloudservers-api-demo  You need to configure some environemnt variable first which keep information about your rackspace account.  edit your ~/.bashrc (or /etc/environement if you want to make it global) and configure those variable : export RCLOUD_DATACENTER=UK  export UK_RCLOUD_USER=“MY_USERNAME” export UK_RCLOUD_KEY=“MY_API_KEY” export UK_RCLOUD_AURL=“https://lon.auth.api.rackspacecloud.com/v1.0\"  or for the US you would have : export RCLOUD_DATACENTER=US  export UK_RCLOUD_USER=“MY_USERNAME” export UK_RCLOUD_KEY=“MY_API_KEY” export UK_RCLOUD_AURL=“https://auth.api.rackspacecloud.com/v1.0\"  source the ~/.bashrc or relog into your account to have those accounts set-up you can test it to see if that works by going to : ~/cloudservers-api-demo/python  and launch the command : ./list-servers.py  to test if this is working properly (it should list your servers for your DATACENTER)  you are now basically ready to mass update firewall on all servers.  Let's say you have two web servers named web1 and web2 and two db servers named db1 and db2 and you would like to allow the 80 port on the web servers and 3306 port on the db servers.  You would have to go to this directory : ~/cloudservers-api-demo/firewall/  and first execute this command to see the help/usages : ./fw-control.py --help  so let's say to enable the firewall on all the web and db server first you can do : ./fw-control.py -s \"web db\" enable  it will connect and enable the firewall on all the servers which match the name web and db.  now let's say we want to enable port 80 on the web : ./fw-control.py -s \"web\" allow port 80  if you log into the servers you can check with iptables -L -n  that it it has been enabled properly.  This is simple enough for you to modify the script to your liking to make it more modular for your specific environement.  ","wordCount":"682","inLanguage":"en","datePublished":"2011-05-05T22:12:42Z","dateModified":"2011-05-05T22:12:42Z","author":{"@type":"Person","name":"chmouel"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.chmouel.com/2011/05/05/mass-editing-firewall-on-rackspace-cloud/"},"publisher":{"@type":"Organization","name":"Chmouel's blog","logo":{"@type":"ImageObject","url":"https://blog.chmouel.com/favicon.ico"}}}</script></head><body class=dark id=top><header class=header><nav class=nav><div class=logo><a href=https://blog.chmouel.com/ accesskey=h title="Chmouel's blog (Alt + H)">Chmouel's blog</a>
+<span class=logo-switches></span></div><ul id=menu><li><a href=https://github.com/chmouel/ title=Github><span>Github</span></a></li><li><a href=https://photos.chmouel.com title=Photos><span>Photos</span></a></li><li><a href=https://app.strava.com/athletes/126695 title=Strava><span>Strava</span></a></li><li><a href=https://twitter.com/chmouel title=Twitter><span>Twitter</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Mass editing firewall on Rackspace Cloud.</h1><div class=post-meta><span title="2011-05-05 22:12:42 +0000 UTC">May 5, 2011</span></div></header><div class=post-content><p>A lot of our customers in Rackspace cloud has been asking how to mass edit firewalls of servers when you have multiple servers without doing it manually.</p><p>Part of my <a href=https://github.com/chmouel/cloudservers-api-demo>cloudservers-api-dem</a>o I have written a simple firewall scripts abstracting the Operating System firewall software to allow/enable/disable the firewall and ports/networks.</p><p>The script has been kept very simple by design and currently allow only to :</p><ul><li></li></ul><pre><code>&lt;p style=&quot;display: inline !important;&quot;&gt;
+  enable the firewall
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;/span&gt;&lt;/li&gt; 
+  
+  &lt;li&gt;
+    &lt;span style=&quot;font-size: medium;&quot;&gt; 
+    
+    &lt;p style=&quot;display: inline !important;&quot;&gt;
+      disable the firewall
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;/span&gt;&lt;/li&gt; 
+      
+      &lt;li&gt;
+        &lt;span style=&quot;font-size: medium;&quot;&gt; 
+        
+        &lt;p style=&quot;display: inline !important;&quot;&gt;
+          allow or disallow a port or a network
+        &lt;/p&gt;
+        
+        &lt;p&gt;
+          &lt;/span&gt;&lt;/li&gt; 
+          
+          &lt;li&gt;
+            &lt;span style=&quot;font-size: medium;&quot;&gt; 
+            
+            &lt;p style=&quot;display: inline !important;&quot;&gt;
+              see firewall status
+            &lt;/p&gt;
+            
+            &lt;p&gt;
+              &lt;/span&gt;&lt;/li&gt; &lt;/ul&gt; 
+              
+              &lt;h3&gt;
+                PREREQUISITES
+              &lt;/h3&gt;
+              
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                  
+                  &lt;p style=&quot;display: inline !important;&quot;&gt;
+                    A management server under Ubuntu maverick.
+                  &lt;/p&gt;
+                  
+                  &lt;p&gt;
+                    &lt;/span&gt;&lt;/li&gt; 
+                    
+                    &lt;li&gt;
+                      &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                      
+                      &lt;p style=&quot;display: inline !important;&quot;&gt;
+                        A supported Operating System for clients which includes :
+                      &lt;/p&gt;
+                      
+                      &lt;p&gt;
+                        &lt;/span&gt;&lt;/li&gt; 
+                        
+                        &lt;li&gt;
+                          &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                          
+                          &lt;p style=&quot;display: inline !important;&quot;&gt;
+                            Debian.
+                          &lt;/p&gt;
+                          
+                          &lt;p&gt;
+                            &lt;/span&gt;&lt;/li&gt; 
+                            
+                            &lt;li&gt;
+                              &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                              
+                              &lt;p style=&quot;display: inline !important;&quot;&gt;
+                                Ubuntu.
+                              &lt;/p&gt;
+                              
+                              &lt;p&gt;
+                                &lt;/span&gt;&lt;/li&gt; 
+                                
+                                &lt;li&gt;
+                                  &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                                  
+                                  &lt;p style=&quot;display: inline !important;&quot;&gt;
+                                    RHEL.
+                                  &lt;/p&gt;
+                                  
+                                  &lt;p&gt;
+                                    &lt;/span&gt;&lt;/li&gt; 
+                                    
+                                    &lt;li&gt;
+                                      &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                                      
+                                      &lt;p style=&quot;display: inline !important;&quot;&gt;
+                                        Fedora
+                                      &lt;/p&gt;
+                                      
+                                      &lt;p&gt;
+                                        &lt;/span&gt;&lt;/li&gt; 
+                                        
+                                        &lt;li&gt;
+                                          &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                                          
+                                          &lt;p style=&quot;display: inline !important;&quot;&gt;
+                                            My patched python-cloudservers library (see below for installs).
+                                          &lt;/p&gt;
+                                          
+                                          &lt;p&gt;
+                                            &lt;/span&gt;&lt;/li&gt; 
+                                            
+                                            &lt;li&gt;
+                                              &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                                              
+                                              &lt;p style=&quot;display: inline !important;&quot;&gt;
+                                                Your SSH key installed on all VM for root users.
+                                              &lt;/p&gt;
+                                              
+                                              &lt;p&gt;
+                                                &lt;/span&gt;&lt;/li&gt; &lt;/ul&gt; 
+                                                
+                                                &lt;h3&gt;
+                                                  Install
+                                                &lt;/h3&gt;
+                                                
+                                                &lt;ul&gt;
+                                                  &lt;li&gt;
+                                                    &lt;span style=&quot;font-size: medium;&quot;&gt; 
+                                                    
+                                                    &lt;p style=&quot;display: inline !important;&quot;&gt;
+                                                      After you have kicked a VM with a Ubuntu maverick and connected to it as root you want first execute intall some prereq packages :
+                                                    &lt;/p&gt;
+                                                    
+                                                    &lt;p&gt;
+                                                      &lt;/span&gt;&lt;/li&gt; &lt;/ul&gt; 
+                                                      
+                                                      &lt;pre lang=&quot;sh&quot;&gt;apt-get update &amp;&amp; apt-get -y install python-stdeb git&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        checkout my python-cloudservers library :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre lang=&quot;sh&quot;&gt;git clone git://github.com/chmouel/python-cloudservers.git&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        after being checked-out you will go into the python-cloudservers directory which has just been created and do this :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre lang=&quot;sh&quot;&gt;cd python-cloudservers/
+</code></pre><p>python setup.py install</p><pre><code>                                                      &lt;p&gt;
+                                                        this should automatically install all the dependences.
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        Now you can install my api-demo which include the firewall script :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre lang=&quot;sh&quot;&gt;cd ../
+</code></pre><p>git clone git://github.com/chmouel/cloudservers-api-demo</p><pre><code>                                                      &lt;p&gt;
+                                                        You need to configure some environemnt variable first which keep information about your rackspace account.
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        edit your ~/.bashrc (or /etc/environement if you want to make it global) and configure those variable :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;export RCLOUD_DATACENTER=UK
+</code></pre><p>export UK_RCLOUD_USER=&ldquo;MY_USERNAME&rdquo;
+export UK_RCLOUD_KEY=&ldquo;MY_API_KEY&rdquo;
+export UK_RCLOUD_AURL=&ldquo;<a href=https://lon.auth.api.rackspacecloud.com/v1.0%22>https://lon.auth.api.rackspacecloud.com/v1.0"</a></p><pre><code>                                                      &lt;p&gt;
+                                                        or for the US you would have :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;export RCLOUD_DATACENTER=US
+</code></pre><p>export UK_RCLOUD_USER=&ldquo;MY_USERNAME&rdquo;
+export UK_RCLOUD_KEY=&ldquo;MY_API_KEY&rdquo;
+export UK_RCLOUD_AURL=&ldquo;<a href=https://auth.api.rackspacecloud.com/v1.0%22>https://auth.api.rackspacecloud.com/v1.0"</a></p><pre><code>                                                      &lt;p&gt;
+                                                        source the ~/.bashrc or relog into your account to have those accounts set-up you can test it to see if that works by going to :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;~/cloudservers-api-demo/python&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        and launch the command :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;./list-servers.py&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        to test if this is working properly (it should list your servers for your DATACENTER)
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        you are now basically ready to mass update firewall on all servers.
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        Let's say you have two web servers named web1 and web2 and two db servers named db1 and db2 and you would like to allow the 80 port on the web servers and 3306 port on the db servers.
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        You would have to go to this directory :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;~/cloudservers-api-demo/firewall/&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        and first execute this command to see the help/usages :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;./fw-control.py --help&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        so let's say to enable the firewall on all the web and db server first you can do :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;./fw-control.py -s &quot;web db&quot; enable&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        it will connect and enable the firewall on all the servers which match the name web and db.
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        now let's say we want to enable port 80 on the web :
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;./fw-control.py -s &quot;web&quot; allow port 80&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        if you log into the servers you can check with
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;pre&gt;iptables -L -n&lt;/pre&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        that it it has been enabled properly.
+                                                      &lt;/p&gt;
+                                                      
+                                                      &lt;p&gt;
+                                                        This is simple enough for you to modify the script to your liking to make it more modular for your specific environement.
+                                                      &lt;/p&gt;
+</code></pre></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.chmouel.com/tags/cloud/>Cloud</a></li><li><a href=https://blog.chmouel.com/tags/rackspace/>Rackspace</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2022 <a href=https://blog.chmouel.com/>Chmouel's blog</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.querySelectorAll("pre > code").forEach(t=>{const n=t.parentNode.parentNode,e=document.createElement("button");e.classList.add("copy-code"),e.innerText="copy";function s(){e.innerText="copied!",setTimeout(()=>{e.innerText="copy"},2e3)}e.addEventListener("click",o=>{if("clipboard"in navigator){navigator.clipboard.writeText(t.textContent),s();return}const e=document.createRange();e.selectNodeContents(t);const n=window.getSelection();n.removeAllRanges(),n.addRange(e);try{document.execCommand("copy"),s()}catch(e){}n.removeRange(e)}),n.classList.contains("highlight")?n.appendChild(e):n.parentNode.firstChild==n||(t.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?t.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(e):t.parentNode.appendChild(e))})</script></body></html>

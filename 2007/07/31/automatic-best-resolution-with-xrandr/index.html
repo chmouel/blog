@@ -1,0 +1,51 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Automatic best resolution with xrandr | Chmouel's blog</title><meta name=keywords content="Life,Scripts"><meta name=description content="If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :
+[code lang=&ldquo;bash&rdquo;]
+#!/bin/bash
+function get_resolutions() {
+xrandr|while read -a line;do
+RES=&#34;${line[1]}x${line[3]} &#34;
+[[ ${RES} != [0-9]* ]] && continue
+echo ${RES}
+done
+}
+_BEST_RES=0
+BEST_RES=
+for res in $(get_resolutions);do
+_res=${res/x/}
+[[ $_res -ge ${_BEST_RES} ]] && {
+BEST_RES=${res}"><meta name=author content><link rel=canonical href=https://blog.chmouel.com/2007/07/31/automatic-best-resolution-with-xrandr/><link crossorigin=anonymous href=/assets/css/stylesheet.min.5a5d567b690246c4eb15b9f0c3d47bef28df71173b90a626c03708a628d3193d.css integrity="sha256-Wl1We2kCRsTrFbnww9R77yjfcRc7kKYmwDcIpijTGT0=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://blog.chmouel.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.chmouel.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.chmouel.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.chmouel.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.chmouel.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:title" content="Automatic best resolution with xrandr"><meta property="og:description" content="If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :
+[code lang=&ldquo;bash&rdquo;]
+#!/bin/bash
+function get_resolutions() {
+xrandr|while read -a line;do
+RES=&#34;${line[1]}x${line[3]} &#34;
+[[ ${RES} != [0-9]* ]] && continue
+echo ${RES}
+done
+}
+_BEST_RES=0
+BEST_RES=
+for res in $(get_resolutions);do
+_res=${res/x/}
+[[ $_res -ge ${_BEST_RES} ]] && {
+BEST_RES=${res}"><meta property="og:type" content="article"><meta property="og:url" content="https://blog.chmouel.com/2007/07/31/automatic-best-resolution-with-xrandr/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2007-07-31T22:23:32+00:00"><meta property="article:modified_time" content="2007-07-31T22:23:32+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Automatic best resolution with xrandr"><meta name=twitter:description content="If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :
+[code lang=&ldquo;bash&rdquo;]
+#!/bin/bash
+function get_resolutions() {
+xrandr|while read -a line;do
+RES=&#34;${line[1]}x${line[3]} &#34;
+[[ ${RES} != [0-9]* ]] && continue
+echo ${RES}
+done
+}
+_BEST_RES=0
+BEST_RES=
+for res in $(get_resolutions);do
+_res=${res/x/}
+[[ $_res -ge ${_BEST_RES} ]] && {
+BEST_RES=${res}"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.chmouel.com/posts/"},{"@type":"ListItem","position":2,"name":"Automatic best resolution with xrandr","item":"https://blog.chmouel.com/2007/07/31/automatic-best-resolution-with-xrandr/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Automatic best resolution with xrandr","name":"Automatic best resolution with xrandr","description":"If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :\n[code lang=\u0026ldquo;bash\u0026rdquo;]\n#!/bin/bash\nfunction get_resolutions() {\nxrandr|while read -a line;do\nRES=\u0026quot;${line[1]}x${line[3]} \u0026quot;\n[[ ${RES} != [0-9]* ]] \u0026amp;\u0026amp; continue\necho ${RES}\ndone\n}\n_BEST_RES=0\nBEST_RES=\nfor res in $(get_resolutions);do\n_res=${res/x/}\n[[ $_res -ge ${_BEST_RES} ]] \u0026amp;\u0026amp; {\nBEST_RES=${res}","keywords":["Life","Scripts"],"articleBody":"If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :\n[code lang=“bash”]\n#!/bin/bash\nfunction get_resolutions() {\nxrandr|while read -a line;do\nRES=\"${line[1]}x${line[3]} \"\n[[ ${RES} != [0-9]* ]] \u0026\u0026 continue\necho ${RES}\ndone\n}\n_BEST_RES=0\nBEST_RES=\nfor res in $(get_resolutions);do\n_res=${res/x/}\n[[ $_res -ge ${_BEST_RES} ]] \u0026\u0026 {\nBEST_RES=${res}\n_BEST_RES=${_res}\n}\ndone\nxrandr -s ${BEST_RES}\n[/code]\n","wordCount":"77","inLanguage":"en","datePublished":"2007-07-31T22:23:32Z","dateModified":"2007-07-31T22:23:32Z","author":{"@type":"Person","name":"chmouel"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.chmouel.com/2007/07/31/automatic-best-resolution-with-xrandr/"},"publisher":{"@type":"Organization","name":"Chmouel's blog","logo":{"@type":"ImageObject","url":"https://blog.chmouel.com/favicon.ico"}}}</script></head><body class=dark id=top><header class=header><nav class=nav><div class=logo><a href=https://blog.chmouel.com/ accesskey=h title="Chmouel's blog (Alt + H)">Chmouel's blog</a>
+<span class=logo-switches></span></div><ul id=menu><li><a href=https://github.com/chmouel/ title=Github><span>Github</span></a></li><li><a href=https://photos.chmouel.com title=Photos><span>Photos</span></a></li><li><a href=https://app.strava.com/athletes/126695 title=Strava><span>Strava</span></a></li><li><a href=https://twitter.com/chmouel title=Twitter><span>Twitter</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Automatic best resolution with xrandr</h1><div class=post-meta><span title="2007-07-31 22:23:32 +0000 UTC">July 31, 2007</span></div></header><div class=post-content><p>If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :</p><p>[code lang=&ldquo;bash&rdquo;]<br>#!/bin/bash</p><p>function get_resolutions() {<br>xrandr|while read -a line;do<br>RES="${line[1]}x${line[3]} "<br>[[ ${RES} != [0-9]* ]] && continue<br>echo ${RES}<br>done<br>}</p><p>_BEST_RES=0<br>BEST_RES=<br>for res in $(get_resolutions);do<br>_res=${res/x/}<br>[[ $_res -ge ${_BEST_RES} ]] && {<br>BEST_RES=${res}<br>_BEST_RES=${_res}<br>}<br>done<br>xrandr -s ${BEST_RES}<br>[/code]</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.chmouel.com/tags/life/>Life</a></li><li><a href=https://blog.chmouel.com/tags/scripts/>Scripts</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2022 <a href=https://blog.chmouel.com/>Chmouel's blog</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.querySelectorAll("pre > code").forEach(t=>{const n=t.parentNode.parentNode,e=document.createElement("button");e.classList.add("copy-code"),e.innerText="copy";function s(){e.innerText="copied!",setTimeout(()=>{e.innerText="copy"},2e3)}e.addEventListener("click",o=>{if("clipboard"in navigator){navigator.clipboard.writeText(t.textContent),s();return}const e=document.createRange();e.selectNodeContents(t);const n=window.getSelection();n.removeAllRanges(),n.addRange(e);try{document.execCommand("copy"),s()}catch(e){}n.removeRange(e)}),n.classList.contains("highlight")?n.appendChild(e):n.parentNode.firstChild==n||(t.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?t.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(e):t.parentNode.appendChild(e))})</script></body></html>
