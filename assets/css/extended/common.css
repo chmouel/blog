@@ -2,8 +2,15 @@
   color: #bd93f9;
 }
 
+body.dark .logo a {
+  color: #50fa7b;
+}
+
+body:not(.dark) .logo a {
+  color: #ff50bc;
+}
+
 .entry-footer,.post-meta {
-  color: #dadadb;
   font-style: italic;
   font-size: 10px;
   text-align: right;
