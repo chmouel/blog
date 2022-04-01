@@ -21,7 +21,7 @@ minify:
 params:
   env: production
   defaultTheme: auto
-  disableThemeToggle: true
+  # disableThemeToggle: true
   # ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   disableSpecial1stPost: true

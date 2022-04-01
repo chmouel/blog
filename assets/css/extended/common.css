@@ -10,7 +10,8 @@ body:not(.dark) .logo a {
   color: #ff50bc;
 }
 
-.entry-footer,.post-meta {
+.entry-footer,
+.post-meta {
   font-style: italic;
   font-size: 10px;
   text-align: right;
@@ -24,8 +25,14 @@ body:not(.dark) .logo a {
   color: #bd93f9;
 }
 
+.post-entry {
+  display: block;
+  /* add shadow around the block */
+  box-shadow: 0px 0px 10px #3c2c3d;
+}
+
 body.dark .post-content a {
-  color: cyan;
+  color: rgb(0, 255, 255);
 }
 
 .nav {
@@ -34,12 +41,14 @@ body.dark .post-content a {
 }
 
 body.dark #menu span {
-  color: cyan;
+  color: rgb(0, 255, 255);
 }
+
 #menu span {
   text-decoration: underline;
 }
 
-html, body {
+html,
+body {
   font-family: "JetBrains Mono", monospace;
 }
