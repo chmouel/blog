@@ -19,7 +19,7 @@ minify:
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   defaultTheme: dark
   disableThemeToggle: true
   # ShowPostNavLinks: true
@@ -28,6 +28,11 @@ params:
   # label:
   #   icon: logo/chmouel.png
   #   iconHeight: 40
+
+  editPost:
+    URL: "https://github.com/chmouel/blog/tree/main/content"
+    Text: "Edit"
+    appendFilePath: true
 
 markup:
   highlight:
