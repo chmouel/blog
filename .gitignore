@@ -1,4 +1,4 @@
-resource/_gen
+resources/_gen
 public/
 .hugo_build.lock
 content/posts/drafts
