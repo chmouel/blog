@@ -1,7 +1,7 @@
 ---
 title: "Chmouel's blog"
 baseURL: "https://blog.chmouel.com/"
-theme: "serial-programmer/"
+theme: "PaperMod"
 languageCode: "en-GB"
 defaultContentLanguage: "en"
 pluralizelisttitles: false
@@ -14,16 +14,15 @@ author:
   url: "https://twitter.com/chmouel"
   avatar: "https://chmouel.com/chmouel.png"
 
-outputFormats:
-  SearchIndex:
-    mediaType: "application/json"
-    baseName: "searchindex"
-    isPlainText: true
-    notAlternative: true
-
-outputs:
-  home: ["HTML", "RSS", "JSON", "SearchIndex"]
-  section: ["HTML", "RSS", "JSON"]
+params:
+  defaultTheme: dark
+  disableThemeToggle: true
+  # ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: true
+  # label:
+  #   icon: logo/chmouel.png
+  #   iconHeight: 40
 
 markup:
   highlight:
@@ -31,3 +30,14 @@ markup:
     lineNumbersInTable: false
     tabWidth: 2
     guessSyntax: true
+
+menus:
+  main:
+    - name: "Photos"
+      url: "https://photos.chmouel.com"
+    - name: "Github"
+      url: "https://github.com/chmouel/"
+    - name: "Twitter"
+      url: "https://twitter.com/chmouel"
+    - name: "Strava"
+      url: "https://app.strava.com/athletes/126695"
