@@ -1,7 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Debian on Chmouel's blog</title><link>https://blog.chmouel.com/tags/debian/</link><description>Recent content in Debian on Chmouel's blog</description><generator>Hugo -- gohugo.io</generator><language>en-GB</language><lastBuildDate>Fri, 30 Oct 2009 08:55:53 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/debian/index.xml" rel="self" type="application/rss+xml"/><item><title>Nokia N95 bluetooth teethering with T-Mobile under Linux and Delll Latitude D630</title><link>https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/</link><pubDate>Fri, 30 Oct 2009 08:55:53 +0000</pubDate><guid>https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/</guid><description>Spent a bit of time to configure my Nokia mobile to teethering wih my Linux and T-Mobile. Here is some steps that may help the others :
-If you don&amp;rsquo;t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven&amp;rsquo;t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the driver (manually not via the setup.</description></item><item><title>Network manager and iwl3945 not showing network</title><link>https://blog.chmouel.com/2009/08/10/network-manager-and-iwl3945-not-showing-network/</link><pubDate>Mon, 10 Aug 2009 15:11:57 +0000</pubDate><guid>https://blog.chmouel.com/2009/08/10/network-manager-and-iwl3945-not-showing-network/</guid><description>So if you have network-manager not detecting wireless networks it is probably because lately the driver need to be set as up to get the thing going.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Debian on Chmouel&#39;s blog</title>
+    <link>https://blog.chmouel.com/tags/debian/</link>
+    <description>Recent content in Debian on Chmouel&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 30 Oct 2009 08:55:53 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nokia N95 bluetooth teethering with T-Mobile under Linux and Delll Latitude D630</title>
+      <link>https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/</link>
+      <pubDate>Fri, 30 Oct 2009 08:55:53 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/</guid>
+      <description>Spent a bit of time to configure my Nokia mobile to teethering wih my Linux and T-Mobile. Here is some steps that may help the others :
+ If you don&amp;rsquo;t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven&amp;rsquo;t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the driver (manually not via the setup.</description>
+    </item>
+    
+    <item>
+      <title>Network manager and iwl3945 not showing network</title>
+      <link>https://blog.chmouel.com/2009/08/10/network-manager-and-iwl3945-not-showing-network/</link>
+      <pubDate>Mon, 10 Aug 2009 15:11:57 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2009/08/10/network-manager-and-iwl3945-not-showing-network/</guid>
+      <description>So if you have network-manager not detecting wireless networks it is probably because lately the driver need to be set as up to get the thing going.
 On my Debian I have added this to make it works :
-echo &amp;quot;/sbin/ip link set wlan0 up&amp;quot;|sudo tee /etc/default/NetworkManager</description></item><item><title>Debian Lenny on Dell Optiplex 760</title><link>https://blog.chmouel.com/2009/06/16/debian-lenny-on-dell-optiflex-760/</link><pubDate>Tue, 16 Jun 2009 21:15:30 +0000</pubDate><guid>https://blog.chmouel.com/2009/06/16/debian-lenny-on-dell-optiflex-760/</guid><description>So if you get that shiny new Dell desktop and ACPI spit bunch of message at the install time and the network driver does not get detected you can follow these steps to have it working.
-Continue the install without the network until you reboot to grub.
-Add hpet=disable at the end of the boot kernel parameter and get into the system.
-Download the latest kernel for your architecture on :</description></item></channel></rss>
+echo &amp;quot;/sbin/ip link set wlan0 up&amp;quot;|sudo tee /etc/default/NetworkManager</description>
+    </item>
+    
+    <item>
+      <title>Debian Lenny on Dell Optiplex 760</title>
+      <link>https://blog.chmouel.com/2009/06/16/debian-lenny-on-dell-optiflex-760/</link>
+      <pubDate>Tue, 16 Jun 2009 21:15:30 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2009/06/16/debian-lenny-on-dell-optiflex-760/</guid>
+      <description>So if you get that shiny new Dell desktop and ACPI spit bunch of message at the install time and the network driver does not get detected you can follow these steps to have it working.
+  Continue the install without the network until you reboot to grub.
+  Add hpet=disable at the end of the boot kernel parameter and get into the system.
+  Download the latest kernel for your architecture on :</description>
+    </item>
+    
+  </channel>
+</rss>

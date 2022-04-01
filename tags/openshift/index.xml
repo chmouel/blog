@@ -1,15 +1,97 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>OpenShift on Chmouel's blog</title><link>https://blog.chmouel.com/tags/openshift/</link><description>Recent content in OpenShift on Chmouel's blog</description><generator>Hugo -- gohugo.io</generator><language>en-GB</language><lastBuildDate>Fri, 09 Jun 2017 13:31:28 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/openshift/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploying minishift on a remote laptop.</title><link>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</link><pubDate>Fri, 09 Jun 2017 13:31:28 +0000</pubDate><guid>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</guid><description>Part of my new job working with Fabric8 is to having it deployed via minishift.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpenShift on Chmouel&#39;s blog</title>
+    <link>https://blog.chmouel.com/tags/openshift/</link>
+    <description>Recent content in OpenShift on Chmouel&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 09 Jun 2017 13:31:28 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/openshift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploying minishift on a remote laptop.</title>
+      <link>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</link>
+      <pubDate>Fri, 09 Jun 2017 13:31:28 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</guid>
+      <description>Part of my new job working with Fabric8 is to having it deployed via minishift.
 Everything is nice and working (try it it&amp;rsquo;s awesome https://fabric8.io/guide/getStarted/gofabric8.html) as long you deploy it on your local workstation.
-The thing is that my desktop macosx laptop has only 8GB of RAM and is not very well up to the task to get all the services being deployed when I have my web browser and other stuff hogging the memory.</description></item><item><title>Getting a letsencrypt SSL certificate for the OpenShift console and API</title><link>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</link><pubDate>Thu, 29 Sep 2016 08:22:48 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</guid><description>By default when you install an OpenShift install it would automatically generate its own certificates.
+The thing is that my desktop macosx laptop has only 8GB of RAM and is not very well up to the task to get all the services being deployed when I have my web browser and other stuff hogging the memory.</description>
+    </item>
+    
+    <item>
+      <title>Getting a letsencrypt SSL certificate for the OpenShift console and API</title>
+      <link>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</link>
+      <pubDate>Thu, 29 Sep 2016 08:22:48 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</guid>
+      <description>By default when you install an OpenShift install it would automatically generate its own certificates.
 It uses those certificates for communication between nodes and as well to automatically auth the admin account. By default those same certificates are the one provided for the OpenShift console and API.
 Since it is auto generated you will when connecting to the website with you webbrowser get an ugly error message :
-and as the error message says that&amp;rsquo;s not very secure #sadpanda.</description></item><item><title>Using python to drive OpenShift REST API</title><link>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</link><pubDate>Mon, 19 Sep 2016 08:19:50 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</guid><description>I have been meaning to automate my deployment directly from my small python application without having to use the openshift client (oc) directly.
+and as the error message says that&amp;rsquo;s not very secure #sadpanda.</description>
+    </item>
+    
+    <item>
+      <title>Using python to drive OpenShift REST API</title>
+      <link>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</link>
+      <pubDate>Mon, 19 Sep 2016 08:19:50 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</guid>
+      <description>I have been meaning to automate my deployment directly from my small python application without having to use the openshift client (oc) directly.
 OpenShift use a REST API and the oc client uses it to communicate with the server, you can actually see all the REST operation the oc client is doing if you specify the &amp;ndash;loglevel=7 (it goes to 10 to get even more debug info) :
-I was thinking to come up with my own python rest wrapper since a google quick search didn&amp;rsquo;t come up with any binding.</description></item><item><title>Getting openshift origin “cluster up” working with xhyve</title><link>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</link><pubDate>Mon, 19 Sep 2016 06:00:54 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</guid><description>In latest openshift client (oc) there is a nifty (relatively) new feature to get you a OpenShift cluster starting (very) quickly. It&amp;rsquo;s a pretty nice way to get you a new openshift origin environment on your laptop without the hassle.
-On macosx there is a (as well relatively) new lightweight virtualization solution called xhyve it&amp;rsquo;s a bit like KVM in the sense of being lightweight and does not need like virtualbox or vmware to get a UI running.</description></item><item><title>The best ways to work with yaml files in Emacs</title><link>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</link><pubDate>Wed, 07 Sep 2016 07:45:03 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</guid><description>Sometime ago or at least when I started doing programming in the late 90s XML was all the rage, it promised to be the panacea for everything from data to storage to data presentation and processing. People realized that it was just complexity as Joel Spolski points out an attempt to make the complex seem accessible to ordinary people.. Really people were annoyed to write all those tags as those &amp;lsquo;&amp;lt;&amp;rsquo; and &amp;lsquo;&amp;gt;&amp;rsquo; are hard to reach on a qwerty keyboard.</description></item><item><title>openshift-sdn with OpenStack SDN and MTU</title><link>https://blog.chmouel.com/2015/09/25/openshift-sdn-with-openstack-sdn-and-mtu/</link><pubDate>Fri, 25 Sep 2015 14:16:12 +0000</pubDate><guid>https://blog.chmouel.com/2015/09/25/openshift-sdn-with-openstack-sdn-and-mtu/</guid><description>I am lucky enough to have a cloud available to me for free it obviously runs OpenStack and I can kick VM like I want.
+I was thinking to come up with my own python rest wrapper since a google quick search didn&amp;rsquo;t come up with any binding.</description>
+    </item>
+    
+    <item>
+      <title>Getting openshift origin “cluster up” working with xhyve</title>
+      <link>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</link>
+      <pubDate>Mon, 19 Sep 2016 06:00:54 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</guid>
+      <description>In latest openshift client (oc) there is a nifty (relatively) new feature to get you a OpenShift cluster starting (very) quickly. It&amp;rsquo;s a pretty nice way to get you a new openshift origin environment on your laptop without the hassle.
+On macosx there is a (as well relatively) new lightweight virtualization solution called xhyve it&amp;rsquo;s a bit like KVM in the sense of being lightweight and does not need like virtualbox or vmware to get a UI running.</description>
+    </item>
+    
+    <item>
+      <title>The best ways to work with yaml files in Emacs</title>
+      <link>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</link>
+      <pubDate>Wed, 07 Sep 2016 07:45:03 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</guid>
+      <description>Sometime ago or at least when I started doing programming in the late 90s XML was all the rage, it promised to be the panacea for everything from data to storage to data presentation and processing. People realized that it was just complexity as Joel Spolski points out an attempt to make the complex seem accessible to ordinary people.. Really people were annoyed to write all those tags as those &amp;lsquo;&amp;lt;&amp;rsquo; and &amp;lsquo;&amp;gt;&amp;rsquo; are hard to reach on a qwerty keyboard.</description>
+    </item>
+    
+    <item>
+      <title>openshift-sdn with OpenStack SDN and MTU</title>
+      <link>https://blog.chmouel.com/2015/09/25/openshift-sdn-with-openstack-sdn-and-mtu/</link>
+      <pubDate>Fri, 25 Sep 2015 14:16:12 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2015/09/25/openshift-sdn-with-openstack-sdn-and-mtu/</guid>
+      <description>I am lucky enough to have a cloud available to me for free it obviously runs OpenStack and I can kick VM like I want.
 Since I am playing with OpenShift a lot lately I have seen issues in that cloud where pushing an image to the internal registry was just randomly failing.
-Networking is definitely not my pedigree but I could definitely sense it was a networking issue. Since I could nost just blame the underlying cloud (hey it&amp;rsquo;s free!</description></item><item><title>Deploy openshift router and registry only on a master nodes with no others</title><link>https://blog.chmouel.com/2015/09/23/openshift-default-router-on-master-nodes-but-no-others/</link><pubDate>Wed, 23 Sep 2015 11:31:07 +0000</pubDate><guid>https://blog.chmouel.com/2015/09/23/openshift-default-router-on-master-nodes-but-no-others/</guid><description>Something that has come up when using OpenShift and that was tricky enough to be shared on a blog post.
+Networking is definitely not my pedigree but I could definitely sense it was a networking issue. Since I could nost just blame the underlying cloud (hey it&amp;rsquo;s free!</description>
+    </item>
+    
+    <item>
+      <title>Deploy openshift router and registry only on a master nodes with no others</title>
+      <link>https://blog.chmouel.com/2015/09/23/openshift-default-router-on-master-nodes-but-no-others/</link>
+      <pubDate>Wed, 23 Sep 2015 11:31:07 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2015/09/23/openshift-default-router-on-master-nodes-but-no-others/</guid>
+      <description>Something that has come up when using OpenShift and that was tricky enough to be shared on a blog post.
 On OpenShift you have this routers and registry which by default are on the master nodes and that&amp;rsquo;s fine. Things get tricky if you don&amp;rsquo;t want anything else in there.
-I finally figured this out after digging in some internal mailing lists and this is actually not too difficult. The key thing is to have this on the &amp;lsquo;default&amp;rsquo; namespace annotations :</description></item><item><title>Using yaml for OpenShift v3 templates</title><link>https://blog.chmouel.com/2015/03/24/using-yaml-for-openshift-v3-templates/</link><pubDate>Tue, 24 Mar 2015 10:54:53 +0000</pubDate><guid>https://blog.chmouel.com/2015/03/24/using-yaml-for-openshift-v3-templates/</guid><description>I have been experimenting a lot with OpenShift v3 and love how everything work well together plugging Kubernetes and Docker with a PAAS workflow.
+I finally figured this out after digging in some internal mailing lists and this is actually not too difficult. The key thing is to have this on the &amp;lsquo;default&amp;rsquo; namespace annotations :</description>
+    </item>
+    
+    <item>
+      <title>Using yaml for OpenShift v3 templates</title>
+      <link>https://blog.chmouel.com/2015/03/24/using-yaml-for-openshift-v3-templates/</link>
+      <pubDate>Tue, 24 Mar 2015 10:54:53 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2015/03/24/using-yaml-for-openshift-v3-templates/</guid>
+      <description>I have been experimenting a lot with OpenShift v3 and love how everything work well together plugging Kubernetes and Docker with a PAAS workflow.
 One of the thing that I don&amp;rsquo;t get is to have to write manually verbose json templates, it&amp;rsquo;s wonderful for machines and to parse but writing it can get as painful as (dear I said it) XML.
-OpenShift natively support very nicely yaml files and it&amp;rsquo;s a straight conversion of what you would have in json format.</description></item></channel></rss>
+OpenShift natively support very nicely yaml files and it&amp;rsquo;s a straight conversion of what you would have in json format.</description>
+    </item>
+    
+  </channel>
+</rss>

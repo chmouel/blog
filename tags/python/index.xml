@@ -1,36 +1,170 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Python on Chmouel's blog</title><link>https://blog.chmouel.com/tags/python/</link><description>Recent content in Python on Chmouel's blog</description><generator>Hugo -- gohugo.io</generator><language>en-GB</language><lastBuildDate>Mon, 08 Sep 2014 00:56:43 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Dox a tool that run python (or others) tests in a docker container</title><link>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</link><pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate><guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid><description>Sometime there is some ideas that are just obvious that they are good ideas. When Montystarted to mentionon the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
-The idea of dox is like the name imply is to slightly behave like the toxtool but instead of running virtualenvs you are using docker containers.</description></item><item><title>On trying to be pylint compatible</title><link>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</link><pubDate>Thu, 11 Apr 2013 09:35:29 +0000</pubDate><guid>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</guid><description>How I feel when I try to address all pylint warning/errors:
- Adapted from http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards</description></item><item><title>Emacs and nosetests</title><link>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</link><pubDate>Sun, 14 Oct 2012 14:19:07 +0000</pubDate><guid>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</guid><description>Sometime you just need a long trans atlantic flight and a stupidly long stop-over in a random city to do some of those task that can improve your day to day but you never take some time to do it.
-When using emacs I wanted a simple way to launch a nosetests on the current function my cursor is in Emacs. The syntax on nosetests is a bit tricky and I actually always have to look at my shell history to know the proper syntax (nosetests directory/filename.</description></item><item><title>Debugging python-novaclient on the command line.</title><link>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</link><pubDate>Fri, 02 Sep 2011 03:00:13 +0000</pubDate><guid>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</guid><description>I have done lately quite a bit of work with python-novaclientthe (nova/keystone) openstack client. I often experiment it with ipythonin the console.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on Chmouel&#39;s blog</title>
+    <link>https://blog.chmouel.com/tags/python/</link>
+    <description>Recent content in Python on Chmouel&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 08 Sep 2014 00:56:43 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dox a tool that run python (or others) tests in a docker container</title>
+      <link>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</link>
+      <pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid>
+      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Montystarted to mentionon the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
+The idea of dox is like the name imply is to slightly behave like the toxtool but instead of running virtualenvs you are using docker containers.</description>
+    </item>
+    
+    <item>
+      <title>On trying to be pylint compatible</title>
+      <link>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</link>
+      <pubDate>Thu, 11 Apr 2013 09:35:29 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</guid>
+      <description>How I feel when I try to address all pylint warning/errors:
+
+ Adapted from http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards</description>
+    </item>
+    
+    <item>
+      <title>Emacs and nosetests</title>
+      <link>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</link>
+      <pubDate>Sun, 14 Oct 2012 14:19:07 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</guid>
+      <description>Sometime you just need a long trans atlantic flight and a stupidly long stop-over in a random city to do some of those task that can improve your day to day but you never take some time to do it.
+When using emacs I wanted a simple way to launch a nosetests on the current function my cursor is in Emacs. The syntax on nosetests is a bit tricky and I actually always have to look at my shell history to know the proper syntax (nosetests directory/filename.</description>
+    </item>
+    
+    <item>
+      <title>Debugging python-novaclient on the command line.</title>
+      <link>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</link>
+      <pubDate>Fri, 02 Sep 2011 03:00:13 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</guid>
+      <description>I have done lately quite a bit of work with python-novaclientthe (nova/keystone) openstack client. I often experiment it with ipythonin the console.
 There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :
-This would give you the details of the session showing you the REST requests and responses including the headers.</description></item><item><title>Installing python-cloudfiles from pypi</title><link>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</link><pubDate>Wed, 16 Feb 2011 05:41:33 +0000</pubDate><guid>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</guid><description>I have just uploaded python-cloudfiles to pypi available here
+This would give you the details of the session showing you the REST requests and responses including the headers.</description>
+    </item>
+    
+    <item>
+      <title>Installing python-cloudfiles from pypi</title>
+      <link>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</link>
+      <pubDate>Wed, 16 Feb 2011 05:41:33 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</guid>
+      <description>I have just uploaded python-cloudfiles to pypi available here
 This make things easy to add as a dependence of your project like you can have something like this in your setup.py :
-requirements = ['python-cloudfiles']
+requirements = [&#39;python-cloudfiles&#39;]
 and it will automatically download it as part of the dependence with easy_install or pip.
 cool kids on latest debian/ubuntu can do stuff like this (from python-stdeb package) :
 pypi-install python-cloudfiles
-which would automatically download the tarball from pypi and install it as a packages (like the way it should be for prod machine!</description></item><item><title>Python decorator to argument checking</title><link>https://blog.chmouel.com/2010/07/29/python-decorator-to-argument-checking/</link><pubDate>Thu, 29 Jul 2010 19:03:57 +0000</pubDate><guid>https://blog.chmouel.com/2010/07/29/python-decorator-to-argument-checking/</guid><description>I am sure there is billions or more people who already done that but I needed this quickly for my project and was not feeling googling around :</description></item><item><title>Get Facebook albums with python</title><link>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</link><pubDate>Sat, 09 Jan 2010 14:42:19 +0000</pubDate><guid>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</guid><description>Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.</description></item><item><title>Twitter notification of replies by Email</title><link>https://blog.chmouel.com/2010/01/07/twitter-notification-of-replies-by-email/</link><pubDate>Thu, 07 Jan 2010 14:40:25 +0000</pubDate><guid>https://blog.chmouel.com/2010/01/07/twitter-notification-of-replies-by-email/</guid><description>I don&amp;rsquo;t check very often my twitter to know when someone replies and I find it hard to figure out what&amp;rsquo;s going on when i check a couple of days after even using a client showing only the reply (my client of choice lately is the Emacs twittering mode client)
-I have made a script who&amp;rsquo;s checking your direct reply and email it to you. This is to setup via a cron on a server who has a mail server configured locally.</description></item><item><title>XMPP notification for irssi running in a screen on a remote host</title><link>https://blog.chmouel.com/2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/</link><pubDate>Sun, 20 Dec 2009 15:41:55 +0000</pubDate><guid>https://blog.chmouel.com/2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/</guid><description>Like a lot of people I have my irssi on a server in a screen. This has
+which would automatically download the tarball from pypi and install it as a packages (like the way it should be for prod machine!</description>
+    </item>
+    
+    <item>
+      <title>Python decorator to argument checking</title>
+      <link>https://blog.chmouel.com/2010/07/29/python-decorator-to-argument-checking/</link>
+      <pubDate>Thu, 29 Jul 2010 19:03:57 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2010/07/29/python-decorator-to-argument-checking/</guid>
+      <description>I am sure there is billions or more people who already done that but I needed this quickly for my project and was not feeling googling around :</description>
+    </item>
+    
+    <item>
+      <title>Get Facebook albums with python</title>
+      <link>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</link>
+      <pubDate>Sat, 09 Jan 2010 14:42:19 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</guid>
+      <description>Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.
+  </description>
+    </item>
+    
+    <item>
+      <title>Twitter notification of replies by Email</title>
+      <link>https://blog.chmouel.com/2010/01/07/twitter-notification-of-replies-by-email/</link>
+      <pubDate>Thu, 07 Jan 2010 14:40:25 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2010/01/07/twitter-notification-of-replies-by-email/</guid>
+      <description>I don&amp;rsquo;t check very often my twitter to know when someone replies and I find it hard to figure out what&amp;rsquo;s going on when i check a couple of days after even using a client showing only the reply (my client of choice lately is the Emacs twittering mode client)
+I have made a script who&amp;rsquo;s checking your direct reply and email it to you. This is to setup via a cron on a server who has a mail server configured locally.</description>
+    </item>
+    
+    <item>
+      <title>XMPP notification for irssi running in a screen on a remote host</title>
+      <link>https://blog.chmouel.com/2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/</link>
+      <pubDate>Sun, 20 Dec 2009 15:41:55 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/</guid>
+      <description>Like a lot of people I have my irssi on a server in a screen. This has
 been working great so far but my only concerns are the notifications
 on the desktop when something happening.
 Over the time I have found some different solution with mitigated
 results for me :
-Use fanotify script with the libnotify-bin and SSH like mentioned here.
-Setup your irssi (or other) as irc proxy bouncer and connect with</description></item><item><title>Accessing to Rackspace Cloud Files via servicenet (update)</title><link>https://blog.chmouel.com/2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/</link><pubDate>Tue, 20 Oct 2009 18:47:49 +0000</pubDate><guid>https://blog.chmouel.com/2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/</guid><description>Last week I have posted an article explaining how to connect to Rackspace Cloud Files via Rackspace ServiceNET but I actually got it wrong as pointed by my great colleague exlt so I had to take it down until figured out how to fix it.
-I have add that feature properly to the PHP and Python API in version 1.5.0 to add a &amp;lsquo;servicenet&amp;rsquo; argument to the connection and updated the blog post here :</description></item><item><title>How to connect to Rackspace Cloud Files via ServiceNET</title><link>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</link><pubDate>Wed, 14 Oct 2009 00:47:27 +0000</pubDate><guid>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</guid><description>If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.</description></item><item><title>python syntax warning in emacs</title><link>https://blog.chmouel.com/2009/08/31/python-syntax-warning-in-emacs/</link><pubDate>Mon, 31 Aug 2009 05:04:28 +0000</pubDate><guid>https://blog.chmouel.com/2009/08/31/python-syntax-warning-in-emacs/</guid><description>One of the best feature to have with Emacs when doing python development is to have a real time syntax error/warning check highlighted in your code to avoid many errors or superfluous code.
+  Use fanotify script with the libnotify-bin and SSH like mentioned here.
+  Setup your irssi (or other) as irc proxy bouncer and connect with</description>
+    </item>
+    
+    <item>
+      <title>Accessing to Rackspace Cloud Files via servicenet (update)</title>
+      <link>https://blog.chmouel.com/2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/</link>
+      <pubDate>Tue, 20 Oct 2009 18:47:49 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/</guid>
+      <description>Last week I have posted an article explaining how to connect to Rackspace Cloud Files via Rackspace ServiceNET but I actually got it wrong as pointed by my great colleague exlt so I had to take it down until figured out how to fix it.
+I have add that feature properly to the PHP and Python API in version 1.5.0 to add a &amp;lsquo;servicenet&amp;rsquo; argument to the connection and updated the blog post here :</description>
+    </item>
+    
+    <item>
+      <title>How to connect to Rackspace Cloud Files via ServiceNET</title>
+      <link>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</link>
+      <pubDate>Wed, 14 Oct 2009 00:47:27 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</guid>
+      <description>If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.</description>
+    </item>
+    
+    <item>
+      <title>python syntax warning in emacs</title>
+      <link>https://blog.chmouel.com/2009/08/31/python-syntax-warning-in-emacs/</link>
+      <pubDate>Mon, 31 Aug 2009 05:04:28 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2009/08/31/python-syntax-warning-in-emacs/</guid>
+      <description>One of the best feature to have with Emacs when doing python development is to have a real time syntax error/warning check highlighted in your code to avoid many errors or superfluous code.
 This code is taken from the brillant Emacswiki python page.
-You need to install pyflakes first which should be available on your linux distro by default in a package or for the other OS you may follow the procedure from the pyflakes webpage.</description></item><item><title>Yum Force Exclude List</title><link>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</link><pubDate>Thu, 20 Mar 2008 09:36:06 +0000</pubDate><guid>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</guid><description>While talking with my fellow colleague Darren Birkett about what seems a design limitation
+You need to install pyflakes first which should be available on your linux distro by default in a package or for the other OS you may follow the procedure from the pyflakes webpage.</description>
+    </item>
+    
+    <item>
+      <title>Yum Force Exclude List</title>
+      <link>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</link>
+      <pubDate>Thu, 20 Mar 2008 09:36:06 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</guid>
+      <description>While talking with my fellow colleague Darren Birkett about what seems a design limitation
 of yum to not be able to force listing the excludes from yum. I had a
 shoot to make a yum plugin to force listing the excludes.
 Here is how it works :
-root@centos5:~&amp;gt; grep exclude /etc/yum.conf
+ root@centos5:~&amp;gt; grep exclude /etc/yum.conf
 exclude=rpm*
 root@centos5:~&amp;gt; yum install rpm-devel
 Loading &amp;ldquo;installonlyn&amp;rdquo; plugin
 Loading &amp;ldquo;changelog&amp;rdquo; plugin
 Loading &amp;ldquo;chmouel&amp;rdquo; plugin
 Loading &amp;ldquo;priorities&amp;rdquo; plugin
-Setting up Install Process</description></item><item><title>Generating md5 encrypted password for chpasswd</title><link>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</link><pubDate>Fri, 17 Aug 2007 07:11:38 +0000</pubDate><guid>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</guid><description>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
+Setting up Install Process</description>
+    </item>
+    
+    <item>
+      <title>Generating md5 encrypted password for chpasswd</title>
+      <link>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</link>
+      <pubDate>Fri, 17 Aug 2007 07:11:38 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</guid>
+      <description>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
 [code lang=&amp;ldquo;bash&amp;rdquo;]
 echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin
 [/code]
@@ -40,11 +174,51 @@ def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):
 import md5
 m = md5.new()
 m.update(password + magic + salt)
-# /* Then just as many characters of the MD5(pw,salt,pw) */</description></item><item><title>Cheetah Mode for Emacs</title><link>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</link><pubDate>Mon, 31 Jul 2006 23:35:09 +0000</pubDate><guid>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</guid><description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.</description></item><item><title>Assignement in Python with list.extend()</title><link>https://blog.chmouel.com/2006/07/31/assignement-in-python-with-listextend/</link><pubDate>Mon, 31 Jul 2006 06:54:13 +0000</pubDate><guid>https://blog.chmouel.com/2006/07/31/assignement-in-python-with-listextend/</guid><description>This is weird for me :
+# /* Then just as many characters of the MD5(pw,salt,pw) */</description>
+    </item>
+    
+    <item>
+      <title>Cheetah Mode for Emacs</title>
+      <link>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</link>
+      <pubDate>Mon, 31 Jul 2006 23:35:09 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</guid>
+      <description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.</description>
+    </item>
+    
+    <item>
+      <title>Assignement in Python with list.extend()</title>
+      <link>https://blog.chmouel.com/2006/07/31/assignement-in-python-with-listextend/</link>
+      <pubDate>Mon, 31 Jul 2006 06:54:13 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2006/07/31/assignement-in-python-with-listextend/</guid>
+      <description>This is weird for me :
 give me the result
 python &amp;ldquo;/tmp/a.py&amp;rdquo;
 [&amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;]
 [&amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;, &amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;]
 Compilation finished at Mon Jul 31 16:49:4
-It seems that extend assign as well the non extended part (d) which is confusing because to merge list i need to use temporary variable.</description></item><item><title>Jabber/Asterisk and Gajim notification</title><link>https://blog.chmouel.com/2006/05/25/jabberasterisk-and-gajim-notification/</link><pubDate>Thu, 25 May 2006 11:38:43 +0000</pubDate><guid>https://blog.chmouel.com/2006/05/25/jabberasterisk-and-gajim-notification/</guid><description>At work we are using Asterisk and Jabber and i am using Gajim as my client. I did a quick patch to have a notification on my desktop when someone call me and i get my big headphones (not that i like the phone very much but well), here is the patch for people who may wants it :
-http://trac.gajim.org/ticket/1998</description></item><item><title>Python 2.5 Beta</title><link>https://blog.chmouel.com/2006/04/09/python-25-beta/</link><pubDate>Sun, 09 Apr 2006 06:07:50 +0000</pubDate><guid>https://blog.chmouel.com/2006/04/09/python-25-beta/</guid><description>I have been looking at the What&amp;rsquo;s new __of Python 2.5. There is some cool features inside it :Conditional Expressions:This stuff basically allow to do standard C idiom (that we found in every kind of derivative language) likea = condition ? &amp;ldquo;true&amp;rdquo; : &amp;ldquo;false&amp;rdquo;the weird part is that Guido Van-Rossum implemented this syntax :x = true_value if condition else false_valuewhich we will have to get use to. I am not a big fan of this feature since it makes the code more obscure.</description></item></channel></rss>
+It seems that extend assign as well the non extended part (d) which is confusing because to merge list i need to use temporary variable.</description>
+    </item>
+    
+    <item>
+      <title>Jabber/Asterisk and Gajim notification</title>
+      <link>https://blog.chmouel.com/2006/05/25/jabberasterisk-and-gajim-notification/</link>
+      <pubDate>Thu, 25 May 2006 11:38:43 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2006/05/25/jabberasterisk-and-gajim-notification/</guid>
+      <description>At work we are using Asterisk and Jabber and i am using Gajim as my client. I did a quick patch to have a notification on my desktop when someone call me and i get my big headphones (not that i like the phone very much but well), here is the patch for people who may wants it :
+http://trac.gajim.org/ticket/1998</description>
+    </item>
+    
+    <item>
+      <title>Python 2.5 Beta</title>
+      <link>https://blog.chmouel.com/2006/04/09/python-25-beta/</link>
+      <pubDate>Sun, 09 Apr 2006 06:07:50 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2006/04/09/python-25-beta/</guid>
+      <description>I have been looking at the What&amp;rsquo;s new __of Python 2.5. There is some cool features inside it :Conditional Expressions:This stuff basically allow to do standard C idiom (that we found in every kind of derivative language) likea = condition ? &amp;ldquo;true&amp;rdquo; : &amp;ldquo;false&amp;rdquo;the weird part is that Guido Van-Rossum implemented this syntax :x = true_value if condition else false_valuewhich we will have to get use to. I am not a big fan of this feature since it makes the code more obscure.</description>
+    </item>
+    
+  </channel>
+</rss>

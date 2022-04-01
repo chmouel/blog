@@ -1,40 +1,187 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cloud on Chmouel's blog</title><link>https://blog.chmouel.com/tags/cloud/</link><description>Recent content in Cloud on Chmouel's blog</description><generator>Hugo -- gohugo.io</generator><language>en-GB</language><lastBuildDate>Fri, 08 Mar 2013 20:45:44 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>Swift and quotas in upcoming 1.8.0 (Grizzly) release.</title><link>https://blog.chmouel.com/2013/03/08/swift-and-quotas-in-upcoming-1-8-0-grizzly-release/</link><pubDate>Fri, 08 Mar 2013 20:45:44 +0000</pubDate><guid>https://blog.chmouel.com/2013/03/08/swift-and-quotas-in-upcoming-1-8-0-grizzly-release/</guid><description>There is two new nifty middlewares for doing quotas in upcoming Swift release 1.8.0 called container_quotas and account_quotas.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cloud on Chmouel&#39;s blog</title>
+    <link>https://blog.chmouel.com/tags/cloud/</link>
+    <description>Recent content in Cloud on Chmouel&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 08 Mar 2013 20:45:44 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift and quotas in upcoming 1.8.0 (Grizzly) release.</title>
+      <link>https://blog.chmouel.com/2013/03/08/swift-and-quotas-in-upcoming-1-8-0-grizzly-release/</link>
+      <pubDate>Fri, 08 Mar 2013 20:45:44 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2013/03/08/swift-and-quotas-in-upcoming-1-8-0-grizzly-release/</guid>
+      <description>There is two new nifty middlewares for doing quotas in upcoming Swift release 1.8.0 called container_quotas and account_quotas.
 Those are two different middlewares because they are actually addressing different use cases.
 container_quotas is typically used by end users the use case here is to let user to specify a limit on one of their container.
-Why would you want to restrict yourself you may ask ? This is because when you allow a public upload to a container for example with tempurl or/and formpost you want to make sure people are not uploading a unlimited amount of datas.</description></item><item><title>Using python-novaclient against Rackspace Cloud next generation (powered by OpenStack)</title><link>https://blog.chmouel.com/2012/08/17/using-python-novaclient-against-rackspace-cloud-next-generation-powered-by-openstack/</link><pubDate>Fri, 17 Aug 2012 10:09:42 +0000</pubDate><guid>https://blog.chmouel.com/2012/08/17/using-python-novaclient-against-rackspace-cloud-next-generation-powered-by-openstack/</guid><description>With the modular auth plugin system merged into python-novaclient it is now very easy to use nova CLI against the Rackspace Public Cloud powered by OpenStack.
+Why would you want to restrict yourself you may ask ? This is because when you allow a public upload to a container for example with tempurl or/and formpost you want to make sure people are not uploading a unlimited amount of datas.</description>
+    </item>
+    
+    <item>
+      <title>Using python-novaclient against Rackspace Cloud next generation (powered by OpenStack)</title>
+      <link>https://blog.chmouel.com/2012/08/17/using-python-novaclient-against-rackspace-cloud-next-generation-powered-by-openstack/</link>
+      <pubDate>Fri, 17 Aug 2012 10:09:42 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2012/08/17/using-python-novaclient-against-rackspace-cloud-next-generation-powered-by-openstack/</guid>
+      <description>With the modular auth plugin system merged into python-novaclient it is now very easy to use nova CLI against the Rackspace Public Cloud powered by OpenStack.
 we even have a metapackage that would install all the needed bits. This should be easy as doing this :
-and all dependencies and extensions will be installed. To actually use the CLI you just need to specify the right arguments (or via env variable see nova &amp;ndash;help) like this :</description></item><item><title>Rackspace CloudDNS python binding</title><link>https://blog.chmouel.com/2011/07/17/rackspace-clouddns-python-binding/</link><pubDate>Sun, 17 Jul 2011 07:32:09 +0000</pubDate><guid>https://blog.chmouel.com/2011/07/17/rackspace-clouddns-python-binding/</guid><description>I have released a python binding to Rackspace CloudDNShere which allow you to create/update/delete domains and records. It&amp;rsquo;s available on github
+and all dependencies and extensions will be installed. To actually use the CLI you just need to specify the right arguments (or via env variable see nova &amp;ndash;help) like this :</description>
+    </item>
+    
+    <item>
+      <title>Rackspace CloudDNS python binding</title>
+      <link>https://blog.chmouel.com/2011/07/17/rackspace-clouddns-python-binding/</link>
+      <pubDate>Sun, 17 Jul 2011 07:32:09 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/07/17/rackspace-clouddns-python-binding/</guid>
+      <description>I have released a python binding to Rackspace CloudDNShere which allow you to create/update/delete domains and records. It&amp;rsquo;s available on github
 https://github.com/rackspace/python-clouddns/The binding is pretty simple and have unfortunately no documentation (or even tests) but you can figure out most of it from here :
-https://github.com/rackspace/python-clouddns/blob/master/tests/t.pyI will be very welcoming pull request that add a bit of documentation.</description></item><item><title>Mass editing firewall on Rackspace Cloud.</title><link>https://blog.chmouel.com/2011/05/05/mass-editing-firewall-on-rackspace-cloud/</link><pubDate>Thu, 05 May 2011 22:12:42 +0000</pubDate><guid>https://blog.chmouel.com/2011/05/05/mass-editing-firewall-on-rackspace-cloud/</guid><description>A lot of our customers in Rackspace cloud has been asking how to mass edit firewalls of servers when you have multiple servers without doing it manually.
+https://github.com/rackspace/python-clouddns/blob/master/tests/t.pyI will be very welcoming pull request that add a bit of documentation.</description>
+    </item>
+    
+    <item>
+      <title>Mass editing firewall on Rackspace Cloud.</title>
+      <link>https://blog.chmouel.com/2011/05/05/mass-editing-firewall-on-rackspace-cloud/</link>
+      <pubDate>Thu, 05 May 2011 22:12:42 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/05/05/mass-editing-firewall-on-rackspace-cloud/</guid>
+      <description>A lot of our customers in Rackspace cloud has been asking how to mass edit firewalls of servers when you have multiple servers without doing it manually.
 Part of my cloudservers-api-demo I have written a simple firewall scripts abstracting the Operating System firewall software to allow/enable/disable the firewall and ports/networks.
 The script has been kept very simple by design and currently allow only to :
-&amp;lt;p style=&amp;quot;display: inline !</description></item><item><title>Howto shutdown your Cloud Server and not getting billed for it.</title><link>https://blog.chmouel.com/2011/04/07/howto-shutdown-your-cloud-server-and-not-getting-billed-for-it/</link><pubDate>Thu, 07 Apr 2011 09:36:28 +0000</pubDate><guid>https://blog.chmouel.com/2011/04/07/howto-shutdown-your-cloud-server-and-not-getting-billed-for-it/</guid><description>Currently in Rackspace-Cloud when you are shutting-down your Cloud Servers you are still paying for it.
+   &amp;lt;p style=&amp;quot;display: inline !</description>
+    </item>
+    
+    <item>
+      <title>Howto shutdown your Cloud Server and not getting billed for it.</title>
+      <link>https://blog.chmouel.com/2011/04/07/howto-shutdown-your-cloud-server-and-not-getting-billed-for-it/</link>
+      <pubDate>Thu, 07 Apr 2011 09:36:28 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/04/07/howto-shutdown-your-cloud-server-and-not-getting-billed-for-it/</guid>
+      <description>Currently in Rackspace-Cloud when you are shutting-down your Cloud Servers you are still paying for it.
 The reason is that when the Cloud Server is shut-down your CloudServer is still sitting on the hyper-visor and still use resources on the Cloud and then get you billed for it.
 There is a way to get around it by having the CloudServer stored as an image into CloudFiles.
-The caveat with this solution is that every-time you are creating a server out of the stored image you are getting a new IP and in certain cases you would need to make a change in your application with the new IP.</description></item><item><title>Uploading to Rackspace Cloud Files via FTP</title><link>https://blog.chmouel.com/2011/04/06/uploading-to-rackspace-cloud-files-via-ftp/</link><pubDate>Wed, 06 Apr 2011 13:05:44 +0000</pubDate><guid>https://blog.chmouel.com/2011/04/06/uploading-to-rackspace-cloud-files-via-ftp/</guid><description>Sometime ago I wrote a FTP proxy to RackSpace Cloud Files which expose Rackspace Cloud Files as a FTP server acting as a proxy.
+The caveat with this solution is that every-time you are creating a server out of the stored image you are getting a new IP and in certain cases you would need to make a change in your application with the new IP.</description>
+    </item>
+    
+    <item>
+      <title>Uploading to Rackspace Cloud Files via FTP</title>
+      <link>https://blog.chmouel.com/2011/04/06/uploading-to-rackspace-cloud-files-via-ftp/</link>
+      <pubDate>Wed, 06 Apr 2011 13:05:44 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/04/06/uploading-to-rackspace-cloud-files-via-ftp/</guid>
+      <description>Sometime ago I wrote a FTP proxy to RackSpace Cloud Files which expose Rackspace Cloud Files as a FTP server acting as a proxy.
 Thanks to the OpenSource community a user on github took it and add support OpenStack and all the latest features available in Cloud Files.
-It is now pretty robust and works pretty well via nautilus even with the pseudo hierarchical folder feature. The fun part here is that it allow you to effectively have a Cloud Drive where you can easily store your files/backup from your Linux desktop via nautilus built-in ftp support.</description></item><item><title>Installing python-cloudfiles from pypi</title><link>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</link><pubDate>Wed, 16 Feb 2011 05:41:33 +0000</pubDate><guid>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</guid><description>I have just uploaded python-cloudfiles to pypi available here
+It is now pretty robust and works pretty well via nautilus even with the pseudo hierarchical folder feature. The fun part here is that it allow you to effectively have a Cloud Drive where you can easily store your files/backup from your Linux desktop via nautilus built-in ftp support.</description>
+    </item>
+    
+    <item>
+      <title>Installing python-cloudfiles from pypi</title>
+      <link>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</link>
+      <pubDate>Wed, 16 Feb 2011 05:41:33 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</guid>
+      <description>I have just uploaded python-cloudfiles to pypi available here
 This make things easy to add as a dependence of your project like you can have something like this in your setup.py :
-requirements = ['python-cloudfiles']
+requirements = [&#39;python-cloudfiles&#39;]
 and it will automatically download it as part of the dependence with easy_install or pip.
 cool kids on latest debian/ubuntu can do stuff like this (from python-stdeb package) :
 pypi-install python-cloudfiles
-which would automatically download the tarball from pypi and install it as a packages (like the way it should be for prod machine!</description></item><item><title>How to use fireuploader with the Rackspace Cloud UK</title><link>https://blog.chmouel.com/2011/02/07/how-to-use-fireuploader-with-the-rackspace-cloud-uk/</link><pubDate>Mon, 07 Feb 2011 11:16:05 +0000</pubDate><guid>https://blog.chmouel.com/2011/02/07/how-to-use-fireuploader-with-the-rackspace-cloud-uk/</guid><description>Fireuploader is a Firefox addon that gives you a nice GUI to upload files via your firefox browser.
+which would automatically download the tarball from pypi and install it as a packages (like the way it should be for prod machine!</description>
+    </item>
+    
+    <item>
+      <title>How to use fireuploader with the Rackspace Cloud UK</title>
+      <link>https://blog.chmouel.com/2011/02/07/how-to-use-fireuploader-with-the-rackspace-cloud-uk/</link>
+      <pubDate>Mon, 07 Feb 2011 11:16:05 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/02/07/how-to-use-fireuploader-with-the-rackspace-cloud-uk/</guid>
+      <description>Fireuploader is a Firefox addon that gives you a nice GUI to upload files via your firefox browser.
 I have made a special version of the extensions to make it works with the RackSpace Cloud UK.
 Install the addon from here :
 http://www.chmouel.com/pub/firefox_universal_uploader__fireuploader_-0.4.5-fx+mz+ukcf.xpi
 Allow the website by clicking Allow in the yellow bar on the top as seen in this screenshot :
-Click on Install Now and restart Firefox.</description></item><item><title>Howto access the UK Rackspace Cloud with the PHP Binding</title><link>https://blog.chmouel.com/2011/01/12/howto-access-the-uk-rackspace-cloud-with-the-php-binding/</link><pubDate>Wed, 12 Jan 2011 16:17:07 +0000</pubDate><guid>https://blog.chmouel.com/2011/01/12/howto-access-the-uk-rackspace-cloud-with-the-php-binding/</guid><description>One of the last library I didn&amp;rsquo;t documented in my earlier post was php-cloudfiles. You need to have at least the version 1.7.6 released to have support to different auth_server and when you have that you can do it like this to get access to cloud files via the library :
-&amp;lt;?php require_once(&amp;#34;cloudfiles.php&amp;#34;); # Allow override by environment variable $USER = &amp;#34;MY_API_USERNAME&amp;#34;; $API_KEY = &amp;#34;MY_API_KEY&amp;#34;; $auth = new CF_Authentication($USER, $API_KEY, NULL, UK_AUTHURL); $auth-&amp;gt;authenticate(); ?</description></item><item><title>Backup with duplicity on Rackspace CloudFiles (including UK) script.</title><link>https://blog.chmouel.com/2011/01/06/backup-with-duplicity-on-rackspace-cloudfiles-including-uk-script/</link><pubDate>Thu, 06 Jan 2011 00:21:34 +0000</pubDate><guid>https://blog.chmouel.com/2011/01/06/backup-with-duplicity-on-rackspace-cloudfiles-including-uk-script/</guid><description>It seems that my post about using duplicity to backup your data on Rackspace CloudFiles got popular and people may be interested to use with the newly (Beta) released Rackspace Cloud UK. You would just need to have a environnement exported at the top of your backup script like this :
+
+Click on Install Now and restart Firefox.</description>
+    </item>
+    
+    <item>
+      <title>Howto access the UK Rackspace Cloud with the PHP Binding</title>
+      <link>https://blog.chmouel.com/2011/01/12/howto-access-the-uk-rackspace-cloud-with-the-php-binding/</link>
+      <pubDate>Wed, 12 Jan 2011 16:17:07 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/01/12/howto-access-the-uk-rackspace-cloud-with-the-php-binding/</guid>
+      <description>One of the last library I didn&amp;rsquo;t documented in my earlier post was php-cloudfiles. You need to have at least the version 1.7.6 released to have support to different auth_server and when you have that you can do it like this to get access to cloud files via the library :
+&amp;lt;?php require_once(&amp;#34;cloudfiles.php&amp;#34;);  # Allow override by environment variable $USER = &amp;#34;MY_API_USERNAME&amp;#34;; $API_KEY = &amp;#34;MY_API_KEY&amp;#34;;  $auth = new CF_Authentication($USER, $API_KEY, NULL, UK_AUTHURL); $auth-&amp;gt;authenticate(); ?</description>
+    </item>
+    
+    <item>
+      <title>Backup with duplicity on Rackspace CloudFiles (including UK) script.</title>
+      <link>https://blog.chmouel.com/2011/01/06/backup-with-duplicity-on-rackspace-cloudfiles-including-uk-script/</link>
+      <pubDate>Thu, 06 Jan 2011 00:21:34 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/01/06/backup-with-duplicity-on-rackspace-cloudfiles-including-uk-script/</guid>
+      <description>It seems that my post about using duplicity to backup your data on Rackspace CloudFiles got popular and people may be interested to use with the newly (Beta) released Rackspace Cloud UK. You would just need to have a environnement exported at the top of your backup script like this :
 export CLOUDFILES_AUTHURL=https://lon.auth.api.rackspacecloud.com/v1.0
-and it will use the UK auth server (the same goes for OpenStack auth server if you have your own Swift install).</description></item><item><title>Howto use Cyberduck with Rackspace Cloud UK</title><link>https://blog.chmouel.com/2011/01/04/howto-use-cyberduck-with-rackspace-cloud-uk/</link><pubDate>Tue, 04 Jan 2011 15:04:36 +0000</pubDate><guid>https://blog.chmouel.com/2011/01/04/howto-use-cyberduck-with-rackspace-cloud-uk/</guid><description>If you are wondering howto use a graphical client like Cyberduck to access the Rackspace Cloud UK this is how you do it. We are going to use the Swift OpenStack support in Cyberduck to access the UK CloudFiles instance.
+and it will use the UK auth server (the same goes for OpenStack auth server if you have your own Swift install).</description>
+    </item>
+    
+    <item>
+      <title>Howto use Cyberduck with Rackspace Cloud UK</title>
+      <link>https://blog.chmouel.com/2011/01/04/howto-use-cyberduck-with-rackspace-cloud-uk/</link>
+      <pubDate>Tue, 04 Jan 2011 15:04:36 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/01/04/howto-use-cyberduck-with-rackspace-cloud-uk/</guid>
+      <description>If you are wondering howto use a graphical client like Cyberduck to access the Rackspace Cloud UK this is how you do it. We are going to use the Swift OpenStack support in Cyberduck to access the UK CloudFiles instance.
 You first Open Cyberduck and Click on open connection :
+
 In the Menu choose Swift (OpenStack Object Storage) and in Server field you specify :
 lon.auth.api.rackspacecloud.com
-and enter your Username and Api Key (in Password field) :</description></item><item><title>How-to use the Rackspace Cloud UK API</title><link>https://blog.chmouel.com/2011/01/04/how-to-use-the-rackspace-cloud-uk-api/</link><pubDate>Tue, 04 Jan 2011 09:00:00 +0000</pubDate><guid>https://blog.chmouel.com/2011/01/04/how-to-use-the-rackspace-cloud-uk-api/</guid><description>Rackspace just released the public beta for the UK version of Rackspace Cloud. The UK Rackspace Cloud doesn&amp;rsquo;t have the same auth server as the US Cloud so there is a few change you need to do to support the UK Rackspace Cloud. This is the same way Amazon has different zone for EC2 we have now different geographical zone between the US and now the UK.
-If you access directly, you just need to adjust the Auth URL in your code to go to :</description></item><item><title>Automatically spawn Rackspace Cloud Servers and customise it.</title><link>https://blog.chmouel.com/2010/11/23/automatically-spawn-rackspace-cloud-servers-and-customise-it/</link><pubDate>Tue, 23 Nov 2010 12:36:00 +0000</pubDate><guid>https://blog.chmouel.com/2010/11/23/automatically-spawn-rackspace-cloud-servers-and-customise-it/</guid><description>Lately I had to spawn some cloud servers and automatically customise them.
+and enter your Username and Api Key (in Password field) :</description>
+    </item>
+    
+    <item>
+      <title>How-to use the Rackspace Cloud UK API</title>
+      <link>https://blog.chmouel.com/2011/01/04/how-to-use-the-rackspace-cloud-uk-api/</link>
+      <pubDate>Tue, 04 Jan 2011 09:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2011/01/04/how-to-use-the-rackspace-cloud-uk-api/</guid>
+      <description>Rackspace just released the public beta for the UK version of Rackspace Cloud. The UK Rackspace Cloud doesn&amp;rsquo;t have the same auth server as the US Cloud so there is a few change you need to do to support the UK Rackspace Cloud. This is the same way Amazon has different zone for EC2 we have now different geographical zone between the US and now the UK.
+If you access directly, you just need to adjust the Auth URL in your code to go to :</description>
+    </item>
+    
+    <item>
+      <title>Automatically spawn Rackspace Cloud Servers and customise it.</title>
+      <link>https://blog.chmouel.com/2010/11/23/automatically-spawn-rackspace-cloud-servers-and-customise-it/</link>
+      <pubDate>Tue, 23 Nov 2010 12:36:00 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2010/11/23/automatically-spawn-rackspace-cloud-servers-and-customise-it/</guid>
+      <description>Lately I had to spawn some cloud servers and automatically customise them.
 I have used the python-cloudservers library and installed it automatically with pypi (works for Debian/Ubuntu you may want to check for other distros):
 From there writing the script was pretty straight forward, I needed to know what type of CloudServers I wanted which in my case the smallest was good enough which is number 1 for me.
-If you want to see all flavours you can do something like that from python command prompt</description></item><item><title>Upload a file to Rackspace Cloud Files from Windows</title><link>https://blog.chmouel.com/2010/10/11/upload-a-file-to-rackspace-cloud-files-from-windows/</link><pubDate>Mon, 11 Oct 2010 21:40:05 +0000</pubDate><guid>https://blog.chmouel.com/2010/10/11/upload-a-file-to-rackspace-cloud-files-from-windows/</guid><description>I don&amp;rsquo;t have to use much of the Windows Operating System except when I have to synchronize my Garmin GPS to use the excellent SportsTrack software for my fitness training.
-I wanted to get safe and backup my SportsTrack &amp;rsquo;logbook&amp;rsquo; directly to Rackspace Cloud Files; while this is easy to do from Linux using some other script I made but I haven&amp;rsquo;t had anything at hand for Windows without having to install bunch of Unix tools.</description></item><item><title>Using Jython with the vCloud API</title><link>https://blog.chmouel.com/2010/05/17/using-jython-with-the-vcloud-api/</link><pubDate>Mon, 17 May 2010 20:33:47 +0000</pubDate><guid>https://blog.chmouel.com/2010/05/17/using-jython-with-the-vcloud-api/</guid><description>Lately I had to do a lot of works with the VMware VCloudproduct and since the python API did not seem available and I did not have the courage to use the PHP API I had to do most of the API works with Java. I never did any Java before and while I have found Eclipse+Java development surprisingly pleasant and easy to use/learn my favourite are still Emacs+Python.
-I have then started to look over Jython to see if I can interact easily with Java via Python and this was actually pretty easy, it took me less than 10mn to convert a Login/Listing-VAPPS script in Jython.</description></item></channel></rss>
+If you want to see all flavours you can do something like that from python command prompt</description>
+    </item>
+    
+    <item>
+      <title>Upload a file to Rackspace Cloud Files from Windows</title>
+      <link>https://blog.chmouel.com/2010/10/11/upload-a-file-to-rackspace-cloud-files-from-windows/</link>
+      <pubDate>Mon, 11 Oct 2010 21:40:05 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2010/10/11/upload-a-file-to-rackspace-cloud-files-from-windows/</guid>
+      <description>I don&amp;rsquo;t have to use much of the Windows Operating System except when I have to synchronize my Garmin GPS to use the excellent SportsTrack software for my fitness training.
+I wanted to get safe and backup my SportsTrack &amp;rsquo;logbook&amp;rsquo; directly to Rackspace Cloud Files; while this is easy to do from Linux using some other script I made but I haven&amp;rsquo;t had anything at hand for Windows without having to install bunch of Unix tools.</description>
+    </item>
+    
+    <item>
+      <title>Using Jython with the vCloud API</title>
+      <link>https://blog.chmouel.com/2010/05/17/using-jython-with-the-vcloud-api/</link>
+      <pubDate>Mon, 17 May 2010 20:33:47 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2010/05/17/using-jython-with-the-vcloud-api/</guid>
+      <description>Lately I had to do a lot of works with the VMware VCloudproduct and since the python API did not seem available and I did not have the courage to use the PHP API I had to do most of the API works with Java. I never did any Java before and while I have found Eclipse+Java development surprisingly pleasant and easy to use/learn my favourite are still Emacs+Python.
+I have then started to look over Jython to see if I can interact easily with Java via Python and this was actually pretty easy, it took me less than 10mn to convert a Login/Listing-VAPPS script in Jython.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,36 +1,227 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Chmouel's blog</title><link>https://blog.chmouel.com/</link><description>Recent content on Chmouel's blog</description><generator>Hugo -- gohugo.io</generator><language>en-GB</language><lastBuildDate>Fri, 18 Mar 2022 11:06:19 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml"/><item><title>vtplug a very dumb and tiny zsh plugin manager</title><link>https://blog.chmouel.com/2022/03/18/vtplug-a-very-dumb-and-tiny-zsh-plugin-manager/</link><pubDate>Fri, 18 Mar 2022 11:06:19 +0000</pubDate><guid>https://blog.chmouel.com/2022/03/18/vtplug-a-very-dumb-and-tiny-zsh-plugin-manager/</guid><description>There is a lot of zsh plugin manager around :
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Chmouel&#39;s blog</title>
+    <link>https://blog.chmouel.com/</link>
+    <description>Recent content on Chmouel&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 18 Mar 2022 11:06:19 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vtplug a very dumb and tiny zsh plugin manager</title>
+      <link>https://blog.chmouel.com/2022/03/18/vtplug-a-very-dumb-and-tiny-zsh-plugin-manager/</link>
+      <pubDate>Fri, 18 Mar 2022 11:06:19 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2022/03/18/vtplug-a-very-dumb-and-tiny-zsh-plugin-manager/</guid>
+      <description>There is a lot of zsh plugin manager around :
 https://github.com/unixorn/awesome-zsh-plugins#frameworks
 They all allow you to add cool new features to your shell easily and for authors to easily share their plugin with users and frameworks.
 While a lot of people are probably using frameworks like oh-my-zsh which does everything for them with minimal setup.
-But since I have been using zsh since much before than those frameworks existed, I always ran my custom config.</description></item><item><title>Show plugins list to a CLI when using go’s cobra library</title><link>https://blog.chmouel.com/2022/03/18/show-plugins-list-to-a-cli-when-using-gos-cobra-library/</link><pubDate>Fri, 18 Mar 2022 08:53:02 +0000</pubDate><guid>https://blog.chmouel.com/2022/03/18/show-plugins-list-to-a-cli-when-using-gos-cobra-library/</guid><description>With the TektonCD CLI we have a system of &amp;ldquo;plugins&amp;rdquo;, it&amp;rsquo;s the same very simple CLI plugin system you have with git or kubectl, if you do a :
+But since I have been using zsh since much before than those frameworks existed, I always ran my custom config.</description>
+    </item>
+    
+    <item>
+      <title>Show plugins list to a CLI when using go’s cobra library</title>
+      <link>https://blog.chmouel.com/2022/03/18/show-plugins-list-to-a-cli-when-using-gos-cobra-library/</link>
+      <pubDate>Fri, 18 Mar 2022 08:53:02 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2022/03/18/show-plugins-list-to-a-cli-when-using-gos-cobra-library/</guid>
+      <description>With the TektonCD CLI we have a system of &amp;ldquo;plugins&amp;rdquo;, it&amp;rsquo;s the same very simple CLI plugin system you have with git or kubectl, if you do a :
 kubectl blah foo --bar
-since kubectl knows it doesn&amp;rsquo;t have the blah command will try to go over the filesystem paths in your $PATH environment and sees if there is a binary called kubectl-blah and if it finds it will pass the arguments to the binary which effectively become :</description></item><item><title>Running tasks as non root on OpenShift Pipelines</title><link>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</link><pubDate>Mon, 07 Mar 2022 08:04:02 +0000</pubDate><guid>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</guid><description>Expanding on my previous blog post on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.
+since kubectl knows it doesn&amp;rsquo;t have the blah command will try to go over the filesystem paths in your $PATH environment and sees if there is a binary called kubectl-blah and if it finds it will pass the arguments to the binary which effectively become :</description>
+    </item>
+    
+    <item>
+      <title>Running tasks as non root on OpenShift Pipelines</title>
+      <link>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</link>
+      <pubDate>Mon, 07 Mar 2022 08:04:02 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</guid>
+      <description>Expanding on my previous blog post on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.
 On OpenShift Pipelines we made the conscious decision to run all the TaskRuns and Pipelinerun by default under a custom ServiceAccount called pipelines.
-That&amp;rsquo;s it, unless overridden by the user in its pipelinerun or taskrun, it will use the pipelines ServiceAccount which has a few elevated privileges.</description></item><item><title>User namespaces with Buildah and OpenShift Pipelines</title><link>https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/</link><pubDate>Tue, 25 Jan 2022 10:07:07 +0000</pubDate><guid>https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/</guid><description>In 2022 one of the hottest topic around CI is how to secure it every steps along the way.
+That&amp;rsquo;s it, unless overridden by the user in its pipelinerun or taskrun, it will use the pipelines ServiceAccount which has a few elevated privileges.</description>
+    </item>
+    
+    <item>
+      <title>User namespaces with Buildah and OpenShift Pipelines</title>
+      <link>https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/</link>
+      <pubDate>Tue, 25 Jan 2022 10:07:07 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/</guid>
+      <description>In 2022 one of the hottest topic around CI is how to secure it every steps along the way.
 The so-called supply chain attacks have been more and more an attack vector for bad actor whereas providers need to make sure every piece of the Integration is secure.
-One area that was identified as something we can improve with Openshift and containers in general is when running as root on the container may expose the host and process in that container may be able to mingle with other resources.</description></item><item><title>For the love of centered windows gnome extension edition</title><link>https://blog.chmouel.com/2021/11/19/for-the-love-of-centered-windows-gnome-extension-edition/</link><pubDate>Fri, 19 Nov 2021 11:41:54 +0000</pubDate><guid>https://blog.chmouel.com/2021/11/19/for-the-love-of-centered-windows-gnome-extension-edition/</guid><description>Feels weird or great or stupid or pretty smart or whatever to be wrong. Just when I wrote that previous blog post : https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/ that I realize that shelll script doesn&amp;rsquo;t work great on wayland.
-I didn&amp;rsquo;t really understood how Wayland works and just assumed that my tiny scripts just works. But experiencing not working on a native Wayland application and understanding how wayland works: https://wayland.freedesktop.org/docs/html/ch05.html it obviously needed a better way to do that if I have to keep up with the modern world of a linux desktop.</description></item><item><title>For the love of centered windows</title><link>https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/</link><pubDate>Sun, 14 Nov 2021 06:36:06 +0000</pubDate><guid>https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/</guid><description>Sometime over a 2020 confinement my work decided to give us some money to buy some work from home office items.
-I didn&amp;rsquo;t need much at that time since I was already settled with everything I needed in a work from home office but decided to go for a fancy new screen since well why not and the other one (a standard 24&amp;quot; display) could find some good use for my teenage gamer son.</description></item><item><title>How to make a release pipeline with Pipelines as Code</title><link>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</link><pubDate>Thu, 01 Jul 2021 12:44:25 +0000</pubDate><guid>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</guid><description>One of the early goal of Pipelines as Codeon Tekton is to make sure we were able to have the project CI running with itself.
+One area that was identified as something we can improve with Openshift and containers in general is when running as root on the container may expose the host and process in that container may be able to mingle with other resources.</description>
+    </item>
+    
+    <item>
+      <title>For the love of centered windows gnome extension edition</title>
+      <link>https://blog.chmouel.com/2021/11/19/for-the-love-of-centered-windows-gnome-extension-edition/</link>
+      <pubDate>Fri, 19 Nov 2021 11:41:54 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2021/11/19/for-the-love-of-centered-windows-gnome-extension-edition/</guid>
+      <description>Feels weird or great or stupid or pretty smart or whatever to be wrong. Just when I wrote that previous blog post : https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/ that I realize that shelll script doesn&amp;rsquo;t work great on wayland.
+I didn&amp;rsquo;t really understood how Wayland works and just assumed that my tiny scripts just works. But experiencing not working on a native Wayland application and understanding how wayland works: https://wayland.freedesktop.org/docs/html/ch05.html it obviously needed a better way to do that if I have to keep up with the modern world of a linux desktop.</description>
+    </item>
+    
+    <item>
+      <title>For the love of centered windows</title>
+      <link>https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/</link>
+      <pubDate>Sun, 14 Nov 2021 06:36:06 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/</guid>
+      <description>Sometime over a 2020 confinement my work decided to give us some money to buy some work from home office items.
+I didn&amp;rsquo;t need much at that time since I was already settled with everything I needed in a work from home office but decided to go for a fancy new screen since well why not and the other one (a standard 24&amp;quot; display) could find some good use for my teenage gamer son.</description>
+    </item>
+    
+    <item>
+      <title>How to make a release pipeline with Pipelines as Code</title>
+      <link>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</link>
+      <pubDate>Thu, 01 Jul 2021 12:44:25 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</guid>
+      <description>One of the early goal of Pipelines as Codeon Tekton is to make sure we were able to have the project CI running with itself.
 The common user case of validating pull request was quickly implemented and you can find more information about it in this walkthough video :
+
 For slightly more advanced use case here is how we made a release pipeline for the project.
-The goal is when we tag a release and push the tags to the GitHUB repo it will</description></item><item><title>Speed up your tekton pipeline caching the hacky way</title><link>https://blog.chmouel.com/2021/05/25/speed-up-your-tekton-pipeline-caching-the-hacky-way/</link><pubDate>Tue, 25 May 2021 08:51:33 +0000</pubDate><guid>https://blog.chmouel.com/2021/05/25/speed-up-your-tekton-pipeline-caching-the-hacky-way/</guid><description>There is one thing that can get your wind up when you try to iterate quickly in a PR is to have a slow CI.
-While working on a go project with a comprehensive test suite it was usually taking over 20 to 30 minutes to run and being as patient as a kid waiting for her candy floss to be ready I am eagerly waiting that my pipeline is Green or not.</description></item><item><title>NextDNS + DNSMasq DHCP and local names</title><link>https://blog.chmouel.com/2021/04/19/nextdns-dnsmasq-dhcp-and-local-names/</link><pubDate>Mon, 19 Apr 2021 07:42:47 +0000</pubDate><guid>https://blog.chmouel.com/2021/04/19/nextdns-dnsmasq-dhcp-and-local-names/</guid><description>Took me a little bit a while to figure out so here is some documentation,
+The goal is when we tag a release and push the tags to the GitHUB repo it will</description>
+    </item>
+    
+    <item>
+      <title>Speed up your tekton pipeline caching the hacky way</title>
+      <link>https://blog.chmouel.com/2021/05/25/speed-up-your-tekton-pipeline-caching-the-hacky-way/</link>
+      <pubDate>Tue, 25 May 2021 08:51:33 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2021/05/25/speed-up-your-tekton-pipeline-caching-the-hacky-way/</guid>
+      <description>There is one thing that can get your wind up when you try to iterate quickly in a PR is to have a slow CI.
+While working on a go project with a comprehensive test suite it was usually taking over 20 to 30 minutes to run and being as patient as a kid waiting for her candy floss to be ready I am eagerly waiting that my pipeline is Green or not.</description>
+    </item>
+    
+    <item>
+      <title>NextDNS &#43; DNSMasq DHCP and local names</title>
+      <link>https://blog.chmouel.com/2021/04/19/nextdns-dnsmasq-dhcp-and-local-names/</link>
+      <pubDate>Mon, 19 Apr 2021 07:42:47 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2021/04/19/nextdns-dnsmasq-dhcp-and-local-names/</guid>
+      <description>Took me a little bit a while to figure out so here is some documentation,
 My router from my ISP which is generally pretty good, doesn&amp;rsquo;t support local dns names which is annoying in itself. Combined with NextDNS, I have no way to identify the devices on my network.
 So there I went configured dnsmasq on my tiny raspbery-pi :
-port=5353 no-resolv interface=eth0 except-interface=lo listen-address=::1,192.168.0.3 no-dhcp-interface= bind-interfaces cache-size=10000 local-ttl=2 log-async log-queries bogus-priv server=192.</description></item><item><title>batzconverter – A multiple timezone converter</title><link>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</link><pubDate>Sun, 31 Jan 2021 16:42:14 +0000</pubDate><guid>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</guid><description>I do write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn time only once and some others I write in about 5mn but save me hours and hour of productivity.
-The script showed today, that I am proud of because of its usefulness and probably not of its code, is called &amp;ldquo;batzconverter&amp;rdquo;. and available on github.</description></item><item><title>Building packages for multiple distros on launchpad with docker</title><link>https://blog.chmouel.com/2021/01/31/building-packages-for-multiple-distros-on-launchpad-with-docker/</link><pubDate>Sun, 31 Jan 2021 15:59:43 +0000</pubDate><guid>https://blog.chmouel.com/2021/01/31/building-packages-for-multiple-distros-on-launchpad-with-docker/</guid><description>I have been trying to build some packages for the ubuntu distros for a new program I have released, gnome-next-meeting-applet
-In short, it what quite painful! if you are quite new to the launchpad and debian packaging ways (which I wasn&amp;rsquo;t and yet It took me some time to figure out) you can get quite lost. I got to say that the fedora copr experience is much smoother. After a couple of frustrated google and stackoverflow searches and multiple tries I finally figured out a script that builds and upload properly to launchpad via docker to make it available to my users.</description></item><item><title>Tekton yaml templates and script feature</title><link>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</link><pubDate>Tue, 28 Jul 2020 08:55:07 +0000</pubDate><guid>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</guid><description>Don&amp;rsquo;t you love &amp;ldquo;yaml&amp;rdquo;, yes you do ! or at least that&amp;rsquo;s what the industry told you to love!
-When you were in school your teacher told you about &amp;ldquo;XML&amp;rdquo; and how it will solve all the industry problems (and there was many in the late 90s). But you learned that you hate reaching to your &amp;quot;&amp;lt;&amp;quot; and&amp;quot; &amp;quot;&amp;gt;&amp;quot; keys and rather have something else. So then the industry came up with &amp;ldquo;json&amp;rdquo; so computer or yourself can talk to each others, that&amp;rsquo;s nice for computers but actually not so nice for yourself it was actually a lie and was not made for yourself to read and write but only for comptures.</description></item><item><title>Deploying minishift on a remote laptop.</title><link>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</link><pubDate>Fri, 09 Jun 2017 13:31:28 +0000</pubDate><guid>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</guid><description>Part of my new job working with Fabric8 is to having it deployed via minishift.
+port=5353 no-resolv interface=eth0 except-interface=lo listen-address=::1,192.168.0.3 no-dhcp-interface= bind-interfaces cache-size=10000 local-ttl=2 log-async log-queries bogus-priv server=192.</description>
+    </item>
+    
+    <item>
+      <title>batzconverter – A multiple timezone converter</title>
+      <link>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</link>
+      <pubDate>Sun, 31 Jan 2021 16:42:14 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</guid>
+      <description>I do write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn time only once and some others I write in about 5mn but save me hours and hour of productivity.
+The script showed today, that I am proud of because of its usefulness and probably not of its code, is called &amp;ldquo;batzconverter&amp;rdquo;. and available on github.</description>
+    </item>
+    
+    <item>
+      <title>Building packages for multiple distros on launchpad with docker</title>
+      <link>https://blog.chmouel.com/2021/01/31/building-packages-for-multiple-distros-on-launchpad-with-docker/</link>
+      <pubDate>Sun, 31 Jan 2021 15:59:43 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2021/01/31/building-packages-for-multiple-distros-on-launchpad-with-docker/</guid>
+      <description>I have been trying to build some packages for the ubuntu distros for a new program I have released, gnome-next-meeting-applet
+In short, it what quite painful! if you are quite new to the launchpad and debian packaging ways (which I wasn&amp;rsquo;t and yet It took me some time to figure out) you can get quite lost. I got to say that the fedora copr experience is much smoother. After a couple of frustrated google and stackoverflow searches and multiple tries I finally figured out a script that builds and upload properly to launchpad via docker to make it available to my users.</description>
+    </item>
+    
+    <item>
+      <title>Tekton yaml templates and script feature</title>
+      <link>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</link>
+      <pubDate>Tue, 28 Jul 2020 08:55:07 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</guid>
+      <description>Don&amp;rsquo;t you love &amp;ldquo;yaml&amp;rdquo;, yes you do ! or at least that&amp;rsquo;s what the industry told you to love!
+When you were in school your teacher told you about &amp;ldquo;XML&amp;rdquo; and how it will solve all the industry problems (and there was many in the late 90s). But you learned that you hate reaching to your &amp;quot;&amp;lt;&amp;quot; and&amp;quot; &amp;quot;&amp;gt;&amp;quot; keys and rather have something else. So then the industry came up with &amp;ldquo;json&amp;rdquo; so computer or yourself can talk to each others, that&amp;rsquo;s nice for computers but actually not so nice for yourself it was actually a lie and was not made for yourself to read and write but only for comptures.</description>
+    </item>
+    
+    <item>
+      <title>Deploying minishift on a remote laptop.</title>
+      <link>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</link>
+      <pubDate>Fri, 09 Jun 2017 13:31:28 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</guid>
+      <description>Part of my new job working with Fabric8 is to having it deployed via minishift.
 Everything is nice and working (try it it&amp;rsquo;s awesome https://fabric8.io/guide/getStarted/gofabric8.html) as long you deploy it on your local workstation.
-The thing is that my desktop macosx laptop has only 8GB of RAM and is not very well up to the task to get all the services being deployed when I have my web browser and other stuff hogging the memory.</description></item><item><title>Getting a letsencrypt SSL certificate for the OpenShift console and API</title><link>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</link><pubDate>Thu, 29 Sep 2016 08:22:48 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</guid><description>By default when you install an OpenShift install it would automatically generate its own certificates.
+The thing is that my desktop macosx laptop has only 8GB of RAM and is not very well up to the task to get all the services being deployed when I have my web browser and other stuff hogging the memory.</description>
+    </item>
+    
+    <item>
+      <title>Getting a letsencrypt SSL certificate for the OpenShift console and API</title>
+      <link>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</link>
+      <pubDate>Thu, 29 Sep 2016 08:22:48 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</guid>
+      <description>By default when you install an OpenShift install it would automatically generate its own certificates.
 It uses those certificates for communication between nodes and as well to automatically auth the admin account. By default those same certificates are the one provided for the OpenShift console and API.
 Since it is auto generated you will when connecting to the website with you webbrowser get an ugly error message :
-and as the error message says that&amp;rsquo;s not very secure #sadpanda.</description></item><item><title>Easily test your OpenShift applications exposed by the router</title><link>https://blog.chmouel.com/2016/09/28/easily-test-your-openshift-applications-exposed-by-the-router/</link><pubDate>Wed, 28 Sep 2016 11:43:49 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/28/easily-test-your-openshift-applications-exposed-by-the-router/</guid><description>OpenShift integrate1 a router based on HAproxy to expose your services to the outside world. Whenever your do a :
+and as the error message says that&amp;rsquo;s not very secure #sadpanda.</description>
+    </item>
+    
+    <item>
+      <title>Easily test your OpenShift applications exposed by the router</title>
+      <link>https://blog.chmouel.com/2016/09/28/easily-test-your-openshift-applications-exposed-by-the-router/</link>
+      <pubDate>Wed, 28 Sep 2016 11:43:49 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/28/easily-test-your-openshift-applications-exposed-by-the-router/</guid>
+      <description>OpenShift integrate1 a router based on HAproxy to expose your services to the outside world. Whenever your do a :
 it would expose by default the servicename this URL :
-The defaultSubdomain is usually a wildcard DNS recordthat you have configured in your domain server by your system administrator. Now for your openshift testing if you don&amp;rsquo;t want to ask your system administrator to configure a new CNAME going to your testing environement you can just use the free service xp.</description></item><item><title>How to view openshift router (haproxy) stats</title><link>https://blog.chmouel.com/2016/09/27/how-to-view-openshift-haproxy-stats/</link><pubDate>Tue, 27 Sep 2016 11:01:51 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/27/how-to-view-openshift-haproxy-stats/</guid><description>After you have installed your fancy openshift install and that it kicked the haproxy router automatically after install you may want to see the stats of the router.
-The HAproxy stats are exposed on the port 1936 where the router is located (usually on the master node) so first you need a way to access it. You can open it via your firewall (not ideal) or you can just port forward the port to your workstation via SSH :</description></item><item><title>Controlling Yamaha AV RX-A830 from command line</title><link>https://blog.chmouel.com/2016/09/23/controlling-yamaha-av-rx-a830-from-command-line/</link><pubDate>Fri, 23 Sep 2016 09:06:25 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/23/controlling-yamaha-av-rx-a830-from-command-line/</guid><description>At home I have been using a Yamaha AV RX-A380, it&amp;rsquo;s an home teather audio video solution where you can plug about everything you need (like 7 hdmi channel, spoiler alert there is something wrong with you if you have that many devices) and output to two other hdmi channel (like a tv and a projector).
-It has integration for spotify, airplay, netradio and billions of connection to everything, just look at the damn back of this device :</description></item><item><title>The trick to get your wordpress behind a reverse proxy</title><link>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</link><pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</guid><description>I have been meaning to get this blog SSL protected for a while and since solution like letsencrypt makes it easy I have generated some SSL keys for my domain and configured it in apache.
-So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using varnish for quite some time or I would get out of memory quickly some the kernel OOM killer kicking1 it.</description></item><item><title>Using python to drive OpenShift REST API</title><link>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</link><pubDate>Mon, 19 Sep 2016 08:19:50 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</guid><description>I have been meaning to automate my deployment directly from my small python application without having to use the openshift client (oc) directly.
+The defaultSubdomain is usually a wildcard DNS recordthat you have configured in your domain server by your system administrator. Now for your openshift testing if you don&amp;rsquo;t want to ask your system administrator to configure a new CNAME going to your testing environement you can just use the free service xp.</description>
+    </item>
+    
+    <item>
+      <title>How to view openshift router (haproxy) stats</title>
+      <link>https://blog.chmouel.com/2016/09/27/how-to-view-openshift-haproxy-stats/</link>
+      <pubDate>Tue, 27 Sep 2016 11:01:51 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/27/how-to-view-openshift-haproxy-stats/</guid>
+      <description>After you have installed your fancy openshift install and that it kicked the haproxy router automatically after install you may want to see the stats of the router.
+The HAproxy stats are exposed on the port 1936 where the router is located (usually on the master node) so first you need a way to access it. You can open it via your firewall (not ideal) or you can just port forward the port to your workstation via SSH :</description>
+    </item>
+    
+    <item>
+      <title>Controlling Yamaha AV RX-A830 from command line</title>
+      <link>https://blog.chmouel.com/2016/09/23/controlling-yamaha-av-rx-a830-from-command-line/</link>
+      <pubDate>Fri, 23 Sep 2016 09:06:25 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/23/controlling-yamaha-av-rx-a830-from-command-line/</guid>
+      <description>At home I have been using a Yamaha AV RX-A380, it&amp;rsquo;s an home teather audio video solution where you can plug about everything you need (like 7 hdmi channel, spoiler alert there is something wrong with you if you have that many devices) and output to two other hdmi channel (like a tv and a projector).
+It has integration for spotify, airplay, netradio and billions of connection to everything, just look at the damn back of this device :</description>
+    </item>
+    
+    <item>
+      <title>The trick to get your wordpress behind a reverse proxy</title>
+      <link>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</link>
+      <pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</guid>
+      <description>I have been meaning to get this blog SSL protected for a while and since solution like letsencrypt makes it easy I have generated some SSL keys for my domain and configured it in apache.
+So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using varnish for quite some time or I would get out of memory quickly some the kernel OOM killer kicking1 it.</description>
+    </item>
+    
+    <item>
+      <title>Using python to drive OpenShift REST API</title>
+      <link>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</link>
+      <pubDate>Mon, 19 Sep 2016 08:19:50 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</guid>
+      <description>I have been meaning to automate my deployment directly from my small python application without having to use the openshift client (oc) directly.
 OpenShift use a REST API and the oc client uses it to communicate with the server, you can actually see all the REST operation the oc client is doing if you specify the &amp;ndash;loglevel=7 (it goes to 10 to get even more debug info) :
-I was thinking to come up with my own python rest wrapper since a google quick search didn&amp;rsquo;t come up with any binding.</description></item><item><title>Getting openshift origin “cluster up” working with xhyve</title><link>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</link><pubDate>Mon, 19 Sep 2016 06:00:54 +0000</pubDate><guid>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</guid><description>In latest openshift client (oc) there is a nifty (relatively) new feature to get you a OpenShift cluster starting (very) quickly. It&amp;rsquo;s a pretty nice way to get you a new openshift origin environment on your laptop without the hassle.
-On macosx there is a (as well relatively) new lightweight virtualization solution called xhyve it&amp;rsquo;s a bit like KVM in the sense of being lightweight and does not need like virtualbox or vmware to get a UI running.</description></item></channel></rss>
+I was thinking to come up with my own python rest wrapper since a google quick search didn&amp;rsquo;t come up with any binding.</description>
+    </item>
+    
+    <item>
+      <title>Getting openshift origin “cluster up” working with xhyve</title>
+      <link>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</link>
+      <pubDate>Mon, 19 Sep 2016 06:00:54 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</guid>
+      <description>In latest openshift client (oc) there is a nifty (relatively) new feature to get you a OpenShift cluster starting (very) quickly. It&amp;rsquo;s a pretty nice way to get you a new openshift origin environment on your laptop without the hassle.
+On macosx there is a (as well relatively) new lightweight virtualization solution called xhyve it&amp;rsquo;s a bit like KVM in the sense of being lightweight and does not need like virtualbox or vmware to get a UI running.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,191 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tags on Chmouel's blog</title><link>https://blog.chmouel.com/tags/</link><description>Recent content in Tags on Chmouel's blog</description><generator>Hugo -- gohugo.io</generator><language>en-GB</language><lastBuildDate>Tue, 28 Jul 2020 08:55:07 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>tekton</title><link>https://blog.chmouel.com/tags/tekton/</link><pubDate>Tue, 28 Jul 2020 08:55:07 +0000</pubDate><guid>https://blog.chmouel.com/tags/tekton/</guid><description/></item><item><title>work</title><link>https://blog.chmouel.com/tags/work/</link><pubDate>Tue, 28 Jul 2020 08:55:07 +0000</pubDate><guid>https://blog.chmouel.com/tags/work/</guid><description/></item><item><title>OpenShift</title><link>https://blog.chmouel.com/tags/openshift/</link><pubDate>Fri, 09 Jun 2017 13:31:28 +0000</pubDate><guid>https://blog.chmouel.com/tags/openshift/</guid><description/></item><item><title>Misc</title><link>https://blog.chmouel.com/tags/misc/</link><pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate><guid>https://blog.chmouel.com/tags/misc/</guid><description/></item><item><title>Programming</title><link>https://blog.chmouel.com/tags/programming/</link><pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate><guid>https://blog.chmouel.com/tags/programming/</guid><description/></item><item><title>Scripts</title><link>https://blog.chmouel.com/tags/scripts/</link><pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate><guid>https://blog.chmouel.com/tags/scripts/</guid><description/></item><item><title>Emacs</title><link>https://blog.chmouel.com/tags/emacs/</link><pubDate>Wed, 07 Sep 2016 07:45:03 +0000</pubDate><guid>https://blog.chmouel.com/tags/emacs/</guid><description/></item><item><title>Docker</title><link>https://blog.chmouel.com/tags/docker/</link><pubDate>Wed, 31 Dec 2014 11:24:36 +0000</pubDate><guid>https://blog.chmouel.com/tags/docker/</guid><description/></item><item><title>Linux</title><link>https://blog.chmouel.com/tags/linux/</link><pubDate>Wed, 31 Dec 2014 11:24:36 +0000</pubDate><guid>https://blog.chmouel.com/tags/linux/</guid><description/></item><item><title>Openstack</title><link>https://blog.chmouel.com/tags/openstack/</link><pubDate>Mon, 10 Nov 2014 20:58:01 +0000</pubDate><guid>https://blog.chmouel.com/tags/openstack/</guid><description/></item><item><title>Python</title><link>https://blog.chmouel.com/tags/python/</link><pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate><guid>https://blog.chmouel.com/tags/python/</guid><description/></item><item><title>Rackspace</title><link>https://blog.chmouel.com/tags/rackspace/</link><pubDate>Fri, 27 Sep 2013 03:50:51 +0000</pubDate><guid>https://blog.chmouel.com/tags/rackspace/</guid><description/></item><item><title>Keystone</title><link>https://blog.chmouel.com/tags/keystone/</link><pubDate>Fri, 14 Jun 2013 15:46:19 +0000</pubDate><guid>https://blog.chmouel.com/tags/keystone/</guid><description/></item><item><title>Cloud</title><link>https://blog.chmouel.com/tags/cloud/</link><pubDate>Fri, 08 Mar 2013 20:45:44 +0000</pubDate><guid>https://blog.chmouel.com/tags/cloud/</guid><description/></item><item><title>Cycling</title><link>https://blog.chmouel.com/tags/cycling/</link><pubDate>Mon, 31 Dec 2012 16:25:38 +0000</pubDate><guid>https://blog.chmouel.com/tags/cycling/</guid><description/></item><item><title>Life</title><link>https://blog.chmouel.com/tags/life/</link><pubDate>Mon, 31 Dec 2012 16:25:38 +0000</pubDate><guid>https://blog.chmouel.com/tags/life/</guid><description/></item><item><title>Uncategorized</title><link>https://blog.chmouel.com/tags/uncategorized/</link><pubDate>Wed, 12 Dec 2012 06:24:24 +0000</pubDate><guid>https://blog.chmouel.com/tags/uncategorized/</guid><description/></item><item><title>Eclipse</title><link>https://blog.chmouel.com/tags/eclipse/</link><pubDate>Thu, 17 Jun 2010 04:48:42 +0000</pubDate><guid>https://blog.chmouel.com/tags/eclipse/</guid><description/></item><item><title>Java</title><link>https://blog.chmouel.com/tags/java/</link><pubDate>Thu, 17 Jun 2010 04:48:42 +0000</pubDate><guid>https://blog.chmouel.com/tags/java/</guid><description/></item><item><title>Android</title><link>https://blog.chmouel.com/tags/android/</link><pubDate>Tue, 25 May 2010 01:14:38 +0000</pubDate><guid>https://blog.chmouel.com/tags/android/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Chmouel&#39;s blog</title>
+    <link>https://blog.chmouel.com/tags/</link>
+    <description>Recent content in Tags on Chmouel&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Tue, 28 Jul 2020 08:55:07 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tekton</title>
+      <link>https://blog.chmouel.com/tags/tekton/</link>
+      <pubDate>Tue, 28 Jul 2020 08:55:07 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/tekton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work</title>
+      <link>https://blog.chmouel.com/tags/work/</link>
+      <pubDate>Tue, 28 Jul 2020 08:55:07 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenShift</title>
+      <link>https://blog.chmouel.com/tags/openshift/</link>
+      <pubDate>Fri, 09 Jun 2017 13:31:28 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/openshift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Misc</title>
+      <link>https://blog.chmouel.com/tags/misc/</link>
+      <pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/misc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://blog.chmouel.com/tags/programming/</link>
+      <pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scripts</title>
+      <link>https://blog.chmouel.com/tags/scripts/</link>
+      <pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/scripts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emacs</title>
+      <link>https://blog.chmouel.com/tags/emacs/</link>
+      <pubDate>Wed, 07 Sep 2016 07:45:03 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://blog.chmouel.com/tags/docker/</link>
+      <pubDate>Wed, 31 Dec 2014 11:24:36 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://blog.chmouel.com/tags/linux/</link>
+      <pubDate>Wed, 31 Dec 2014 11:24:36 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openstack</title>
+      <link>https://blog.chmouel.com/tags/openstack/</link>
+      <pubDate>Mon, 10 Nov 2014 20:58:01 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/openstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://blog.chmouel.com/tags/python/</link>
+      <pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rackspace</title>
+      <link>https://blog.chmouel.com/tags/rackspace/</link>
+      <pubDate>Fri, 27 Sep 2013 03:50:51 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/rackspace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keystone</title>
+      <link>https://blog.chmouel.com/tags/keystone/</link>
+      <pubDate>Fri, 14 Jun 2013 15:46:19 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/keystone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>https://blog.chmouel.com/tags/cloud/</link>
+      <pubDate>Fri, 08 Mar 2013 20:45:44 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cycling</title>
+      <link>https://blog.chmouel.com/tags/cycling/</link>
+      <pubDate>Mon, 31 Dec 2012 16:25:38 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/cycling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://blog.chmouel.com/tags/life/</link>
+      <pubDate>Mon, 31 Dec 2012 16:25:38 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorized</title>
+      <link>https://blog.chmouel.com/tags/uncategorized/</link>
+      <pubDate>Wed, 12 Dec 2012 06:24:24 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/uncategorized/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eclipse</title>
+      <link>https://blog.chmouel.com/tags/eclipse/</link>
+      <pubDate>Thu, 17 Jun 2010 04:48:42 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/eclipse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://blog.chmouel.com/tags/java/</link>
+      <pubDate>Thu, 17 Jun 2010 04:48:42 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://blog.chmouel.com/tags/android/</link>
+      <pubDate>Tue, 25 May 2010 01:14:38 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/tags/android/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

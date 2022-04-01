@@ -1,5 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Docker on Chmouel's blog</title><link>https://blog.chmouel.com/tags/docker/</link><description>Recent content in Docker on Chmouel's blog</description><generator>Hugo -- gohugo.io</generator><language>en-GB</language><lastBuildDate>Wed, 31 Dec 2014 11:24:36 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Building RPM with Docker images</title><link>https://blog.chmouel.com/2014/12/31/building-rpm-with-docker-images/</link><pubDate>Wed, 31 Dec 2014 11:24:36 +0000</pubDate><guid>https://blog.chmouel.com/2014/12/31/building-rpm-with-docker-images/</guid><description>For an internal project at work I have been thinking about more how to generate RPMs out of our CI. I wanted to have them produced as artifacts of the build so I can test how if they can be installed and properly working with some smoketests.
-Since we are using Docker for most of the things in our CI, I have been thinking about more about how to do that with docker images and RPM.</description></item><item><title>Use cases for Docker driven development.</title><link>https://blog.chmouel.com/2014/11/10/use-cases-for-docker-driven-development/</link><pubDate>Mon, 10 Nov 2014 20:58:01 +0000</pubDate><guid>https://blog.chmouel.com/2014/11/10/use-cases-for-docker-driven-development/</guid><description>So the trend these days is to talk about container all the things that usually involve Docker, it even has a now its own verb, people are now using the word &amp;lsquo;containerizing&amp;rsquo; to describe packaging their application with Docker.
-A lot of the things happening lately in the Docker world is to solve how to get those containers in real production environments, there is people working on taking the &amp;lsquo;containerization&amp;rsquo; philosophy to storage, networking or getting orchestration right</description></item><item><title>Avoiding race conditions between containers with docker and fig</title><link>https://blog.chmouel.com/2014/11/04/avoiding-race-conditions-between-containers-with-docker-and-fig/</link><pubDate>Tue, 04 Nov 2014 20:18:01 +0000</pubDate><guid>https://blog.chmouel.com/2014/11/04/avoiding-race-conditions-between-containers-with-docker-and-fig/</guid><description>I have been playing with docker quite a lot lately. The advantage for me is to be able to run functional tests easily and be able to document how deployment should be done of my software as a developer for my endusers (i.e: operators/admins).
-The advantage of this method is probably an article of its own which I won&amp;rsquo;t dig into today but just to give a tip for the existing users of fig/docker</description></item><item><title>Dox a tool that run python (or others) tests in a docker container</title><link>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</link><pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate><guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid><description>Sometime there is some ideas that are just obvious that they are good ideas. When Montystarted to mentionon the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
-The idea of dox is like the name imply is to slightly behave like the toxtool but instead of running virtualenvs you are using docker containers.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on Chmouel&#39;s blog</title>
+    <link>https://blog.chmouel.com/tags/docker/</link>
+    <description>Recent content in Docker on Chmouel&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 31 Dec 2014 11:24:36 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building RPM with Docker images</title>
+      <link>https://blog.chmouel.com/2014/12/31/building-rpm-with-docker-images/</link>
+      <pubDate>Wed, 31 Dec 2014 11:24:36 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2014/12/31/building-rpm-with-docker-images/</guid>
+      <description>For an internal project at work I have been thinking about more how to generate RPMs out of our CI. I wanted to have them produced as artifacts of the build so I can test how if they can be installed and properly working with some smoketests.
+Since we are using Docker for most of the things in our CI, I have been thinking about more about how to do that with docker images and RPM.</description>
+    </item>
+    
+    <item>
+      <title>Use cases for Docker driven development.</title>
+      <link>https://blog.chmouel.com/2014/11/10/use-cases-for-docker-driven-development/</link>
+      <pubDate>Mon, 10 Nov 2014 20:58:01 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2014/11/10/use-cases-for-docker-driven-development/</guid>
+      <description>So the trend these days is to talk about container all the things that usually involve Docker, it even has a now its own verb, people are now using the word &amp;lsquo;containerizing&amp;rsquo; to describe packaging their application with Docker.
+A lot of the things happening lately in the Docker world is to solve how to get those containers in real production environments, there is people working on taking the &amp;lsquo;containerization&amp;rsquo; philosophy to storage, networking or getting orchestration right</description>
+    </item>
+    
+    <item>
+      <title>Avoiding race conditions between containers with docker and fig</title>
+      <link>https://blog.chmouel.com/2014/11/04/avoiding-race-conditions-between-containers-with-docker-and-fig/</link>
+      <pubDate>Tue, 04 Nov 2014 20:18:01 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2014/11/04/avoiding-race-conditions-between-containers-with-docker-and-fig/</guid>
+      <description>I have been playing with docker quite a lot lately. The advantage for me is to be able to run functional tests easily and be able to document how deployment should be done of my software as a developer for my endusers (i.e: operators/admins).
+The advantage of this method is probably an article of its own which I won&amp;rsquo;t dig into today but just to give a tip for the existing users of fig/docker</description>
+    </item>
+    
+    <item>
+      <title>Dox a tool that run python (or others) tests in a docker container</title>
+      <link>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</link>
+      <pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate>
+      
+      <guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid>
+      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Montystarted to mentionon the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
+The idea of dox is like the name imply is to slightly behave like the toxtool but instead of running virtualenvs you are using docker containers.</description>
+    </item>
+    
+  </channel>
+</rss>
