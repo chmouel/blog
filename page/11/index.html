@@ -1,0 +1,59 @@
+<!doctype html><html lang=en dir=auto><head><meta name=generator content="Hugo 0.96.0"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Chmouel's blog</title><meta name=description content><meta name=author content><link rel=canonical href=https://blog.chmouel.com/><link crossorigin=anonymous href=/assets/css/stylesheet.min.5a5d567b690246c4eb15b9f0c3d47bef28df71173b90a626c03708a628d3193d.css integrity="sha256-Wl1We2kCRsTrFbnww9R77yjfcRc7kKYmwDcIpijTGT0=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.chmouel.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.chmouel.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.chmouel.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.chmouel.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.chmouel.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://blog.chmouel.com/index.xml><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:title" content="Chmouel's blog"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://blog.chmouel.com/"><meta name=twitter:card content="summary"><meta name=twitter:title content="Chmouel's blog"><meta name=twitter:description content><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Chmouel's blog","url":"https://blog.chmouel.com/","description":"","thumbnailUrl":"https://blog.chmouel.com/favicon.ico","sameAs":[]}</script></head><body class="list dark" id=top><header class=header><nav class=nav><div class=logo><a href=https://blog.chmouel.com/ accesskey=h title="Chmouel's blog (Alt + H)">Chmouel's blog</a>
+<span class=logo-switches></span></div><ul id=menu><li><a href=https://github.com/chmouel/ title=Github><span>Github</span></a></li><li><a href=https://photos.chmouel.com title=Photos><span>Photos</span></a></li><li><a href=https://app.strava.com/athletes/126695 title=Strava><span>Strava</span></a></li><li><a href=https://twitter.com/chmouel title=Twitter><span>Twitter</span></a></li></ul></nav></header><main class=main><article class=post-entry><header class=entry-header><h2>FFAP and Ruby in Emacs</h2></header><section class=entry-content><p>If you want to use FFAP (find-file-at-point) in ruby-mode you can add this to your .emacs
+When you do ffap (i bind it to C-x f) near a require ‘PP’ for example it will find it in your ruby path.</p></section><footer class=entry-footer><span title="2008-05-04 19:13:41 +0000 UTC">May 4, 2008</span></footer><a class=entry-link aria-label="post link to FFAP and Ruby in Emacs" href=https://blog.chmouel.com/2008/05/04/ffap-and-ruby-in-emacs/></a></article><article class=post-entry><header class=entry-header><h2>Ruby XMLRPC over a Self Certified SSL with a warning</h2></header><section class=entry-content><p>If you use the XMLRPC client in ruby over a self certified SSL you have this warning :
+warning: peer certificate won’t be verified in this SSL session
+You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :</p></section><footer class=entry-footer><span title="2008-03-21 16:56:05 +0000 UTC">March 21, 2008</span></footer><a class=entry-link aria-label="post link to Ruby XMLRPC over a Self Certified SSL with a warning" href=https://blog.chmouel.com/2008/03/21/ruby-xmlrpc-over-a-self-certified-ssl-with-a-warning/></a></article><article class=post-entry><header class=entry-header><h2>Yum Force Exclude List</h2></header><section class=entry-content><p>While talking with my fellow colleague Darren Birkett about what seems a design limitation
+of yum to not be able to force listing the excludes from yum. I had a
+shoot to make a yum plugin to force listing the excludes.
+Here is how it works :
+root@centos5:~> grep exclude /etc/yum.conf
+exclude=rpm*
+root@centos5:~> yum install rpm-devel
+Loading “installonlyn” plugin
+Loading “changelog” plugin
+Loading “chmouel” plugin
+Loading “priorities” plugin
+Setting up Install Process...</p></section><footer class=entry-footer><span title="2008-03-20 09:36:06 +0000 UTC">March 20, 2008</span></footer><a class=entry-link aria-label="post link to Yum Force Exclude List" href=https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/></a></article><article class=post-entry><header class=entry-header><h2>Emacs config</h2></header><section class=entry-content><p>To anyone interested my extensive Emacs configuration is available here :
+http://code.google.com/p/chmouel/sourceAnd here is the usual screen shot :</p></section><footer class=entry-footer><span title="2007-09-07 07:57:34 +0000 UTC">September 7, 2007</span></footer><a class=entry-link aria-label="post link to Emacs config" href=https://blog.chmouel.com/2007/09/07/emacs-config/></a></article><article class=post-entry><header class=entry-header><h2>Netapp sue Sun</h2></header><section class=entry-content><p>This is fun, theses two CEO of theses big companies are dog fighting each others :
+Dave post:
+http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.htmlJohanthan answer:
+http://blogs.sun.com/jonathan/entry/on_patent_trollingbut the real (fake) truth about that post is here :
+http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html
+I tend to believe more NetAPP in this case, just because i don’t know how many time i have sweared on that bloody ps -aux that does not work on solaris.</p></section><footer class=entry-footer><span title="2007-09-07 07:50:24 +0000 UTC">September 7, 2007</span></footer><a class=entry-link aria-label="post link to Netapp sue Sun" href=https://blog.chmouel.com/2007/09/07/netapp-sue-sun/></a></article><article class=post-entry><header class=entry-header><h2>Generating md5 encrypted password for chpasswd</h2></header><section class=entry-content><p>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
+[code lang=“bash”]
+echo “encryptedpassword”|openssl passwd -1 -stdin
+[/code]
+If you want to generate in pure python you can do it like that :
+[code lang=“python”]
+def md5crypt(password, salt, magic=’$1$’):
+import md5
+m = md5.new()
+m.update(password + magic + salt)
+# /* Then just as many characters of the MD5(pw,salt,pw) */...</p></section><footer class=entry-footer><span title="2007-08-17 07:11:38 +0000 UTC">August 17, 2007</span></footer><a class=entry-link aria-label="post link to Generating md5 encrypted password for chpasswd" href=https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/></a></article><article class=post-entry><header class=entry-header><h2>Automatic best resolution with xrandr</h2></header><section class=entry-content><p>If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :
+[code lang=“bash”]
+#!/bin/bash
+function get_resolutions() {
+xrandr|while read -a line;do
+RES="${line[1]}x${line[3]} "
+[[ ${RES} != [0-9]* ]] && continue
+echo ${RES}
+done
+}
+_BEST_RES=0
+BEST_RES=
+for res in $(get_resolutions);do
+_res=${res/x/}
+[[ $_res -ge ${_BEST_RES} ]] && {
+BEST_RES=${res}...</p></section><footer class=entry-footer><span title="2007-07-31 22:23:32 +0000 UTC">July 31, 2007</span></footer><a class=entry-link aria-label="post link to Automatic best resolution with xrandr" href=https://blog.chmouel.com/2007/07/31/automatic-best-resolution-with-xrandr/></a></article><article class=post-entry><header class=entry-header><h2>Automate SSH known_hosts cleanup</h2></header><section class=entry-content><p>If you like me, you have to do a lot of installs1 of the same test machine with the same IP and have to ssh it you will notice this annoying message :
+I have automated the cleanup by a script :
+[code lang=“bash”]
+#!/bin/bash
+H=$1
+[[ -z ${H} ]] && { echo “Need a host as argument”; exit 1 ;}
+LINE=$(ssh -o StrictHostKeyChecking=yes $1 ’exit’ 2>&1 | sed -n ‘/Offending key/ { s/....</p></section><footer class=entry-footer><span title="2007-05-30 22:33:40 +0000 UTC">May 30, 2007</span></footer><a class=entry-link aria-label="post link to Automate SSH known_hosts cleanup" href=https://blog.chmouel.com/2007/05/30/automate-ssh-known_hosts-cleanup/></a></article><article class=post-entry><header class=entry-header><h2>Linus Torvalds on GIT</h2></header><section class=entry-content><p>Pretty good video to look if you like to know more about git and its creation :
+http://www.youtube.com/watch?v=4XpnKHJAok8</p></section><footer class=entry-footer><span title="2007-05-29 11:36:17 +0000 UTC">May 29, 2007</span></footer><a class=entry-link aria-label="post link to Linus Torvalds on GIT" href=https://blog.chmouel.com/2007/05/29/linus-torvalds-on-git/></a></article><article class=post-entry><header class=entry-header><h2>Always search before coding</h2></header><section class=entry-content><p>This is a annoying, even if it take 5mn to code thing like that :
+you discover after a litlle while that if you have did a lilt bit of searching before, you will have discovered a variable call `dired-recursive-deletes` that would do the thing in a much better way.</p></section><footer class=entry-footer><span title="2007-02-11 11:47:39 +0000 UTC">February 11, 2007</span></footer><a class=entry-link aria-label="post link to Always search before coding" href=https://blog.chmouel.com/2007/02/11/always-search-before-coding/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://blog.chmouel.com/page/10/>« Prev Page</a>
+<a class=next href=https://blog.chmouel.com/page/12/>Next Page »</a></nav></footer></main><footer class=footer><span>&copy; 2022 <a href=https://blog.chmouel.com/>Chmouel's blog</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script></body></html>
