@@ -1,7 +1,6 @@
 ---
 title: Exclude .git or .svn directories in Eclipse (Helios)
 author: chmouel
-type: post
 date: 2010-06-17T04:48:42+00:00
 url: /2010/06/17/exclude-git-or-svn-directories-in-eclipse-helios/
 dsq_thread_id:

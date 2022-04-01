@@ -1,7 +1,6 @@
 ---
 title: rsync like backup to Rackspace Cloud File with duplicity
 author: chmouel
-type: post
 date: 2009-09-02T20:09:15+00:00
 url: /2009/09/02/rsync-like-backup-to-rackspace-cloud-file-with-duplicity/
 dsq_thread_id:

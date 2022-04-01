@@ -1,7 +1,6 @@
 ---
 title: Compile tora with oracle
 author: chmouel
-type: post
 date: 2007-01-04T22:19:28+00:00
 url: /2007/01/04/compile-tora-with-oracle/
 dsq_thread_id:

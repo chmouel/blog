@@ -1,7 +1,6 @@
 ---
 title: Howto access the UK Rackspace Cloud with the PHP Binding
 author: chmouel
-type: post
 date: 2011-01-12T16:17:07+00:00
 url: /2011/01/12/howto-access-the-uk-rackspace-cloud-with-the-php-binding/
 dsq_thread_id:

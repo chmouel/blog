@@ -1,7 +1,6 @@
 ---
 title: Mass editing firewall on Rackspace Cloud.
 author: chmouel
-type: post
 date: 2011-05-05T22:12:42+00:00
 url: /2011/05/05/mass-editing-firewall-on-rackspace-cloud/
 dsq_thread_id:

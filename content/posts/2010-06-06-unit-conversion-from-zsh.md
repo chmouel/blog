@@ -1,7 +1,6 @@
 ---
 title: Unit conversion from zsh
 author: chmouel
-type: post
 date: 2010-06-06T17:58:31+00:00
 url: /2010/06/06/unit-conversion-from-zsh/
 dsq_thread_id:

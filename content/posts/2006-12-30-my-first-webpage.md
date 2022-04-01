@@ -1,7 +1,6 @@
 ---
 title: My first webpage
 author: chmouel
-type: post
 date: 2006-12-30T18:01:43+00:00
 url: /2006/12/30/my-first-webpage/
 dsq_thread_id:

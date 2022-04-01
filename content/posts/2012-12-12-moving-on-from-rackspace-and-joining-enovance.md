@@ -1,7 +1,6 @@
 ---
 title: Moving on from Rackspace and joining eNovance.
 author: chmouel
-type: post
 date: 2012-12-12T06:24:24+00:00
 url: /2012/12/12/moving-on-from-rackspace-and-joining-enovance/
 dsq_thread_id:

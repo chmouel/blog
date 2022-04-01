@@ -1,7 +1,6 @@
 ---
 title: Swift integration with other OpenStack components in Essex.
 author: chmouel
-type: post
 date: 2012-04-25T15:11:58+00:00
 url: /2012/04/25/swift-integration-with-other-openstack-components-in-essex/
 dsq_thread_id:

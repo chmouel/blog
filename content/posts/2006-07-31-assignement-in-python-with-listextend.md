@@ -1,7 +1,6 @@
 ---
 title: Assignement in Python with list.extend()
 author: chmouel
-type: post
 date: 2006-07-31T06:54:13+00:00
 url: /2006/07/31/assignement-in-python-with-listextend/
 dsq_thread_id:

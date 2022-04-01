@@ -1,7 +1,6 @@
 ---
 title: Access Gajim within Emacs
 author: chmouel
-type: post
 date: 2006-07-31T09:28:56+00:00
 url: /2006/07/31/access-gajim-within-emacs/
 dsq_thread_id:

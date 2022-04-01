@@ -1,7 +1,6 @@
 ---
 title: Better output from sqlite3 command line
 author: chmouel
-type: post
 date: 2009-07-15T23:47:55+00:00
 url: /2009/07/16/better-output-from-sqlite3-command-line/
 dsq_thread_id:

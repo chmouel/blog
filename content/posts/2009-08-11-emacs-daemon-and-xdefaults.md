@@ -1,7 +1,6 @@
 ---
 title: emacs daemon and Xdefaults
 author: chmouel
-type: post
 date: 2009-08-11T09:27:21+00:00
 url: /2009/08/11/emacs-daemon-and-xdefaults/
 dsq_thread_id:

@@ -1,7 +1,6 @@
 ---
 title: connecting to self signed SSL certificate from Java on Debian/Ubuntu
 author: chmouel
-type: post
 date: 2010-06-03T10:50:43+00:00
 url: /2010/06/03/connecting-to-self-signed-ssl-certificate-from-java-on-debian-ubuntu/
 dsq_thread_id:

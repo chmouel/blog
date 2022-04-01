@@ -1,7 +1,6 @@
 ---
 title: On trying to be pylint compatible
 author: chmouel
-type: post
 date: 2013-04-11T09:35:29+00:00
 url: /2013/04/11/trying-to-be-pylint-compatible/
 dsq_thread_id:

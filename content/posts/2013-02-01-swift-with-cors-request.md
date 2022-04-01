@@ -1,7 +1,6 @@
 ---
 title: Upload to OpenStack Swift via CORS/HTML5 request.
 author: chmouel
-type: post
 date: 2013-02-01T12:06:23+00:00
 url: /2013/02/01/swift-with-cors-request/
 dsq_thread_id:

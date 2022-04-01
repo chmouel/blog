@@ -1,7 +1,6 @@
 ---
 title: sqlplus timeout when connnecting
 author: chmouel
-type: post
 date: 2007-01-03T02:24:26+00:00
 url: /2007/01/02/sqlplus-timeout-when-connnecting/
 dsq_thread_id:

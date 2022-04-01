@@ -1,7 +1,6 @@
 ---
 title: S3 emulation to OpenStack Swift has moved
 author: chmouel
-type: post
 date: 2012-05-24T15:09:59+00:00
 url: /2012/05/24/s3-emulation-to-openstack-swift-has-moved/
 dsq_thread_id:

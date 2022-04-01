@@ -1,7 +1,6 @@
 ---
 title: Customize face at point in Emacs
 author: chmouel
-type: post
 date: 2009-12-22T16:58:02+00:00
 url: /2009/12/22/customize-face-at-point-in-emacs/
 dsq_thread_id:

@@ -1,7 +1,6 @@
 ---
 title: How to use fireuploader with the Rackspace Cloud UK
 author: chmouel
-type: post
 date: 2011-02-07T11:16:05+00:00
 url: /2011/02/07/how-to-use-fireuploader-with-the-rackspace-cloud-uk/
 dsq_thread_id:

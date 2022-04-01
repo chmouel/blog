@@ -1,7 +1,6 @@
 ---
 title: History expansion and substitions in ZSH
 author: chmouel
-type: post
 date: 2007-01-11T05:05:50+00:00
 url: /2007/01/10/history-expansion-and-substitions-in-zsh/
 dsq_thread_id:

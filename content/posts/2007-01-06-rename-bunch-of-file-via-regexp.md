@@ -1,7 +1,6 @@
 ---
 title: Rename bunch of file via regexp
 author: chmouel
-type: post
 date: 2007-01-07T02:48:46+00:00
 url: /2007/01/06/rename-bunch-of-file-via-regexp/
 dsq_thread_id:

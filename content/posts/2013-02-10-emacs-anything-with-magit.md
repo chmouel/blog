@@ -1,7 +1,6 @@
 ---
 title: emacs anything with magit
 author: chmouel
-type: post
 date: 2013-02-10T21:48:33+00:00
 url: /2013/02/10/emacs-anything-with-magit/
 dsq_thread_id:

@@ -1,7 +1,6 @@
 ---
 title: Using python-novaclient against Rackspace Cloud next generation (powered by OpenStack)
 author: chmouel
-type: post
 date: 2012-08-17T10:09:42+00:00
 url: /2012/08/17/using-python-novaclient-against-rackspace-cloud-next-generation-powered-by-openstack/
 dsq_thread_id:

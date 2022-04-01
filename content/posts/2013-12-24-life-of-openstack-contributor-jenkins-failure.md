@@ -1,7 +1,6 @@
 ---
 title: The life of an OpenStack contributor checking for Jenkins failures
 author: chmouel
-type: post
 date: 2013-12-24T20:36:40+00:00
 url: /2013/12/24/life-of-openstack-contributor-jenkins-failure/
 dsq_thread_id:

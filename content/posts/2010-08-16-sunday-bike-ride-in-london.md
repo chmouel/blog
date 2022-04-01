@@ -1,7 +1,6 @@
 ---
 title: Sunday bike ride in London
 author: chmouel
-type: post
 date: 2010-08-16T09:45:58+00:00
 url: /2010/08/16/sunday-bike-ride-in-london/
 dsq_thread_id:

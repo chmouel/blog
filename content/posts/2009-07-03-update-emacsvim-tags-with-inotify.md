@@ -1,7 +1,6 @@
 ---
 title: Update Emacs/VIM tags with inotify
 author: chmouel
-type: post
 date: 2009-07-03T18:12:30+00:00
 url: /2009/07/03/update-emacsvim-tags-with-inotify/
 dsq_thread_id:

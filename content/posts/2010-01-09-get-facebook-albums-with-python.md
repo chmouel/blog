@@ -1,7 +1,6 @@
 ---
 title: Get Facebook albums with python
 author: chmouel
-type: post
 date: 2010-01-09T14:42:19+00:00
 url: /2010/01/09/get-facebook-albums-with-python/
 dsq_thread_id:

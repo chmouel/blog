@@ -1,7 +1,6 @@
 ---
 title: Howto revoke a token with keystone and PKI (v2.0 API)
 author: chmouel
-type: post
 date: 2013-04-22T22:38:27+00:00
 url: /2013/04/22/howto-revoke-a-token-with-keystone-and-pki-v2-0-api/
 dsq_thread_id:

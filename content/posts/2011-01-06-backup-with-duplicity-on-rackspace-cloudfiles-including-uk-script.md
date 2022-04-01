@@ -1,7 +1,6 @@
 ---
 title: Backup with duplicity on Rackspace CloudFiles (including UK) script.
 author: chmouel
-type: post
 date: 2011-01-06T00:21:34+00:00
 url: /2011/01/06/backup-with-duplicity-on-rackspace-cloudfiles-including-uk-script/
 dsq_thread_id:

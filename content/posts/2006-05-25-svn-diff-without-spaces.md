@@ -1,7 +1,6 @@
 ---
 title: svn diff without spaces
 author: chmouel
-type: post
 date: 2006-05-25T11:26:15+00:00
 url: /2006/05/25/svn-diff-without-spaces/
 tags:

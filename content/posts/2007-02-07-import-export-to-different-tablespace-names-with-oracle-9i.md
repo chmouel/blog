@@ -1,7 +1,6 @@
 ---
 title: Import Export to different tablespace names with Oracle 9i
 author: chmouel
-type: post
 date: 2007-02-07T09:32:40+00:00
 url: /2007/02/07/import-export-to-different-tablespace-names-with-oracle-9i/
 dsq_thread_id:

@@ -1,7 +1,6 @@
 ---
 title: Using Jython with the vCloud API
 author: chmouel
-type: post
 date: 2010-05-17T20:33:47+00:00
 url: /2010/05/17/using-jython-with-the-vcloud-api/
 dsq_thread_id:

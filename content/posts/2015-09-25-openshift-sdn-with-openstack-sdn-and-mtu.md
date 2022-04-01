@@ -1,7 +1,6 @@
 ---
 title: openshift-sdn with OpenStack SDN and MTU
 author: chmouel
-type: post
 date: 2015-09-25T14:16:12+00:00
 url: /2015/09/25/openshift-sdn-with-openstack-sdn-and-mtu/
 dsq_thread_id:

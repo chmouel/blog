@@ -1,7 +1,6 @@
 ---
 title: Announcing the (Paris (Emacs) Meetup) Group
 author: chmouel
-type: post
 date: 2014-03-31T18:22:15+00:00
 url: /2014/03/31/paris-emacs-meetup-group/
 dsq_thread_id:

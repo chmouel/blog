@@ -1,7 +1,6 @@
 ---
 title: Debian Lenny on Dell Optiplex 760
 author: chmouel
-type: post
 date: 2009-06-16T21:15:30+00:00
 url: /2009/06/16/debian-lenny-on-dell-optiflex-760/
 dsq_thread_id:

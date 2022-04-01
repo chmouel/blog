@@ -1,7 +1,6 @@
 ---
 title: My running and cycling stats of 2012
 author: chmouel
-type: post
 date: 2012-12-31T16:25:38+00:00
 url: /2012/12/31/my-running-and-cycling-stats-2012/
 dsq_thread_id:

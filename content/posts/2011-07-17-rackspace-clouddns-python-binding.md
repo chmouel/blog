@@ -1,7 +1,6 @@
 ---
 title: Rackspace CloudDNS python binding
 author: chmouel
-type: post
 date: 2011-07-17T07:32:09+00:00
 url: /2011/07/17/rackspace-clouddns-python-binding/
 dsq_thread_id:

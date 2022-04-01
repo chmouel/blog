@@ -1,7 +1,6 @@
 ---
 title: How to get bright LS colors on Redhat with dark background
 author: chmouel
-type: post
 date: 2006-12-21T02:52:01+00:00
 url: /2006/12/20/how-to-get-bright-ls-colors-on-redhat-with-dark-background/
 dsq_thread_id:

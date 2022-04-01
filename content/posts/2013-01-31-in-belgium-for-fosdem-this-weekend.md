@@ -1,7 +1,6 @@
 ---
 title: In belgium for Fosdem this weekend.
 author: chmouel
-type: post
 date: 2013-01-31T22:04:45+00:00
 url: /2013/01/31/in-belgium-for-fosdem-this-weekend/
 dsq_thread_id:

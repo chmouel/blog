@@ -1,7 +1,6 @@
 ---
 title: How-to use the Rackspace Cloud UK API
 author: chmouel
-type: post
 date: 2011-01-04T09:00:00+00:00
 url: /2011/01/04/how-to-use-the-rackspace-cloud-uk-api/
 dsq_thread_id:

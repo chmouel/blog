@@ -1,7 +1,6 @@
 ---
 title: Howto shutdown your Cloud Server and not getting billed for it.
 author: chmouel
-type: post
 date: 2011-04-07T09:36:28+00:00
 url: /2011/04/07/howto-shutdown-your-cloud-server-and-not-getting-billed-for-it/
 dsq_thread_id:

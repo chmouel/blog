@@ -1,7 +1,6 @@
 ---
 title: Howto use backtrack4 from hard disk with Grub2
 author: chmouel
-type: post
 date: 2010-03-08T12:00:18+00:00
 url: /2010/03/08/howto-use-backtrack4-from-hard-disk-with-grub2/
 dsq_thread_id:

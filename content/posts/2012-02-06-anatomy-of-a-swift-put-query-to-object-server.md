@@ -1,7 +1,6 @@
 ---
 title: How does a PUT to a swift object server look like.
 author: chmouel
-type: post
 date: 2012-02-06T10:00:33+00:00
 url: /2012/02/06/anatomy-of-a-swift-put-query-to-object-server/
 dsq_thread_id:

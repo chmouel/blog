@@ -1,7 +1,6 @@
 ---
 title: Emacs nighly cvs snapshot with xft on Ubuntu Edgy
 author: chmouel
-type: post
 date: 2007-01-21T12:32:54+00:00
 url: /2007/01/21/emacs-nighly-cvs-snapshot-with-xft-on-ubuntu-edgy/
 dsq_thread_id:

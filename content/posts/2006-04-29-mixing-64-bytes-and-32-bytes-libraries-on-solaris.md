@@ -1,7 +1,6 @@
 ---
 title: Mixing 64 bytes and 32 Bytes Libraries on Solaris
 author: chmouel
-type: post
 date: 2006-04-29T22:54:06+00:00
 url: /2006/04/29/mixing-64-bytes-and-32-bytes-libraries-on-solaris/
 dsq_thread_id:

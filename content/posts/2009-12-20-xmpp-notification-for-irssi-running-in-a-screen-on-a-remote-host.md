@@ -1,7 +1,6 @@
 ---
 title: XMPP notification for irssi running in a screen on a remote host
 author: chmouel
-type: post
 date: 2009-12-20T15:41:55+00:00
 url: /2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/
 dsq_thread_id:

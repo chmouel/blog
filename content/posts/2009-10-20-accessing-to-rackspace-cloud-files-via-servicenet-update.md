@@ -1,7 +1,6 @@
 ---
 title: Accessing to Rackspace Cloud Files via servicenet (update)
 author: chmouel
-type: post
 date: 2009-10-20T18:47:49+00:00
 url: /2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/
 dsq_thread_id:

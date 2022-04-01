@@ -1,7 +1,6 @@
 ---
 title: chrometophone and cyrket
 author: chmouel
-type: post
 date: 2010-05-25T01:14:38+00:00
 url: /2010/05/25/chrometophone-and-cyrket/
 dsq_thread_id:

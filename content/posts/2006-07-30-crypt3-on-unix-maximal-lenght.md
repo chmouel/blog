@@ -1,7 +1,6 @@
 ---
 title: crypt(3) on unix maximal length
 author: chmouel
-type: post
 date: 2006-07-30T12:50:45+00:00
 url: /2006/07/30/crypt3-on-unix-maximal-lenght/
 dsq_thread_id:

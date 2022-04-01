@@ -1,7 +1,6 @@
 ---
 title: Nokia N95 bluetooth teethering with T-Mobile under Linux and Delll Latitude D630
 author: chmouel
-type: post
 date: 2009-10-30T08:55:53+00:00
 url: /2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/
 dsq_thread_id:

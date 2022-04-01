@@ -1,7 +1,6 @@
 ---
 title: SVN Diff against changes in the remote repository.
 author: chmouel
-type: post
 date: 2007-02-07T03:02:26+00:00
 url: /2007/02/06/svn-diff-against-changes-in-the-remote-repository/
 dsq_thread_id:

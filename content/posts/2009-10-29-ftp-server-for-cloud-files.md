@@ -1,7 +1,6 @@
 ---
 title: FTP server for Cloud Files
 author: chmouel
-type: post
 date: 2009-10-29T14:38:14+00:00
 url: /2009/10/29/ftp-server-for-cloud-files/
 dsq_thread_id:

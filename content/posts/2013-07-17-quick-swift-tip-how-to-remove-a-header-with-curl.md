@@ -1,7 +1,6 @@
 ---
 title: 'Quick Swift Tip: How to remove a header with Curl'
 author: chmouel
-type: post
 date: 2013-07-17T10:07:50+00:00
 url: /2013/07/17/quick-swift-tip-how-to-remove-a-header-with-curl/
 dsq_thread_id:

@@ -1,7 +1,6 @@
 ---
 title: What type of MySQL table schemas
 author: chmouel
-type: post
 date: 2009-05-11T08:55:27+00:00
 url: /2009/05/11/what-type-of-mysql-table-schemas/
 dsq_thread_id:

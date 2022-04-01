@@ -1,7 +1,6 @@
 ---
 title: How to launch the Swift functional test suite with Keystone
 author: chmouel
-type: post
 date: 2013-06-14T15:46:19+00:00
 url: /2013/06/14/how-to-launch-the-swift-functional-test-suite-with-keystone/
 dsq_thread_id:

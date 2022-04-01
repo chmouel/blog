@@ -1,7 +1,6 @@
 ---
 title: Xterm like Control-L in Eshell
 author: chmouel
-type: post
 date: 2006-12-28T00:00:15+00:00
 url: /2006/12/27/xterm-like-control-l-in-eshell/
 dsq_thread_id:

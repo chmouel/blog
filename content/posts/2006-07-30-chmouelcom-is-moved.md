@@ -1,7 +1,6 @@
 ---
 title: chmouel.com is moved.
 author: chmouel
-type: post
 date: 2006-07-30T12:36:14+00:00
 url: /2006/07/30/chmouelcom-is-moved/
 dsq_thread_id:

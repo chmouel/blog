@@ -1,7 +1,6 @@
 ---
 title: How do I manage my copyright headers in Emacs
 author: chmouel
-type: post
 date: 2014-03-14T07:07:41+00:00
 url: /2014/03/14/how-do-i-manage-my-copyright-headers-in-emacs/
 tags:

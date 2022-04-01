@@ -1,7 +1,6 @@
 ---
 title: Emacs and nosetests
 author: chmouel
-type: post
 date: 2012-10-14T14:19:07+00:00
 url: /2012/10/14/emacs-and-nosetests/
 dsq_thread_id:

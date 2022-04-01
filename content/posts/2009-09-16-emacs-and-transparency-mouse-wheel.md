@@ -1,7 +1,6 @@
 ---
 title: Emacs transparency with mouse wheel
 author: chmouel
-type: post
 date: 2009-09-16T02:52:22+00:00
 url: /2009/09/16/emacs-and-transparency-mouse-wheel/
 dsq_thread_id:

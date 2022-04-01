@@ -1,7 +1,6 @@
 ---
 title: Using yaml for OpenShift v3 templates
 author: chmouel
-type: post
 date: 2015-03-24T10:54:53+00:00
 url: /2015/03/24/using-yaml-for-openshift-v3-templates/
 dsq_thread_id:

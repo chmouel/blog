@@ -1,7 +1,6 @@
 ---
 title: Upload a file to Rackspace Cloud Files from Windows
 author: chmouel
-type: post
 date: 2010-10-11T21:40:05+00:00
 url: /2010/10/11/upload-a-file-to-rackspace-cloud-files-from-windows/
 dsq_thread_id:

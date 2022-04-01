@@ -1,7 +1,6 @@
 ---
 title: New GNOME plugin for uploading to Rackspace Cloud Files and APT/PPA repo for CF tools.
 author: chmouel
-type: post
 date: 2009-12-21T15:50:37+00:00
 url: /2009/12/21/new-gnome-plugin-for-uploading-to-rackspace-cloud-files-and-aptppa-repo-for-cf-tools/
 dsq_thread_id:

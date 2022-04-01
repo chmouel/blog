@@ -1,7 +1,6 @@
 ---
 title: Jabber/Asterisk and Gajim notification
 author: chmouel
-type: post
 date: 2006-05-25T11:38:43+00:00
 url: /2006/05/25/jabberasterisk-and-gajim-notification/
 tags:

@@ -1,7 +1,6 @@
 ---
 title: Get latest lyrics of a scrobbled LastFM song
 author: chmouel
-type: post
 date: 2010-10-09T07:56:05+00:00
 url: /2010/10/09/get-latest-lyrics-of-a-scrobbled-lastfm-song/
 dsq_thread_id:

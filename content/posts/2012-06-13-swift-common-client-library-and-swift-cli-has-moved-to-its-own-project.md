@@ -1,7 +1,6 @@
 ---
 title: swift.common.client library and swift CLI has moved to its own project
 author: chmouel
-type: post
 date: 2012-06-13T12:50:56+00:00
 url: /2012/06/13/swift-common-client-library-and-swift-cli-has-moved-to-its-own-project/
 dsq_thread_id:

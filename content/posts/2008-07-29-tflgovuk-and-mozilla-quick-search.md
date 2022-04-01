@@ -1,7 +1,6 @@
 ---
 title: TFL.GOV.UK and mozilla quick search
 author: chmouel
-type: post
 date: 2008-07-29T06:14:49+00:00
 url: /2008/07/29/tflgovuk-and-mozilla-quick-search/
 dsq_thread_id:

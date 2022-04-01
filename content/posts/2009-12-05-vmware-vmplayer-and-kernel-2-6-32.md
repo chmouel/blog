@@ -1,7 +1,6 @@
 ---
 title: Vmware vmplayer and kernel 2.6.32
 author: chmouel
-type: post
 date: 2009-12-05T01:35:01+00:00
 url: /2009/12/05/vmware-vmplayer-and-kernel-2-6-32/
 dsq_thread_id:

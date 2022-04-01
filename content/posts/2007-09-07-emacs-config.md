@@ -1,7 +1,6 @@
 ---
 title: Emacs config
 author: chmouel
-type: post
 date: 2007-09-07T07:57:34+00:00
 url: /2007/09/07/emacs-config/
 dsq_thread_id:

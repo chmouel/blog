@@ -1,7 +1,6 @@
 ---
 title: Keystone and PKI tokens overview
 author: chmouel
-type: post
 date: 2013-05-02T08:00:15+00:00
 url: /2013/05/02/keystone-pki-tokens-overview/
 dsq_thread_id:

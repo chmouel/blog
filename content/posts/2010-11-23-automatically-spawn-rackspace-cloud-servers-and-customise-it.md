@@ -1,7 +1,6 @@
 ---
 title: Automatically spawn Rackspace Cloud Servers and customise it.
 author: chmouel
-type: post
 date: 2010-11-23T12:36:00+00:00
 url: /2010/11/23/automatically-spawn-rackspace-cloud-servers-and-customise-it/
 dsq_thread_id:

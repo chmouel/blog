@@ -1,7 +1,6 @@
 ---
 title: 'Error loading native library: libnjni9.so'
 author: chmouel
-type: post
 date: 2006-12-22T00:29:57+00:00
 url: /2006/12/21/error-loading-native-library-libnjni9so/
 dsq_thread_id:

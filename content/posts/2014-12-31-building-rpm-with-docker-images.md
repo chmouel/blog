@@ -1,7 +1,6 @@
 ---
 title: Building RPM with Docker images
 author: chmouel
-type: post
 date: 2014-12-31T11:24:36+00:00
 url: /2014/12/31/building-rpm-with-docker-images/
 dsq_thread_id:

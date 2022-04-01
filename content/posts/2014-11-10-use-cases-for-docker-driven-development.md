@@ -1,7 +1,6 @@
 ---
 title: Use cases for Docker driven development.
 author: chmouel
-type: post
 date: 2014-11-10T20:58:01+00:00
 url: /2014/11/10/use-cases-for-docker-driven-development/
 dsq_thread_id:

@@ -1,7 +1,6 @@
 ---
 title: Cheetah Mode for Emacs
 author: chmouel
-type: post
 date: 2006-07-31T23:35:09+00:00
 url: /2006/07/31/cheetah-mode-for-emacs/
 dsq_thread_id:

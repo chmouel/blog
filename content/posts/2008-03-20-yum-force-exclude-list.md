@@ -1,7 +1,6 @@
 ---
 title: Yum Force Exclude List
 author: chmouel
-type: post
 date: 2008-03-20T09:36:06+00:00
 url: /2008/03/20/yum-force-exclude-list/
 dsq_thread_id:

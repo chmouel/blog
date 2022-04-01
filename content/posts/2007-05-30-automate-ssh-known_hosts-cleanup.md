@@ -1,7 +1,6 @@
 ---
 title: Automate SSH known_hosts cleanup
 author: chmouel
-type: post
 date: 2007-05-30T22:33:40+00:00
 url: /2007/05/30/automate-ssh-known_hosts-cleanup/
 dsq_thread_id:

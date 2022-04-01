@@ -1,7 +1,6 @@
 ---
 title: Upload to Rackspace Cloud files from GNOME nautilus
 author: chmouel
-type: post
 date: 2009-09-02T16:49:30+00:00
 url: /2009/09/02/upload-to-rackspace-cloud-files-from-gnome-nautilus/
 dsq_thread_id:

@@ -1,7 +1,6 @@
 ---
 title: My stats for this year running and cycling
 author: chmouel
-type: post
 date: 2011-12-28T19:08:27+00:00
 url: /2011/12/28/my-training-year-cycling-and-running/
 dsq_thread_id:

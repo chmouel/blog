@@ -1,7 +1,6 @@
 ---
 title: Automatic best resolution with xrandr
 author: chmouel
-type: post
 date: 2007-07-31T22:23:32+00:00
 url: /2007/07/31/automatic-best-resolution-with-xrandr/
 dsq_thread_id:

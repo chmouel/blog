@@ -1,7 +1,6 @@
 ---
 title: Toshiba Regza 32AV615DB blank screen HDMI Linux
 author: chmouel
-type: post
 date: 2009-12-03T17:17:19+00:00
 url: /2009/12/03/toshiba-regza-32av615db-blank-screen-hdmi-linux/
 dsq_thread_id:

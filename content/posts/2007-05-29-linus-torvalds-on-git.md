@@ -1,7 +1,6 @@
 ---
 title: Linus Torvalds on GIT
 author: chmouel
-type: post
 date: 2007-05-29T11:36:17+00:00
 url: /2007/05/29/linus-torvalds-on-git/
 dsq_thread_id:

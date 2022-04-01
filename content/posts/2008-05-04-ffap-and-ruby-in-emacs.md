@@ -1,7 +1,6 @@
 ---
 title: FFAP and Ruby in Emacs
 author: chmouel
-type: post
 date: 2008-05-04T19:13:41+00:00
 url: /2008/05/04/ffap-and-ruby-in-emacs/
 dsq_thread_id:

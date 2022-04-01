@@ -1,7 +1,6 @@
 ---
 title: Dox a tool that run python (or others) tests in a docker container
 author: chmouel
-type: post
 date: 2014-09-08T00:56:43+00:00
 url: /2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/
 dsq_thread_id:

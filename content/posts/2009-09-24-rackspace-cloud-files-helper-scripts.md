@@ -1,7 +1,6 @@
 ---
 title: Rackspace Cloud Files helper scripts
 author: chmouel
-type: post
 date: 2009-09-24T21:10:18+00:00
 url: /2009/09/24/rackspace-cloud-files-helper-scripts/
 dsq_thread_id:

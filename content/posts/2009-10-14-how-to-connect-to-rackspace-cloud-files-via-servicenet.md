@@ -1,7 +1,6 @@
 ---
 title: How to connect to Rackspace Cloud Files via ServiceNET
 author: chmouel
-type: post
 date: 2009-10-14T00:47:27+00:00
 url: /2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/
 dsq_thread_id:

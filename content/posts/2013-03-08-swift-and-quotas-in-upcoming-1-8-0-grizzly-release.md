@@ -1,7 +1,6 @@
 ---
 title: Swift and quotas in upcoming 1.8.0 (Grizzly) release.
 author: chmouel
-type: post
 date: 2013-03-08T20:45:44+00:00
 url: /2013/03/08/swift-and-quotas-in-upcoming-1-8-0-grizzly-release/
 dsq_thread_id:

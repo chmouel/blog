@@ -1,7 +1,6 @@
 ---
 title: Network manager and iwl3945 not showing network
 author: chmouel
-type: post
 date: 2009-08-10T15:11:57+00:00
 url: /2009/08/10/network-manager-and-iwl3945-not-showing-network/
 dsq_thread_id:

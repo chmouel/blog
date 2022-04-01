@@ -1,7 +1,6 @@
 ---
 title: Using ProxyCommand with OpenSSH and a Bastion server.
 author: chmouel
-type: post
 date: 2009-02-08T12:21:38+00:00
 url: /2009/02/08/proxycommand-ssh-bastion-proxy/
 dsq_thread_id:

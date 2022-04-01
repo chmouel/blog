@@ -1,7 +1,6 @@
 ---
 title: Netapp sue Sun
 author: chmouel
-type: post
 date: 2007-09-07T07:50:24+00:00
 url: /2007/09/07/netapp-sue-sun/
 dsq_thread_id:

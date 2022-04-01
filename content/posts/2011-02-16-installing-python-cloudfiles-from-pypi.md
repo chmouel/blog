@@ -1,7 +1,6 @@
 ---
 title: Installing python-cloudfiles from pypi
 author: chmouel
-type: post
 date: 2011-02-16T05:41:33+00:00
 url: /2011/02/16/installing-python-cloudfiles-from-pypi/
 dsq_thread_id:

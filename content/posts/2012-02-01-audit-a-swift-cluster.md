@@ -1,7 +1,6 @@
 ---
 title: Audit a swift cluster
 author: chmouel
-type: post
 date: 2012-02-01T10:18:11+00:00
 url: /2012/02/01/audit-a-swift-cluster/
 dsq_thread_id:

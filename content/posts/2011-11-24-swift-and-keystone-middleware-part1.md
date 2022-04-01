@@ -1,7 +1,6 @@
 ---
 title: Swift and Keystone middleware
 author: chmouel
-type: post
 date: 2011-11-24T09:20:39+00:00
 url: /2011/11/24/swift-and-keystone-middleware-part1/
 dsq_thread_id:

@@ -1,7 +1,6 @@
 ---
 title: Using python to drive OpenShift REST API
 author: chmouel
-type: post
 date: 2016-09-19T08:19:50+00:00
 url: /2016/09/19/using-python-to-drive-openshift-rest-api/
 dsq_thread_id:

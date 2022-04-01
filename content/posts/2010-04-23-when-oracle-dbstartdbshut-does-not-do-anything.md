@@ -1,7 +1,6 @@
 ---
 title: When Oracle dbstart/dbshut does not do anything
 author: chmouel
-type: post
 date: 2010-04-23T10:06:24+00:00
 url: /2010/04/23/when-oracle-dbstartdbshut-does-not-do-anything/
 dsq_thread_id:

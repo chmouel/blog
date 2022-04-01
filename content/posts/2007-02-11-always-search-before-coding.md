@@ -1,7 +1,6 @@
 ---
 title: Always search before coding
 author: chmouel
-type: post
 date: 2007-02-11T11:47:39+00:00
 url: /2007/02/11/always-search-before-coding/
 dsq_thread_id:

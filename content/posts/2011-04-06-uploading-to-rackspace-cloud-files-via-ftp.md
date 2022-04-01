@@ -1,7 +1,6 @@
 ---
 title: Uploading to Rackspace Cloud Files via FTP
 author: chmouel
-type: post
 date: 2011-04-06T13:05:44+00:00
 url: /2011/04/06/uploading-to-rackspace-cloud-files-via-ftp/
 dsq_thread_id:

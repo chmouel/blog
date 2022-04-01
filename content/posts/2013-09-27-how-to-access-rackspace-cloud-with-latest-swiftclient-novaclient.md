@@ -1,7 +1,6 @@
 ---
 title: How to access Rackspace Cloud with latest novaclient/swiftclient
 author: chmouel
-type: post
 date: 2013-09-27T03:50:51+00:00
 url: /2013/09/27/how-to-access-rackspace-cloud-with-latest-swiftclient-novaclient/
 dsq_thread_id:

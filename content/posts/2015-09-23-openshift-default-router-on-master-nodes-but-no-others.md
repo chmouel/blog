@@ -1,7 +1,6 @@
 ---
 title: Deploy openshift router and registry only on a master nodes with no others
 author: chmouel
-type: post
 date: 2015-09-23T11:31:07+00:00
 url: /2015/09/23/openshift-default-router-on-master-nodes-but-no-others/
 dsq_thread_id:

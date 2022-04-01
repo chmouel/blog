@@ -1,7 +1,6 @@
 ---
 title: 'Benchmarking with PGBench: TPS results.'
 author: chmouel
-type: post
 date: 2007-01-06T08:19:23+00:00
 url: /2007/01/06/postgres-options-using-pgbench-tps/
 dsq_thread_id:

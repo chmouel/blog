@@ -1,7 +1,6 @@
 ---
 title: Get size of Postgres DB from filesystem
 author: chmouel
-type: post
 date: 2006-06-05T08:26:55+00:00
 url: /2006/06/05/get-size-of-postgres-db-from-filesystem/
 tags:

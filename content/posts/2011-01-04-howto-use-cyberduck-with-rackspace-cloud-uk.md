@@ -1,7 +1,6 @@
 ---
 title: Howto use Cyberduck with Rackspace Cloud UK
 author: chmouel
-type: post
 date: 2011-01-04T15:04:36+00:00
 url: /2011/01/04/howto-use-cyberduck-with-rackspace-cloud-uk/
 dsq_thread_id:

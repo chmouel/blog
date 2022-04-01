@@ -1,7 +1,6 @@
 ---
 title: python syntax warning in emacs
 author: chmouel
-type: post
 date: 2009-08-31T05:04:28+00:00
 url: /2009/08/31/python-syntax-warning-in-emacs/
 dsq_thread_id:

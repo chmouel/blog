@@ -1,7 +1,6 @@
 ---
 title: Avoiding race conditions between containers with docker and fig
 author: chmouel
-type: post
 date: 2014-11-04T20:18:01+00:00
 url: /2014/11/04/avoiding-race-conditions-between-containers-with-docker-and-fig/
 dsq_thread_id:

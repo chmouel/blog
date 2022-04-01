@@ -1,7 +1,6 @@
 ---
 title: Twitter notification of replies by Email
 author: chmouel
-type: post
 date: 2010-01-07T14:40:25+00:00
 url: /2010/01/07/twitter-notification-of-replies-by-email/
 dsq_thread_id:

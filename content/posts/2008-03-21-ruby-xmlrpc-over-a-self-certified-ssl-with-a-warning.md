@@ -1,7 +1,6 @@
 ---
 title: Ruby XMLRPC over a Self Certified SSL with a warning
 author: chmouel
-type: post
 date: 2008-03-21T16:56:05+00:00
 url: /2008/03/21/ruby-xmlrpc-over-a-self-certified-ssl-with-a-warning/
 dsq_thread_id:

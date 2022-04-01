@@ -1,7 +1,6 @@
 ---
 title: Debugging python-novaclient on the command line.
 author: chmouel
-type: post
 date: 2011-09-02T03:00:13+00:00
 url: /2011/09/02/debugging-python-novaclient-on-the-command-line/
 dsq_thread_id:
