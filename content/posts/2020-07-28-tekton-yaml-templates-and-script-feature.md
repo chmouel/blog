@@ -28,11 +28,15 @@ So now that i am over talking to myself with this way too long preamble here is 
 
 It's available here :
 
-<a href="https://github.com/chmouel/chmouzies/blob/master/work/tekton-script-template.sh" target="_blank" rel="noreferrer noopener">https://github.com/chmouel/chmouzies/blob/master/work/tekton-script-template.sh</a>
+<https://github.com/chmouel/chmouzies/blob/master/work/tekton-script-template.sh>
 
 The idea is if you have in your template a tag saying #INSERT filename, it would be replaced by the content of the file, it's dumb and stupid but make devloping your yaml much more pleasing... so if you have something like :
 
-<pre>image: foo<br />script: |<br />      #INSERT script.py</pre>
+```yaml
+image: foo
+script: |
+  #INSERT script.py
+```
 
 the script with see this and insert the file script.py in your template. It will respect the previous line indentation and add four spaces extra to indent the script and you can have as many INSERT as you want in your template....
 

@@ -44,36 +44,38 @@ It has three tasks.
 
 When you run this pipeline you can see that everything with run as non root as user 1000 :
 
-    % tkn pr logs -Lf
-    [clone : clone] ++ id
-    [clone : clone] + echo &#039;Running as uid=1000 gid=0(root) groups=0(root),1000670000&#039;
-    [clone : clone] Running as uid=1000 gid=0(root) groups=0(root),1000670000
-    [....]
-    [task-spec : task-spec] ++ id
-    [task-spec : task-spec] + echo &#039;I can write here I am uid=1000(1000) gid=0(root) groups=0(root),1000670000&#039;
-    [task-spec : task-spec] + ls -l .
-    [task-spec : task-spec] total 52
-    [....]
-    userns-buildah : build] ++ id
-    [userns-buildah : build] Running as USER ID uid=1000(build) gid=1000(build) groups=1000(build),1000670000
-    [userns-buildah : build] + echo &#039;Running as USER ID uid=1000(build) gid=1000(build) groups=1000(build),1000670000&#039;
-    [userns-buildah : build] + buildah --storage-driver=vfs bud --format=oci --tls-verify=true --no-cache -f ./Dockerfile -t image-registry.openshift-image-registry.svc:5000/test/userns:latest .
-    [userns-buildah : build] STEP 1: FROM registry.access.redhat.com/ubi8/ubi-minimal:8.5
-    [...]
-    [userns-buildah : build] Storing signatures
-    [userns-buildah : build] STEP 2: RUN id
-    [userns-buildah : build] uid=0(root) gid=0(root) groups=0(root)
-    [userns-buildah : build] STEP 3: COMMIT image-registry.openshift-image-registry.svc:5000/test/userns:latest
-    [userns-buildah : build] --> 3637c099315
-    [userns-buildah : build] 3637c0993158a555352c26ca9f8ed6406f916a708511b95f6135a8ba02432b96
-    [userns-buildah : push] ++ id
-    [userns-buildah : push] + echo &#039;Running as USER ID uid=1000(build) gid=1000(build) groups=1000(build),1000670000&#039;
-    [userns-buildah : push] Running as USER ID uid=1000(build) gid=1000(build) groups=1000(build),1000670000
-    [userns-buildah : push] + buildah --storage-driver=vfs push --tls-verify=true --digestfile /workspace/source/image-digest image-registry.openshift-image-registry.svc:5000/test/userns:latest docker://image-registry.openshift-image-registry.svc:5000/test/userns:latest
-    [...]
-    [userns-buildah : push] Writing manifest to image destination
-    [userns-buildah : push] Storing signatures
-    [...]
+```bash
+% tkn pr logs -Lf
+[clone : clone] ++ id
+[clone : clone] + echo ' Running as uid=1000 gid=0(root) ps=0(root),1000670000' 
+[clone : clone] Running as uid=1000 gid=0(root) groups=0(root),1000670000
+[....]
+[task-spec : task-spec] ++ id
+[task-spec : task-spec] + echo ' I can write here I am uid=1000(1000) 0(root) groups=0(root),1000670000' 
+[task-spec : task-spec] + ls -l .
+[task-spec : task-spec] total 52
+[....]
+userns-buildah : build] ++ id
+[userns-buildah : build] Running as USER ID uid=1000(build) gid=1000(build) ps=1000(build),1000670000
+[userns-buildah : build] + echo ' Running as USER ID uid=1000(build) 1000(build) groups=1000(build),1000670000' 
+[userns-buildah : build] + buildah --storage-driver=vfs bud --format=oci --tls-fy=true --no-cache -f ./Dockerfile -t image-registry.openshift-image-stry.svc:5000/test/userns:latest .
+[userns-buildah : build] STEP 1: FROM registry.access.redhat.com/ubi8/ubi-mal:8.5
+[...]
+[userns-buildah : build] Storing signatures
+[userns-buildah : build] STEP 2: RUN id
+[userns-buildah : build] uid=0(root) gid=0(root) groups=0(root)
+[userns-buildah : build] STEP 3: COMMIT image-registry.openshift-image-stry.svc:5000/test/userns:latest
+[userns-buildah : build] --> 3637c099315
+[userns-buildah : build] c0993158a555352c26ca9f8ed6406f916a708511b95f6135a8ba02432b96
+[userns-buildah : push] ++ id
+[userns-buildah : push] + echo ' Running as USER ID uid=1000(build) 1000(build) groups=1000(build),1000670000' 
+[userns-buildah : push] Running as USER ID uid=1000(build) gid=1000(build) ps=1000(build),1000670000
+[userns-buildah : push] + buildah --storage-driver=vfs push --tls-verify=true --stfile /workspace/source/image-digest image-registry.openshift-image-stry.svc:5000/test/userns:latest docker://image-registry.openshift-image-stry.svc:5000/test/userns:latest
+[...]
+[userns-buildah : push] Writing manifest to image destination
+[userns-buildah : push] Storing signatures
+[...]
+```
 
 ### Conclusion
 

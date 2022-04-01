@@ -30,27 +30,30 @@ You can directly edit the buildah ClusterTask with “oc edit clustertask builda
 
 With the latest tkn create from feature you can easily automate it :
 
-<pre>$ oc new-project test
+```bash
+oc new-project test
 $ tkn task create --from=buildah
 $ oc edit task buildah
-</pre>
+```
 
 And add the annotations to the task :
 
-<pre>annotations:
+```yaml
+annotations:
     io.kubernetes.cri-o.userns-mode: "auto"
     io.openshift.builder: "true"
-</pre>
+```
 
 Now if you are running the (currently unreleased) latest Openshift Pipelines 1.7 on OpenShift 4.10, you will see your buildah container running like before as root.
 
 But if you adventure yourself behind the scene on the host of the pod :
 
-<pre># get the nodename where the buildah pod is with "oc get pod -o wide"
+```bash
+# get the nodename where the buildah pod is with "oc get pod -o wide"
 $ oc debug nodes/nodename
 $ chroot /host
 $ lsns -t user
-</pre>
+```
 
 OpenShift and CRIO did their magic and ran your pod in a “user namespace”.
 
@@ -80,7 +83,6 @@ volumeMounts:
   - name: varlibcontainers
     mountPath: /home/build/.local/share/containers
 ```
-
 
 And for demo purpose I have added this line at the beginning of the script task
 :
@@ -132,7 +134,6 @@ runAsUser:
   seLinuxContext:
     type: MustRunAs
 ```
-
 
 The pipeline serviceaccount will only allow running images as user 1000 and not
 as root anymore, if the images are not running as 1000 they will berandomed out as user id.
