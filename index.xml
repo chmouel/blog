@@ -115,7 +115,7 @@ port=5353 no-resolv interface=eth0 except-interface=lo listen-address=::1,192.16
       
       <guid>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</guid>
       <description>I do write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn time only once and some others I write in about 5mn but save me hours and hour of productivity.
-The script showed today, that I am proud of because of its usefulness and probably not of its code, is called &amp;ldquo;batzconverter&amp;rdquo;. and available on github.</description>
+The script showed today, that I am proud of because of its usefulness and probably not of its code, is called &amp;ldquo;batzconverter&amp;rdquo; available on https://github.com/chmouel/batzconverter. What the script is trying to solve is when you work with your team spread around 3/4 timezones, how do you schedule a meeting easily.</description>
     </item>
     
     <item>
