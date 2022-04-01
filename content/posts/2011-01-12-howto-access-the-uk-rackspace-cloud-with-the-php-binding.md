@@ -13,7 +13,8 @@ tags:
 ---
 One of the last library I didn't documented in my [earlier post][1] was php-cloudfiles. You need to have at least the [version 1.7.6][2] released to have support to different auth_server and when you have that you can do it like this to get access to cloud files via the library :
 
-<pre lang="php">&lt; ?php
+```php
+<?php
 require_once("cloudfiles.php");
 
 # Allow override by environment variable
@@ -23,7 +24,7 @@ $API_KEY = "MY_API_KEY";
 $auth = new CF_Authentication($USER, $API_KEY, NULL, UK_AUTHURL);
 $auth->authenticate();
 ?>
-</pre>
+```
 
  [1]: https://blog.chmouel.com/2011/01/04/how-to-use-the-rackspace-cloud-uk-api/
  [2]: https://github.com/rackspace/php-cloudfiles/archives/1.7.6

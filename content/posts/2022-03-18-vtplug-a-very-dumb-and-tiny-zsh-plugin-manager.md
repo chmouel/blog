@@ -44,7 +44,7 @@ ZSH_PLUGINS=(
 )
 ```
 
-it currently only support public github based plugins so effectively add the
+It currently only support public GitHub based plugins so effectively add the
 `https://github.com/` to the repo/owner specified in ZSHZ_PLUGINS variable.
 
 You then may want to add some configuration of the plugin right after, like this,
