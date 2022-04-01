@@ -14,7 +14,16 @@
     <loc>https://blog.chmouel.com/2022/03/18/show-plugins-list-to-a-cli-when-using-gos-cobra-library/</loc>
     <lastmod>2022-03-18T08:53:02+00:00</lastmod>
   </url><url>
+    <loc>https://blog.chmouel.com/tags/openshift/</loc>
+    <lastmod>2022-03-07T08:04:02+00:00</lastmod>
+  </url><url>
     <loc>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</loc>
+    <lastmod>2022-03-07T08:04:02+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.chmouel.com/tags/</loc>
+    <lastmod>2022-03-07T08:04:02+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.chmouel.com/tags/tekton/</loc>
     <lastmod>2022-03-07T08:04:02+00:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/</loc>
@@ -44,12 +53,6 @@
     <loc>https://blog.chmouel.com/categories/</loc>
     <lastmod>2020-07-28T08:55:07+00:00</lastmod>
   </url><url>
-    <loc>https://blog.chmouel.com/tags/</loc>
-    <lastmod>2020-07-28T08:55:07+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.chmouel.com/tags/tekton/</loc>
-    <lastmod>2020-07-28T08:55:07+00:00</lastmod>
-  </url><url>
     <loc>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</loc>
     <lastmod>2020-07-28T08:55:07+00:00</lastmod>
   </url><url>
@@ -60,9 +63,6 @@
     <lastmod>2020-07-28T08:55:07+00:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</loc>
-    <lastmod>2017-06-09T13:31:28+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.chmouel.com/tags/openshift/</loc>
     <lastmod>2017-06-09T13:31:28+00:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</loc>
