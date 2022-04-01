@@ -10,6 +10,11 @@ body:not(.dark) .logo a {
   color: #ff50bc;
 }
 
+.highlight pre {
+  box-shadow: 5px 5px 10px #3c2c3d;
+  padding: 5px;
+}
+
 .entry-footer,
 .post-meta {
   font-style: italic;

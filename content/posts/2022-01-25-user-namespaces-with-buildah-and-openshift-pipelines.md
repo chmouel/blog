@@ -3,6 +3,7 @@ title: User namespaces with Buildah and OpenShift Pipelines
 author: chmouel
 date: 2022-01-25T10:07:07+00:00
 url: /2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/
+showToc: true
 ---
 In 2022 one of the hottest topic around CI is how to secure it every steps along the way.
 

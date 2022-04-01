@@ -3,6 +3,10 @@ title: Running tasks as non root on OpenShift Pipelines
 author: chmouel
 date: 2022-03-07T08:04:02+00:00
 url: /2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/
+showToc: true
+tags:
+  - OpenShift
+  - Tekton
 ---
 Expanding on my [previous blog post][1] on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.
 
@@ -47,17 +51,17 @@ When you run this pipeline you can see that everything with run as non root as u
 ```bash
 % tkn pr logs -Lf
 [clone : clone] ++ id
-[clone : clone] + echo ' Running as uid=1000 gid=0(root) ps=0(root),1000670000' 
+[clone : clone] + echo ' Running as uid=1000 gid=0(root) ps=0(root),1000670000'
 [clone : clone] Running as uid=1000 gid=0(root) groups=0(root),1000670000
 [....]
 [task-spec : task-spec] ++ id
-[task-spec : task-spec] + echo ' I can write here I am uid=1000(1000) 0(root) groups=0(root),1000670000' 
+[task-spec : task-spec] + echo ' I can write here I am uid=1000(1000) 0(root) groups=0(root),1000670000'
 [task-spec : task-spec] + ls -l .
 [task-spec : task-spec] total 52
 [....]
 userns-buildah : build] ++ id
 [userns-buildah : build] Running as USER ID uid=1000(build) gid=1000(build) ps=1000(build),1000670000
-[userns-buildah : build] + echo ' Running as USER ID uid=1000(build) 1000(build) groups=1000(build),1000670000' 
+[userns-buildah : build] + echo ' Running as USER ID uid=1000(build) 1000(build) groups=1000(build),1000670000'
 [userns-buildah : build] + buildah --storage-driver=vfs bud --format=oci --tls-fy=true --no-cache -f ./Dockerfile -t image-registry.openshift-image-stry.svc:5000/test/userns:latest .
 [userns-buildah : build] STEP 1: FROM registry.access.redhat.com/ubi8/ubi-mal:8.5
 [...]
@@ -68,7 +72,7 @@ userns-buildah : build] ++ id
 [userns-buildah : build] --> 3637c099315
 [userns-buildah : build] c0993158a555352c26ca9f8ed6406f916a708511b95f6135a8ba02432b96
 [userns-buildah : push] ++ id
-[userns-buildah : push] + echo ' Running as USER ID uid=1000(build) 1000(build) groups=1000(build),1000670000' 
+[userns-buildah : push] + echo ' Running as USER ID uid=1000(build) 1000(build) groups=1000(build),1000670000'
 [userns-buildah : push] Running as USER ID uid=1000(build) gid=1000(build) ps=1000(build),1000670000
 [userns-buildah : push] + buildah --storage-driver=vfs push --tls-verify=true --stfile /workspace/source/image-digest image-registry.openshift-image-stry.svc:5000/test/userns:latest docker://image-registry.openshift-image-stry.svc:5000/test/userns:latest
 [...]
