@@ -58,7 +58,7 @@ ZSHZ_DATA=${HOME}/.cache/zsh-cache-z
 EMOJI_CLI_USE_EMOJI=true
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#9400d3"
 ZSH_FZF_HISTORY_SEARCH_BIND="^S"
-EMOJI_CLI_KEYBIND="^X^S"</code></pre>
+EMOJI_CLI_KEYBIND="^X^S"
 ```
 
 and then simply execute vtplug after that :

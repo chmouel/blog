@@ -7,7 +7,6 @@ body.dark .logo a {
 }
 
 body:not(.dark) .logo a {
-  color: #ff50bc;
 }
 
 .highlight pre {
@@ -15,11 +14,14 @@ body:not(.dark) .logo a {
   padding: 5px;
 }
 
-.entry-footer,
-.post-meta {
+.entry-footer {
   font-style: italic;
   font-size: 10px;
   text-align: right;
+}
+
+.post-meta {
+  width: 100%;
 }
 
 .post-entry {

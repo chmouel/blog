@@ -20,7 +20,7 @@ minify:
 
 params:
   env: production
-  defaultTheme: auto
+  defaultTheme: light
   # disableThemeToggle: true
   # ShowPostNavLinks: true
   ShowCodeCopyButtons: true
@@ -51,3 +51,6 @@ menus:
       url: "https://twitter.com/chmouel"
     - name: "Strava"
       url: "https://app.strava.com/athletes/126695"
+privacy:
+  youtube:
+    privacyEnhanced: true
