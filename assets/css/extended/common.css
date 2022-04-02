@@ -7,7 +7,9 @@ body.dark .logo a {
 }
 
 body:not(.dark) .logo a {
+  color: #bd93f9;
 }
+
 
 .highlight pre {
   box-shadow: 5px 5px 10px #3c2c3d;
