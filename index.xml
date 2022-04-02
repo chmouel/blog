@@ -81,8 +81,7 @@ I didn&amp;rsquo;t need much at that time since I was already settled with every
       <guid>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</guid>
       <description>One of the early goal of Pipelines as Codeon Tekton is to make sure we were able to have the project CI running with itself.
 The common user case of validating pull request was quickly implemented and you can find more information about it in this walkthough video :
-
-For slightly more advanced use case here is how we made a release pipeline for the project.
+  For slightly more advanced use case here is how we made a release pipeline for the project.
 The goal is when we tag a release and push the tags to the GitHUB repo it will</description>
     </item>
     
