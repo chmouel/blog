@@ -20,7 +20,7 @@ minify:
 
 params:
   env: production
-  defaultTheme: light
+  defaultTheme: auto
   # disableThemeToggle: true
   # ShowPostNavLinks: true
   ShowCodeCopyButtons: true
