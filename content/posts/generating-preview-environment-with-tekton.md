@@ -9,25 +9,30 @@ get a nice documentation website on :
 
 <https://pipelinesascode.com>
 
-The website is a statically generated website based on
-[Hugo](https://gohugo.io/) hosted on [CloudFares
+The website is statically generated with
+[Hugo](https://gohugo.io/) and hosted on [CloudFares
 Pages](https://pages.cloudfare.com) using the markdown files from the
 repository.
 
-So far this is pretty standard but when we wanted to get preview URLS like
-`netlify` does with `cloudfare` it seems that previews url would not be
-processed on `Pull Request` coming from forks but only from branch coming from
-the same repository.
+So far that's a pretty standard stack, but what we wanted is to be able to get
+preview URLS like what [`netlify`](https://www.netlify.com/) does from `Cloudfare`.
 
-Since we do our own dogfood, I started to implement a preview environement
-mechanism with Tekton and `Pipelines as Code` to get a link with the changes
-from the pull requst if the `doc/` folder is modified.
+There is a nice check box, that says "Generate Preview URL on Pull Request"
+which seems to do what we want but it doesn't. So far it seems that `Pull
+Request` coming from forks are not processed only the one from branch coming
+from the same repository where the pull request is.
+
+Since we do our own dogfood and we want anyway to use `Pipelines as Code` and
+`Tekton` as much as possible, I started to implement a preview environement
+mechanism to get a link with the changes from the pull request if the `doc/`
+folder is modified inside the PR.
 
 I have again used my toy webserver,
-[`go-simple-uploader`](https://github.com/chmouel/go-simple-uploader) to be
-able to serve files, but first I had to make a few changes to it:
+[`go-simple-uploader`](https://github.com/chmouel/go-simple-uploader) (which we
+have been used previously for artifacts caching) to serve the static HTML
+generate with hugo, but first I had to make a few changes to it:
 
-* Added an OpenShift Route to dircetly expose it to the internet. It previously
+* Added an OpenShift Route to directly expose it to the internet. It previously
   was only accessible via the local kubernetes service across pods.
 
 * I added a capability to be able to send a tarball when uploading, so we can
@@ -37,9 +42,9 @@ able to serve files, but first I had to make a few changes to it:
 * I modified the server to add authentication to the `/upload` endpoint via a
   username and password. Just to make sure nobody abuse from it.
 
-So far so good after having the new image deployed on our cluster, I started to
-modify our `Pipelines as Code`/`Tekton` template in the `.tekton` directory to
-start generating the preview env on pull requests.
+So far so good and after having the new image deployed on our cluster, I
+modified our `Pipelines as Code`/`Tekton` template in the `.tekton` directory
+to get those preview URLS generated.
 
 The whole bits added is here :
 
