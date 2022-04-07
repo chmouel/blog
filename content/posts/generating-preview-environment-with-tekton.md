@@ -15,7 +15,8 @@ Pages](https://pages.cloudfare.com) using the markdown files from the
 repository.
 
 So far that's a pretty standard stack, but what we wanted is to be able to get
-preview URLS like what [Netlify](https://www.netlify.com/) does from `Cloudfare`.
+preview URLS like on [Netlify](https://docs.netlify.com/site-deploys/deploy-previews/) 
+or other [CI](https://docs.gitlab.com/ee/ci/review_apps/)s
 
 There is a nice check box, that says "Generate Preview URL on Pull Request"
 which seems to do what we want but it doesn't. So far it seems that `Pull
