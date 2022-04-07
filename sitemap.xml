@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.chmouel.com/</loc>
-    <lastmod>2022-03-18T11:06:19+00:00</lastmod>
+    <lastmod>2022-04-07T20:50:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.chmouel.com/posts/generating-preview-environment-with-tekton/</loc>
+    <lastmod>2022-04-07T20:50:00+02:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/posts/</loc>
-    <lastmod>2022-03-18T11:06:19+00:00</lastmod>
+    <lastmod>2022-04-07T20:50:00+02:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/2022/03/18/vtplug-a-very-dumb-and-tiny-zsh-plugin-manager/</loc>
     <lastmod>2022-03-18T11:06:19+00:00</lastmod>

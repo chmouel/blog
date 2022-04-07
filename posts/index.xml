@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 18 Mar 2022 11:06:19 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Apr 2022 20:50:00 +0200</lastBuildDate><atom:link href="https://blog.chmouel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generating Preview Environments with Tekton</title>
+      <link>https://blog.chmouel.com/posts/generating-preview-environment-with-tekton/</link>
+      <pubDate>Thu, 07 Apr 2022 20:50:00 +0200</pubDate>
+      
+      <guid>https://blog.chmouel.com/posts/generating-preview-environment-with-tekton/</guid>
+      <description>On Pipelines as Code we started to get a nice documentation website on :
+https://pipelinesascode.com
+The website is a statically generated website based on Hugo hosted on CloudFares Pages using the markdown files from the repository.
+So far this is pretty standard but when we wanted to get preview URLS like netlify does with cloudfare it seems that previews url would not be processed on Pull Request coming from forks but only from branch coming from the same repository.</description>
+    </item>
+    
     <item>
       <title>vtplug a very dumb and tiny zsh plugin manager</title>
       <link>https://blog.chmouel.com/2022/03/18/vtplug-a-very-dumb-and-tiny-zsh-plugin-manager/</link>
@@ -210,16 +222,6 @@ So far so good, but the thing is my VM at my hosting provider is pretty small an
       <description>I have been meaning to automate my deployment directly from my small python application without having to use the openshift client (oc) directly.
 OpenShift use a REST API and the oc client uses it to communicate with the server, you can actually see all the REST operation the oc client is doing if you specify the &amp;ndash;loglevel=7 (it goes to 10 to get even more debug info) :
 I was thinking to come up with my own python rest wrapper since a google quick search didn&amp;rsquo;t come up with any binding.</description>
-    </item>
-    
-    <item>
-      <title>Getting openshift origin “cluster up” working with xhyve</title>
-      <link>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</link>
-      <pubDate>Mon, 19 Sep 2016 06:00:54 +0000</pubDate>
-      
-      <guid>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</guid>
-      <description>In latest openshift client (oc) there is a nifty (relatively) new feature to get you a OpenShift cluster starting (very) quickly. It&amp;rsquo;s a pretty nice way to get you a new openshift origin environment on your laptop without the hassle.
-On macosx there is a (as well relatively) new lightweight virtualization solution called xhyve it&amp;rsquo;s a bit like KVM in the sense of being lightweight and does not need like virtualbox or vmware to get a UI running.</description>
     </item>
     
   </channel>
