@@ -51,6 +51,8 @@ menus:
       url: "https://twitter.com/chmouel"
     - name: "Strava"
       url: "https://app.strava.com/athletes/126695"
+    - name: "Work"
+      url: "https://redhat.com"
 privacy:
   youtube:
     privacyEnhanced: true
