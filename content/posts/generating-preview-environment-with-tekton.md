@@ -118,4 +118,4 @@ be previewed.
 * [`Pipelines as Code pull request template`](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.tekton/pull-request.yaml)
 * [`Go Simple Uploader`](https://github.com/chmouel/go-simple-uploader)
 
-![Preview URL on CI](../images/previewurl.png)
+![Preview URL on CI](../../images/previewurl.png)
