@@ -16,7 +16,7 @@
       <description>On Pipelines as Code we started to get a nice documentation website on :
 https://pipelinesascode.com
 The website is statically generated with Hugo and hosted on CloudFares Pages using the markdown files from the repository.
-So far that&amp;rsquo;s a pretty standard stack, but what we wanted is to be able to get preview URLS like what Netlify does from Cloudfare.
+So far that&amp;rsquo;s a pretty standard stack, but what we wanted is to be able to get preview URLS like on Netlify or other CIs
 There is a nice check box, that says &amp;ldquo;Generate Preview URL on Pull Request&amp;rdquo; which seems to do what we want but it doesn&amp;rsquo;t.</description>
     </item>
     
