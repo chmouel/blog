@@ -15,8 +15,9 @@
       <guid>https://blog.chmouel.com/posts/generating-preview-environment-with-tekton/</guid>
       <description>On Pipelines as Code we started to get a nice documentation website on :
 https://pipelinesascode.com
-The website is a statically generated website based on Hugo hosted on CloudFares Pages using the markdown files from the repository.
-So far this is pretty standard but when we wanted to get preview URLS like netlify does with cloudfare it seems that previews url would not be processed on Pull Request coming from forks but only from branch coming from the same repository.</description>
+The website is statically generated with Hugo and hosted on CloudFares Pages using the markdown files from the repository.
+So far that&amp;rsquo;s a pretty standard stack, but what we wanted is to be able to get preview URLS like what netlify does from Cloudfare.
+There is a nice check box, that says &amp;ldquo;Generate Preview URL on Pull Request&amp;rdquo; which seems to do what we want but it doesn&amp;rsquo;t.</description>
     </item>
     
     <item>
