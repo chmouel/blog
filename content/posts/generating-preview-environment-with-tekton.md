@@ -3,8 +3,8 @@ title: "Generating Preview Environments with Tekton"
 date: 2022-04-07T20:50:00+02:00
 ---
 
-On [`Pipelines as
-Code`](htps://github.com/openshift-pipelines/pipelines-as-code) we started to
+On [Pipelines as
+Code](htps://github.com/openshift-pipelines/pipelines-as-code) we started to
 get a nice documentation website on :
 
 <https://pipelinesascode.com>
