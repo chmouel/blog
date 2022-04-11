@@ -3,8 +3,8 @@ title: "Generating Preview Environments with Tekton"
 date: 2022-04-07T20:50:00+02:00
 ---
 
-On [`Pipelines as
-Code`](htps://github.com/openshift-pipelines/pipelines-as-code) we started to
+On [Pipelines as
+Code](htps://github.com/openshift-pipelines/pipelines-as-code) we started to
 get a nice documentation website on :
 
 <https://pipelinesascode.com>
@@ -15,7 +15,8 @@ Pages](https://pages.cloudfare.com) using the markdown files from the
 repository.
 
 So far that's a pretty standard stack, but what we wanted is to be able to get
-preview URLS like what [`netlify`](https://www.netlify.com/) does from `Cloudfare`.
+preview URLS like on [Netlify](https://docs.netlify.com/site-deploys/deploy-previews/) 
+or other [CI](https://docs.gitlab.com/ee/ci/review_apps/)s
 
 There is a nice check box, that says "Generate Preview URL on Pull Request"
 which seems to do what we want but it doesn't. So far it seems that `Pull
@@ -28,7 +29,7 @@ mechanism to get a link with the changes from the pull request if the `doc/`
 folder is modified inside the PR.
 
 I have again used my toy webserver,
-[`go-simple-uploader`](https://github.com/chmouel/go-simple-uploader) (which we
+[go-simple-uploader](https://github.com/chmouel/go-simple-uploader) (which we
 have been used previously for artifacts caching) to serve the static HTML
 generate with hugo, but first I had to make a few changes to it:
 
@@ -114,8 +115,10 @@ be previewed.
 
 ### Links
 
-* [`Pipelines as Code`](https://github.com/openshift-pipelines/pipelines-as-code)
-* [`Pipelines as Code pull request template`](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.tekton/pull-request.yaml)
-* [`Go Simple Uploader`](https://github.com/chmouel/go-simple-uploader)
+* [Pipelines as Code](https://github.com/openshift-pipelines/pipelines-as-code)
+* [Pipelines as Code pull request template](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.tekton/pull-request.yaml)
+* [Go Simple Uploader](https://github.com/chmouel/go-simple-uploader)
 
-![Preview URL on CI](../images/previewurl.png)
+## Screenshot
+
+![Preview URL on CI](../../images/previewurl.png)
