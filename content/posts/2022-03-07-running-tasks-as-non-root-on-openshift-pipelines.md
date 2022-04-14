@@ -82,7 +82,7 @@ userns-buildah : build] ++ id
 [...]
 ```
 
-## Mixing it with some tasks which needs root access
+## Mixing it with some tasks with root requirement
 
 In some situation you will need to be able to mix it with some tasks in your pipeline that mayb needs the root access. 
 
