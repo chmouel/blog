@@ -8,6 +8,7 @@ tags:
   - OpenShift
   - Tekton
 ---
+
 Expanding on my [previous blog post][1] on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.
 
 On OpenShift Pipelines we made the conscious decision to run all the TaskRuns and Pipelinerun by default under a custom ServiceAccount called `pipelines`.
@@ -34,7 +35,7 @@ The `ClusterTask` shipped with openshift-pipelines needs to have a slight modifi
 
 <https://gist.github.com/chmouel/8242806100ffa7164bb63d7d5b0a593d#file-buildah-task-yaml>
 
-### Example
+## Example
 
 Here is an example pipeline :
 
@@ -81,7 +82,24 @@ userns-buildah : build] ++ id
 [...]
 ```
 
-### Conclusion
+## Mixing it with some tasks which needs root access
+
+In some situation you will need to be able to mix it with some tasks in your pipeline that mayb needs the root access. 
+
+You can do this by createing a new `ServiceAccount` with elevated rights as needed (ie: like cluster-admin but you may want to lower this).
+
+In your PipelineRun you can use a [taskRunSpecs](https://tekton.dev/docs/pipelines/pipelineruns/#specifying-taskrunspecs) to force it to use that serviceaccount instead of the normal one : 
+
+```
+  taskRunSpecs:
+    - pipelineTaskName: task-that-needs-root-access
+      taskServiceAccountName: elevated-right-sa
+```
+
+and the task `task-that-needs-root-access` will be run with the `elevated-right-sa` all other tasks will be run with the default SA `pipelines` 
+
+
+## Conclusion
 
 There may be some restrictions when running rootless buildah where some images may not work but for most use cases this it should not need elevated priviliges to run your Tasks.
 
