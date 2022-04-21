@@ -132,8 +132,8 @@ seLinuxContext section to MustRunAs to uid 1000 :
 runAsUser:
   type: MustRunAs
   uid: 1000
-  seLinuxContext:
-    type: MustRunAs
+seLinuxContext:
+  type: MustRunAs
 ```
 
 The pipeline serviceaccount will only allow running images as user 1000 and not
