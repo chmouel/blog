@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 07 Apr 2022 20:50:00 +0200</lastBuildDate><atom:link href="https://blog.chmouel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 09:54:31 +0200</lastBuildDate><atom:link href="https://blog.chmouel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Error chaining with Rust and Go</title>
+      <link>https://blog.chmouel.com/posts/rust-errorhandling/</link>
+      <pubDate>Fri, 20 May 2022 09:54:31 +0200</pubDate>
+      
+      <guid>https://blog.chmouel.com/posts/rust-errorhandling/</guid>
+      <description>I was talking with a colleague about Rust and we were wondering (since we are both learning the language) how error handling compares to Go.
+Chaining error in Go Go&amp;rsquo;s best practice when you want to chain multiple errors is to &amp;ldquo;wrap&amp;rdquo; them.
+For example let&amp;rsquo;s say you have this function returning an error:
+fn do_something() err {  value := &amp;#34;value&amp;#34;  if value != &amp;#34;expected&amp;#34; {  return fmt.</description>
+    </item>
+    
     <item>
       <title>Generating Preview Environments with Tekton</title>
       <link>https://blog.chmouel.com/posts/generating-preview-environment-with-tekton/</link>
@@ -212,17 +224,6 @@ It has integration for spotify, airplay, netradio and billions of connection to 
       <guid>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</guid>
       <description>I have been meaning to get this blog SSL protected for a while and since solution like letsencrypt makes it easy I have generated some SSL keys for my domain and configured it in apache.
 So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using varnish for quite some time or I would get out of memory quickly some the kernel OOM killer kicking1 it.</description>
-    </item>
-    
-    <item>
-      <title>Using python to drive OpenShift REST API</title>
-      <link>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</link>
-      <pubDate>Mon, 19 Sep 2016 08:19:50 +0000</pubDate>
-      
-      <guid>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</guid>
-      <description>I have been meaning to automate my deployment directly from my small python application without having to use the openshift client (oc) directly.
-OpenShift use a REST API and the oc client uses it to communicate with the server, you can actually see all the REST operation the oc client is doing if you specify the &amp;ndash;loglevel=7 (it goes to 10 to get even more debug info) :
-I was thinking to come up with my own python rest wrapper since a google quick search didn&amp;rsquo;t come up with any binding.</description>
     </item>
     
   </channel>
