@@ -14,7 +14,7 @@ Go's best practice when you want to chain multiple errors is to "wrap" them.
 For example let's say you have this function returning an error:
 
 ```go
-fn do_something() err {
+func do_something() err {
  value := "value"
   if value != "expected" {
     return fmt.Errorf("this was not expected")
@@ -107,7 +107,7 @@ Caused by:
 
 with the help of anyhow and thiserror we are nicely showing the chain of errors and what caused it.
 
-## My very humble comparaison between Go and Rust error chaining
+## My humble comparaison between Go and Rust error chaining
 
 The go way is definitely more idiomatic and much easier to write and understand
 than the the rust way. However the Rust way is more elegant and I feel
