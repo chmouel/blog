@@ -32,7 +32,7 @@ When you were in school your teacher told you about &amp;ldquo;XML&amp;rdquo; an
       <pubDate>Fri, 02 Sep 2011 03:00:13 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</guid>
-      <description>I have done lately quite a bit of work with python-novaclientthe (nova/keystone) openstack client. I often experiment it with ipythonin the console.
+      <description>I have done lately quite a bit of work with python-novaclient the (nova/keystone) openstack client. I often experiment it with ipython in the console.
 There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :
 This would give you the details of the session showing you the REST requests and responses including the headers.</description>
     </item>

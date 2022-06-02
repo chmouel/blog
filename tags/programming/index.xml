@@ -33,8 +33,7 @@ So far so good, but the thing is my VM at my hosting provider is pretty small an
       
       <guid>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</guid>
       <description>How I feel when I try to address all pylint warning/errors:
-
- Adapted from http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards</description>
+Adapted from http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards</description>
     </item>
     
     <item>
@@ -54,9 +53,11 @@ Plugging those two just seemed natural I had already this in my emacs to quickly
       <pubDate>Sun, 17 Jul 2011 07:32:09 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2011/07/17/rackspace-clouddns-python-binding/</guid>
-      <description>I have released a python binding to Rackspace CloudDNShere which allow you to create/update/delete domains and records. It&amp;rsquo;s available on github
-https://github.com/rackspace/python-clouddns/The binding is pretty simple and have unfortunately no documentation (or even tests) but you can figure out most of it from here :
-https://github.com/rackspace/python-clouddns/blob/master/tests/t.pyI will be very welcoming pull request that add a bit of documentation.</description>
+      <description>I have released a python binding to Rackspace CloudDNS here which allow you to create/update/delete domains and records. It&amp;rsquo;s available on github
+https://github.com/rackspace/python-clouddns/
+The binding is pretty simple and have unfortunately no documentation (or even tests) but you can figure out most of it from here :
+https://github.com/rackspace/python-clouddns/blob/master/tests/t.py
+I will be very welcoming pull request that add a bit of documentation.</description>
     </item>
     
     <item>
@@ -112,8 +113,7 @@ There is actually a very easy (and secure) way on Debian based systems.</descrip
       <pubDate>Mon, 17 May 2010 20:33:47 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2010/05/17/using-jython-with-the-vcloud-api/</guid>
-      <description>Lately I had to do a lot of works with the VMware VCloudproduct and since the python API did not seem available and I did not have the courage to use the PHP API I had to do most of the API works with Java. I never did any Java before and while I have found Eclipse+Java development surprisingly pleasant and easy to use/learn my favourite are still Emacs+Python.
-I have then started to look over Jython to see if I can interact easily with Java via Python and this was actually pretty easy, it took me less than 10mn to convert a Login/Listing-VAPPS script in Jython.</description>
+      <description>Lately I had to do a lot of works with the VMware VCloud product and since the python API did not seem available and I did not have the courage to use the PHP API I had to do most of the API works with Java. I never did any Java before and while I have found Eclipse+Java development surprisingly pleasant and easy to use/learn my favourite are still Emacs+Python.</description>
     </item>
     
     <item>
@@ -132,7 +132,8 @@ I have add that feature properly to the PHP and Python API in version 1.5.0 to a
       <pubDate>Wed, 14 Oct 2009 00:47:27 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</guid>
-      <description>If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.</description>
+      <description>If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.
+The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.</description>
     </item>
     
     <item>
@@ -164,8 +165,7 @@ http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master</description
       <pubDate>Wed, 15 Jul 2009 23:47:55 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2009/07/16/better-output-from-sqlite3-command-line/</guid>
-      <description>That weird output from sqlite3 command line is annoying you as well ? Just set this up to get something better :
-  </description>
+      <description>That weird output from sqlite3 command line is annoying you as well ? Just set this up to get something better :</description>
     </item>
     
     <item>
@@ -176,8 +176,7 @@ http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master</description
       <guid>https://blog.chmouel.com/2008/03/21/ruby-xmlrpc-over-a-self-certified-ssl-with-a-warning/</guid>
       <description>If you use the XMLRPC client in ruby over a self certified SSL you have this warning :
 warning: peer certificate won&amp;rsquo;t be verified in this SSL session
-You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :
-  </description>
+You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :</description>
     </item>
     
     <item>
@@ -190,7 +189,7 @@ You can get override that warning cleanly (i have seen some people who just comm
 of yum to not be able to force listing the excludes from yum. I had a
 shoot to make a yum plugin to force listing the excludes.
 Here is how it works :
- root@centos5:~&amp;gt; grep exclude /etc/yum.conf
+root@centos5:~&amp;gt; grep exclude /etc/yum.conf
 exclude=rpm*
 root@centos5:~&amp;gt; yum install rpm-devel
 Loading &amp;ldquo;installonlyn&amp;rdquo; plugin

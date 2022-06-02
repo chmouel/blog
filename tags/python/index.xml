@@ -13,8 +13,8 @@
       <pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid>
-      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Montystarted to mentionon the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
-The idea of dox is like the name imply is to slightly behave like the toxtool but instead of running virtualenvs you are using docker containers.</description>
+      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Monty started to mention on the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
+The idea of dox is like the name imply is to slightly behave like the tox tool but instead of running virtualenvs you are using docker containers.</description>
     </item>
     
     <item>
@@ -24,8 +24,7 @@ The idea of dox is like the name imply is to slightly behave like the toxtool bu
       
       <guid>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</guid>
       <description>How I feel when I try to address all pylint warning/errors:
-
- Adapted from http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards</description>
+Adapted from http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards</description>
     </item>
     
     <item>
@@ -44,7 +43,7 @@ When using emacs I wanted a simple way to launch a nosetests on the current func
       <pubDate>Fri, 02 Sep 2011 03:00:13 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</guid>
-      <description>I have done lately quite a bit of work with python-novaclientthe (nova/keystone) openstack client. I often experiment it with ipythonin the console.
+      <description>I have done lately quite a bit of work with python-novaclient the (nova/keystone) openstack client. I often experiment it with ipython in the console.
 There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :
 This would give you the details of the session showing you the REST requests and responses including the headers.</description>
     </item>
@@ -79,8 +78,7 @@ which would automatically download the tarball from pypi and install it as a pac
       <pubDate>Sat, 09 Jan 2010 14:42:19 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</guid>
-      <description>Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.
-  </description>
+      <description>Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.</description>
     </item>
     
     <item>
@@ -104,8 +102,8 @@ been working great so far but my only concerns are the notifications
 on the desktop when something happening.
 Over the time I have found some different solution with mitigated
 results for me :
-  Use fanotify script with the libnotify-bin and SSH like mentioned here.
-  Setup your irssi (or other) as irc proxy bouncer and connect with</description>
+Use fanotify script with the libnotify-bin and SSH like mentioned here.
+Setup your irssi (or other) as irc proxy bouncer and connect with</description>
     </item>
     
     <item>
@@ -124,7 +122,8 @@ I have add that feature properly to the PHP and Python API in version 1.5.0 to a
       <pubDate>Wed, 14 Oct 2009 00:47:27 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</guid>
-      <description>If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.</description>
+      <description>If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.
+The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.</description>
     </item>
     
     <item>
@@ -148,7 +147,7 @@ You need to install pyflakes first which should be available on your linux distr
 of yum to not be able to force listing the excludes from yum. I had a
 shoot to make a yum plugin to force listing the excludes.
 Here is how it works :
- root@centos5:~&amp;gt; grep exclude /etc/yum.conf
+root@centos5:~&amp;gt; grep exclude /etc/yum.conf
 exclude=rpm*
 root@centos5:~&amp;gt; yum install rpm-devel
 Loading &amp;ldquo;installonlyn&amp;rdquo; plugin
@@ -217,7 +216,13 @@ http://trac.gajim.org/ticket/1998</description>
       <pubDate>Sun, 09 Apr 2006 06:07:50 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/04/09/python-25-beta/</guid>
-      <description>I have been looking at the What&amp;rsquo;s new __of Python 2.5. There is some cool features inside it :Conditional Expressions:This stuff basically allow to do standard C idiom (that we found in every kind of derivative language) likea = condition ? &amp;ldquo;true&amp;rdquo; : &amp;ldquo;false&amp;rdquo;the weird part is that Guido Van-Rossum implemented this syntax :x = true_value if condition else false_valuewhich we will have to get use to. I am not a big fan of this feature since it makes the code more obscure.</description>
+      <description>I have been looking at the What&amp;rsquo;s new __of Python 2.5. There is some cool features inside it :
+Conditional Expressions:
+This stuff basically allow to do standard C idiom (that we found in every kind of derivative language) like
+a = condition ? &amp;ldquo;true&amp;rdquo; : &amp;ldquo;false&amp;rdquo;
+the weird part is that Guido Van-Rossum implemented this syntax :
+x = true_value if condition else false_value
+which we will have to get use to.</description>
     </item>
     
   </channel>

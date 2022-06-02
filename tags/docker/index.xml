@@ -43,8 +43,8 @@ The advantage of this method is probably an article of its own which I won&amp;r
       <pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid>
-      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Montystarted to mentionon the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
-The idea of dox is like the name imply is to slightly behave like the toxtool but instead of running virtualenvs you are using docker containers.</description>
+      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Monty started to mention on the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
+The idea of dox is like the name imply is to slightly behave like the tox tool but instead of running virtualenvs you are using docker containers.</description>
     </item>
     
   </channel>

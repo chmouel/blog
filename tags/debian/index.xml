@@ -14,7 +14,7 @@
       
       <guid>https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/</guid>
       <description>Spent a bit of time to configure my Nokia mobile to teethering wih my Linux and T-Mobile. Here is some steps that may help the others :
- If you don&amp;rsquo;t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven&amp;rsquo;t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the driver (manually not via the setup.</description>
+If you don&amp;rsquo;t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven&amp;rsquo;t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the driver (manually not via the setup.</description>
     </item>
     
     <item>
@@ -35,9 +35,9 @@ echo &amp;quot;/sbin/ip link set wlan0 up&amp;quot;|sudo tee /etc/default/Networ
       
       <guid>https://blog.chmouel.com/2009/06/16/debian-lenny-on-dell-optiflex-760/</guid>
       <description>So if you get that shiny new Dell desktop and ACPI spit bunch of message at the install time and the network driver does not get detected you can follow these steps to have it working.
-  Continue the install without the network until you reboot to grub.
-  Add hpet=disable at the end of the boot kernel parameter and get into the system.
-  Download the latest kernel for your architecture on :</description>
+Continue the install without the network until you reboot to grub.
+Add hpet=disable at the end of the boot kernel parameter and get into the system.
+Download the latest kernel for your architecture on :</description>
     </item>
     
   </channel>

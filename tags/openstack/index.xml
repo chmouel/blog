@@ -23,8 +23,8 @@ A lot of the things happening lately in the Docker world is to solve how to get 
       <pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid>
-      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Montystarted to mentionon the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
-The idea of dox is like the name imply is to slightly behave like the toxtool but instead of running virtualenvs you are using docker containers.</description>
+      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Monty started to mention on the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
+The idea of dox is like the name imply is to slightly behave like the tox tool but instead of running virtualenvs you are using docker containers.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ The idea of dox is like the name imply is to slightly behave like the toxtool bu
       <guid>https://blog.chmouel.com/2014/03/14/how-do-i-manage-my-copyright-headers-in-emacs/</guid>
       <description>My day to day being work or personal is to create OpenSource code. As an habit I have taken lately I am adding licenses to all new files I am creating.
 I have historically used the `auto-insert-mode with a default template. For example for my newly created python files I would have this for configration :
-;AutoInsert (auto-insert-mode &amp;#39;t) (setq auto-insert-alist &amp;#39;((python-mode . &amp;#34;python.py&amp;#34;))) and in my `auto-insert-directorydirectory there would be a python.</description>
+;AutoInsert (auto-insert-mode &amp;#39;t) (setq auto-insert-alist &amp;#39;((python-mode . &amp;#34;python.py&amp;#34;))) and in my `auto-insert-directory directory there would be a python.</description>
     </item>
     
     <item>
@@ -78,7 +78,7 @@ For example when I wanted to remove the account quota header from an account wit
       <description>It is easy to launch the swift functional tests with v2 auth (Keystone).
 Assuming you have a recent version of python-swiftclient, python-keystoneclient and swift you need to first add a few users which is easily done with this script :
 Assuming you have already your OS_* variables configured with an admin, you can just launch it and it will :
- add a tenant/user named test/tester. add a tenant/user name test2/tester2.</description>
+add a tenant/user named test/tester. add a tenant/user name test2/tester2. add a user tester3 belonging to test2 but not operator on that tenant.</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@ Assuming you have already your OS_* variables configured with an admin, you can 
       <guid>https://blog.chmouel.com/2013/05/02/keystone-pki-tokens-overview/</guid>
       <description>PKI tokens has been implemented in keystone by Adam Young and others and was shipped for the OpenStack grizlly release. It is available since the version 2.0 API of keystone.
 PKI is a beautiful acronym to Public-key infrastructure which according to wikipedia defines it like this :
- Public-key cryptography is a cryptographic technique that enables users to securely communicate on an insecure public network, and reliably verify the identity of a user via digital signatures.</description>
+Public-key cryptography is a cryptographic technique that enables users to securely communicate on an insecure public network, and reliably verify the identity of a user via digital signatures.</description>
     </item>
     
     <item>
@@ -177,7 +177,7 @@ Feel free to grab the middle-ware or report issue from fujita&amp;rsquo;s reposi
       <guid>https://blog.chmouel.com/2012/04/25/swift-integration-with-other-openstack-components-in-essex/</guid>
       <description>During the development for OpenStack Essex a lot of work has been done to make Swift working well with the other OpenStack components, this is a list of the work that has been done.
 MIDDLEWARE To make Swift behaving well in the &amp;lsquo;stack&amp;rsquo; we had to get a rock solid keystone middleware and make sure most of the features provided by Swift would be supported by the middleware.
-The middleware is currently locatedin the keystone essex repository and was entirely rewritten from the Diablo release to allow support these Swift features :</description>
+The middleware is currently located in the keystone essex repository and was entirely rewritten from the Diablo release to allow support these Swift features :</description>
     </item>
     
     <item>
@@ -201,14 +201,15 @@ There is quite a bit of tools shipped with Swift to ensure you have the right ob
 At first there is the basic :
 swift-object-info
 It will take a swift object stored on the filesystem and print some infos about it, like this :
- swift@storage01:0/016/0b221bab535ac1b8f0d91e394f225016$ swift-object-info 1327991417.01411.data
+swift@storage01:0/016/0b221bab535ac1b8f0d91e394f225016$ swift-object-info 1327991417.01411.data
 Path: /AUTH_root/foobar/file.txt
 Account: AUTH_root
 Container: foobar
 Object: file.txt
 Object hash: 0b221bab535ac1b8f0d91e394f225016
 Ring locations:
-192.168.254.12:6000 - /srv/node/sdb1/objects/0/016/0b221bab535ac1b8f0d91e394f225016/1327991417.01411.data</description>
+192.168.254.12:6000 - /srv/node/sdb1/objects/0/016/0b221bab535ac1b8f0d91e394f225016/1327991417.01411.data
+Content-Type: text/plain</description>
     </item>
     
     <item>
@@ -217,7 +218,8 @@ Ring locations:
       <pubDate>Thu, 24 Nov 2011 09:20:39 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2011/11/24/swift-and-keystone-middleware-part1/</guid>
-      <description>[NB: Much things has changed since I have written this article but keeping it here for info]It seems that integrating Swiftand Keystonetogether present some challenges to people and this is absolutely normal as there is a lot of changes going on. This is my attempt to document how everything is plugged together.
+      <description>[NB: Much things has changed since I have written this article but keeping it here for info]
+It seems that integrating Swift and Keystone together present some challenges to people and this is absolutely normal as there is a lot of changes going on. This is my attempt to document how everything is plugged together.
 I am not going to explain how a middleware is supposed to work as this is nicely documented on Wikipedia :</description>
     </item>
     
@@ -227,7 +229,7 @@ I am not going to explain how a middleware is supposed to work as this is nicely
       <pubDate>Fri, 02 Sep 2011 03:00:13 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</guid>
-      <description>I have done lately quite a bit of work with python-novaclientthe (nova/keystone) openstack client. I often experiment it with ipythonin the console.
+      <description>I have done lately quite a bit of work with python-novaclient the (nova/keystone) openstack client. I often experiment it with ipython in the console.
 There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :
 This would give you the details of the session showing you the REST requests and responses including the headers.</description>
     </item>

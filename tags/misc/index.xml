@@ -28,8 +28,8 @@ been working great so far but my only concerns are the notifications
 on the desktop when something happening.
 Over the time I have found some different solution with mitigated
 results for me :
-  Use fanotify script with the libnotify-bin and SSH like mentioned here.
-  Setup your irssi (or other) as irc proxy bouncer and connect with</description>
+Use fanotify script with the libnotify-bin and SSH like mentioned here.
+Setup your irssi (or other) as irc proxy bouncer and connect with</description>
     </item>
     
     <item>
@@ -40,8 +40,10 @@ results for me :
       <guid>https://blog.chmouel.com/2007/09/07/netapp-sue-sun/</guid>
       <description>This is fun, theses two CEO of theses big companies are dog fighting each others :
 Dave post:
-http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.htmlJohanthan answer:
-http://blogs.sun.com/jonathan/entry/on_patent_trollingbut the real (fake) truth about that post is here :
+http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.html
+Johanthan answer:
+http://blogs.sun.com/jonathan/entry/on_patent_trolling
+but the real (fake) truth about that post is here :
 http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html
 I tend to believe more NetAPP in this case, just because i don&amp;rsquo;t know how many time i have sweared on that bloody ps -aux that does not work on solaris.</description>
     </item>

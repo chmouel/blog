@@ -38,8 +38,8 @@ been working great so far but my only concerns are the notifications
 on the desktop when something happening.
 Over the time I have found some different solution with mitigated
 results for me :
-  Use fanotify script with the libnotify-bin and SSH like mentioned here.
-  Setup your irssi (or other) as irc proxy bouncer and connect with</description>
+Use fanotify script with the libnotify-bin and SSH like mentioned here.
+Setup your irssi (or other) as irc proxy bouncer and connect with</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ results for me :
       
       <guid>https://blog.chmouel.com/2009/12/05/vmware-vmplayer-and-kernel-2-6-32/</guid>
       <description>So you have a shiny new linux-2.6.32 kernel installed but your VMPlayer does not work anymore since the vmnet module does not compile by throwing this error :
- CC [M] /tmp/vmware-root/modules/vmnet-only/vnetEvent.o
+CC [M] /tmp/vmware-root/modules/vmnet-only/vnetEvent.o
 CC [M] /tmp/vmware-root/modules/vmnet-only/vnetUserListener.o
 /tmp/vmware-root/modules/vmnet-only/vnetUserListener.c: In function â€˜VNetUserListenerEventHandlerâ€™:
 /tmp/vmware-root/modules/vmnet-only/vnetUserListener.c:240: error: â€˜TASK_INTERRUPTIBLEâ€™ undeclared (first use in this function)
@@ -66,7 +66,7 @@ CC [M] /tmp/vmware-root/modules/vmnet-only/vnetUserListener.o
       
       <guid>https://blog.chmouel.com/2009/12/03/toshiba-regza-32av615db-blank-screen-hdmi-linux/</guid>
       <description>I have this nice Toshiba TV which is connected to a small Linux box which act as a media player. I have been some issue lately the things works fine under the 1920x1800 resolution most of the time. But once in a while I get a blank screen and the nvidia driver telling me this :
- (II) Dec 03 17:00:19 NVIDIA(0): &amp;ldquo;nvidia-auto-select&amp;rdquo;
+(II) Dec 03 17:00:19 NVIDIA(0): &amp;ldquo;nvidia-auto-select&amp;rdquo;
 (II) Dec 03 17:00:19 NVIDIA(0): Virtual screen size determined to be 640 x 480</description>
     </item>
     
@@ -77,7 +77,7 @@ CC [M] /tmp/vmware-root/modules/vmnet-only/vnetUserListener.o
       
       <guid>https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/</guid>
       <description>Spent a bit of time to configure my Nokia mobile to teethering wih my Linux and T-Mobile. Here is some steps that may help the others :
- If you don&amp;rsquo;t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven&amp;rsquo;t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the driver (manually not via the setup.</description>
+If you don&amp;rsquo;t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven&amp;rsquo;t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the driver (manually not via the setup.</description>
     </item>
     
   </channel>

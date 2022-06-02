@@ -16,7 +16,7 @@
       <description>I was talking with a colleague about Rust and we were wondering (since we are both learning the language) how error handling compares to Go.
 Chaining error in Go Go&amp;rsquo;s best practice when you want to chain multiple errors is to &amp;ldquo;wrap&amp;rdquo; them.
 For example let&amp;rsquo;s say you have this function returning an error:
-fn do_something() err {  value := &amp;#34;value&amp;#34;  if value != &amp;#34;expected&amp;#34; {  return fmt.</description>
+func do_something() err { value := &amp;#34;value&amp;#34; if value != &amp;#34;expected&amp;#34; { return fmt.Errorf(&amp;#34;this was not expected&amp;#34;) } } when we call the function do_something() from another function, we want to add context to it and to do so we will wrap it around it with the &amp;ldquo;%w&amp;rdquo; directive:</description>
     </item>
     
     <item>
@@ -104,9 +104,9 @@ I didn&amp;rsquo;t need much at that time since I was already settled with every
       <pubDate>Thu, 01 Jul 2021 12:44:25 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</guid>
-      <description>One of the early goal of Pipelines as Codeon Tekton is to make sure we were able to have the project CI running with itself.
+      <description>One of the early goal of Pipelines as Code on Tekton is to make sure we were able to have the project CI running with itself.
 The common user case of validating pull request was quickly implemented and you can find more information about it in this walkthough video :
-  For slightly more advanced use case here is how we made a release pipeline for the project.
+For slightly more advanced use case here is how we made a release pipeline for the project.
 The goal is when we tag a release and push the tags to the GitHUB repo it will</description>
     </item>
     
@@ -193,7 +193,7 @@ and as the error message says that&amp;rsquo;s not very secure #sadpanda.</des
       <guid>https://blog.chmouel.com/2016/09/28/easily-test-your-openshift-applications-exposed-by-the-router/</guid>
       <description>OpenShift integrate1 a router based on HAproxy to expose your services to the outside world. Whenever your do a :
 it would expose by default the servicename this URL :
-The defaultSubdomain is usually a wildcard DNS recordthat you have configured in your domain server by your system administrator. Now for your openshift testing if you don&amp;rsquo;t want to ask your system administrator to configure a new CNAME going to your testing environement you can just use the free service xp.</description>
+The defaultSubdomain is usually a wildcard DNS record that you have configured in your domain server by your system administrator. Now for your openshift testing if you don&amp;rsquo;t want to ask your system administrator to configure a new CNAME going to your testing environement you can just use the free service xp.</description>
     </item>
     
     <item>

@@ -15,8 +15,7 @@
       <guid>https://blog.chmouel.com/2008/03/21/ruby-xmlrpc-over-a-self-certified-ssl-with-a-warning/</guid>
       <description>If you use the XMLRPC client in ruby over a self certified SSL you have this warning :
 warning: peer certificate won&amp;rsquo;t be verified in this SSL session
-You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :
-  </description>
+You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :</description>
     </item>
     
   </channel>

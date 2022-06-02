@@ -27,7 +27,7 @@ change it to this :</description>
 MySQL or PostGres where we do that all the time i did not think that
 Oracle have to be such a pain.
 My only way i can find.
-  If i have the tablespace named tablesp1 and owned by the
+If i have the tablespace named tablesp1 and owned by the
 user user1, and i want to import it to another tablespace
 called tablesp2 in an another Oracle 9i tablespace with the user</description>
     </item>

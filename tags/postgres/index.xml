@@ -28,8 +28,7 @@ backup, we have tested with postgres 8.</description>
       <pubDate>Mon, 05 Jun 2006 08:26:55 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</guid>
-      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :
-  </description>
+      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :</description>
     </item>
     
   </channel>

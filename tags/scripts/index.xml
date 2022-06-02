@@ -43,8 +43,8 @@ So here is a shell script to upload to Rackspace Cloud Files and give you back a
       <pubDate>Wed, 02 Sep 2009 20:09:15 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2009/09/02/rsync-like-backup-to-rackspace-cloud-file-with-duplicity/</guid>
-      <description>It seems that there is no much documentation about how to do rsync like backup with duplictyso here it is :
- Install python-cloudfiles from here http://github.com/rackspace/python-cloudfiles  This should take care to upload the backup files to the backup container. It does that incrementally and detect the changes to your file system to upload. There is much more option for duplicity look at the manpage for more info.</description>
+      <description>It seems that there is no much documentation about how to do rsync like backup with duplicty so here it is :
+Install python-cloudfiles from here http://github.com/rackspace/python-cloudfiles This should take care to upload the backup files to the backup container. It does that incrementally and detect the changes to your file system to upload. There is much more option for duplicity look at the manpage for more info.</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master</description
       <pubDate>Sun, 08 Feb 2009 12:21:38 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2009/02/08/proxycommand-ssh-bastion-proxy/</guid>
-      <description>So at work we have to use a bastion hostfor all our connections to servers to be able to get called PCI compliant. This kind of stuff could be a pain to use when you have to use another host to do RSYNC/SCP or other stuff that need direct transfer to workstation.
+      <description>So at work we have to use a bastion host for all our connections to servers to be able to get called PCI compliant. This kind of stuff could be a pain to use when you have to use another host to do RSYNC/SCP or other stuff that need direct transfer to workstation.
 Thankfully OpenSSH is very flexible and have multiple options to easy the pain. If you add this to your ~/.</description>
     </item>
     
@@ -132,8 +132,7 @@ LINE=$(ssh -o StrictHostKeyChecking=yes $1 &amp;rsquo;exit&amp;rsquo; 2&amp;gt;&
       <pubDate>Wed, 07 Feb 2007 03:02:26 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2007/02/06/svn-diff-against-changes-in-the-remote-repository/</guid>
-      <description>A useful svn wrapper scripts. Get a diff of your local repostitory against the upstream repository changes. I wonder why it is not builtins though like a svn status -u but for dif.
-  </description>
+      <description>A useful svn wrapper scripts. Get a diff of your local repostitory against the upstream repository changes. I wonder why it is not builtins though like a svn status -u but for dif.</description>
     </item>
     
     <item>
@@ -145,8 +144,7 @@ LINE=$(ssh -o StrictHostKeyChecking=yes $1 &amp;rsquo;exit&amp;rsquo; 2&amp;gt;&
       <description>I better to keep that somewhere since i always forget that thing, to do a search and replace from the command line in zsh. you just have to do the :s^FOO^BAR after your expansion
 For example you just have typed the long command line :
 you can just type :
-and it will be expanded to :
-  </description>
+and it will be expanded to :</description>
     </item>
     
     <item>
@@ -155,8 +153,7 @@ and it will be expanded to :
       <pubDate>Mon, 05 Jun 2006 08:26:55 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</guid>
-      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :
-  </description>
+      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :</description>
     </item>
     
     <item>
@@ -165,8 +162,7 @@ and it will be expanded to :
       <pubDate>Thu, 25 May 2006 11:26:15 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/05/25/svn-diff-without-spaces/</guid>
-      <description>I am sic of spaces and having svn diff that does not get the spaces removed. So here is a simple script that does the stuff that you can use as your diff-cmd :
-  </description>
+      <description>I am sic of spaces and having svn diff that does not get the spaces removed. So here is a simple script that does the stuff that you can use as your diff-cmd :</description>
     </item>
     
   </channel>

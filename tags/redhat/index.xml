@@ -17,7 +17,7 @@
 of yum to not be able to force listing the excludes from yum. I had a
 shoot to make a yum plugin to force listing the excludes.
 Here is how it works :
- root@centos5:~&amp;gt; grep exclude /etc/yum.conf
+root@centos5:~&amp;gt; grep exclude /etc/yum.conf
 exclude=rpm*
 root@centos5:~&amp;gt; yum install rpm-devel
 Loading &amp;ldquo;installonlyn&amp;rdquo; plugin
