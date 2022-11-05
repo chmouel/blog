@@ -6,7 +6,17 @@
     <description>Recent content on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 20 May 2022 09:54:31 +0200</lastBuildDate><atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Nov 2022 09:00:56 +0200</lastBuildDate><atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>snazy - a convenient log viewer</title>
+      <link>https://blog.chmouel.com/posts/snazy-log-viewer/</link>
+      <pubDate>Sat, 05 Nov 2022 09:00:56 +0200</pubDate>
+      
+      <guid>https://blog.chmouel.com/posts/snazy-log-viewer/</guid>
+      <description>I have been meaning to write an article about tools that I have developped lately to make it easier for my day to day life work.
+Being a so called &amp;ldquo;kubernetes cloud native developer&amp;rdquo; (don&amp;rsquo;t laugh at the title because I do) I have to watch a log of controller logs. Most controller logs output in JSON format which is a nice tool for computers but not really easily parseable to the eyes for us mere mortals.</description>
+    </item>
+    
     <item>
       <title>Error chaining with Rust and Go</title>
       <link>https://blog.chmouel.com/posts/rust-errorhandling/</link>
@@ -17,16 +27,6 @@
 Chaining error in Go Go&amp;rsquo;s best practice when you want to chain multiple errors is to &amp;ldquo;wrap&amp;rdquo; them.
 For example let&amp;rsquo;s say you have this function returning an error:
 func do_something() err { value := &amp;#34;value&amp;#34; if value != &amp;#34;expected&amp;#34; { return fmt.Errorf(&amp;#34;this was not expected&amp;#34;) } } when we call the function do_something() from another function, we want to add context to it and to do so we will wrap it around it with the &amp;ldquo;%w&amp;rdquo; directive:</description>
-    </item>
-    
-    <item>
-      <title>snazy - a convenient log viewer</title>
-      <link>https://blog.chmouel.com/posts/snazy-log-viewer/</link>
-      <pubDate>Mon, 25 Apr 2022 17:49:56 +0200</pubDate>
-      
-      <guid>https://blog.chmouel.com/posts/snazy-log-viewer/</guid>
-      <description>I have been meaning to write an article about tools that I have developped lately to make it easier for my day to day life work.
-Being a so called &amp;ldquo;kubernetes cloud native developer&amp;rdquo; (don&amp;rsquo;t laugh at the title because I do) I have to watch a log of controller logs. Most controller logs output in JSON format which is a nice tool for computers but not really easily parseable to the eyes for us mere mortals.</description>
     </item>
     
     <item>
