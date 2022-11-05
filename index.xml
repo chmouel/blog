@@ -20,6 +20,16 @@ func do_something() err { value := &amp;#34;value&amp;#34; if value != &amp;#34;
     </item>
     
     <item>
+      <title>snazy - a convenient log viewer</title>
+      <link>https://blog.chmouel.com/posts/snazy-log-viewer/</link>
+      <pubDate>Mon, 25 Apr 2022 17:49:56 +0200</pubDate>
+      
+      <guid>https://blog.chmouel.com/posts/snazy-log-viewer/</guid>
+      <description>I have been meaning to write an article about tools that I have developped lately to make it easier for my day to day life work.
+Being a so called &amp;ldquo;kubernetes cloud native developer&amp;rdquo; (don&amp;rsquo;t laugh at the title because I do) I have to watch a log of controller logs. Most controller logs output in JSON format which is a nice tool for computers but not really easily parseable to the eyes for us mere mortals.</description>
+    </item>
+    
+    <item>
       <title>Generating Preview Environments with Tekton</title>
       <link>https://blog.chmouel.com/posts/generating-preview-environment-with-tekton/</link>
       <pubDate>Thu, 07 Apr 2022 20:50:00 +0200</pubDate>
@@ -214,16 +224,6 @@ The HAproxy stats are exposed on the port 1936 where the router is located (usu
       <guid>https://blog.chmouel.com/2016/09/23/controlling-yamaha-av-rx-a830-from-command-line/</guid>
       <description>At home I have been using a Yamaha AV RX-A380, it&amp;rsquo;s an home teather audio video solution where you can plug about everything you need (like 7 hdmi channel, spoiler alert there is something wrong with you if you have that many devices) and output to two other hdmi channel (like a tv and a projector).
 It has integration for spotify, airplay, netradio and billions of connection to everything, just look at the damn back of this device :</description>
-    </item>
-    
-    <item>
-      <title>The trick to get your wordpress behind a reverse proxy</title>
-      <link>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</link>
-      <pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate>
-      
-      <guid>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</guid>
-      <description>I have been meaning to get this blog SSL protected for a while and since solution like letsencrypt makes it easy I have generated some SSL keys for my domain and configured it in apache.
-So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using varnish for quite some time or I would get out of memory quickly some the kernel OOM killer kicking1 it.</description>
     </item>
     
   </channel>
