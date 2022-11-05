@@ -1,6 +1,6 @@
 ---
 title: "snazy - a convenient log viewer"
-date: 2022-04-25T17:49:56+02:00
+date: 2022-11-05T09:00:56+02:00
 ---
 I have been meaning to write an article about tools that I have developped
 lately to make it easier for my day to day life work.
