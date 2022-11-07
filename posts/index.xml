@@ -13,8 +13,8 @@
       <pubDate>Sat, 05 Nov 2022 09:00:56 +0200</pubDate>
       
       <guid>https://blog.chmouel.com/posts/snazy-log-viewer/</guid>
-      <description>I have been meaning to write an article about tools that I have developped lately to make it easier for my day to day life work.
-Being a so called &amp;ldquo;kubernetes cloud native developer&amp;rdquo; (don&amp;rsquo;t laugh at the title because I do) I have to watch a log of controller logs. Most controller logs output in JSON format which is a nice tool for computers but not really easily parseable to the eyes for us mere mortals.</description>
+      <description>I have been meaning to write an article about tools that I have developed lately to make it easier for my day to day life work.
+Being a so called &amp;ldquo;Kubernetes cloud native developer&amp;rdquo; (don&amp;rsquo;t laugh at the title because I do) I have to watch a log of controller logs. Most controller logs output in JSON format which is a nice tool for computers but not straightforward to parse to the eyes of the mere mortals.</description>
     </item>
     
     <item>
