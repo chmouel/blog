@@ -28,7 +28,7 @@ it down and write my own. So I wrote one and called it `"vtplug"` for "very tiny
 plugin manager" and since it's so small it can be installed directly by copying
 it in your config as function from here :
 
-<https://github.com/chmouel/zsh-config/blob/master/functions/vtplug#L15>
+<https://gitlab.com/chmouel/zsh-config/-/blob/main/functions/vtplug>
 
 to use it you first need to copy the function in your config and then have a
 variable that has all the plugins you want to install, which for me is :
@@ -82,7 +82,7 @@ It's simple as that, and load in milliseconds.
 
 My whole zsh config is located here if you want to have a look:
 
-<https://github.com/chmouel/zsh-config>
+<https://gitlab.com/chmouel/zsh-config>
 
 If you really want a plugin manger that does much more and probably more
 flexible, perhaps look at [`antidote`][2] which seems to be pretty fast and
