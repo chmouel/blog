@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 05 Nov 2022 09:00:56 +0200</lastBuildDate><atom:link href="https://blog.chmouel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Nov 2022 09:00:56 +0200</lastBuildDate><atom:link href="https://blog.chmouel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>shell completions with go cobra library</title>
+      <link>https://blog.chmouel.com/posts/cobra-completions/</link>
+      <pubDate>Tue, 22 Nov 2022 09:00:56 +0200</pubDate>
+      
+      <guid>https://blog.chmouel.com/posts/cobra-completions/</guid>
+      <description>It always bugging me every time I press the [TAB] key in my shell trying to get a completion to a binary and nothing happen.
+Not being super smart I usually press that [TAB] key many times always hopeful that maybe the seventh times it will magically output a completion as expected.
+Alas magic isn&amp;rsquo;t a computer function and if a user or a cli author didn&amp;rsquo;t offer a completion function, nothing will ever happen.</description>
+    </item>
+    
     <item>
       <title>snazy - a convenient log viewer</title>
       <link>https://blog.chmouel.com/posts/snazy-log-viewer/</link>
@@ -214,16 +225,6 @@ The defaultSubdomain is usually a wildcard DNS record that you have configured
       <guid>https://blog.chmouel.com/2016/09/27/how-to-view-openshift-haproxy-stats/</guid>
       <description>After you have installed your fancy openshift install and that it kicked the haproxy router automatically after install you may want to see the stats of the router.
 The HAproxy stats are exposed on the port 1936 where the router is located (usually on the master node) so first you need a way to access it. You can open it via your firewall (not ideal) or you can just port forward the port to your workstation via SSH :</description>
-    </item>
-    
-    <item>
-      <title>Controlling Yamaha AV RX-A830 from command line</title>
-      <link>https://blog.chmouel.com/2016/09/23/controlling-yamaha-av-rx-a830-from-command-line/</link>
-      <pubDate>Fri, 23 Sep 2016 09:06:25 +0000</pubDate>
-      
-      <guid>https://blog.chmouel.com/2016/09/23/controlling-yamaha-av-rx-a830-from-command-line/</guid>
-      <description>At home I have been using a Yamaha AV RX-A380, it&amp;rsquo;s an home teather audio video solution where you can plug about everything you need (like 7 hdmi channel, spoiler alert there is something wrong with you if you have that many devices) and output to two other hdmi channel (like a tv and a projector).
-It has integration for spotify, airplay, netradio and billions of connection to everything, just look at the damn back of this device :</description>
     </item>
     
   </channel>
