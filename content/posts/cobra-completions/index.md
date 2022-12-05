@@ -3,41 +3,41 @@ title: "shell completions with go cobra library"
 date: 2022-11-22T09:00:56+02:00
 ---
 
-It always bugging me every time I press the `[TAB]` key in my shell trying to
-get a completion to a binary and nothing happen.
+Every time I press the `[TAB]` key in my shell, it bothers me that nothing happens.
 
-Not being super smart I usually press that `[TAB]` key many times always
-hopeful that maybe the seventh times it will magically output a completion as expected.
+I'm not very smart, so I often press the `[TAB]` key multiple times, hoping that
+maybe the seventh time will magically produce the completion that I expect.
 
-Alas magic isn't a computer function and if a user or a cli author
-didn't offer a completion function, nothing will ever happen.
+However, magic is not a computer function, and if a user or command line
+interface (CLI) author has not provided a completion function, nothing will ever
+happen.
 
-We used to have to write completion function manually. There is a huge
-collection of completion functions for different binaries for
-[ZSH](https://github.com/zsh-users/zsh-completions) (zsh has a lot of completion
-function built-it too) or
+This used to be a manual task, Users has contributed a huge collection of
+completion functions for multiple binaries. Here is some completions for
+[ZSH](https://github.com/zsh-users/zsh-completions) (zsh has a large number of
+builtins completion too) and here is some for
 [Bash](https://github.com/scop/bash-completion/blob/master/README.md).
 
-All these functions are a good way to get nice completions for the standard Unix binaries.
+All these functions are a good way to get nice completions for most popular Unix
+binaries.
 
-On the non standard one, if you have to make the completion manually yourself
-and you aren't a shell ninja then it may be painful. [I did
-this](https://github.com/chmouel/oh-my-zsh-openshift) a long time ago for
-the openshift client when the "oc/osc" cli didn't offer a builtin completion
-mechanism.
+Providing shell completion when you are not an expert in shell scripting, can be
+a frustrating and difficult process. For example, I
+previously created [zsh completions](https://github.com/chmouel/oh-my-zsh-openshift) manually
+for the openshift client, but it was a tedious and time-consuming task. Just the process of
+having to keep it updated with the new flags and arguments could get very frustrating.
 
-The process was tedious, not just figuring out the right incantation to
-the [zsh completion
-system](https://zsh.sourceforge.io/Doc/Release/Completion-System.html#Completion-System)
-but more importantly to keep it in sync it with the binary new features and
-change of behaviour.
+Advanced shell scripting can be difficult to learn, especially when you have to
+work with multiple shell environments, such as bash, zsh, powershell, and
+fish. This can greatly increase the complexity and difficulty of the task.
 
-Thankfully most modern CLI libraries provides "built-in" shell completions to
-make easy for developers to provides completion transparently.
+Thankfully, most modern CLI libraries now offer built-in shell completion
+mechanisms, which make it easier for developers to provide completion
+functionality for their programs.
 
-In the `go` word a number of projects are using the
-[Cobra](https://github.com/spf13/cobra) library and here is some examples on how
-to define the completion for your cli.
+For the purposes of this article, we will focus on the Go programming language
+and one of its most popular libraries for command line interface (CLI) parsing,
+[Cobra](https://github.com/spf13/cobra).
 
 ## Basics
 
