@@ -1,7 +1,6 @@
 ---
 title: "Selecting files in ZSH With fzf and exa"
 date: 2023-01-11T15:41:47+01:00
-draft: true
 ---
 
 Sometime the tiniest optimization makes a huge difference. Except when using
