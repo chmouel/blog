@@ -13,9 +13,8 @@
       <pubDate>Wed, 11 Jan 2023 15:41:47 +0100</pubDate>
       
       <guid>https://blog.chmouel.com/posts/selecting-files-in-zsh-with-fzf/</guid>
-      <description>Sometime the tiniest optimization makes a huge difference. Except when using Emacs and dired I usually use the shell with zsh to do all my file management.
-Which is fine and great but sometime if I need to select multiles files with different names, I need to do a lot of tabs and selection or copy and paste to select properly the files.
-I could use a terminal file manager like ranger or nnn but I never got into it and even if I have it installed and configured I can&amp;rsquo;t get myself to use them.</description>
+      <description>Sometime the tiniest optimization makes a huge difference. When I am not using Emacs and dired I usually just use the shell with zsh to do all my file management.
+This is fine and great but sometime when I need to select multiple files with different names, I would have to do a lot of tabs and selection or copy and paste to select properly the list of files I want to do operations on.</description>
     </item>
     
     <item>
