@@ -3,29 +3,28 @@ title: "Selecting files in ZSH With fzf and exa"
 date: 2023-01-11T15:41:47+01:00
 ---
 
-Sometime the tiniest optimization makes a huge difference. Except when using
-Emacs and dired I usually use the shell with zsh to do all my file
+Sometime the tiniest optimization makes a huge difference. When I am not using
+Emacs and dired I usually just use the shell with zsh to do all my file
 management.
 
-Which is fine and great but sometime if I need to select multiles
-files with different names, I need to do a lot of tabs and selection or copy and
-paste to select properly the files.
+This is fine and great but sometime when I need to select multiple
+files with different names, I would have to do a lot of tabs and selection or
+copy and paste to select properly the list of files I want to do operations on.
 
 I could use a terminal file manager like `ranger` or `nnn` but I never got into
-it and even if I have it installed and configured I can't get myself to use
-them.
+getting used to use them and even if I have it installed and configured I always
+forget to launch them.
 
 There is a fantastic plug-in for zsh called
 [zsh-fzf-history-search](https://github.com/joshskidmore/zsh-fzf-history-search)
-which allow to get any zsh selection with fzf where you can do fuzzy finding on
-the filename easily.
+it let you plug fzf onto any zsh selection.
 
-I don't need as much fzf in my shell but I want it sometime for selecting some
+I don't need as much fzf in my shell but I want only sometime for selecting some
 not so easy to get files.
 
-I made the `fzf-select` plug-in for that :
+I made the `fzf-select-file` plug-in for that :
 
-<https://github.com/chmouel/fzf-select>
+<https://github.com/chmouel/fzf-select-file>
 
 You just hit the keys `C-x C-f` (ie: `control-x` followed by `control-f`) and it
 will spin up a fzf windows with the list of files provided by
