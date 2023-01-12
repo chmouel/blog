@@ -28,7 +28,8 @@ I made the `fzf-select-file` plug-in for that :
 
 You just hit the keys `C-x C-f` (ie: `control-x` followed by `control-f`) and it
 will spin up a fzf windows with the list of files provided by
-[exa](https://the.exa.website/) sorted by file modification time.
+[exa](https://the.exa.website/) sorted by file modification time. A nice
+preview window of it file will be showed as well on the right with `bat`.
 
 It automatically quote the files with space into it show it on your command line.
 
