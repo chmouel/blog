@@ -33,5 +33,4 @@ will spin up a fzf windows with the list of files provided by
 It automatically quote the files with space into it show it on your command line.
 
 Feel free to go on the github project to see how you can install it!
-
-{{< video src="https://user-images.githubusercontent.com/98980/211789984-5343295e-6680-4ea6-ba4a-21c65eb63d62.mp4" type="video/webm" preload="auto" width="800" height="600" >}}
+{{< video src="https://user-images.githubusercontent.com/98980/212008664-d87d18c1-71c9-403f-9282-685002a54797.mp4" type="video/webm" preload="auto" width="800" height="600" >}}
