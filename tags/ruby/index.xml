@@ -16,7 +16,7 @@
       <description>If you use the XMLRPC client in ruby over a self certified SSL you have this warning :
 warning: peer certificate won&amp;rsquo;t be verified in this SSL session
 You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :
-require &amp;#39;xmlrpc/client&amp;#39; require &amp;#39;net/https&amp;#39; require &amp;#39;openssl&amp;#39; require &amp;#39;pp&amp;#39; module SELF_SSL class Net_HTTP &amp;amp;lt; Net::HTTP def initialize(*args) super @ssl_context = OpenSSL::SSL::SSLContext.</description>
+require &amp;#39;xmlrpc/client&amp;#39; require &amp;#39;net/https&amp;#39; require &amp;#39;openssl&amp;#39; require &amp;#39;pp&amp;#39; module SELF_SSL class Net_HTTP &amp;lt; Net::HTTP def initialize(*args) super @ssl_context = OpenSSL::SSL::SSLContext.</description>
     </item>
     
   </channel>

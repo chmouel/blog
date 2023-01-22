@@ -150,7 +150,7 @@ And here is the usual screen shot :</description>
       <guid>https://blog.chmouel.com/2007/01/21/emacs-nighly-cvs-snapshot-with-xft-on-ubuntu-edgy/</guid>
       <description>I wanted to try the latest cvs snapshot with XFT support, since i did not want to screw up more my workstation i have used packages instead of make install blindy.
 Basically i have a script called ./build.sh
-#!/bin/bash set -e d=$(date &amp;#39;+%Y%m%d&amp;#39;) debpatch=20061218-1 mkdir -p cvs pushd cvs &amp;amp;gt;/dev/null &amp;amp;&amp;amp; { cvs -Q -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/emacs co -r emacs-unicode-2 emacs } &amp;amp;&amp;amp; popd &amp;amp;gt;/dev/null mkdir -p build [[ -d build/emacs-${d} ]] &amp;amp;&amp;amp; rm -rf build/emacs-${d} cp -al cvs/emacs build/emacs-${d} zcat patches/emacs-snapshot_${debpatch}.</description>
+#!/bin/bash set -e d=$(date &amp;#39;+%Y%m%d&amp;#39;) debpatch=20061218-1 mkdir -p cvs pushd cvs &amp;gt;/dev/null &amp;amp;&amp;amp; { cvs -Q -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/emacs co -r emacs-unicode-2 emacs } &amp;amp;&amp;amp; popd &amp;gt;/dev/null mkdir -p build [[ -d build/emacs-${d} ]] &amp;amp;&amp;amp; rm -rf build/emacs-${d} cp -al cvs/emacs build/emacs-${d} zcat patches/emacs-snapshot_${debpatch}.</description>
     </item>
     
     <item>
@@ -192,7 +192,7 @@ It is in french thought.</description>
       
       <guid>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</guid>
       <description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.
-(define-derived-mode cheetah-mode html-mode &amp;#34;Cheetah&amp;#34; (make-face &amp;#39;cheetah-variable-face) (font-lock-add-keywords nil &amp;#39;( (&amp;#34;\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\&amp;gt;&amp;#34; 1 font-lock-type-face) (&amp;#34;\\(#\\(from\\|for\\|end\\)\\).*\\&amp;amp;lt;\\(for\\|import\\|if\\|in\\)\\&amp;gt;&amp;#34; 3 font-lock-type-face) (&amp;#34;\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)&amp;#34; 1 font-lock-variable-name-face)) ) (font-lock-mode 1) ) (setq auto-mode-alist (cons &amp;#39;( &amp;#34;\\.tmpl\\&amp;#39;&amp;#34; . cheetah-mode ) auto-mode-alist )) </description>
+(define-derived-mode cheetah-mode html-mode &amp;#34;Cheetah&amp;#34; (make-face &amp;#39;cheetah-variable-face) (font-lock-add-keywords nil &amp;#39;( (&amp;#34;\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\&amp;gt;&amp;#34; 1 font-lock-type-face) (&amp;#34;\\(#\\(from\\|for\\|end\\)\\).*\\&amp;lt;\\(for\\|import\\|if\\|in\\)\\&amp;gt;&amp;#34; 3 font-lock-type-face) (&amp;#34;\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)&amp;#34; 1 font-lock-variable-name-face)) ) (font-lock-mode 1) ) (setq auto-mode-alist (cons &amp;#39;( &amp;#34;\\.tmpl\\&amp;#39;&amp;#34; . cheetah-mode ) auto-mode-alist )) </description>
     </item>
     
     <item>

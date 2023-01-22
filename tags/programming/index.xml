@@ -165,7 +165,7 @@ http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master</description
       
       <guid>https://blog.chmouel.com/2009/07/16/better-output-from-sqlite3-command-line/</guid>
       <description>That weird output from sqlite3 command line is annoying you as well ? Just set this up to get something better :
-cat &amp;amp;lt; &amp;amp;lt;EOF&amp;gt;~/.sqliterc .mode &amp;#34;column&amp;#34; .headers on .explain on EOF </description>
+cat &amp;lt; &amp;lt;EOF&amp;gt;~/.sqliterc .mode &amp;#34;column&amp;#34; .headers on .explain on EOF </description>
     </item>
     
     <item>
@@ -177,7 +177,7 @@ cat &amp;amp;lt; &amp;amp;lt;EOF&amp;gt;~/.sqliterc .mode &amp;#34;column&amp;#3
       <description>If you use the XMLRPC client in ruby over a self certified SSL you have this warning :
 warning: peer certificate won&amp;rsquo;t be verified in this SSL session
 You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :
-require &amp;#39;xmlrpc/client&amp;#39; require &amp;#39;net/https&amp;#39; require &amp;#39;openssl&amp;#39; require &amp;#39;pp&amp;#39; module SELF_SSL class Net_HTTP &amp;amp;lt; Net::HTTP def initialize(*args) super @ssl_context = OpenSSL::SSL::SSLContext.</description>
+require &amp;#39;xmlrpc/client&amp;#39; require &amp;#39;net/https&amp;#39; require &amp;#39;openssl&amp;#39; require &amp;#39;pp&amp;#39; module SELF_SSL class Net_HTTP &amp;lt; Net::HTTP def initialize(*args) super @ssl_context = OpenSSL::SSL::SSLContext.</description>
     </item>
     
     <item>
