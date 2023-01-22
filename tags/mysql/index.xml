@@ -13,7 +13,8 @@
       <pubDate>Mon, 11 May 2009 08:55:27 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2009/05/11/what-type-of-mysql-table-schemas/</guid>
-      <description>Since I always forget stuff like this. This is the SQL query to detect mysql table schemas type (thanks to Darren.B) :</description>
+      <description>Since I always forget stuff like this. This is the SQL query to detect mysql table schemas type (thanks to Darren.B) :
+SELECT table_name, table_schema, table_type, engine FROM information_schema.tables where table_schema not in (&amp;#39;information_schema&amp;#39;, &amp;#39;mysql&amp;#39;); </description>
     </item>
     
   </channel>

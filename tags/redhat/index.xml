@@ -35,7 +35,7 @@ Setting up Install Process</description>
       <guid>https://blog.chmouel.com/2006/12/20/how-to-get-bright-ls-colors-on-redhat-with-dark-background/</guid>
       <description>Something that i haven&amp;rsquo;t find via goole. By default on RedHat (and derivatives) if you get a dark background the colored ls will be seen really humm bold from a xterm (since i guess there default gnome-terminal has been configured to have a white background ).
 The solution is to
-or to redefine your dircolors to get the /etc/DIR_COLORS files instead of /etc/DIR_COLORS.xterm in your shell init configuration.</description>
+cp /etc/DIR_COLORS /etc/DIR_COLORS.xterm or to redefine your dircolors to get the /etc/DIR_COLORS files instead of /etc/DIR_COLORS.xterm in your shell init configuration.</description>
     </item>
     
   </channel>

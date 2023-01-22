@@ -160,8 +160,7 @@ If you access directly, you just need to adjust the Auth URL in your code to go 
       <guid>https://blog.chmouel.com/2010/11/23/automatically-spawn-rackspace-cloud-servers-and-customise-it/</guid>
       <description>Lately I had to spawn some cloud servers and automatically customise them.
 I have used the python-cloudservers library and installed it automatically with pypi (works for Debian/Ubuntu you may want to check for other distros):
-From there writing the script was pretty straight forward, I needed to know what type of CloudServers I wanted which in my case the smallest was good enough which is number 1 for me.
-If you want to see all flavours you can do something like that from python command prompt</description>
+pypi-install python-cloudservers From there writing the script was pretty straight forward, I needed to know what type of CloudServers I wanted which in my case the smallest was good enough which is number 1 for me.</description>
     </item>
     
     <item>

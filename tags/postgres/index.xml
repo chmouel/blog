@@ -18,8 +18,7 @@ the one shipped by default with postgres.
 It does not do a good job for benchmarking your &amp;ldquo;web apps&amp;rdquo; SQL wise, it will give you some
 good indication about how fast is your server for postgres.
 Here are some results we have collected using theses options :
-We configure servers with RAID 1+0 with write-cache and a battery
-backup, we have tested with postgres 8.</description>
+pgbench -Uuser -s 10 -c 10 -t 3000 benchmark We configure servers with RAID 1+0 with write-cache and a battery</description>
     </item>
     
     <item>
@@ -28,7 +27,8 @@ backup, we have tested with postgres 8.</description>
       <pubDate>Mon, 05 Jun 2006 08:26:55 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</guid>
-      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :</description>
+      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :
+#!/bin/bash /usr/lib/postgresql/8.1/bin/oid2name -U postgres|while read -a e;do name=${e[1]} oid=${e[0]} [[ $oid == &amp;#34;All&amp;#34; || $oid == &amp;#34;Oid&amp;#34; || -z $oid || -z $name ]] &amp;amp;&amp;amp; continue typeset -a size size=(`du -s /var/lib/postgresql/8.1/main/base/$oid`) size=${size[0]} printf &amp;#34;%-20s %-20s\n&amp;#34; ${name} ${size} done | sort -n -r -k 2 |awk &amp;#39;{printf &amp;#34;%-20s%20d Mb\n&amp;#34;, $1, $2 / 1024}&amp;#39; </description>
     </item>
     
   </channel>

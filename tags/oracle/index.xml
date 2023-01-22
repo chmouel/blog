@@ -50,7 +50,7 @@ Let me know ny email if you want the deb for ubuntu linux.</description>
       
       <guid>https://blog.chmouel.com/2007/01/02/sqlplus-timeout-when-connnecting/</guid>
       <description>If you are using a pam_ldap or pam_nis environement and it happend that sqlplus does not want to connect as user but it does as root, waiting for :
-You just to have make sure to have nscd up and running. dunno what sqlplus does :(</description>
+socket(PF_FILE, SOCK_STREAM, 0) = 3 connect(3, {sa_family=AF_FILE, path=&amp;#34;/var/run/.nscd_socket&amp;#34;}, 110) = -1 ENOENT (No such file or directory) close(3) = 0 open(&amp;#34;/etc/hosts&amp;#34;, O_RDONLY) = 3 fcntl64(3, F_GETFD) = 0 fcntl64(3, F_SETFD, FD_CLOEXEC) = 0 fstat64(3, {st_mode=S_IFREG|0644, st_size=286, ...}) = 0 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE |MAP_ANONYMOUS, -1, 0) = 0x45b78000 read(3, &amp;#34;127.</description>
     </item>
     
     <item>

@@ -103,8 +103,7 @@ for the scripter around you can just get (via curl or other) :</description>
       
       <guid>https://blog.chmouel.com/2010/06/03/connecting-to-self-signed-ssl-certificate-from-java-on-debian-ubuntu/</guid>
       <description>You want to connect to self signed SSL certificate from Java using the standard HttpsURLConnection and you are getting this error, because the self signed certificate is obviously not recognized by Java :
-it seems that there is a lot of &amp;lsquo;solutions&amp;rsquo; (read hack) or workaround around the web which is resumed well on this stack overflow article.
-There is actually a very easy (and secure) way on Debian based systems.</description>
+SEVERE: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1639) at sun.</description>
     </item>
     
     <item>
@@ -165,7 +164,8 @@ http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master</description
       <pubDate>Wed, 15 Jul 2009 23:47:55 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2009/07/16/better-output-from-sqlite3-command-line/</guid>
-      <description>That weird output from sqlite3 command line is annoying you as well ? Just set this up to get something better :</description>
+      <description>That weird output from sqlite3 command line is annoying you as well ? Just set this up to get something better :
+cat &amp;amp;lt; &amp;amp;lt;EOF&amp;gt;~/.sqliterc .mode &amp;#34;column&amp;#34; .headers on .explain on EOF </description>
     </item>
     
     <item>
@@ -176,7 +176,8 @@ http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master</description
       <guid>https://blog.chmouel.com/2008/03/21/ruby-xmlrpc-over-a-self-certified-ssl-with-a-warning/</guid>
       <description>If you use the XMLRPC client in ruby over a self certified SSL you have this warning :
 warning: peer certificate won&amp;rsquo;t be verified in this SSL session
-You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :</description>
+You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :
+require &amp;#39;xmlrpc/client&amp;#39; require &amp;#39;net/https&amp;#39; require &amp;#39;openssl&amp;#39; require &amp;#39;pp&amp;#39; module SELF_SSL class Net_HTTP &amp;amp;lt; Net::HTTP def initialize(*args) super @ssl_context = OpenSSL::SSL::SSLContext.</description>
     </item>
     
     <item>
@@ -235,7 +236,7 @@ http://www.youtube.com/watch?v=4XpnKHJAok8</description>
       
       <guid>https://blog.chmouel.com/2006/07/31/access-gajim-within-emacs/</guid>
       <description>Here is some function to launch a gajim window from Emacs :
-If Emacs had a dbus support that would have been cool.</description>
+(defvar gajim-remote &amp;#34;/usr/bin/gajim-remote&amp;#34;) (defvar gajim-user-list ()) (defun my-gajim-get-list() (save-excursion (with-temp-buffer (call-process gajim-remote nil t nil &amp;#34;list_contacts&amp;#34;) (goto-char (point-min)) (while (re-search-forward &amp;#34;^jid[ ]*:[ ]*\\(.*\\)$&amp;#34; (point-max) t ) (setq gajim-user-list (append gajim-user-list (list (match-string-no-properties 1))))))) gajim-user-list) (defun my-gajim-talk() (interactive) (let* ((ff (if (not gajim-user-list)(my-gajim-get-list) gajim-user-list)) (answer (completing-read &amp;#34;Jabber: &amp;#34; (mapcar (lambda (tt)(list tt)) ff)))) (message answer) (start-process &amp;#34;*GAJIM*&amp;#34; nil gajim-remote &amp;#34;open_chat&amp;#34; answer) ) ) (global-set-key &amp;#39;[(control x)(j)] &amp;#39;my-gajim-talk) If Emacs had a dbus support that would have been cool.</description>
     </item>
     
   </channel>

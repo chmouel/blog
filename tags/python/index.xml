@@ -78,7 +78,8 @@ which would automatically download the tarball from pypi and install it as a pac
       <pubDate>Sat, 09 Jan 2010 14:42:19 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</guid>
-      <description>Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.</description>
+      <description>Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.
+#!/usr/bin/python import os import urllib from facebook import Facebook # see http://developers.facebook.com/get_started.php # Your API key API_KEY=&amp;#34;YOUR_API_KEY&amp;#34; # Application secret key SECRET_KEY=&amp;#34;YOUR_SECRET_KEY&amp;#34; cnx = Facebook(API_KEY, SECRET_KEY) cnx.auth.createToken() cnx.login() cnx.auth.getSession() def choose_albums(cnx): cnt = 1 ret={} bigthing=cnx.</description>
     </item>
     
     <item>
@@ -182,7 +183,8 @@ m.update(password + magic + salt)
       <pubDate>Mon, 31 Jul 2006 23:35:09 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</guid>
-      <description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.</description>
+      <description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.
+(define-derived-mode cheetah-mode html-mode &amp;#34;Cheetah&amp;#34; (make-face &amp;#39;cheetah-variable-face) (font-lock-add-keywords nil &amp;#39;( (&amp;#34;\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\&amp;gt;&amp;#34; 1 font-lock-type-face) (&amp;#34;\\(#\\(from\\|for\\|end\\)\\).*\\&amp;amp;lt;\\(for\\|import\\|if\\|in\\)\\&amp;gt;&amp;#34; 3 font-lock-type-face) (&amp;#34;\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)&amp;#34; 1 font-lock-variable-name-face)) ) (font-lock-mode 1) ) (setq auto-mode-alist (cons &amp;#39;( &amp;#34;\\.tmpl\\&amp;#39;&amp;#34; . cheetah-mode ) auto-mode-alist )) </description>
     </item>
     
     <item>
@@ -192,7 +194,7 @@ m.update(password + magic + salt)
       
       <guid>https://blog.chmouel.com/2006/07/31/assignement-in-python-with-listextend/</guid>
       <description>This is weird for me :
-give me the result
+d = [&amp;#39;foo&amp;#39;, &amp;#39;bar&amp;#39;, &amp;#39;ba&amp;#39;, &amp;#39;c&amp;#39;] print d f = d f.extend(d) print d give me the result
 python &amp;ldquo;/tmp/a.py&amp;rdquo;
 [&amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;]
 [&amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;, &amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;]

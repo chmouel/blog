@@ -26,8 +26,7 @@ Change the *.git* to *.svn* if you like for subversion.</description>
       
       <guid>https://blog.chmouel.com/2010/06/03/connecting-to-self-signed-ssl-certificate-from-java-on-debian-ubuntu/</guid>
       <description>You want to connect to self signed SSL certificate from Java using the standard HttpsURLConnection and you are getting this error, because the self signed certificate is obviously not recognized by Java :
-it seems that there is a lot of &amp;lsquo;solutions&amp;rsquo; (read hack) or workaround around the web which is resumed well on this stack overflow article.
-There is actually a very easy (and secure) way on Debian based systems.</description>
+SEVERE: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1639) at sun.</description>
     </item>
     
   </channel>

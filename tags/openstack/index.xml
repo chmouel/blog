@@ -56,7 +56,7 @@ You now that a two character change cannot fail. This is a tiny change in some a
       <guid>https://blog.chmouel.com/2013/09/27/how-to-access-rackspace-cloud-with-latest-swiftclient-novaclient/</guid>
       <description>I spent too much time trying to figure out how to use the latest swiftclient/novaclient with Rackspace Cloud that I thought I would have to document it somewhere to avoid the pain for others.
 Assuming you don&amp;rsquo;t want to use pyrax and no OS_AUTH_SYSTEM plugin but just pure OpenStack python-novaclient/swiftclient on Rackspace cloud then you just need to export those variables in your shell :
-so now the region is ORD here (Chicago) but this can be SYD/IAD/DFW or whatever new datacenter/region from Rackspace.</description>
+export OS_REGION_NAME=ORD export OS_USERNAME=username export OS_TENANT_NAME=&amp;#34; &amp;#34; export OS_PASSWORD=password export OS_AUTH_URL=https://identity.</description>
     </item>
     
     <item>
@@ -87,8 +87,8 @@ add a tenant/user named test/tester. add a tenant/user name test2/tester2. add a
       <pubDate>Thu, 02 May 2013 08:00:15 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2013/05/02/keystone-pki-tokens-overview/</guid>
-      <description>PKI tokens has been implemented in keystone by Adam Young and others and was shipped for the OpenStack grizlly release. It is available since the version 2.0 API of keystone.
-PKI is a beautiful acronym to Public-key infrastructure which according to wikipedia defines it like this :
+      <description>PKI tokens has been implemented in keystone by [Adam Young][1] and others and was shipped for the OpenStack grizlly release. It is available since the version 2.0 API of keystone.
+PKI is a beautiful acronym to [Public-key infrastructure][2] which according to wikipedia defines it like this :
 Public-key cryptography is a cryptographic technique that enables users to securely communicate on an insecure public network, and reliably verify the identity of a user via digital signatures.</description>
     </item>
     

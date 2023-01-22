@@ -76,7 +76,7 @@ If you point on the text where you want to customize it will detect it automatic
       <guid>https://blog.chmouel.com/2009/09/16/emacs-and-transparency-mouse-wheel/</guid>
       <description>Emacs is playing fancy on the latest version (since emacs 23) it has now support for transparency at least on Linux when you have a composited Windows Manager.
 As explained on the Emacs wiki here everything is controlled by this frame parameter like this :
-I have automated the thing to allow the transparency to increase or decrease when combined with the alt key just put this code somewhere in your $HOME/.</description>
+(set-frame-parameter (selected-frame) &amp;#39;alpha &amp;#39;(85 50)) I have automated the thing to allow the transparency to increase or decrease when combined with the alt key just put this code somewhere in your $HOME/.</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@ You need to install pyflakes first which should be available on your linux distr
       <guid>https://blog.chmouel.com/2009/08/11/emacs-daemon-and-xdefaults/</guid>
       <description>It does not seems that emacs started with &amp;ndash;daemon read the .Xdefauls resource it seems that the only way setting it is by the default-frame-alist variable.
 I have my setup like this :
-PS: inconsolata font can be installed from the package ttf-inconsolata</description>
+(setq default-frame-alist &amp;#39;((font-backend . &amp;#34;xft&amp;#34;) (font . &amp;#34;Inconsolata-14&amp;#34;) (vertical-scroll-bars) (left-fringe . -1) (right-fringe . -1) (fullscreen . fullboth) (menu-bar-lines . 0) (tool-bar-lines . 0) )) PS: inconsolata font can be installed from the package ttf-inconsolata</description>
     </item>
     
     <item>
@@ -118,7 +118,7 @@ With incron you have cron that can watch some portion of the filesystem and gene
       
       <guid>https://blog.chmouel.com/2008/05/04/ffap-and-ruby-in-emacs/</guid>
       <description>If you want to use FFAP (find-file-at-point) in ruby-mode you can add this to your .emacs
-When you do ffap (i bind it to C-x f) near a require &amp;lsquo;PP&amp;rsquo; for example it will find it in your ruby path.</description>
+(defvar ruby-program-name &amp;#34;ruby&amp;#34;) (defun ruby-module-path(module) (shell-command-to-string (concat ruby-program-name &amp;#34; -e &amp;#34; &amp;#34;\&amp;#34;ret=&amp;#39;()&amp;#39;;$LOAD_PATH.each{|p| &amp;#34; &amp;#34;x=p+&amp;#39;/&amp;#39;+ARGV[0].gsub(&amp;#39;.rb&amp;#39;, &amp;#39;&amp;#39;)+&amp;#39;.rb&amp;#39;;&amp;#34; &amp;#34;ret=File.expand_path(x)&amp;#34; &amp;#34;if(File.exist?(x))};printf ret\&amp;#34; &amp;#34; module))) (eval-after-load &amp;#34;ffap&amp;#34; &amp;#39;(push &amp;#39;(ruby-mode . ruby-module-path) ffap-alist)) When you do ffap (i bind it to C-x f) near a require &amp;lsquo;PP&amp;rsquo; for example it will find it in your ruby path.</description>
     </item>
     
     <item>
@@ -139,7 +139,7 @@ And here is the usual screen shot :</description>
       
       <guid>https://blog.chmouel.com/2007/02/11/always-search-before-coding/</guid>
       <description>This is a annoying, even if it take 5mn to code thing like that :
-you discover after a litlle while that if you have did a lilt bit of searching before, you will have discovered a variable call `dired-recursive-deletes` that would do the thing in a much better way.</description>
+(defun my-dired-rm-rf() &amp;#34;Rm -rf directories&amp;#34; (interactive) (let ((sel (selected-window))) (dolist (curFile (dired-get-marked-files)) (if (yes-or-no-p (concat &amp;#34;Do you want to remove \&amp;#34;&amp;#34; (file-name-nondirectory curFile) &amp;#34;\&amp;#34; ? &amp;#34;)) (progn (shell-command (concat &amp;#34;rm -rvf &amp;#34; curFile) &amp;#34;*Removing Directories*&amp;#34;) (kill-buffer &amp;#34;*Removing Directories*&amp;#34;) (select-window sel) (revert-buffer) ) )) )) you discover after a litlle while that if you have did a lilt bit of searching before, you will have discovered a variable call `dired-recursive-deletes` that would do the thing in a much better way.</description>
     </item>
     
     <item>
@@ -150,9 +150,7 @@ you discover after a litlle while that if you have did a lilt bit of searching b
       <guid>https://blog.chmouel.com/2007/01/21/emacs-nighly-cvs-snapshot-with-xft-on-ubuntu-edgy/</guid>
       <description>I wanted to try the latest cvs snapshot with XFT support, since i did not want to screw up more my workstation i have used packages instead of make install blindy.
 Basically i have a script called ./build.sh
-in patches/with-font.patch i have :
-i have as well in patches/ the ubuntu (or could be debian) patch downloaded from the ubuntu (or debian archive) archive which is for ubuntu on
-http://archive.ubuntu.com/ubuntu/pool/universe/e/emacs-wiki</description>
+#!/bin/bash set -e d=$(date &amp;#39;+%Y%m%d&amp;#39;) debpatch=20061218-1 mkdir -p cvs pushd cvs &amp;amp;gt;/dev/null &amp;amp;&amp;amp; { cvs -Q -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/emacs co -r emacs-unicode-2 emacs } &amp;amp;&amp;amp; popd &amp;amp;gt;/dev/null mkdir -p build [[ -d build/emacs-${d} ]] &amp;amp;&amp;amp; rm -rf build/emacs-${d} cp -al cvs/emacs build/emacs-${d} zcat patches/emacs-snapshot_${debpatch}.</description>
     </item>
     
     <item>
@@ -183,7 +181,8 @@ It is in french thought.</description>
       
       <guid>https://blog.chmouel.com/2006/12/27/xterm-like-control-l-in-eshell/</guid>
       <description>If you want to emulate Control-L in Eshell (the Emacs Shell) like in Xterm, you can use this :
-And add a key bind to it in your custom hook :</description>
+(defun eshell-show-minimum-output () (interactive) (goto-char (eshell-beginning-of-output)) (set-window-start (selected-window) (save-excursion (goto-char (point-max)) (line-beginning-position))) (eshell-end-of-output)) And add a key bind to it in your custom hook :
+(local-set-key &amp;#34;\C-l&amp;#34; &amp;#39;eshell-show-minimum-output)&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; </description>
     </item>
     
     <item>
@@ -192,7 +191,8 @@ And add a key bind to it in your custom hook :</description>
       <pubDate>Mon, 31 Jul 2006 23:35:09 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</guid>
-      <description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.</description>
+      <description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.
+(define-derived-mode cheetah-mode html-mode &amp;#34;Cheetah&amp;#34; (make-face &amp;#39;cheetah-variable-face) (font-lock-add-keywords nil &amp;#39;( (&amp;#34;\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\&amp;gt;&amp;#34; 1 font-lock-type-face) (&amp;#34;\\(#\\(from\\|for\\|end\\)\\).*\\&amp;amp;lt;\\(for\\|import\\|if\\|in\\)\\&amp;gt;&amp;#34; 3 font-lock-type-face) (&amp;#34;\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)&amp;#34; 1 font-lock-variable-name-face)) ) (font-lock-mode 1) ) (setq auto-mode-alist (cons &amp;#39;( &amp;#34;\\.tmpl\\&amp;#39;&amp;#34; . cheetah-mode ) auto-mode-alist )) </description>
     </item>
     
     <item>
@@ -202,7 +202,7 @@ And add a key bind to it in your custom hook :</description>
       
       <guid>https://blog.chmouel.com/2006/07/31/access-gajim-within-emacs/</guid>
       <description>Here is some function to launch a gajim window from Emacs :
-If Emacs had a dbus support that would have been cool.</description>
+(defvar gajim-remote &amp;#34;/usr/bin/gajim-remote&amp;#34;) (defvar gajim-user-list ()) (defun my-gajim-get-list() (save-excursion (with-temp-buffer (call-process gajim-remote nil t nil &amp;#34;list_contacts&amp;#34;) (goto-char (point-min)) (while (re-search-forward &amp;#34;^jid[ ]*:[ ]*\\(.*\\)$&amp;#34; (point-max) t ) (setq gajim-user-list (append gajim-user-list (list (match-string-no-properties 1))))))) gajim-user-list) (defun my-gajim-talk() (interactive) (let* ((ff (if (not gajim-user-list)(my-gajim-get-list) gajim-user-list)) (answer (completing-read &amp;#34;Jabber: &amp;#34; (mapcar (lambda (tt)(list tt)) ff)))) (message answer) (start-process &amp;#34;*GAJIM*&amp;#34; nil gajim-remote &amp;#34;open_chat&amp;#34; answer) ) ) (global-set-key &amp;#39;[(control x)(j)] &amp;#39;my-gajim-talk) If Emacs had a dbus support that would have been cool.</description>
     </item>
     
   </channel>

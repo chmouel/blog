@@ -44,7 +44,7 @@ So here is a shell script to upload to Rackspace Cloud Files and give you back a
       
       <guid>https://blog.chmouel.com/2009/09/02/rsync-like-backup-to-rackspace-cloud-file-with-duplicity/</guid>
       <description>It seems that there is no much documentation about how to do rsync like backup with duplicty so here it is :
-Install python-cloudfiles from here http://github.com/rackspace/python-cloudfiles This should take care to upload the backup files to the backup container. It does that incrementally and detect the changes to your file system to upload. There is much more option for duplicity look at the manpage for more info.</description>
+Install python-cloudfiles from here http://github.com/rackspace/python-cloudfiles #!/bin/bash UPLOAD_TO_CONTAINER=&amp;#34;backup&amp;#34; #adjust it as you like export CLOUDFILES_USERNAME=Your Username export CLOUDFILES_APIKEY=API_KEY_YOU_GOT export PASSPHRASE=The Passphrase for your encrypted backup duplicity /full/path cf+http://${UPLOAD_TO_CONTAINER} This should take care to upload the backup files to the backup container. It does that incrementally and detect the changes to your file system to upload.</description>
     </item>
     
     <item>
@@ -118,12 +118,7 @@ BEST_RES=${res}</description>
       
       <guid>https://blog.chmouel.com/2007/05/30/automate-ssh-known_hosts-cleanup/</guid>
       <description>If you like me, you have to do a lot of installs1 of the same test machine with the same IP and have to ssh it you will notice this annoying message :
-I have automated the cleanup by a script :
-[code lang=&amp;ldquo;bash&amp;rdquo;]
-#!/bin/bash
-H=$1
-[[ -z ${H} ]] &amp;amp;&amp;amp; { echo &amp;ldquo;Need a host as argument&amp;rdquo;; exit 1 ;}
-LINE=$(ssh -o StrictHostKeyChecking=yes $1 &amp;rsquo;exit&amp;rsquo; 2&amp;gt;&amp;amp;1 | sed -n &amp;lsquo;/Offending key/ { s/.</description>
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY! Someone could be eavesdropping on you right now (man-in-the-middle attack)! It is also possible that the RSA host key has just been changed. The fingerprint for the RSA key sent by the remote host is 54:9d:c0:37:3a:80:48:6c:82:ec:d1:84:93:61:24.</description>
     </item>
     
     <item>
@@ -132,7 +127,8 @@ LINE=$(ssh -o StrictHostKeyChecking=yes $1 &amp;rsquo;exit&amp;rsquo; 2&amp;gt;&
       <pubDate>Wed, 07 Feb 2007 03:02:26 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2007/02/06/svn-diff-against-changes-in-the-remote-repository/</guid>
-      <description>A useful svn wrapper scripts. Get a diff of your local repostitory against the upstream repository changes. I wonder why it is not builtins though like a svn status -u but for dif.</description>
+      <description>A useful svn wrapper scripts. Get a diff of your local repostitory against the upstream repository changes. I wonder why it is not builtins though like a svn status -u but for dif.
+#!/bin/bash IFS=&amp;#34; &amp;#34; for line in `svn status -u`;do [[ $line != &amp;#34; &amp;#34;* ]] &amp;amp;&amp;amp; continue rev=`echo $line|awk &amp;#39;{print $2}&amp;#39;` ff=`echo $line|awk &amp;#39;{print $3}&amp;#39;` svn diff -r${rev}:HEAD $ff done </description>
     </item>
     
     <item>
@@ -143,8 +139,9 @@ LINE=$(ssh -o StrictHostKeyChecking=yes $1 &amp;rsquo;exit&amp;rsquo; 2&amp;gt;&
       <guid>https://blog.chmouel.com/2007/01/10/history-expansion-and-substitions-in-zsh/</guid>
       <description>I better to keep that somewhere since i always forget that thing, to do a search and replace from the command line in zsh. you just have to do the :s^FOO^BAR after your expansion
 For example you just have typed the long command line :
-you can just type :
-and it will be expanded to :</description>
+blah bar FOO=1 FOO=3 FOO=6 cnt=1 you can just type :
+!blah:s^FOO^VALUE^:G and it will be expanded to :
+blah bar VALUE=1 VALUE=3 VALUE=6 cnt=1 </description>
     </item>
     
     <item>
@@ -153,7 +150,8 @@ and it will be expanded to :</description>
       <pubDate>Mon, 05 Jun 2006 08:26:55 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</guid>
-      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :</description>
+      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :
+#!/bin/bash /usr/lib/postgresql/8.1/bin/oid2name -U postgres|while read -a e;do name=${e[1]} oid=${e[0]} [[ $oid == &amp;#34;All&amp;#34; || $oid == &amp;#34;Oid&amp;#34; || -z $oid || -z $name ]] &amp;amp;&amp;amp; continue typeset -a size size=(`du -s /var/lib/postgresql/8.1/main/base/$oid`) size=${size[0]} printf &amp;#34;%-20s %-20s\n&amp;#34; ${name} ${size} done | sort -n -r -k 2 |awk &amp;#39;{printf &amp;#34;%-20s%20d Mb\n&amp;#34;, $1, $2 / 1024}&amp;#39; </description>
     </item>
     
     <item>
@@ -162,7 +160,8 @@ and it will be expanded to :</description>
       <pubDate>Thu, 25 May 2006 11:26:15 +0000</pubDate>
       
       <guid>https://blog.chmouel.com/2006/05/25/svn-diff-without-spaces/</guid>
-      <description>I am sic of spaces and having svn diff that does not get the spaces removed. So here is a simple script that does the stuff that you can use as your diff-cmd :</description>
+      <description>I am sic of spaces and having svn diff that does not get the spaces removed. So here is a simple script that does the stuff that you can use as your diff-cmd :
+#!/bin/bash for i in $@;do echo $i |grep -q &amp;#34;)&amp;#34; &amp;amp;&amp;amp; continue echo $i |grep -q &amp;#34;(&amp;#34; &amp;amp;&amp;amp; continue t=&amp;#34;$t $i&amp;#34; done diff -bBw $t </description>
     </item>
     
   </channel>
