@@ -1,5 +1,5 @@
 ---
-title: "the snazy json log viewer"
+title: "snazy json log viewer"
 date: 2022-11-05T09:00:56+02:00
 ---
 I have been meaning to write an article about tools that I have developed
