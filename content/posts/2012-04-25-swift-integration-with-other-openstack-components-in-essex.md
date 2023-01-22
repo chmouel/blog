@@ -93,7 +93,7 @@ We unfortunately were not in time to add the support for OS\_AUTH\_TENANT and us
 
 Aside of a couple of bit missing we believe Swift should be rock solid to use with your other OpenStack components. There is no excuse to not use Swift as your central object storage component in OpenStack ;-).
 
-&nbsp;
+ 
 
 <div>
   <strong><br /> </strong>

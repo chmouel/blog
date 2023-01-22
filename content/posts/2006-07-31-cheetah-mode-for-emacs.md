@@ -20,7 +20,7 @@ Here is a simple html derived mode for [Cheetah][1] templates files. The font-lo
    nil
    '(
      ("\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\>" 1 font-lock-type-face)
-     ("\\(#\\(from\\|for\\|end\\)\\).*\\&lt;\\(for\\|import\\|if\\|in\\)\\>" 3 font-lock-type-face)
+     ("\\(#\\(from\\|for\\|end\\)\\).*\\<\\(for\\|import\\|if\\|in\\)\\>" 3 font-lock-type-face)
      ("\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)" 1 font-lock-variable-name-face))
    )
   (font-lock-mode 1)

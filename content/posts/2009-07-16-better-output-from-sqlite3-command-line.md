@@ -13,7 +13,7 @@ That weird output from sqlite3 command line is annoying you as well ? Just set t
 
 
 ```bash
-cat &lt; &lt;EOF>~/.sqliterc
+cat < <EOF>~/.sqliterc
 .mode "column"
 .headers on
 .explain on

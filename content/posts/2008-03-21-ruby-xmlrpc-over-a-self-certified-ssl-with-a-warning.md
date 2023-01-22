@@ -25,7 +25,7 @@ require 'openssl'
 require 'pp'
 
 module SELF_SSL
-  class Net_HTTP &lt; Net::HTTP
+  class Net_HTTP < Net::HTTP
     def initialize(*args)
       super
       @ssl_context = OpenSSL::SSL::SSLContext.new
@@ -33,7 +33,7 @@ module SELF_SSL
     end
   end
 
-  class XMLRPC_Client &lt; XMLRPC::Client
+  class XMLRPC_Client < XMLRPC::Client
     def initialize(*args)
       super
       @http = SELF_SSL::Net_HTTP.new( @host, @port,

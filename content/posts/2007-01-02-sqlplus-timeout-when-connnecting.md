@@ -29,8 +29,8 @@ close(3)                                = 0
 munmap(0x45b78000, 4096)                = 0
 getpid()                                = 26002
 getuid32()                              = 1121
-futex(0x41239198, FUTEX_WAIT, 2, NULL &lt;unfinished>
-&lt;/unfinished>
+futex(0x41239198, FUTEX_WAIT, 2, NULL <unfinished>
+</unfinished>
 ```
 
 

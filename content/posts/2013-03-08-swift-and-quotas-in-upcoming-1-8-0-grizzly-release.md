@@ -42,6 +42,6 @@ and account quotas commit :
 
 Enjoy.
 
-&nbsp;
+ 
 
  [1]: https://github.com/openstack/swift/commit/28c75db0e7103603e89e0a5ba3c32b7505e4d89e

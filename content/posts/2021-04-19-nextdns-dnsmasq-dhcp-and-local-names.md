@@ -48,7 +48,7 @@ dhcp-option=option:dns-server,192.168.0.3
 dhcp-option=option:domain-name,lan
 
 domain=lan
-dhcp-option=option6:dns-server,&#91;::]
+dhcp-option=option6:dns-server]
 dhcp-range=::100,::1ff,constructor:eth0,ra-names,slaac,24h
 ra-param=*,0,0
 

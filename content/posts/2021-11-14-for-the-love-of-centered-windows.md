@@ -19,7 +19,7 @@ After experimenting for a short while, I decided that centered window was the wa
 
 Fast forward 3 months later, I was happily switched back onto Linux with the promises of those titling windows manager where windows gets titled and rearranged exactly the way I would wanted it.
 
-But I never got into titling windows manager and never understood it really. Before that ultra wide screen display, I was mostly a one large window person with fast Alt-&lt;Tab&gt; fingers. I would have my Emacs (or browser/terminal) in full screen which was just right to look at without moving my head since the screen was smaller where I can focus on the task at hand, without having five of them at the same time.
+But I never got into titling windows manager and never understood it really. Before that ultra wide screen display, I was mostly a one large window person with fast Alt-<Tab> fingers. I would have my Emacs (or browser/terminal) in full screen which was just right to look at without moving my head since the screen was smaller where I can focus on the task at hand, without having five of them at the same time.
 
 In titling windows manager you can customize it a lot but no matter what layout I tried I never could get it right.
 

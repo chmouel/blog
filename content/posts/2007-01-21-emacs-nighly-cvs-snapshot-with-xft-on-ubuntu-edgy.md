@@ -23,9 +23,9 @@ debpatch=20061218-1
 
 mkdir -p cvs
 
-pushd cvs &gt;/dev/null && {
+pushd cvs >/dev/null && {
 cvs -Q -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/emacs co -r emacs-unicode-2 emacs
-} && popd &gt;/dev/null
+} && popd >/dev/null
 
 mkdir -p build
 [[ -d build/emacs-${d} ]] && rm -rf build/emacs-${d}
@@ -34,12 +34,12 @@ cp -al cvs/emacs build/emacs-${d}
 zcat patches/emacs-snapshot_${debpatch}.diff.gz|patch -p1 -d build/emacs-${d}
 cat patches/with-font.patch|patch --silent -p1 -d build/emacs-${d}
 
-pushd build/emacs-${d} &gt;/dev/null && {
+pushd build/emacs-${d} >/dev/null && {
     chmod +x debian/rules
     dch -v "1:${d}-1" "New snapshot."
     dch "Build with xft."
     fakeroot dpkg-buildpackage -b
-} && popd &gt;/dev/null
+} && popd >/dev/null
 ```
 
 

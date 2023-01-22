@@ -39,7 +39,7 @@ for extension in $ACCEPTED_EXTENSION;do
     [[ $extension == $FILE_EXT ]] && processing=true
 done
 
-find ${BASE_DIR} ! -wholename './.git/*'  -a ! -wholename './.svn/*' -a ! -name '*.pyc' -a ! -name '*~' -a ! -name '*#' -print0| xargs -0 etags -o ${BASE_DIR}/TAGS 2&gt;/dev/null &gt;/dev/null
+find ${BASE_DIR} ! -wholename './.git/*'  -a ! -wholename './.svn/*' -a ! -name '*.pyc' -a ! -name '*~' -a ! -name '*#' -print0| xargs -0 etags -o ${BASE_DIR}/TAGS 2>/dev/null >/dev/null
 ```
 
 

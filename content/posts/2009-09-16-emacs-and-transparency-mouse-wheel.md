@@ -34,13 +34,13 @@ I have automated the thing to allow the transparency to increase or decrease whe
 (defun my-decrease-opacity()
   (interactive)
   (let ((decrease (- (car (frame-parameter nil 'alpha)) 10)))
-    (if (&lt; decrease 20)(setq decrease 20))
+    (if (< decrease 20)(setq decrease 20))
     (set-frame-parameter (selected-frame) 'alpha (values decrease 75)))
 )
 
-(global-set-key (kbd "M-&lt;mouse-4>") 'my-increase-opacity)
-(global-set-key (kbd "M-&lt;mouse -5>") 'my-decrease-opacity)
-&lt;/mouse>
+(global-set-key (kbd "M-<mouse-4>") 'my-increase-opacity)
+(global-set-key (kbd "M-<mouse -5>") 'my-decrease-opacity)
+</mouse>
 ```
 
 

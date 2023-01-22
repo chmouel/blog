@@ -51,7 +51,7 @@ I have just to plug that in my template like this :
 # name: header
 # --
 # -*- coding: utf-8 -*-
-# Author: Chmouel Boudjnah &lt; `(yas--magit-email-or-default)`>
+# Author: Chmouel Boudjnah < `(yas--magit-email-or-default)`>
 ```
 
 

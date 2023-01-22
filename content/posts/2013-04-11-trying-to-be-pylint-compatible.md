@@ -14,7 +14,7 @@ How I feel when I try to address all pylint warning/errors:
 
 [<img loading="lazy" class="aligncenter size-full wp-image-612" alt="tumblr_inline_mk6xomQvzf1qz4rgp" src="/wp-content/uploads/2013/04/tumblr_inline_mk6xomQvzf1qz4rgp.gif" width="245" height="137" />][1]
 
-&nbsp;
+ 
 
 _Adapted from <http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards>_
 
