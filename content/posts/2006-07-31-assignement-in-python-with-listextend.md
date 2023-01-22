@@ -11,12 +11,16 @@ tags:
 ---
 This is weird for me :
 
-<pre lang="python">d = ['foo', 'bar', 'ba', 'c']
+
+```python
+d = ['foo', 'bar', 'ba', 'c']
 print d
 f = d
 f.extend(d)
 print d
-</pre>
+
+```
+
 
 give me the result
 

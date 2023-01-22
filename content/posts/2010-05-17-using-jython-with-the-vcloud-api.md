@@ -16,12 +16,12 @@ I have then started to look over Jython to see if I can interact easily with Jav
 
 The script is attached at the end of this post (or on github gist [here][1]). Don't forget to adjust the classpath variable mine are defined like that :
 
-> commons-codec-1.3.jar  
-> commons-httpclient-3.1.jar  
-> commons-logging-1.1.1.jar  
-> rest-api-schemas-1.0.0.jar  
-> vcloud-java-sdk-0.9.jar  
-> vCloudJavaSDK-samples.jar 
+> commons-codec-1.3.jar
+> commons-httpclient-3.1.jar
+> commons-logging-1.1.1.jar
+> rest-api-schemas-1.0.0.jar
+> vcloud-java-sdk-0.9.jar
+> vCloudJavaSDK-samples.jar
 
 <div>
   Most of them are the ones shipped with the official Java API
@@ -31,7 +31,8 @@ The script is attached at the end of this post (or on github gist [here][1]). Do
   Here is the script  the __main__ should get you the logic and a start how to use it :
 </div>
 
-<pre lang="python">#!/usr/bin/jython
+```python
+#!/usr/bin/jython
 import sys
 
 from org.apache.commons.httpclient.protocol import Protocol
@@ -45,14 +46,14 @@ class VcloudLogin(object):
     vcloudClient = None
     api_version = None
     vcloud_url = None
-    
+
     def __init__(self, vcloud_url, api_version):
         # This is needed if you have a self certified certificate
         # remove it if you have a proper SSL certs.
         self.setup_fake_ssl()
         self.vcloud_url = vcloud_url
         self.api_version = api_version
-        
+
     def setup_fake_ssl(self):
         https = Protocol("https", FakeSSLSocketFactory(), 443)
         Protocol.registerProtocol("https", https)
@@ -79,7 +80,7 @@ if __name__ == '__main__':
             print "VDC Href: %s\n" % (vdcLink.getHref())
             for vapps in vdc.getVappRefs():
                 print "Name: %s URL: %s" % (vapps.getName(), vapps.getHref())
-            
-</pre>
+
+```
 
  [1]: http://gist.github.com/404193

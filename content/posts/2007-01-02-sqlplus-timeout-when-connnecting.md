@@ -11,7 +11,9 @@ tags:
 ---
 If you are using a pam\_ldap or pam\_nis environement and it happend that sqlplus does not want to connect as user but it does as root, waiting for :
 
-<pre>socket(PF_FILE, SOCK_STREAM, 0)         = 3
+
+```
+socket(PF_FILE, SOCK_STREAM, 0)         = 3
 connect(3, {sa_family=AF_FILE, path="/var/run/.nscd_socket"}, 110) = 
 -1 ENOENT (No such file or directory)
 close(3)                                = 0
@@ -28,6 +30,8 @@ munmap(0x45b78000, 4096)                = 0
 getpid()                                = 26002
 getuid32()                              = 1121
 futex(0x41239198, FUTEX_WAIT, 2, NULL &lt;unfinished>
-&lt;/unfinished></pre>
+&lt;/unfinished>
+```
+
 
 You just to have make sure to have nscd up and running. dunno what sqlplus does :(

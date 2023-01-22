@@ -13,15 +13,26 @@ I better to keep that somewhere since i always forget that thing, to do a search
 
 For example you just have typed the long command line :
 
-<pre>blah bar FOO=1 FOO=3 FOO=6 cnt=1
-</pre>
+
+```
+blah bar FOO=1 FOO=3 FOO=6 cnt=1
+
+```
+
 
 you can just type :
 
-<pre>!blah:s^FOO^VALUE^:G 
-</pre>
+
+```
+!blah:s^FOO^VALUE^:G 
+
+```
+
 
 and it will be expanded to :
 
-<pre>blah bar VALUE=1 VALUE=3 VALUE=6 cnt=1
-</pre>
+
+```
+blah bar VALUE=1 VALUE=3 VALUE=6 cnt=1
+
+```

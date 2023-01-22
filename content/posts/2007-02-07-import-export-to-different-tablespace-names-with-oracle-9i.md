@@ -30,8 +30,12 @@ name **user2**.
     [/code]</p> 
   * Export the Oracle10 tablespace with Oracle 9 exp.  
     Sometime sometime you may encounter that famous error </p> 
-    <pre><i>"EXP-00003 : no storage definition found for segment ....."</i>. 
-</pre>
+    
+```
+<i>"EXP-00003 : no storage definition found for segment ....."</i>. 
+
+```
+
     
     So you have have to  
     do [this][1] as well. </li> 

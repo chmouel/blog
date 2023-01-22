@@ -12,7 +12,9 @@ tags:
 ---
 Here is a simple html derived mode for [Cheetah][1] templates files. The font-locking regexp can be improved thought but thatâ€™s a start.
 
-<pre lang="lisp">(define-derived-mode cheetah-mode html-mode "Cheetah"
+
+```lisp
+(define-derived-mode cheetah-mode html-mode "Cheetah"
   (make-face 'cheetah-variable-face)
   (font-lock-add-keywords
    nil
@@ -24,6 +26,8 @@ Here is a simple html derived mode for [Cheetah][1] templates files. The font-lo
   (font-lock-mode 1)
   )
 (setq auto-mode-alist (cons '( "\\.tmpl\\'" . cheetah-mode ) auto-mode-alist ))
-</pre>
+
+```
+
 
  [1]: http://www.cheetahtemplate.org/

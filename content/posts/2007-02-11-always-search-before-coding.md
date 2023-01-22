@@ -11,7 +11,9 @@ tags:
 ---
 This is a annoying, even if it take 5mn to code thing like that :
 
-<pre lang="lisp">(defun my-dired-rm-rf()
+
+```lisp
+(defun my-dired-rm-rf()
   "Rm -rf directories"
   (interactive)
   (let ((sel (selected-window)))
@@ -26,6 +28,8 @@ This is a annoying, even if it take 5mn to code thing like that :
 			)
 		))
 	))
-</pre>
+
+```
+
 
 you discover after a litlle while that if you have did a lilt bit of searching before, you will have discovered a variable call **\`dired-recursive-deletes\`** that would do the thing in a much better way.

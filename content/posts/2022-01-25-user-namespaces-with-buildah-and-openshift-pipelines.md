@@ -72,7 +72,11 @@ Edit directly or export to a specific namespace the buildah clustertask as
 described in the previous section.  Add this securityContext to each [build][5]
 and [push][6] steps :
 
-<pre>securityContext: runAsUser: 1000 </pre>
+
+```
+securityContext: runAsUser: 1000 
+```
+
 
 Since we are now going to be building as user, buildah will keep its image
 caching in **/home/build/.local/cache** so instead of volume mounting

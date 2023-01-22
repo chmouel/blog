@@ -16,8 +16,12 @@ good indication about how fast is your server for postgres.
 
 Here are some results we have collected using theses options :
 
-<pre>pgbench -Uuser  -s 10 -c 10 -t 3000 benchmark
-</pre>
+
+```
+pgbench -Uuser  -s 10 -c 10 -t 3000 benchmark
+
+```
+
 
 We configure servers with RAID 1+0 with write-cache and a battery  
 backup, we have tested with postgres 8.1.5 and here are the best  

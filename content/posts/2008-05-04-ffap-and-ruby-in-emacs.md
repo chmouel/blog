@@ -11,7 +11,9 @@ tags:
 ---
 If you want to use FFAP (find-file-at-point) in ruby-mode you can add this to your .emacs
 
-<pre lang="ruby">(defvar ruby-program-name "ruby")
+
+```ruby
+(defvar ruby-program-name "ruby")
 (defun ruby-module-path(module)
     (shell-command-to-string
      (concat
@@ -24,6 +26,8 @@ If you want to use FFAP (find-file-at-point) in ruby-mode you can add this to yo
 
 (eval-after-load "ffap"
   '(push '(ruby-mode . ruby-module-path) ffap-alist))
-</pre>
+
+```
+
 
 When you do ffap (i bind it to C-x f) near a require 'PP' for example it will find it in your ruby path.

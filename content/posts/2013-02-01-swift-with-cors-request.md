@@ -19,9 +19,13 @@ To be able to do a xmlrpc upload to another server (swift in this case) there is
 
 Basically what happen when in Javascript we do :
 
-<pre lang="javascript">request.open("POST", "http://swift/AUTH_account/container/");
+
+```javascript
+request.open("POST", "http://swift/AUTH_account/container/");
 request.setRequestHeader('X-Auth-Token', myToken);
-request.send();</pre>
+request.send();
+```
+
 
 The browser just before the request will send an OPTIONS request to check with the server if the request is allowed by the server. This look like this when uploading to Swift :
 

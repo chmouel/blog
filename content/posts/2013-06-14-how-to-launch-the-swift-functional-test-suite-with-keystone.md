@@ -26,7 +26,11 @@ and it will create a /etc/swift/swift.conf for testing. You can adjust the keyst
 
 You can now just go to your swift directory and launch the script :
 
-<pre>$ ./.functests
-</pre>
+
+```
+$ ./.functests
+
+```
+
 
 and the functional tests will run against a keystone server (or a auth v2 api compatible server).

@@ -28,9 +28,13 @@ This is available here :
 ][2]  
 You need to make sure that you have python-cloudfiles installed, on a Debian or Ubuntu system you can do it like this :
 
-<pre lang="shell">sudo apt-get -y install python-stdeb 
+
+```shell
+sudo apt-get -y install python-stdeb 
 sudo pypi-install python-cloudfiles
-</pre>
+
+```
+
 
 Check the documentation of your Operating System to install python-cloudfiles, usually it is very easy to do it via [pip][3] (pip install python-cloudfiles)
 
@@ -38,7 +42,9 @@ When you have installed duplicity and checkout the script (see the github page f
 
 At the top there is a detailled explanation of the different variables that need to be configured. You can change it in the script or you can have them configured in an external configuration file in your home directory called ~/.dt-cf-backup.conf, this is an example :
 
-<pre lang="shell">export CLOUDFILES_USERNAME="MY_USERNAME"
+
+```shell
+export CLOUDFILES_USERNAME="MY_USERNAME"
 export CLOUDFILES_APIKEY="MY_APIKEY"
 export PASSPHRASE="MY_PASSPHRASE"
 GPG_KEY="8D643162"
@@ -48,12 +54,18 @@ INCLIST=( /home/chmouel/ )
 EXCLIST=( 	 "/home/chmouel/tmp"    "/**.DS_Store" "/**Icon?" "/**.AppleDouble"  )
 LOGDIR="/tmp/"
 LOG_FILE_OWNER="chmouel:"
-</pre>
+
+```
+
 
 You can then just run :
 
-<pre>./dt-cf-backup.sh --backup  
-</pre>
+
+```
+./dt-cf-backup.sh --backup  
+
+```
+
 
 to do your backup. 
 

@@ -44,7 +44,9 @@ auth_uri = http://keystone_host:keystone_admin_port/
 admin_tenant_name = service
 admin_user = service_user
 admin_password = service_password
-</pre>
+
+```
+
 
 There is much more options to the auth\_token middleware, I invite you to refer to your service documentation and read a bit the top of the auth\_token file [here][5].
 

@@ -16,7 +16,11 @@ With my work on [OpenStack][5] I have found myself jumping a lot between git dir
 
 Plugging those two just seemed natural I had already this in my emacs to quickly open those magit repository directories :
 
-<pre lang="&quot;lisp">(global-set-key (read-kbd-macro "C-S-o") '(lambda ()(interactive) (dired (magit-read-top-dir nil))))</pre>
+
+```&quot;lisp
+(global-set-key (read-kbd-macro "C-S-o") '(lambda ()(interactive) (dired (magit-read-top-dir nil))))
+```
+
 
 But going with anything is much nicer and I can add another action for openning the source to  magit so I quickly came up with this magit source :
 

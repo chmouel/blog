@@ -13,12 +13,18 @@ Emacs is playing fancy on the latest version (since emacs 23) it has now support
 
 As explained on the Emacs wiki [here][2] everything is controlled by this frame parameter like this :
 
-<pre lang="lisp">(set-frame-parameter (selected-frame) 'alpha '(85 50))
-</pre>
+
+```lisp
+(set-frame-parameter (selected-frame) 'alpha '(85 50))
+
+```
+
 
 I have automated the thing to allow the transparency to increase or decrease when combined with the alt key just put this code somewhere in your $HOME/.emacs or $HOME/.emacs.d/init.el :
 
-<pre lang="lisp">(defun my-increase-opacity()
+
+```lisp
+(defun my-increase-opacity()
   (interactive)
   (let ((increase (+ 10 (car (frame-parameter nil 'alpha)))))
     (if (> increase 99)(setq increase 99))
@@ -34,7 +40,9 @@ I have automated the thing to allow the transparency to increase or decrease whe
 
 (global-set-key (kbd "M-&lt;mouse-4>") 'my-increase-opacity)
 (global-set-key (kbd "M-&lt;mouse -5>") 'my-decrease-opacity)
-&lt;/mouse></pre>
+&lt;/mouse>
+```
+
 
  [1]: http://en.wikipedia.org/wiki/Compositing_window_manager
  [2]: http://www.emacswiki.org/emacs/TransparentEmacs

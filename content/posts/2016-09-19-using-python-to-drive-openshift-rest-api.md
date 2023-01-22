@@ -13,7 +13,9 @@ I have been meaning to automate my deployment directly from my small python appl
 
 OpenShift use a REST API and the oc client uses it to communicate with the server, you can actually see all the REST operation the oc client is doing if you specify the --loglevel=7 (it goes to 10 to get even more debug info) :
 
-<pre>$ oc --loglevel=7 get pod 2>&1 |head -10
+
+```
+$ oc --loglevel=7 get pod 2>&1 |head -10
 I0919 09:59:20.047350   77328 loader.go:329] Config loaded from file /Users/chmouel/.kube/config
 I0919 09:59:20.048149   77328 round_trippers.go:296] GET https://openshift:8443/oapi
 I0919 09:59:20.048158   77328 round_trippers.go:303] Request Headers:
@@ -24,7 +26,9 @@ I0919 09:59:20.095239   77328 round_trippers.go:321] Response Status: 200 OK in 
 I0919 09:59:20.096056   77328 round_trippers.go:296] GET https://openshift:8443/version
 I0919 09:59:20.096078   77328 round_trippers.go:303] Request Headers:
 I0919 09:59:20.096084   77328 round_trippers.go:306]     User-Agent: oc/v1.4.0 (darwin/amd64) openshift/85eb37b
-</pre>
+
+```
+
 
 I was thinking to come up with my own python rest wrapper since a google quick search didn't come up with any binding. But since openshift is build on kubernetes and fully compatible with it (i.e: no fork or changes that make it incompatible) it was as easy as using the tools provided for kube.
 

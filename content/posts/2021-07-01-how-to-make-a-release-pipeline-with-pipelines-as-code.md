@@ -44,7 +44,9 @@ directory with the annotations needed:
 
 ```yaml
 pipelinesascode.tekton.dev/on-event: "[push]"
-pipelinesascode.tekton.dev/on-target-branch: "[refs/tags/*]"</pre>
+pipelinesascode.tekton.dev/on-target-branch: "[refs/tags/*]"
+```
+
 ```
 
 Which mean in pain english that this pipelinerun will handle all on push tags events.

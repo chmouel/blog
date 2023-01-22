@@ -19,18 +19,26 @@ Using the "[access to internal docker registry][1]" feature of OpenShift, I coul
 
 I came back to our internal mailing list and the local experts there pointed me to the file :
 
-<pre>/etc/sysconfig/openshift-node
-</pre>
+
+```
+/etc/sysconfig/openshift-node
+
+```
+
 
 and the interesting part is this :
 
-<pre># The $DOCKER_NETWORK_OPTIONS variable is used by sdn plugins to set
+
+```
+# The $DOCKER_NETWORK_OPTIONS variable is used by sdn plugins to set
 # $DOCKER_NETWORK_OPTIONS variable in the /etc/sysconfig/docker-network
 # Most plugins include their own defaults within the scripts
 # TODO: More elegant solution like this
 # https://github.com/coreos/flannel/blob/master/dist/mk-docker-opts.sh
 # DOCKER_NETWORK_OPTIONS='-b=lbr0 --mtu=1450'
-</pre>
+
+```
+
 
 I uncommented and adjusted my MTU to 1400 since 1450 wasn't working for me and after a reboot I could push properly my images from the nodes to the internal registry.
 

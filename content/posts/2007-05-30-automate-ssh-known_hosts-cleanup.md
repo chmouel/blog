@@ -11,7 +11,9 @@ tags:
 ---
 If you like me, you have to do a lot of installs[1] of the same test machine with the same IP and have to ssh it you will notice this annoying message :
 
-<pre>IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+
+```
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
 Someone could be eavesdropping on you right now (man-in-the-middle attack)!
 It is also possible that the RSA host key has just been changed.
 The fingerprint for the RSA key sent by the remote host is
@@ -24,7 +26,9 @@ Password authentication is disabled to avoid
  man-in-the-middle attacks.
 Keyboard-interactive authentication is disabled to avoid
 man-in-the-middle attacks.
-Agent forwarding is disabled to avoid man-in-the-middle attacks.</pre>
+Agent forwarding is disabled to avoid man-in-the-middle attacks.
+```
+
 
 I have automated the cleanup by a script :  
 [code lang="bash"]  

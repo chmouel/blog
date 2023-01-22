@@ -11,8 +11,11 @@ tags:
 ---
 That weird output from sqlite3 command line is annoying you as well ? Just set this up to get something better :
 
-<pre lang="bash">cat &lt; &lt;EOF>~/.sqliterc
+
+```bash
+cat &lt; &lt;EOF>~/.sqliterc
 .mode "column"
 .headers on
 .explain on
-EOF</pre>
+EOF
+```

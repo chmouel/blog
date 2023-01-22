@@ -10,7 +10,9 @@ tags:
 ---
 Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :
 
-<pre lang="bash">#!/bin/bash
+
+```bash
+#!/bin/bash
 /usr/lib/postgresql/8.1/bin/oid2name  -U postgres|while read -a e;do
 name=${e[1]}
 oid=${e[0]}
@@ -19,4 +21,5 @@ typeset -a size
 size=(`du -s /var/lib/postgresql/8.1/main/base/$oid`)
 size=${size[0]}
 printf "%-20s %-20s\n" ${name} ${size}
-done | sort -n -r -k 2 |awk '{printf "%-20s%20d Mb\n", $1, $2 / 1024}'</pre>
+done | sort -n -r -k 2 |awk '{printf "%-20s%20d Mb\n", $1, $2 / 1024}'
+```

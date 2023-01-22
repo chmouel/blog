@@ -13,14 +13,20 @@ When you use the tags interface for [Emacs][1] or with [VIM][2] you have to gene
 
 With [incron][3] you have cron that can watch some portion of the filesystem and generate an action if certain event appears.  So after installed (aptitude/urpmi) it I have configured this incrontab entry :
 
-<pre lang="bash">/home/chmouel/git/myproject IN_CLOSE_WRITE /home/chmouel/update-ctags.sh py $@ $@/$#
-</pre>
+
+```bash
+/home/chmouel/git/myproject IN_CLOSE_WRITE /home/chmouel/update-ctags.sh py $@ $@/$#
+
+```
+
 
 The script update-ctags.sh takes 3 argument one is the type of file to update when it's changed it accept multipe of them if you delimit with a pipe ie: py|inc|php|c and the two others are identifier from incron to give the base directory and the full path which is something you should not have to change.
 
 The update-ctags is simple as follow which could be hacked for your convenience :
 
-<pre lang="bash">#!/bin/bash
+
+```bash
+#!/bin/bash
 
 ACCEPTED_EXTENSION="$(echo $1|sed 's/|/ /g')"
 BASE_DIR=$2
@@ -33,7 +39,9 @@ for extension in $ACCEPTED_EXTENSION;do
     [[ $extension == $FILE_EXT ]] && processing=true
 done
 
-find ${BASE_DIR} ! -wholename './.git/*'  -a ! -wholename './.svn/*' -a ! -name '*.pyc' -a ! -name '*~' -a ! -name '*#' -print0| xargs -0 etags -o ${BASE_DIR}/TAGS 2&gt;/dev/null &gt;/dev/null</pre>
+find ${BASE_DIR} ! -wholename './.git/*'  -a ! -wholename './.svn/*' -a ! -name '*.pyc' -a ! -name '*~' -a ! -name '*#' -print0| xargs -0 etags -o ${BASE_DIR}/TAGS 2&gt;/dev/null &gt;/dev/null
+```
+
 
 <div id="_mcePaste" style="position: absolute; left: -10000px; top: 50px; width: 1px; height: 1px; overflow-x: hidden; overflow-y: hidden;">
   /home/chmouel/git/swift-container IN_CLOSE_WRITE /home/chmouel/updatectags.sh py $@ $@/$#

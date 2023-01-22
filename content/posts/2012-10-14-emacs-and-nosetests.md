@@ -23,9 +23,13 @@ It's available from here :
 
 I have binded those keys for my python mode hook :
 
-<pre lang="lisp">(local-set-key (kbd "C-S-t") 'nosetests-copy-shell-comand)
+
+```lisp
+(local-set-key (kbd "C-S-t") 'nosetests-copy-shell-comand)
 (local-set-key (kbd "C-S-r") 'nosetests-compile)
-</pre>
+
+```
+
 
 Happy [TDD][1]!!!!
 

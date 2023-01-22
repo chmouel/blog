@@ -28,33 +28,53 @@ In programming words this is the steps you would do. I am using the python-nova 
 
 At first I am going to create an object which we are going to authenticate
 
-<pre lang="python">import novaclient
+
+```python
+import novaclient
 cx = novaclient.OpenStack(USERNAME,
                             API_KEY)
-</pre>
+
+```
+
 
 or for the UK :
 
-<pre lang="python">import novaclient
+
+```python
+import novaclient
 cx = novaclient.OpenStack("USERNAME",
                             "API_KEY",
                             'https://lon.auth.api.rackspacecloud.com/v1.0')
-</pre>
+
+```
+
 
 cx is going to be the object from where we can do things on it. Let's first find the server server that we want, assuming your server is called test you would get the server like this :
 
-<pre lang="python">server = cx.servers.find(name='test')
-</pre>
+
+```python
+server = cx.servers.find(name='test')
+
+```
+
 
 The variable 'server' contain our server 'object' and we can get its ID out of it :
 
-<pre lang="python">server_id = server.id
-</pre>
+
+```python
+server_id = server.id
+
+```
+
 
 We got the function cx.images.create to create an image from a server which accept as first argument the image name and the second the server id we just got. this would start the creation of the image :
 
-<pre lang="python">cx.images.create("backup_server", server_id)
-</pre>
+
+```python
+cx.images.create("backup_server", server_id)
+
+```
+
 
 The server has started to get backed-up into your Cloud Files account, you can see it directly into the "My Server Images" tab of Hosting => Cloud Servers section :
 
@@ -62,28 +82,42 @@ The server has started to get backed-up into your Cloud Files account, you can s
 
 You can now delete the server since it's 'backuped' into cloud files ;
 
-<pre lang="python">server.delete()
-</pre>
+
+```python
+server.delete()
+
+```
+
 
 At this time you are not billed for your Cloud Servers anymore and only for the storage usage in Cloud Files.
 
 When you want to restore the image as a server, you would first get the id of your image :
 
-<pre lang="python">image = cx.images.find(name='backup-test')
+
+```python
+image = cx.images.find(name='backup-test')
 image_id = image.id
-</pre>
+
+```
+
 
 and create the server out of this image :
 
-<pre lang="python">CNX.servers.create(image=image_id,
+
+```python
+CNX.servers.create(image=image_id,
                             flavor=1,
                             name="test",
                             )
-</pre>
+
+```
+
 
 The flavor argument is the type of image you want, 1 the minimal 256M flavor. The full list is :
 
-<pre lang="python">In [14]: for x in cx.flavors.list():
+
+```python
+In [14]: for x in cx.flavors.list():
    ....:     print x.id, '-', x.name
    ....:     
    ....:     
@@ -94,7 +128,9 @@ The flavor argument is the type of image you want, 1 the minimal 256M flavor. Th
 5 - 4GB server
 6 - 8GB server
 7 - 15.5GB server
-</pre>
+
+```
+
 
 When the server has created it should be exactly the same as what you have before created in image. You can now run a script using SSH with SSH keys to log into servers and do adjustment with the new IP.
 

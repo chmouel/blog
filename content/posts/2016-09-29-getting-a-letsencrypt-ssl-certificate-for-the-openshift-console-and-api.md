@@ -59,10 +59,14 @@ So there is a little caveat here, there is a bug in openshift-ansible currently 
 
 now you just need to some configuration in your /etc/ansible/hosts file :
 
-<pre>openshift_master_cluster_public_hostname=lb.198.154.189.125.xip.io
+
+```
+openshift_master_cluster_public_hostname=lb.198.154.189.125.xip.io
 openshift_master_named_certificates=[{"certfile": "/etc/letsencrypt/live/lb.198.154.189.125.xip.io/full.pem", "keyfile": "/etc/letsencrypt/live/lb.198.154.189.125.xip.io/privkey.pem", "names":["lb.198.154.189.125.xip.io"]}]
 openshift_master_overwrite_named_certificates=true
-</pre>
+
+```
+
 
 after you run your playbook (with ansible-playbook /usr/share/ansible/openshift-ansible/playbooks/byo/config.yml) you should have it running properly and now when accessing by the console you should the reassuring secure lock :
 

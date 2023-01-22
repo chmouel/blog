@@ -23,17 +23,27 @@ The language binding provided by Rackspace has all been updated and available fr
 
 For [Python CloudFiles][2] :
 
-<pre lang="python">cnx = cloudfiles.Connection(api_username, api_key, authurl="https://lon.auth.api.rackspacecloud.com/v1.0)
-</pre>
+
+```python
+cnx = cloudfiles.Connection(api_username, api_key, authurl="https://lon.auth.api.rackspacecloud.com/v1.0)
+
+```
+
 
 For [Python CloudServers][3] :
 
-<pre lang="python">cloudservers.CloudServers("USERNAME", "API_KEY", auth_url="https://lon.auth.api.rackspacecloud.com/v1.0")
-</pre>
+
+```python
+cloudservers.CloudServers("USERNAME", "API_KEY", auth_url="https://lon.auth.api.rackspacecloud.com/v1.0")
+
+```
+
 
 For [Ruby CloudFiles][4] :
 
-<pre lang="ruby">require 'cloudfiles'
+
+```ruby
+require 'cloudfiles'
 
   # Log into the Cloud Files system
 cf = CloudFiles::Connection.new(
@@ -41,27 +51,41 @@ cf = CloudFiles::Connection.new(
                                 :api_key => "API_KEY",
                                 :authurl => "https://lon.auth.api.rackspacecloud.com/v1.0"
                                 )
-</pre>
+
+```
+
 
 For [C# CloudFiles][5] :
 
-<pre lang="csharp">UserCredentials userCreds = new UserCredentials(new Uri("https://lon.auth.api.rackspacecloud.com/v1.0"), username, api_key, null, null);
+
+```csharp
+UserCredentials userCreds = new UserCredentials(new Uri("https://lon.auth.api.rackspacecloud.com/v1.0"), username, api_key, null, null);
 Connection connection = new com.mosso.cloudfiles.Connection(userCreds);
-</pre>
+
+```
+
 
 For [Java CloudFIles][6] add a cloudfiles.properties file in your classpath with this content :
 
-<pre lang="ini">username=username
+
+```ini
+username=username
 password=apikey
 auth_url=https://lon.auth.api.rackspacecloud.com/v1.0
 connection_timeout=15000
-</pre>
+
+```
+
 
 and you would be able to access it like this without any argument to the constructor :
 
-<pre lang="java">FilesClient client = new FilesClient();
+
+```java
+FilesClient client = new FilesClient();
 client.login();
-</pre>
+
+```
+
 
 For non rackspace binding I have sent a patch for Apache [libcloud][7] :
 
@@ -81,7 +105,9 @@ and like this for cloudservers :
 
 for Ruby [Fog][9] :
 
-<pre lang="ruby">require 'rubygems'
+
+```ruby
+require 'rubygems'
 require 'fog'
 
 rackspace = Fog::Rackspace::Storage.new(
@@ -89,7 +115,9 @@ rackspace = Fog::Rackspace::Storage.new(
   :rackspace_username => "",
   :rackspace_auth_url => "lon.auth.api.rackspacecloud.com"
 )
-</pre>
+
+```
+
 
  [1]: https://lon.auth.api.rackspacecloud.com
  [2]: https://github.com/rackspace/python-cloudfiles

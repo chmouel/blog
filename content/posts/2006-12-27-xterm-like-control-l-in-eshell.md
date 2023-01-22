@@ -11,7 +11,9 @@ tags:
 ---
 If you want to emulate Control-L in Eshell (the Emacs Shell) like in Xterm, you can use this :</p> 
 
-<pre lang="lisp">(defun eshell-show-minimum-output ()
+
+```lisp
+(defun eshell-show-minimum-output ()
   (interactive)
   (goto-char (eshell-beginning-of-output))
   (set-window-start (selected-window)
@@ -19,12 +21,18 @@ If you want to emulate Control-L in Eshell (the Emacs Shell) like in Xterm, you 
 		      (goto-char (point-max))
 		      (line-beginning-position)))
   (eshell-end-of-output))
-</pre>
+
+```
+
 
 And add a key bind to it in your custom hook :
 
-<pre lang="lisp">(local-set-key "\C-l" 'eshell-show-minimum-output)</p>
+
+```lisp
+(local-set-key "\C-l" 'eshell-show-minimum-output)</p>
 
 <p>
-  </pre>
+  
+```
+
 </p>

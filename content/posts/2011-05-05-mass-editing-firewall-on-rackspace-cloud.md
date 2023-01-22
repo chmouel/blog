@@ -156,20 +156,32 @@ The script has been kept very simple by design and currently allow only to :
                                                         <p>
                                                           </span></li> </ul> 
                                                           
-                                                          <pre lang="sh">apt-get update && apt-get -y install python-stdeb git</pre>
+                                                          
+```sh
+apt-get update && apt-get -y install python-stdeb git
+```
+
                                                           
                                                           <p>
                                                             checkout my python-cloudservers library :
                                                           </p>
                                                           
-                                                          <pre lang="sh">git clone git://github.com/chmouel/python-cloudservers.git</pre>
+                                                          
+```sh
+git clone git://github.com/chmouel/python-cloudservers.git
+```
+
                                                           
                                                           <p>
                                                             after being checked-out you will go into the python-cloudservers directory which has just been created and do this :
                                                           </p>
                                                           
-                                                          <pre lang="sh">cd python-cloudservers/
-python setup.py install</pre>
+                                                          
+```sh
+cd python-cloudservers/
+python setup.py install
+```
+
                                                           
                                                           <p>
                                                             this should automatically install all the dependences.
@@ -179,8 +191,12 @@ python setup.py install</pre>
                                                             Now you can install my api-demo which include the firewall script :
                                                           </p>
                                                           
-                                                          <pre lang="sh">cd ../
-git clone git://github.com/chmouel/cloudservers-api-demo</pre>
+                                                          
+```sh
+cd ../
+git clone git://github.com/chmouel/cloudservers-api-demo
+```
+
                                                           
                                                           <p>
                                                             You need to configure some environemnt variable first which keep information about your rackspace account.
@@ -190,31 +206,47 @@ git clone git://github.com/chmouel/cloudservers-api-demo</pre>
                                                             edit your ~/.bashrc (or /etc/environement if you want to make it global) and configure those variable :
                                                           </p>
                                                           
-                                                          <pre>export RCLOUD_DATACENTER=UK
+                                                          
+```
+export RCLOUD_DATACENTER=UK
 export UK_RCLOUD_USER="MY_USERNAME"
 export UK_RCLOUD_KEY="MY_API_KEY"
-export UK_RCLOUD_AURL="https://lon.auth.api.rackspacecloud.com/v1.0"</pre>
+export UK_RCLOUD_AURL="https://lon.auth.api.rackspacecloud.com/v1.0"
+```
+
                                                           
                                                           <p>
                                                             or for the US you would have :
                                                           </p>
                                                           
-                                                          <pre>export RCLOUD_DATACENTER=US
+                                                          
+```
+export RCLOUD_DATACENTER=US
 export UK_RCLOUD_USER="MY_USERNAME"
 export UK_RCLOUD_KEY="MY_API_KEY"
-export UK_RCLOUD_AURL="https://auth.api.rackspacecloud.com/v1.0"</pre>
+export UK_RCLOUD_AURL="https://auth.api.rackspacecloud.com/v1.0"
+```
+
                                                           
                                                           <p>
                                                             source the ~/.bashrc or relog into your account to have those accounts set-up you can test it to see if that works by going to :
                                                           </p>
                                                           
-                                                          <pre>~/cloudservers-api-demo/python</pre>
+                                                          
+```
+~/cloudservers-api-demo/python
+```
+
                                                           
                                                           <p>
                                                             and launch the command :
                                                           </p>
                                                           
-                                                          <pre>./list-servers.py</pre>
+                                                          
+```
+./list-servers.py
+```
+
                                                           
                                                           <p>
                                                             to test if this is working properly (it should list your servers for your DATACENTER)
@@ -232,19 +264,31 @@ export UK_RCLOUD_AURL="https://auth.api.rackspacecloud.com/v1.0"</pre>
                                                             You would have to go to this directory :
                                                           </p>
                                                           
-                                                          <pre>~/cloudservers-api-demo/firewall/</pre>
+                                                          
+```
+~/cloudservers-api-demo/firewall/
+```
+
                                                           
                                                           <p>
                                                             and first execute this command to see the help/usages :
                                                           </p>
                                                           
-                                                          <pre>./fw-control.py --help</pre>
+                                                          
+```
+./fw-control.py --help
+```
+
                                                           
                                                           <p>
                                                             so let's say to enable the firewall on all the web and db server first you can do :
                                                           </p>
                                                           
-                                                          <pre>./fw-control.py -s "web db" enable</pre>
+                                                          
+```
+./fw-control.py -s "web db" enable
+```
+
                                                           
                                                           <p>
                                                             it will connect and enable the firewall on all the servers which match the name web and db.
@@ -254,13 +298,21 @@ export UK_RCLOUD_AURL="https://auth.api.rackspacecloud.com/v1.0"</pre>
                                                             now let's say we want to enable port 80 on the web :
                                                           </p>
                                                           
-                                                          <pre>./fw-control.py -s "web" allow port 80</pre>
+                                                          
+```
+./fw-control.py -s "web" allow port 80
+```
+
                                                           
                                                           <p>
                                                             if you log into the servers you can check with
                                                           </p>
                                                           
-                                                          <pre>iptables -L -n</pre>
+                                                          
+```
+iptables -L -n
+```
+
                                                           
                                                           <p>
                                                             that it it has been enabled properly.

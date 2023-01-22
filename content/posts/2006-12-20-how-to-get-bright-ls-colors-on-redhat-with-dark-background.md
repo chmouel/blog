@@ -13,7 +13,11 @@ Something that i haven't find via goole. By default on RedHat (and derivatives) 
 
 The solution is to 
 
-<pre lang="bash">cp /etc/DIR_COLORS /etc/DIR_COLORS.xterm
-</pre>
+
+```bash
+cp /etc/DIR_COLORS /etc/DIR_COLORS.xterm
+
+```
+
 
 or to redefine your dircolors to get the /etc/DIR\_COLORS files instead of /etc/DIR\_COLORS.xterm in your shell init configuration.

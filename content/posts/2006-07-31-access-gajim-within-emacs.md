@@ -12,7 +12,9 @@ tags:
 ---
 Here is some function to launch a gajim window from Emacs :
 
-<pre lang="lisp">(defvar gajim-remote "/usr/bin/gajim-remote")
+
+```lisp
+(defvar gajim-remote "/usr/bin/gajim-remote")
 (defvar gajim-user-list ())
 
 (defun my-gajim-get-list()
@@ -33,6 +35,8 @@ Here is some function to launch a gajim window from Emacs :
     )
   )
 (global-set-key '[(control x)(j)] 'my-gajim-talk)
-</pre>
+
+```
+
 
 If Emacs had a dbus support that would have been cool.

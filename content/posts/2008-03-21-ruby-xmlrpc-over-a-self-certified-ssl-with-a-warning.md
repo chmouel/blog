@@ -16,7 +16,9 @@ If you use the XMLRPC client in ruby over a self certified SSL you have this war
 
 You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :
 
-<pre lang="ruby">require 'xmlrpc/client'
+
+```ruby
+require 'xmlrpc/client'
 
 require 'net/https'
 require 'openssl'
@@ -49,4 +51,5 @@ if __FILE__ == $0
   f = SELF_SSL::XMLRPC_Client.new2("https://url")
   puts f.call("method", 'arg')
 end
-</pre>
+
+```

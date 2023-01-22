@@ -11,7 +11,9 @@ tags:
 ---
 A useful svn wrapper scripts. Get a diff of your local repostitory against the upstream repository changes. I wonder why it is not builtins though like a svn status -u but for dif.
 
-<pre lang="bash">#!/bin/bash
+
+```bash
+#!/bin/bash
 
 IFS="
 "
@@ -21,4 +23,5 @@ for line in `svn status -u`;do
     ff=`echo $line|awk '{print $3}'`
     svn diff -r${rev}:HEAD $ff
 done
-</pre>
+
+```

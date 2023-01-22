@@ -27,17 +27,24 @@ and for python :
 
 Afer this is just a matter to set the argument servicenet=True, for example in PHP :
 
-<pre lang="php">$user='username';
+
+```php
+$user='username';
 $api_key='theapi_key';
 
 $auth = new CF_Authentication($user, $api_key);
 $auth->authenticate();
 $conn = new CF_Connection($auth, $servicenet=true);
-</pre>
+
+```
+
 
 In Python you can do like this :
 
-<pre lang="python">username='username'
+
+```python
+username='username'
 api_key='api_key'
 
-cnx = cloudfiles.get_connection(username, api_key, servicenet=True)</pre>
+cnx = cloudfiles.get_connection(username, api_key, servicenet=True)
+```

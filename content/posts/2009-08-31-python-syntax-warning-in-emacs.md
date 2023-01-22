@@ -18,7 +18,9 @@ You need to install pyflakes first which should be available on your linux distr
 
 and add this configuration to your .emacs :
 
-<pre lang="lisp">(when (load "flymake" t)
+
+```lisp
+(when (load "flymake" t)
 (defun flymake-pyflakes-init ()
   (let* ((temp-file (flymake-init-create-temp-buffer-copy
                      'flymake-create-temp-inplace))
@@ -28,7 +30,9 @@ and add this configuration to your .emacs :
     (list "pyflakes" (list local-file))))
 (add-to-list 'flymake-allowed-file-name-masks
              '("\\.py\\'" flymake-pyflakes-init)))
-</pre>
+
+```
+
 
 make sure pyflakes is in your path and enable flymake-mode by default if you like for all python mode :
 

@@ -13,7 +13,9 @@ It does not seems that emacs started with --daemon read the .Xdefauls resource i
 
 I have my setup like this :
 
-<pre lang="lisp">(setq default-frame-alist '((font-backend . "xft")
+
+```lisp
+(setq default-frame-alist '((font-backend . "xft")
                             (font . "Inconsolata-14")
                             (vertical-scroll-bars)
                             (left-fringe . -1)
@@ -21,6 +23,8 @@ I have my setup like this :
                             (fullscreen . fullboth)
                             (menu-bar-lines . 0)
                             (tool-bar-lines . 0)
-                            ))</pre>
+                            ))
+```
+
 
 PS: inconsolata font can be installed from the package ttf-inconsolata

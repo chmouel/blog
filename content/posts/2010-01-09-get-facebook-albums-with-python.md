@@ -11,7 +11,9 @@ tags:
 ---
 Since I haven't see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.
 
-<pre lang="python">#!/usr/bin/python
+
+```python
+#!/usr/bin/python
 import os
 import urllib
 from facebook import Facebook
@@ -52,4 +54,5 @@ for album in chosen_albums:
         if not os.path.exists(dest):
             print "Getting: ", url
             urllib.urlretrieve(url, dest)
-</pre>
+
+```

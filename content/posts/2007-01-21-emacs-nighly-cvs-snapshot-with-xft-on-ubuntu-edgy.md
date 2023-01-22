@@ -13,7 +13,9 @@ I wanted to try the latest cvs snapshot with XFT support, since i did not want t
 
 Basically i have a script called ./build.sh
 
-<pre lang="bash">#!/bin/bash
+
+```bash
+#!/bin/bash
 set -e
 
 d=$(date '+%Y%m%d')
@@ -37,11 +39,15 @@ pushd build/emacs-${d} &gt;/dev/null && {
     dch -v "1:${d}-1" "New snapshot."
     dch "Build with xft."
     fakeroot dpkg-buildpackage -b
-} && popd &gt;/dev/null</pre>
+} && popd &gt;/dev/null
+```
+
 
 in patches/with-font.patch i have :
 
-<pre lang="diff">--- c/debian/rules.chmou        2007-01-21 23:21:09.486353750 +1100
+
+```diff
+--- c/debian/rules.chmou        2007-01-21 23:21:09.486353750 +1100
 +++ c/debian/rules      2007-01-21 23:21:13.914630500 +1100
 @@ -393,7 +393,7 @@
  # Emacs-gtk confflags
@@ -76,7 +82,9 @@ in patches/with-font.patch i have :
 +  { "-disable-font-backend", "--disable-font-backend", 65, 0 },
    /* -d must come last before the options handled in startup.el.  */
    { "-d", "--display", 60, 1 },
-   { "-display", 0, 60, 1 },</pre>
+   { "-display", 0, 60, 1 },
+```
+
 
 i have as well in patches/ the ubuntu (or could be debian) patch downloaded from the ubuntu (or debian archive) archive which is for ubuntu on
 

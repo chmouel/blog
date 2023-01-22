@@ -20,12 +20,16 @@ It seems that there is no much documentation about how to do rsync like backup w
   Get your API Key from <a href="https://manage.rackspacecloud.com/" target="_blank">https://manage.rackspacecloud.com/</a> and use a script like this :
 </li>
 
-<pre lang="bash">#!/bin/bash
+
+```bash
+#!/bin/bash
 UPLOAD_TO_CONTAINER="backup" #adjust it as you like
 export CLOUDFILES_USERNAME=Your Username
 export CLOUDFILES_APIKEY=API_KEY_YOU_GOT
 export PASSPHRASE=The Passphrase for your encrypted backup
 
-duplicity /full/path cf+http://${UPLOAD_TO_CONTAINER}</pre>
+duplicity /full/path cf+http://${UPLOAD_TO_CONTAINER}
+```
+
 
 This should take care to upload the backup files to the backup container. It does that incrementally and detect the changes to your file system to upload. There is much more option for duplicity look at the manpage for more info.
