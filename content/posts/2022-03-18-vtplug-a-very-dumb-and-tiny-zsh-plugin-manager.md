@@ -28,7 +28,7 @@ it down and write my own. So I wrote one and called it `"vtplug"` for "very tiny
 plugin manager" and since it's so small it can be installed directly by copying
 it in your config as function from here :
 
-<https://gitlab.com/chmouel/zsh-config/-/blob/main/functions/vtplug>
+<https://gitlab.com/chmouel/zsh-config/blob/master/functions/vtplug>
 
 to use it you first need to copy the function in your config and then have a
 variable that has all the plugins you want to install, which for me is :

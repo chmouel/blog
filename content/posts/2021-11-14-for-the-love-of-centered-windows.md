@@ -41,4 +41,4 @@ Another win for perfect aligned windows desktop.
  [2]: https://unix.stackexchange.com/a/53228
  [3]: https://linux.die.net/man/1/xwininfo
  [4]: https://en.wikipedia.org/wiki/Wmctrl
- [5]: https://github.com/chmouel/chmouzies/blob/master/misc/wmctrl-resize-and-center.sh
+ [5]: https://gitlab.com/chmouel/chmouzies/blob/master/misc/wmctrl-resize-and-center.sh

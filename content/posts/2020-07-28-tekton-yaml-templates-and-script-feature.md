@@ -28,7 +28,7 @@ So now that i am over talking to myself with this way too long preamble here is 
 
 It's available here :
 
-<https://github.com/chmouel/chmouzies/blob/master/work/tekton-script-template.sh>
+<a href="https://gitlab.com/chmouel/chmouzies/blob/master/work/tekton-script-template.sh" target="_blank" rel="noreferrer noopener">https://gitlab.com/chmouel/chmouzies/blob/master/work/tekton-script-template.sh</a>
 
 The idea is if you have in your template a tag saying #INSERT filename, it would be replaced by the content of the file, it's dumb and stupid but make devloping your yaml much more pleasing... so if you have something like :
 
