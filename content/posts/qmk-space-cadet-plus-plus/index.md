@@ -1,6 +1,6 @@
 ---
 title: "qmk space cadet plus"
-date: 2022-11-05T09:00:56+02:00
+date: 2023-04-25T09:00:56+02:00
 ---
 I enjoy the space cadet feature of [QMK](https://docs.qmk.fm/) :
 
