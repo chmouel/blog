@@ -6,7 +6,20 @@
     <description>Recent content on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 11 Jan 2023 15:41:47 +0100</lastBuildDate><atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Apr 2023 09:00:56 +0200</lastBuildDate><atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>qmk space cadet plus</title>
+      <link>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</link>
+      <pubDate>Tue, 25 Apr 2023 09:00:56 +0200</pubDate>
+      
+      <guid>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</guid>
+      <description>I enjoy the space cadet feature of QMK :
+https://docs.qmk.fm/#/feature_space_cadet
+The feature is simple but yet powerful, when you hit one press you send a parenthese open or close form the other side and if you hold it you have shift.
+I am not sure what happened to my config, but I could not get it to work with the default macros offered SC_LSPO and SC_RSPO.
+I dug into the process_record_user() function hook to replicate the feature and add one other &amp;rsquo;thing&amp;rsquo; where if you press another shift at the same time of the keypress it will do a right bracket.</description>
+    </item>
+    
     <item>
       <title>Selecting files in ZSH With fzf and exa</title>
       <link>https://blog.chmouel.com/posts/selecting-files-in-zsh-with-fzf/</link>
@@ -26,19 +39,6 @@ This is fine and great but sometime when I need to select multiple files with di
       <description>Every time I press the [TAB] key in my shell, it bothers me that nothing happens.
 I&amp;rsquo;m not very smart, so I often press the [TAB] key multiple times, hoping that maybe the seventh time will magically produce the completion that I expect.
 However, magic is not a computer function, and if a user or command line interface (CLI) author has not provided a completion function, nothing will ever happen.</description>
-    </item>
-    
-    <item>
-      <title>qmk space cadet plus</title>
-      <link>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</link>
-      <pubDate>Sat, 05 Nov 2022 09:00:56 +0200</pubDate>
-      
-      <guid>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</guid>
-      <description>I enjoy the space cadet feature of QMK :
-https://docs.qmk.fm/#/feature_space_cadet
-The feature is simple but yet powerful, when you hit one press you send a parenthese open or close form the other side and if you hold it you have shift.
-I am not sure what happened to my config, but I could not get it to work with the default macros offered SC_LSPO and SC_RSPO.
-I dug into the process_record_user() function hook to replicate the feature and add one other &amp;rsquo;thing&amp;rsquo; where if you press another shift at the same time of the keypress it will do a right bracket.</description>
     </item>
     
     <item>
