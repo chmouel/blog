@@ -29,6 +29,19 @@ However, magic is not a computer function, and if a user or command line interfa
     </item>
     
     <item>
+      <title>qmk space cadet plus</title>
+      <link>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</link>
+      <pubDate>Sat, 05 Nov 2022 09:00:56 +0200</pubDate>
+      
+      <guid>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</guid>
+      <description>I enjoy the space cadet feature of QMK :
+https://docs.qmk.fm/#/feature_space_cadet
+The feature is simple but yet powerful, when you hit one press you send a parenthese open or close form the other side and if you hold it you have shift.
+I am not sure what happened to my config, but I could not get it to work with the default macros offered SC_LSPO and SC_RSPO.
+I dug into the process_record_user() function hook to replicate the feature and add one other &amp;rsquo;thing&amp;rsquo; where if you press another shift at the same time of the keypress it will do a right bracket.</description>
+    </item>
+    
+    <item>
       <title>snazy - a snazzy json log viewer</title>
       <link>https://blog.chmouel.com/posts/snazy-log-viewer/</link>
       <pubDate>Sat, 05 Nov 2022 09:00:56 +0200</pubDate>
@@ -214,17 +227,6 @@ The thing is that my desktop macosx laptop has only 8GB of RAM and is not very w
 It uses those certificates for communication between nodes and as well to automatically auth the admin account. By default those same certificates are the one provided for the OpenShift console and API.
 Since it is auto generated you will when connecting to the website with you webbrowser get an ugly error message :
 and as the error message says that&amp;rsquo;s not very secure #sadpanda.</description>
-    </item>
-    
-    <item>
-      <title>Easily test your OpenShift applications exposed by the router</title>
-      <link>https://blog.chmouel.com/2016/09/28/easily-test-your-openshift-applications-exposed-by-the-router/</link>
-      <pubDate>Wed, 28 Sep 2016 11:43:49 +0000</pubDate>
-      
-      <guid>https://blog.chmouel.com/2016/09/28/easily-test-your-openshift-applications-exposed-by-the-router/</guid>
-      <description>OpenShift integrate1 a router based on HAproxy to expose your services to the outside world. Whenever your do a :
-it would expose by default the servicename this URL :
-The defaultSubdomain is usually a wildcard DNS record that you have configured in your domain server by your system administrator. Now for your openshift testing if you don&amp;rsquo;t want to ask your system administrator to configure a new CNAME going to your testing environement you can just use the free service xp.</description>
     </item>
     
   </channel>
