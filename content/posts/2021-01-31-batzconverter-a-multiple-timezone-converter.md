@@ -4,7 +4,7 @@ author: chmouel
 date: 2021-01-31T16:42:14+00:00
 url: /2021/01/31/batzconverter-a-multiple-timezone-converter/
 ---
-I do write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn time only once and some others I write in about 5mn but save me hours and hour of productivity.
+I write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn only once and some others I write for about 5mn but save me hours of boreness and repetitive task.
 
 The script showed today, that I am proud of because of its usefulness and probably not of its code, is called **"batzconverter"** available on <https://github.com/chmouel/batzconverter>. What the script is trying to solve is when you work with your team spread around 3/4 timezones, how do you schedule a meeting easily.
 
