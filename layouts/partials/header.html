@@ -116,7 +116,6 @@
                             {{ $label = .Pre }}
                           {{- end }}
                           {{- $img.Content | safeHTML }}
-                          &nbsp;{{ $label }}
                          <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
                         {{- else }}
                           <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
