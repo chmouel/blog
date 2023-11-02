@@ -45,9 +45,8 @@ body.dark .post-content a {
 }
 
 .nav {
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
-  width: fit-content;
 }
 
 body.dark #menu span {
