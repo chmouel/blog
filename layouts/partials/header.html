@@ -106,10 +106,24 @@
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- .Pre }}
-                        {{- .Name -}}
-                        {{ .Post -}}
+                        {{- $resource := (resources.Match (printf "fontawesome/*/%s.svg" .Name)) }}
+                        {{- if $resource }}
+                          {{- $img := index $resource 0 }}
+                          {{- $label := "" }}
+                          {{- if eq .Pre "" }}
+                            {{ $label = .Name }}
+                          {{- else }}
+                            {{ $label = .Pre }}
+                          {{- end }}
+                          {{- $img.Content | safeHTML }}
+                          &nbsp;{{ $label }}
+                         <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- else }}
+                          <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                          {{- .Pre }}
+                          {{- .Name -}}
+                          {{ .Post -}}
+                        {{- end }}
                     </span>
                 </a>
             </li>

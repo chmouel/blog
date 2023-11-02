@@ -58,6 +58,21 @@ body.dark #menu span {
   text-decoration: underline;
 }
 
+#menu img {
+    margin-top: 20px;
+}
+
+
+#menu svg {
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+body.dark #menu svg path {
+    fill: #bd93f9;
+}
+
 html,
 body {
   font-family: "JetBrains Mono", monospace;

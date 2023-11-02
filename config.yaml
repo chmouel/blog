@@ -43,8 +43,9 @@ markup:
 
 menus:
   main:
-    - name: "Photos"
+    - name: "camera"
       url: "https://photos.chmouel.com"
+      pre: Photos
     - name: "GitHub"
       url: "https://github.com/chmouel/"
     - name: "Mastodon"
@@ -53,6 +54,9 @@ menus:
       url: "https://twitter.com/chmouel"
     - name: "Strava"
       url: "https://app.strava.com/athletes/126695"
+    - name: "briefcase"
+      url: "https://redhat.com"
+      pre: Work
 privacy:
   youtube:
     privacyEnhanced: true
