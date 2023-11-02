@@ -54,9 +54,9 @@ menus:
       url: "https://twitter.com/chmouel"
     - name: "Strava"
       url: "https://app.strava.com/athletes/126695"
-    - name: "briefcase"
+    - name: "redhat"
       url: "https://redhat.com"
-      pre: Work
+      pre: Red Hat
 privacy:
   youtube:
     privacyEnhanced: true
