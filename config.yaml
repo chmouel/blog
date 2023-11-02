@@ -45,7 +45,7 @@ menus:
   main:
     - name: "Photos"
       url: "https://photos.chmouel.com"
-    - name: "Github"
+    - name: "GitHub"
       url: "https://github.com/chmouel/"
     - name: "Mastodon"
       url: "https://fosstodon.org/@chmouel"
