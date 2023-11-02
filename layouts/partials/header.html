@@ -106,7 +106,7 @@
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                        {{- $resource := (resources.Match (printf "fontawesome/*/%s.svg" .Name)) }}
+                        {{- $resource := (resources.Match (printf "fontawesome/%s.svg" .Name)) }}
                         {{- if $resource }}
                           {{- $img := index $resource 0 }}
                           {{- $label := "" }}
