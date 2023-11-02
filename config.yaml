@@ -47,12 +47,12 @@ menus:
       url: "https://photos.chmouel.com"
     - name: "Github"
       url: "https://github.com/chmouel/"
+    - name: "Mastodon"
+      url: "https://fosstodon.org/@chmouel"
     - name: "Twitter"
       url: "https://twitter.com/chmouel"
     - name: "Strava"
       url: "https://app.strava.com/athletes/126695"
-    - name: "Work"
-      url: "https://redhat.com"
 privacy:
   youtube:
     privacyEnhanced: true
