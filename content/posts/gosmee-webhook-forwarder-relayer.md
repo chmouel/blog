@@ -20,7 +20,8 @@ service that is allowed is: <https://smee.io>
 `smee.io` is a great service! It lets you expose a local port to the internet
 as simply as that. It's all open source, but you can use their instance on
 <https://smee.io> for free. They have this client called
-[smee-client](https://github.com/probot/smee-client).
+[smee-client](https://github.com/probot/smee-client) which you can run locally
+to fetch the events from the server and replay them on a local service.
 
 I encountered some issues with the client (not being able to set the Host header
 behind a proxy) and found it challenging to deploy the Node.js version. So, I
