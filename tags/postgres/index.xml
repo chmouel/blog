@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>postgres on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/postgres/</link>
     <description>Recent content in postgres on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 06 Jan 2007 08:19:23 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/postgres/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jan 2007 08:19:23 +0000</lastBuildDate>
+    <atom:link href="https://blog.chmouel.com/tags/postgres/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Benchmarking with PGBench: TPS results.</title>
       <link>https://blog.chmouel.com/2007/01/06/postgres-options-using-pgbench-tps/</link>
       <pubDate>Sat, 06 Jan 2007 08:19:23 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2007/01/06/postgres-options-using-pgbench-tps/</guid>
       <description>pgbench is not the best tools to benchmark postgres but it&amp;rsquo;s
 the one shipped by default with postgres.
@@ -20,16 +20,13 @@ good indication about how fast is your server for postgres.
 Here are some results we have collected using theses options :
 pgbench -Uuser -s 10 -c 10 -t 3000 benchmark We configure servers with RAID 1+0 with write-cache and a battery</description>
     </item>
-    
     <item>
       <title>Get size of Postgres DB from filesystem</title>
       <link>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</link>
       <pubDate>Mon, 05 Jun 2006 08:26:55 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</guid>
       <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :
 #!/bin/bash /usr/lib/postgresql/8.1/bin/oid2name -U postgres|while read -a e;do name=${e[1]} oid=${e[0]} [[ $oid == &amp;#34;All&amp;#34; || $oid == &amp;#34;Oid&amp;#34; || -z $oid || -z $name ]] &amp;amp;&amp;amp; continue typeset -a size size=(`du -s /var/lib/postgresql/8.1/main/base/$oid`) size=${size[0]} printf &amp;#34;%-20s %-20s\n&amp;#34; ${name} ${size} done | sort -n -r -k 2 |awk &amp;#39;{printf &amp;#34;%-20s%20d Mb\n&amp;#34;, $1, $2 / 1024}&amp;#39; </description>
     </item>
-    
   </channel>
 </rss>

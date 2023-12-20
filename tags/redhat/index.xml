@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RedHat on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/redhat/</link>
     <description>Recent content in RedHat on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 20 Mar 2008 09:36:06 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/redhat/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Mar 2008 09:36:06 +0000</lastBuildDate>
+    <atom:link href="https://blog.chmouel.com/tags/redhat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yum Force Exclude List</title>
       <link>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</link>
       <pubDate>Thu, 20 Mar 2008 09:36:06 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</guid>
       <description>While talking with my fellow colleague Darren Birkett about what seems a design limitation
 of yum to not be able to force listing the excludes from yum. I had a
@@ -26,17 +26,14 @@ Loading &amp;ldquo;chmouel&amp;rdquo; plugin
 Loading &amp;ldquo;priorities&amp;rdquo; plugin
 Setting up Install Process</description>
     </item>
-    
     <item>
       <title>How to get bright LS colors on Redhat with dark background</title>
       <link>https://blog.chmouel.com/2006/12/20/how-to-get-bright-ls-colors-on-redhat-with-dark-background/</link>
       <pubDate>Thu, 21 Dec 2006 02:52:01 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2006/12/20/how-to-get-bright-ls-colors-on-redhat-with-dark-background/</guid>
       <description>Something that i haven&amp;rsquo;t find via goole. By default on RedHat (and derivatives) if you get a dark background the colored ls will be seen really humm bold from a xterm (since i guess there default gnome-terminal has been configured to have a white background ).
 The solution is to
 cp /etc/DIR_COLORS /etc/DIR_COLORS.xterm or to redefine your dircolors to get the /etc/DIR_COLORS files instead of /etc/DIR_COLORS.xterm in your shell init configuration.</description>
     </item>
-    
   </channel>
 </rss>

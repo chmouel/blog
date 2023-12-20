@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solaris on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/solaris/</link>
     <description>Recent content in Solaris on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 07 Sep 2007 07:50:24 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/solaris/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Sep 2007 07:50:24 +0000</lastBuildDate>
+    <atom:link href="https://blog.chmouel.com/tags/solaris/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Netapp sue Sun</title>
       <link>https://blog.chmouel.com/2007/09/07/netapp-sue-sun/</link>
       <pubDate>Fri, 07 Sep 2007 07:50:24 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2007/09/07/netapp-sue-sun/</guid>
       <description>This is fun, theses two CEO of theses big companies are dog fighting each others :
 Dave post:
@@ -22,12 +22,10 @@ but the real (fake) truth about that post is here :
 http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html
 I tend to believe more NetAPP in this case, just because i don&amp;rsquo;t know how many time i have sweared on that bloody ps -aux that does not work on solaris.</description>
     </item>
-    
     <item>
       <title>Generating md5 encrypted password for chpasswd</title>
       <link>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</link>
       <pubDate>Fri, 17 Aug 2007 07:11:38 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</guid>
       <description>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
 [code lang=&amp;ldquo;bash&amp;rdquo;]
@@ -41,18 +39,15 @@ m = md5.new()
 m.update(password + magic + salt)
 # /* Then just as many characters of the MD5(pw,salt,pw) */</description>
     </item>
-    
     <item>
       <title>Mixing 64 bytes and 32 Bytes Libraries on Solaris</title>
       <link>https://blog.chmouel.com/2006/04/29/mixing-64-bytes-and-32-bytes-libraries-on-solaris/</link>
       <pubDate>Sat, 29 Apr 2006 22:54:06 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2006/04/29/mixing-64-bytes-and-32-bytes-libraries-on-solaris/</guid>
       <description>Remind to myself to use the switch -64 on solaris with crle to tell
 the linker on solaris to get the linker &amp;lsquo;seeing&amp;rsquo; 64 libraries.
 I wonder why everything is not as simple as linux thought where we
 have everything in one place with /etc/ld.so.config</description>
     </item>
-    
   </channel>
 </rss>

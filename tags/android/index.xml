@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/android/</link>
     <description>Recent content in Android on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 25 May 2010 01:14:38 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2010 01:14:38 +0000</lastBuildDate>
+    <atom:link href="https://blog.chmouel.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>chrometophone and cyrket</title>
       <link>https://blog.chmouel.com/2010/05/25/chrometophone-and-cyrket/</link>
       <pubDate>Tue, 25 May 2010 01:14:38 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2010/05/25/chrometophone-and-cyrket/</guid>
       <description>Latest Froyo for Android have a nice feature for pushing messages to a Android phone, it&amp;rsquo;s called Android Cloud to Device Messaging Framework.
 Someone at google has developped a nice extensions/apps for sending URL directly from google chrome web browser to your phone, it is called chrometophone and available here.
 I often use cyrket for browsing and installing new apps. I thought it could be nice to add support to chrome2phone when sending a cyrknet URL to my Nexus one to popup a market link to install the app sent.</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uncategorized on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/uncategorized/</link>
     <description>Recent content in Uncategorized on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 12 Dec 2012 06:24:24 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Dec 2012 06:24:24 +0000</lastBuildDate>
+    <atom:link href="https://blog.chmouel.com/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Moving on from Rackspace and joining eNovance.</title>
       <link>https://blog.chmouel.com/2012/12/12/moving-on-from-rackspace-and-joining-enovance/</link>
       <pubDate>Wed, 12 Dec 2012 06:24:24 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2012/12/12/moving-on-from-rackspace-and-joining-enovance/</guid>
       <description>After almost five years at Rackspace UK I have now decided to move on and come back for good to Paris I will be now at eNovance working as before on OpenStack projects.</description>
     </item>
-    
     <item>
       <title>Debugging python-novaclient on the command line.</title>
       <link>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</link>
       <pubDate>Fri, 02 Sep 2011 03:00:13 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</guid>
       <description>I have done lately quite a bit of work with python-novaclient the (nova/keystone) openstack client. I often experiment it with ipython in the console.
 There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :
 This would give you the details of the session showing you the REST requests and responses including the headers.</description>
     </item>
-    
   </channel>
 </rss>

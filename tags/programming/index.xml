@@ -1,57 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/programming/</link>
     <description>Recent content in Programming on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 22 Sep 2016 10:27:27 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Sep 2016 10:27:27 +0000</lastBuildDate>
+    <atom:link href="https://blog.chmouel.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The trick to get your wordpress behind a reverse proxy</title>
       <link>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</link>
       <pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</guid>
       <description>I have been meaning to get this blog SSL protected for a while and since solution like letsencrypt makes it easy I have generated some SSL keys for my domain and configured it in apache.
 So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using varnish for quite some time or I would get out of memory quickly some the kernel OOM killer kicking1 it.</description>
     </item>
-    
     <item>
       <title>The best ways to work with yaml files in Emacs</title>
       <link>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</link>
       <pubDate>Wed, 07 Sep 2016 07:45:03 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</guid>
       <description>Sometime ago or at least when I started doing programming in the late 90s XML was all the rage, it promised to be the panacea for everything from data to storage to data presentation and processing. People realized that it was just complexity as Joel Spolski points out an attempt to make the complex seem accessible to ordinary people.. Really people were annoyed to write all those tags as those &amp;lsquo;&amp;lt;&amp;rsquo; and &amp;lsquo;&amp;gt;&amp;rsquo; are hard to reach on a qwerty keyboard.</description>
     </item>
-    
     <item>
       <title>On trying to be pylint compatible</title>
       <link>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</link>
       <pubDate>Thu, 11 Apr 2013 09:35:29 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</guid>
       <description>How I feel when I try to address all pylint warning/errors:
 Adapted from http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards</description>
     </item>
-    
     <item>
       <title>emacs anything with magit</title>
       <link>https://blog.chmouel.com/2013/02/10/emacs-anything-with-magit/</link>
       <pubDate>Sun, 10 Feb 2013 21:48:33 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2013/02/10/emacs-anything-with-magit/</guid>
       <description>I have been using quite a bit the anything-mode for Emacs, it&amp;rsquo;s basically a Quicksilver/Alfred or Gnome-do for Emacs and allow to configure a lot of different sources to complete some chosen &amp;lsquo;source&amp;rsquo;with different actions.
 With my work on OpenStack I have found myself jumping a lot between git directories and due configured the variable &amp;lsquo;magit-repo-dirs for easy access to most of them easily.
 Plugging those two just seemed natural I had already this in my emacs to quickly open those magit repository directories :</description>
     </item>
-    
     <item>
       <title>Rackspace CloudDNS python binding</title>
       <link>https://blog.chmouel.com/2011/07/17/rackspace-clouddns-python-binding/</link>
       <pubDate>Sun, 17 Jul 2011 07:32:09 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2011/07/17/rackspace-clouddns-python-binding/</guid>
       <description>I have released a python binding to Rackspace CloudDNS here which allow you to create/update/delete domains and records. It&amp;rsquo;s available on github
 https://github.com/rackspace/python-clouddns/
@@ -59,12 +51,10 @@ The binding is pretty simple and have unfortunately no documentation (or even te
 https://github.com/rackspace/python-clouddns/blob/master/tests/t.py
 I will be very welcoming pull request that add a bit of documentation.</description>
     </item>
-    
     <item>
       <title>Installing python-cloudfiles from pypi</title>
       <link>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</link>
       <pubDate>Wed, 16 Feb 2011 05:41:33 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</guid>
       <description>I have just uploaded python-cloudfiles to pypi available here
 This make things easy to add as a dependence of your project like you can have something like this in your setup.py :
@@ -74,117 +64,95 @@ cool kids on latest debian/ubuntu can do stuff like this (from python-stdeb pack
 pypi-install python-cloudfiles
 which would automatically download the tarball from pypi and install it as a packages (like the way it should be for prod machine!</description>
     </item>
-    
     <item>
       <title>Get latest lyrics of a scrobbled LastFM song</title>
       <link>https://blog.chmouel.com/2010/10/09/get-latest-lyrics-of-a-scrobbled-lastfm-song/</link>
       <pubDate>Sat, 09 Oct 2010 07:56:05 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2010/10/09/get-latest-lyrics-of-a-scrobbled-lastfm-song/</guid>
       <description>All my music players (Spotify, XBMC, Rythmbox etc&amp;hellip;) are scrobbling over lastfm but not all of them display song lyrics properly so I came up with a quick Google AppEngine app that grab the latest or current song scrobbled over last.fm and display its lyrics. No fancy HTML or javascript just the lyrics displayed for your enjoyment.
 This is available here :
 http://getlastlastfmlyrics.appspot.com/
 for the scripter around you can just get (via curl or other) :</description>
     </item>
-    
     <item>
       <title>Python decorator to argument checking</title>
       <link>https://blog.chmouel.com/2010/07/29/python-decorator-to-argument-checking/</link>
       <pubDate>Thu, 29 Jul 2010 19:03:57 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2010/07/29/python-decorator-to-argument-checking/</guid>
       <description>I am sure there is billions or more people who already done that but I needed this quickly for my project and was not feeling googling around :</description>
     </item>
-    
     <item>
       <title>connecting to self signed SSL certificate from Java on Debian/Ubuntu</title>
       <link>https://blog.chmouel.com/2010/06/03/connecting-to-self-signed-ssl-certificate-from-java-on-debian-ubuntu/</link>
       <pubDate>Thu, 03 Jun 2010 10:50:43 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2010/06/03/connecting-to-self-signed-ssl-certificate-from-java-on-debian-ubuntu/</guid>
       <description>You want to connect to self signed SSL certificate from Java using the standard HttpsURLConnection and you are getting this error, because the self signed certificate is obviously not recognized by Java :
 SEVERE: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1639) at sun.</description>
     </item>
-    
     <item>
       <title>Using Jython with the vCloud API</title>
       <link>https://blog.chmouel.com/2010/05/17/using-jython-with-the-vcloud-api/</link>
       <pubDate>Mon, 17 May 2010 20:33:47 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2010/05/17/using-jython-with-the-vcloud-api/</guid>
       <description>Lately I had to do a lot of works with the VMware VCloud product and since the python API did not seem available and I did not have the courage to use the PHP API I had to do most of the API works with Java. I never did any Java before and while I have found Eclipse+Java development surprisingly pleasant and easy to use/learn my favourite are still Emacs+Python.</description>
     </item>
-    
     <item>
       <title>Accessing to Rackspace Cloud Files via servicenet (update)</title>
       <link>https://blog.chmouel.com/2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/</link>
       <pubDate>Tue, 20 Oct 2009 18:47:49 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/</guid>
       <description>Last week I have posted an article explaining how to connect to Rackspace Cloud Files via Rackspace ServiceNET but I actually got it wrong as pointed by my great colleague exlt so I had to take it down until figured out how to fix it.
 I have add that feature properly to the PHP and Python API in version 1.5.0 to add a &amp;lsquo;servicenet&amp;rsquo; argument to the connection and updated the blog post here :</description>
     </item>
-    
     <item>
       <title>How to connect to Rackspace Cloud Files via ServiceNET</title>
       <link>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</link>
       <pubDate>Wed, 14 Oct 2009 00:47:27 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</guid>
       <description>If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.
 The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.</description>
     </item>
-    
     <item>
       <title>Rackspace Cloud Files helper scripts</title>
       <link>https://blog.chmouel.com/2009/09/24/rackspace-cloud-files-helper-scripts/</link>
       <pubDate>Thu, 24 Sep 2009 21:10:18 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2009/09/24/rackspace-cloud-files-helper-scripts/</guid>
       <description>It&amp;rsquo;s really a collection of quickly written stuff put in the same file
 but at least if not useful for you it would give you an idea how the
 python-cloudfiles works. It is all available here :
 http://github.com/chmouel/cloud-files-helper</description>
     </item>
-    
     <item>
       <title>Upload to Rackspace Cloud files from GNOME nautilus</title>
       <link>https://blog.chmouel.com/2009/09/02/upload-to-rackspace-cloud-files-from-gnome-nautilus/</link>
       <pubDate>Wed, 02 Sep 2009 16:49:30 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2009/09/02/upload-to-rackspace-cloud-files-from-gnome-nautilus/</guid>
       <description>After seeing this script http://overhrd.com/?p=106 which allow to upload files with the file manager (finder) of MacosX to Rackspace Cloud Files, I have made a nautilus script that doe the same for us Gnome/Unix users.
 Available here :
 http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master</description>
     </item>
-    
     <item>
       <title>Better output from sqlite3 command line</title>
       <link>https://blog.chmouel.com/2009/07/16/better-output-from-sqlite3-command-line/</link>
       <pubDate>Wed, 15 Jul 2009 23:47:55 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2009/07/16/better-output-from-sqlite3-command-line/</guid>
       <description>That weird output from sqlite3 command line is annoying you as well ? Just set this up to get something better :
 cat &amp;lt; &amp;lt;EOF&amp;gt;~/.sqliterc .mode &amp;#34;column&amp;#34; .headers on .explain on EOF </description>
     </item>
-    
     <item>
       <title>Ruby XMLRPC over a Self Certified SSL with a warning</title>
       <link>https://blog.chmouel.com/2008/03/21/ruby-xmlrpc-over-a-self-certified-ssl-with-a-warning/</link>
       <pubDate>Fri, 21 Mar 2008 16:56:05 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2008/03/21/ruby-xmlrpc-over-a-self-certified-ssl-with-a-warning/</guid>
       <description>If you use the XMLRPC client in ruby over a self certified SSL you have this warning :
 warning: peer certificate won&amp;rsquo;t be verified in this SSL session
 You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :
 require &amp;#39;xmlrpc/client&amp;#39; require &amp;#39;net/https&amp;#39; require &amp;#39;openssl&amp;#39; require &amp;#39;pp&amp;#39; module SELF_SSL class Net_HTTP &amp;lt; Net::HTTP def initialize(*args) super @ssl_context = OpenSSL::SSL::SSLContext.</description>
     </item>
-    
     <item>
       <title>Yum Force Exclude List</title>
       <link>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</link>
       <pubDate>Thu, 20 Mar 2008 09:36:06 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</guid>
       <description>While talking with my fellow colleague Darren Birkett about what seems a design limitation
 of yum to not be able to force listing the excludes from yum. I had a
@@ -199,12 +167,10 @@ Loading &amp;ldquo;chmouel&amp;rdquo; plugin
 Loading &amp;ldquo;priorities&amp;rdquo; plugin
 Setting up Install Process</description>
     </item>
-    
     <item>
       <title>Generating md5 encrypted password for chpasswd</title>
       <link>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</link>
       <pubDate>Fri, 17 Aug 2007 07:11:38 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</guid>
       <description>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
 [code lang=&amp;ldquo;bash&amp;rdquo;]
@@ -218,26 +184,21 @@ m = md5.new()
 m.update(password + magic + salt)
 # /* Then just as many characters of the MD5(pw,salt,pw) */</description>
     </item>
-    
     <item>
       <title>Linus Torvalds on GIT</title>
       <link>https://blog.chmouel.com/2007/05/29/linus-torvalds-on-git/</link>
       <pubDate>Tue, 29 May 2007 11:36:17 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2007/05/29/linus-torvalds-on-git/</guid>
       <description>Pretty good video to look if you like to know more about git and its creation :
 http://www.youtube.com/watch?v=4XpnKHJAok8</description>
     </item>
-    
     <item>
       <title>Access Gajim within Emacs</title>
       <link>https://blog.chmouel.com/2006/07/31/access-gajim-within-emacs/</link>
       <pubDate>Mon, 31 Jul 2006 09:28:56 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2006/07/31/access-gajim-within-emacs/</guid>
       <description>Here is some function to launch a gajim window from Emacs :
 (defvar gajim-remote &amp;#34;/usr/bin/gajim-remote&amp;#34;) (defvar gajim-user-list ()) (defun my-gajim-get-list() (save-excursion (with-temp-buffer (call-process gajim-remote nil t nil &amp;#34;list_contacts&amp;#34;) (goto-char (point-min)) (while (re-search-forward &amp;#34;^jid[ ]*:[ ]*\\(.*\\)$&amp;#34; (point-max) t ) (setq gajim-user-list (append gajim-user-list (list (match-string-no-properties 1))))))) gajim-user-list) (defun my-gajim-talk() (interactive) (let* ((ff (if (not gajim-user-list)(my-gajim-get-list) gajim-user-list)) (answer (completing-read &amp;#34;Jabber: &amp;#34; (mapcar (lambda (tt)(list tt)) ff)))) (message answer) (start-process &amp;#34;*GAJIM*&amp;#34; nil gajim-remote &amp;#34;open_chat&amp;#34; answer) ) ) (global-set-key &amp;#39;[(control x)(j)] &amp;#39;my-gajim-talk) If Emacs had a dbus support that would have been cool.</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eclipse on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/eclipse/</link>
     <description>Recent content in Eclipse on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 17 Jun 2010 04:48:42 +0000</lastBuildDate><atom:link href="https://blog.chmouel.com/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jun 2010 04:48:42 +0000</lastBuildDate>
+    <atom:link href="https://blog.chmouel.com/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exclude .git or .svn directories in Eclipse (Helios)</title>
       <link>https://blog.chmouel.com/2010/06/17/exclude-git-or-svn-directories-in-eclipse-helios/</link>
       <pubDate>Thu, 17 Jun 2010 04:48:42 +0000</pubDate>
-      
       <guid>https://blog.chmouel.com/2010/06/17/exclude-git-or-svn-directories-in-eclipse-helios/</guid>
       <description>If you are using Ctrl+Shift+T in Eclipse and have .git or .svn directory showing up it is easy to fix it without having to use another plugin for eclipse like subeclipse or egit.
 Open the Properties of your project go to Resource=&amp;gt;Resource Filters and click on Add to add a new filter.
 Now just do like this ScreenShot :
 Change the *.git* to *.svn* if you like for subversion.</description>
     </item>
-    
   </channel>
 </rss>
