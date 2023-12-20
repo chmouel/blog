@@ -9,16 +9,13 @@ removePathAccents: true
 paginate: 10
 paginatePath: "page"
 rssLimit: 20
-author:
-  name: "Chmouel Boudjnah"
-  url: "https://twitter.com/chmouel"
-  avatar: "https://chmouel.com/chmouel.png"
 
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
+  author: "Chmouel Boudjnah"
   env: production
   defaultTheme: auto
   # disableThemeToggle: true
