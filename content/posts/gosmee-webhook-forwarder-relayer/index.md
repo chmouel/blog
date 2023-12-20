@@ -2,7 +2,6 @@
 title: "Gosmee Webhook Forwarder Relayer"
 date: 2023-12-20T13:22:06+01:00
 ---
-
 I use "Webhook" every day; it's a simple mechanism used by most web
 applications to send payloads on events. It's great and all, but since it needs to
 send you data, it has to be exposed to the internet. And that's where it gets
@@ -45,6 +44,12 @@ This was quite straightforward, and since it was in `Go`, it makes it easy to
 distribute and run in the cloud, which is a perfect fit for when running on
 `Kubernetes` to expose a local `Deployment/Service` to the internet.
 
+Here is a handy diagram showing how it works:
+
+<img src="gosmee-diag.png">
+
+![gosmee diagram](gosmee-diag.png)
+
 ## Debugging Webhook with the Saved Script
 
 I added a feature that I find crucial to my workflow: the ability to replay a
@@ -70,26 +75,30 @@ easily reproduce (and hopefully fix) the bug.
 All this things was great until `smee.io` wasn't available anymore, it was down
 for a few weeks due of some abuse and our CI was broken again...
 
-You can run the `smee-server` easily and I should have probably have done that
-and go on with my day but instead since I did find it interesting I implemented
-a server into `gosmee` available as `gosmee server` with the ideas of adding
-more features like `authentication` in the feature (spoiler: I didn't do it
-since webhok is not really designed for that).
+You can run the [smee.io server](https://github.com/probot/smee.io) easily and
+I should have probably have done that and go on with my day but instead since I
+did find it interesting I implemented a server into `gosmee` available as
+`gosmee server` with the ideas of adding more features like `authentication` in
+the feature (spoiler: I didn't do it since webhook is not really designed for
+that).
 
 I wasn't sure if it was going to scale but since I have started running it on
 <https://hook.pipelinesascode.com> behind a [caddy
 server](https://caddyserver.com/) on the smallest Amazon public VM I could find,
-I never had issues.
+I never had issues with it and happily run this for everyone who wants an
+alternative to `smee.io`.
 
 ## Gosmee Replay via GitHub API
 
 I could probably have been done with this and called it a day, but then I stumbled
-onto the GitHub API to be able to [list
-deliveries](https://docs.github.com/en/rest/repos/webhooks?apiVersion=2022-11-28).
+onto the GitHub API documentation and saw that they have started to have the ability to [list
+deliveries](https://docs.github.com/en/rest/repos/webhooks?apiVersion=2022-11-28)
+I thought this would be an interesting fit for `gosmee`.
 
 This has the advantage of being able to replay any webhook deliveries even if the
 server or client was down, but it has the disadvantage of being specific to GitHub
 (unless there are other services offering that API that I don't know about).
+Furthermore you don't have to trust a external service or deploy your own.
 
 So, the `gosmee replay` feature is born. It only supports repository webhook for
 now, but I am planning to have organization webhook or even GitHub Apps webhook
