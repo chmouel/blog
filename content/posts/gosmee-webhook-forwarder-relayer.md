@@ -12,7 +12,7 @@ solution for that.
 
 There are a lot of solutions for that, but most of them are either paid or require
 some pre-setup. At [work](https://redhat.com/security), our Security team is very
-particular about things that can go in when you have things behind the VPN; the only
+pedantic about things that can go in when you have things behind the VPN; the only
 service that is allowed is: <https://smee.io>
 
 ## smee.io Service
