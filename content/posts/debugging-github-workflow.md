@@ -1,7 +1,6 @@
 ---
 title: "How to debug GitHub Workflow with Tmate"
 date: 2023-12-20T11:40:45+01:00
-draft: true
 ---
 GitHub workflow is great but can be a bit of a black box when things go wrong.
 
