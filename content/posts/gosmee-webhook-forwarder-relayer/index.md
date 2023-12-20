@@ -1,5 +1,5 @@
 ---
-title: "Gosmee Webhook Forwarder Relayer"
+title: "Gosmee Webhook Forwarder and Relayer"
 date: 2023-12-20T13:22:06+01:00
 ---
 I use "Webhook" every day; it's a simple mechanism used by most web
