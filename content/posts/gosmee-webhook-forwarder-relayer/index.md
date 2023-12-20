@@ -44,7 +44,12 @@ This was quite straightforward, and since it was in `Go`, it makes it easy to
 distribute and run in the cloud, which is a perfect fit for when running on
 `Kubernetes` to expose a local `Deployment/Service` to the internet.
 
-Here is a handy diagram showing how it works:
+It's available here:
+
+<https://github.com/chmouel/gosmee>
+
+and if my word don't make that much sense here is a handy diagram showing how it
+works:
 
 <img src="gosmee-diag.png">
 
