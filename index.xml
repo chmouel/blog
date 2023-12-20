@@ -6,8 +6,17 @@
     <description>Recent content on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 25 Apr 2023 09:00:56 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 20 Dec 2023 11:40:45 +0100</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to debug GitHub Workflow with Tmate</title>
+      <link>https://blog.chmouel.com/posts/debugging-github-workflow/</link>
+      <pubDate>Wed, 20 Dec 2023 11:40:45 +0100</pubDate>
+      <guid>https://blog.chmouel.com/posts/debugging-github-workflow/</guid>
+      <description>GitHub workflow is great but can be a bit of a black box when things go wrong.
+When the YAML cannot be validated, GitHub offers a handy feature to debug the workflow with additional logging.
+But sometimes your deployment or tests, or whatever you are doing in your workflow, fail when running on CI but not locally, and you are bound to end up in the git push/commit Outer-Loop hell:</description>
+    </item>
     <item>
       <title>qmk space cadet plus</title>
       <link>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</link>
@@ -179,16 +188,6 @@ When you were in school your teacher told you about &amp;ldquo;XML&amp;rdquo; an
       <description>Part of my new job working with Fabric8 is to having it deployed via minishift.
 Everything is nice and working (try it it&amp;rsquo;s awesome https://fabric8.io/guide/getStarted/gofabric8.html) as long you deploy it on your local workstation.
 The thing is that my desktop macosx laptop has only 8GB of RAM and is not very well up to the task to get all the services being deployed when I have my web browser and other stuff hogging the memory.</description>
-    </item>
-    <item>
-      <title>Getting a letsencrypt SSL certificate for the OpenShift console and API</title>
-      <link>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</link>
-      <pubDate>Thu, 29 Sep 2016 08:22:48 +0000</pubDate>
-      <guid>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</guid>
-      <description>By default when you install an OpenShift install it would automatically generate its own certificates.
-It uses those certificates for communication between nodes and as well to automatically auth the admin account. By default those same certificates are the one provided for the OpenShift console and API.
-Since it is auto generated you will when connecting to the website with you webbrowser get an ugly error message :
-and as the error message says that&amp;rsquo;s not very secure #sadpanda.</description>
     </item>
   </channel>
 </rss>

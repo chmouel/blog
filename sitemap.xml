@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.chmouel.com/</loc>
-    <lastmod>2023-04-25T09:00:56+02:00</lastmod>
+    <lastmod>2023-12-20T11:40:45+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.chmouel.com/posts/debugging-github-workflow/</loc>
+    <lastmod>2023-12-20T11:40:45+01:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/posts/</loc>
-    <lastmod>2023-04-25T09:00:56+02:00</lastmod>
+    <lastmod>2023-12-20T11:40:45+01:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</loc>
     <lastmod>2023-04-25T09:00:56+02:00</lastmod>
