@@ -25,6 +25,8 @@ params:
   # label:
   #   icon: logo/chmouel.png
   #   iconHeight: 40
+  assets:
+    disableFingerprinting: true
 
   editPost:
     URL: "https://github.com/chmouel/blog/tree/main/content"
