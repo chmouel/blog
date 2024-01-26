@@ -6,8 +6,17 @@
     <description>Recent content on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 20 Dec 2023 13:22:06 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jan 2024 15:11:55 +0100</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trusting self signed certs with Ingress Controller on Kubernetes</title>
+      <link>https://blog.chmouel.com/posts/self-signed-certs/</link>
+      <pubDate>Fri, 26 Jan 2024 15:11:55 +0100</pubDate>
+      <guid>https://blog.chmouel.com/posts/self-signed-certs/</guid>
+      <description>I have a very complicated development environment, which spins up a local Kubernetes cluster on Kind and then deploys a bunch of services to it.
+Some of the services gets accessed by the browser and until late I was deploying everything on localhost which so far did not cause any issues, since the browser are good at trusting localhost.
+But since my laptop was getting slower and slower and I had a new raspberry pi 5 unused with a SSD, I decided to made it my local Kubernetes cluster.</description>
+    </item>
     <item>
       <title>Gosmee Webhook Forwarder and Relayer</title>
       <link>https://blog.chmouel.com/posts/gosmee-webhook-forwarder-relayer/</link>
@@ -178,14 +187,6 @@ The script showed today, that I am proud of because of its usefulness and probab
       <guid>https://blog.chmouel.com/2021/01/31/building-packages-for-multiple-distros-on-launchpad-with-docker/</guid>
       <description>I have been trying to build some packages for the ubuntu distros for a new program I have released, gnome-next-meeting-applet
 In short, it what quite painful! if you are quite new to the launchpad and debian packaging ways (which I wasn&amp;rsquo;t and yet It took me some time to figure out) you can get quite lost. I got to say that the fedora copr experience is much smoother. After a couple of frustrated google and stackoverflow searches and multiple tries I finally figured out a script that builds and upload properly to launchpad via docker to make it available to my users.</description>
-    </item>
-    <item>
-      <title>Tekton yaml templates and script feature</title>
-      <link>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</link>
-      <pubDate>Tue, 28 Jul 2020 08:55:07 +0000</pubDate>
-      <guid>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</guid>
-      <description>Don&amp;rsquo;t you love &amp;ldquo;yaml&amp;rdquo;, yes you do ! or at least that&amp;rsquo;s what the industry told you to love!
-When you were in school your teacher told you about &amp;ldquo;XML&amp;rdquo; and how it will solve all the industry problems (and there was many in the late 90s). But you learned that you hate reaching to your &amp;quot;&amp;lt;&amp;quot; and&amp;quot; &amp;quot;&amp;gt;&amp;quot; keys and rather have something else. So then the industry came up with &amp;ldquo;json&amp;rdquo; so computer or yourself can talk to each others, that&amp;rsquo;s nice for computers but actually not so nice for yourself it was actually a lie and was not made for yourself to read and write but only for comptures.</description>
     </item>
   </channel>
 </rss>

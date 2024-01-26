@@ -3,12 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.chmouel.com/</loc>
-    <lastmod>2023-12-20T13:22:06+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.chmouel.com/posts/gosmee-webhook-forwarder-relayer/</loc>
-    <lastmod>2023-12-20T13:22:06+01:00</lastmod>
+    <lastmod>2024-01-26T15:11:55+01:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/posts/</loc>
+    <lastmod>2024-01-26T15:11:55+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.chmouel.com/posts/self-signed-certs/</loc>
+    <lastmod>2024-01-26T15:11:55+01:00</lastmod>
+  </url><url>
+    <loc>https://blog.chmouel.com/posts/gosmee-webhook-forwarder-relayer/</loc>
     <lastmod>2023-12-20T13:22:06+01:00</lastmod>
   </url><url>
     <loc>https://blog.chmouel.com/posts/debugging-github-workflow/</loc>
