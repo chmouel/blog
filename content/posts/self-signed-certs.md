@@ -1,0 +1,145 @@
+---
+title: "Trusting self signed certs with Ingress Controller on Kubernetes"
+date: 2024-01-26T15:11:55+01:00
+draft: true
+---
+
+I have a very complicated development environement, which spins up a local
+Kubernetes cluster on Kind and then deploys a bunch of services to it.
+
+Some of the services gets accessed by the browser and until late I was deploying
+everything on localhost which so far didn't cause any issues, since the browser
+are good at trusting localhost.
+
+But since my laptop was getting slower and slower and I had a new raspberry pi 5
+unused with a SSD, I decided to made it as my local kubernetes cluster.
+
+Deploying kubernetes on a rpi5 running raspbian with nix is probably a post on
+its own, but let's assume it's already deployed. Now I have a new issue, since
+we are not running on localhost the browser don't trust it anymore and everytime
+I redeploy I need to reclick on those pesky "Trust me bro, I know what I'm
+doing" (or something along those lines) scary box.
+
+I spent a bit of time reading this LetsEncrypt blog post
+<https://letsencrypt.org/docs/certificates-for-localhost/> which had a link to
+this fantastic tool called [minica](https://github.com/jsha/minica/). It's
+pretty straightforward it create a CA root and then create domains out of it.
+
+In your browsers you only trust the CA root and everytime you generate domains,
+they are being trusted.
+
+## Generating a certificate and deploying an Ingress
+
+To plug this with ingress-nginx I do something like this:
+
+1. First generate a domain for `$domain` with minica:
+
+```bash
+mkdir -p minica;cd minica/
+minica -domains $domain
+```
+
+(if it's already generated then the minica command will fail then make sure it's not)
+
+2. Then a create a kubernetes secret out of it which we will call `$sec_name` on
+   namespace `$namespace` using the generate secret from minica.
+
+```bash
+key_file=minica/${domain}/key.pem
+cert_file=minica/${domain}/cert.pem
+kubectl create secret tls ${sec_name} --key ${key_file} --cert ${cert_file} -n ${namespace}
+```
+
+3. And then we create a Ingress out of it for a `component` on `targetPort`
+   expose as ${host} (for example for a docker registry, I use `docker-registry`
+   as component, `5000` as targetPort and `host` as `registry.local` which
+   resolve via my local dns but your can use a `/etc/host` entry too)
+
+```bash
+cat <<EOF | kubectl apply -f -
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: "${component}"
+  namespace: "${namespace}"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - "${host}"
+      secretName: "${sec_name}"
+  rules:
+    - host: "${host}"
+      http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: "${component}"
+                port:
+                  number: ${targetPort}
+EOF
+```
+
+for the docker registries you actually need some other annotations to give to
+ingress nginx to let know that large blobs are ok, here is what I do to actually
+set those, you don't need to set them if your service don't need to increase the
+read/send timeout nginx settings:
+
+```bash
+for annotations in "nginx.ingress.kubernetes.io/proxy-body-size=0" \
+	"nginx.ingress.kubernetes.io/proxy-read-timeout=600" \
+	"nginx.ingress.kubernetes.io/proxy-send-timeout=600" \
+	"kubernetes.io/tls-acme=true"; do
+	kubectl -v=0 annotate ingress -n ${namespace} ${component} "${annotations}"
+done
+```
+
+## Clients
+### curl
+
+now you can use curl to try it quickly:
+
+```bash
+curl --cacert minica/minica.pem https://${host}
+```
+
+and no weird error :)
+
+### Firefox
+
+For Firefox you open the settings, search `view certificates` and click it, go
+to the `Authorities` tab click on Import use the minica.pem file as generated in
+the `minica/` directory and trust it as root domain by checking the
+checkbox. Now if you go to the https://${host} it should not bring any scary
+messsages.
+
+### Chrome browsers
+
+Almost the same thing with chrome browser, I use Brave but that should apply to
+others. Go to this URL in your browser to see the certificates (it's in the
+security section if you look for it from the home settings)
+
+<brave://settings/certificates>
+
+go to the authorities tab and import your minica.pem from the `minica/`
+directory and you should be good to go.
+
+### Python request
+
+Just for completess using python requests you can simply specify the cacerts by
+using the non obvious keyword verify:
+
+```python
+                r = requests.get(
+                    f"https://{domain}/",
+                    verify="minica/minica.pem",
+                )
+```
+
+## Conclusion
+
+There is no reason to don't use ssl domains for your local services on your
+cluster and you won't need to spend your precious time clicking on those "trust
+me" button anymore.
