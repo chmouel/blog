@@ -4,21 +4,22 @@ date: 2024-01-26T15:11:55+01:00
 draft: true
 ---
 
-I have a very complicated development environement, which spins up a local
+I have a very complicated development environment, which spins up a local
 Kubernetes cluster on Kind and then deploys a bunch of services to it.
 
 Some of the services gets accessed by the browser and until late I was deploying
-everything on localhost which so far didn't cause any issues, since the browser
+everything on localhost which so far did not cause any issues, since the browser
 are good at trusting localhost.
 
 But since my laptop was getting slower and slower and I had a new raspberry pi 5
-unused with a SSD, I decided to made it as my local kubernetes cluster.
+unused with a SSD, I decided to made it my local Kubernetes cluster.
 
-Deploying kubernetes on a rpi5 running raspbian with nix is probably a post on
-its own, but let's assume it's already deployed. Now I have a new issue, since
-we are not running on localhost the browser don't trust it anymore and everytime
-I redeploy I need to reclick on those pesky "Trust me bro, I know what I'm
-doing" (or something along those lines) scary box.
+Deploying Kubernetes on a Raspberry Pi 5 running the raspbian distribution with
+nix is probably a post on its own, but let's assume it's already deployed. Now
+I have a new issue, since we are not running on localhost the browser don't
+trust it anymore and everytime I redeploy I need to click again on those pesky
+"Trust me bro, I know what I'm doing" (or something along those lines) scary
+box.
 
 I spent a bit of time reading this LetsEncrypt blog post
 <https://letsencrypt.org/docs/certificates-for-localhost/> which had a link to
@@ -39,10 +40,10 @@ mkdir -p minica;cd minica/
 minica -domains $domain
 ```
 
-(if it's already generated then the minica command will fail then make sure it's not)
+(if it is already generated then the `minica` command will fail then make sure it's not)
 
-2. Then a create a kubernetes secret out of it which we will call `$sec_name` on
-   namespace `$namespace` using the generate secret from minica.
+2. You will hen create a Kubernetes secret out of it which we will call `$sec_name` on
+   namespace `$namespace` using the generate secret from `minica.`
 
 ```bash
 key_file=minica/${domain}/key.pem
@@ -52,8 +53,8 @@ kubectl create secret tls ${sec_name} --key ${key_file} --cert ${cert_file} -n $
 
 3. And then we create a Ingress out of it for a `component` on `targetPort`
    expose as ${host} (for example for a docker registry, I use `docker-registry`
-   as component, `5000` as targetPort and `host` as `registry.local` which
-   resolve via my local dns but your can use a `/etc/host` entry too)
+   as component, `5000` as `targetPort` and `host` as `registry.local` which
+   resolve via my local DNS but you can use a `/etc/host` entry too)
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -82,21 +83,22 @@ spec:
 EOF
 ```
 
-for the docker registries you actually need some other annotations to give to
-ingress nginx to let know that large blobs are ok, here is what I do to actually
+For the docker registries you actually need some other annotations to give to
+ingress nginx to let know that large blobs are OK, here is what I do to actually
 set those, you don't need to set them if your service don't need to increase the
-read/send timeout nginx settings:
+read/send timeout nginx settings.
 
 ```bash
 for annotations in "nginx.ingress.kubernetes.io/proxy-body-size=0" \
-	"nginx.ingress.kubernetes.io/proxy-read-timeout=600" \
-	"nginx.ingress.kubernetes.io/proxy-send-timeout=600" \
-	"kubernetes.io/tls-acme=true"; do
-	kubectl -v=0 annotate ingress -n ${namespace} ${component} "${annotations}"
+ "nginx.ingress.kubernetes.io/proxy-read-timeout=600" \
+ "nginx.ingress.kubernetes.io/proxy-send-timeout=600" \
+ "kubernetes.io/tls-acme=true"; do
+ kubectl -v=0 annotate ingress -n ${namespace} ${component} "${annotations}"
 done
 ```
 
 ## Clients
+
 ### curl
 
 now you can use curl to try it quickly:
@@ -110,10 +112,10 @@ and no weird error :)
 ### Firefox
 
 For Firefox you open the settings, search `view certificates` and click it, go
-to the `Authorities` tab click on Import use the minica.pem file as generated in
+to the `Authorities` tab click on Import use the `minica.pem` file as generated in
 the `minica/` directory and trust it as root domain by checking the
 checkbox. Now if you go to the https://${host} it should not bring any scary
-messsages.
+messages.
 
 ### Chrome browsers
 
@@ -123,12 +125,12 @@ security section if you look for it from the home settings)
 
 <brave://settings/certificates>
 
-go to the authorities tab and import your minica.pem from the `minica/`
+go to the authorities tab and import your `minica.pem` from the `minica/`
 directory and you should be good to go.
 
 ### Python request
 
-Just for completess using python requests you can simply specify the cacerts by
+Just for completeness using python requests you can simply specify the root certificates by
 using the non obvious keyword verify:
 
 ```python
@@ -140,6 +142,6 @@ using the non obvious keyword verify:
 
 ## Conclusion
 
-There is no reason to don't use ssl domains for your local services on your
+There is no reason to don't use SSL domains for your local services on your
 cluster and you won't need to spend your precious time clicking on those "trust
 me" button anymore.
