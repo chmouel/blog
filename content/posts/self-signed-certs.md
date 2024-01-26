@@ -1,7 +1,6 @@
 ---
 title: "Trusting self signed certs with Ingress Controller on Kubernetes"
 date: 2024-01-26T15:11:55+01:00
-draft: true
 ---
 
 I have a very complicated development environment, which spins up a local
