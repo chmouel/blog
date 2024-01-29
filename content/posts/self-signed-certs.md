@@ -98,9 +98,17 @@ done
 
 ## Clients
 
-### curl
+### Installing the certificate system wise (Linux)
 
-now you can use curl to try it quickly:
+On Linux you can install the certificate system wise by issuing this command:
+
+```bash
+sudo trust anchor -v --store minica/minica.pem
+```
+
+### Curl
+
+if you are not installing the certificate system wise you can still use curl with the custom certificate by specifying the cacert argument:
 
 ```bash
 curl --cacert minica/minica.pem https://${host}
