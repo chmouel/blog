@@ -21,6 +21,7 @@ params:
   # disableThemeToggle: true
   # ShowPostNavLinks: true
   ShowCodeCopyButtons: true
+  ShowToc: true
   disableSpecial1stPost: true
   # label:
   #   icon: logo/chmouel.png
