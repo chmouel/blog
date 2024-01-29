@@ -1,5 +1,5 @@
 ---
-title: "Trusting self signed certs with Ingress Controller on Kubernetes"
+title: "Trusting self signed certificates with Kubernetes Ingress Controller"
 date: 2024-01-26T15:11:55+01:00
 ---
 
