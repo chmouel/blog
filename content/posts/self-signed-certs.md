@@ -111,9 +111,15 @@ sudo trust anchor -v --store minica/minica.pem
 
 If you are using Nix you can simply use the option [security.pki.cert](https://search.nixos.org/options?channel=unstable&show=security.pki.certificates&from=0&size=50&sort=relevance&type=packages&query=security.pki.cert) and include the certificate in your configuration.
 
+### MacOS
+
+On MacOS you can use this guide from Broadcom here to install your `minica/minica.pem` onto your keychain: <https://techdocs.broadcom.com/us/en/symantec-security-software/web-and-network-security/web-isolation/1-16/Installing-the-STIP/Installing-the-STIP-Overview/Installing-the-CA-Certificate/Installing-the-CA-Certificate-Mac.html>
+
+When you trust it, it will be available to all CLI tools as well as your browsers.
+
 ### Curl
 
-If you are not installing the certificate system wise you can still use curl with the custom certificate by specifying the cacert argument:
+If you can't (or don't want to) install certificate system wise use curl with the custom certificate by specifying the `--cacert` flag to curl:
 
 ```bash
 curl --cacert minica/minica.pem https://${host}
@@ -135,7 +141,7 @@ security section if you look for it from the home settings)
 
 <brave://settings/certificates>
 
-go to the authorities tab and import your `minica.pem` from the `minica/`
+Go to the authorities tab and import your `minica.pem` from the `minica/`
 directory and you should be good to go.
 
 ### Python request
