@@ -96,9 +96,9 @@ for annotations in "nginx.ingress.kubernetes.io/proxy-body-size=0" \
 done
 ```
 
-## Clients
+## Using the certificate
 
-### Installing the certificate system wise (Linux)
+### Linux (generic)
 
 On Linux you can install the certificate system wise by issuing this command:
 
@@ -106,19 +106,21 @@ On Linux you can install the certificate system wise by issuing this command:
 sudo trust anchor -v --store minica/minica.pem
 ```
 
+### NixOS
+
+If you are using Nix you can simply use the option [security.pki.cert](https://search.nixos.org/options?channel=unstable&show=security.pki.certificates&from=0&size=50&sort=relevance&type=packages&query=security.pki.cert) and include the certificate in your configuration.
+
 ### Curl
 
-if you are not installing the certificate system wise you can still use curl with the custom certificate by specifying the cacert argument:
+If you are not installing the certificate system wise you can still use curl with the custom certificate by specifying the cacert argument:
 
 ```bash
 curl --cacert minica/minica.pem https://${host}
 ```
 
-and no weird error :)
-
 ### Firefox
 
-For Firefox you open the settings, search `view certificates` and click it, go
+As for Firefox you have to go to the settings and search for `view certificates` in the search box, go
 to the `Authorities` tab click on Import use the `minica.pem` file as generated in
 the `minica/` directory and trust it as root domain by checking the
 checkbox. Now if you go to the https://${host} it should not bring any scary
