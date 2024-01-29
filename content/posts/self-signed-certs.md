@@ -41,8 +41,9 @@ minica -domains $domain
 
 (if it is already generated then the `minica` command will fail then make sure it's not)
 
-2. You will hen create a Kubernetes secret out of it which we will call `$sec_name` on
-   namespace `$namespace` using the generate secret from `minica.`
+2. Using the generated secret from `minica` you can now create a
+   Kubernetes secret out of it, we can call it `$sec_name` nd install it on the
+   `$namespace` namespace.
 
 ```bash
 key_file=minica/${domain}/key.pem
