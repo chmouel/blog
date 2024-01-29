@@ -9,7 +9,7 @@
     <lastBuildDate>Fri, 26 Jan 2024 15:11:55 +0100</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trusting self signed certs with Ingress Controller on Kubernetes</title>
+      <title>Trusting self signed certificates with Kubernetes Ingress Controller</title>
       <link>https://blog.chmouel.com/posts/self-signed-certs/</link>
       <pubDate>Fri, 26 Jan 2024 15:11:55 +0100</pubDate>
       <guid>https://blog.chmouel.com/posts/self-signed-certs/</guid>
