@@ -225,11 +225,12 @@ builtin `isearch-query-replace`:
 
 ```elisp
 (use-package anzu
-   :map
+  :bind
+  (:map
    isearch-mode-map
    ([remap isearch-query-replace]        . anzu-isearch-query-replace)
    ([remap isearch-query-replace-regexp] . anzu-isearch-query-replace-regexp)
-   ("C-h"                                . anzu-isearch-query-replace))
+   ("C-h"                                . anzu-isearch-query-replace)))
 ```
 
 I start a search and do a `C-h` and it will ask me for a new name to replace
