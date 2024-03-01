@@ -13,8 +13,8 @@
       <link>https://blog.chmouel.com/posts/emacs-isearch/</link>
       <pubDate>Fri, 01 Mar 2024 10:21:39 +0100</pubDate>
       <guid>https://blog.chmouel.com/posts/emacs-isearch/</guid>
-      <description>Introduction It has been a long time since I have blogged about Emacs. I still enjoy using it as day one (around 1998) even tho I have now moved out of the Emacs keybindings to the evil keybinding as long as being proficient using Neovim (for terminal editing) or Vscode (for the debugger).
-Today I&amp;rsquo;d like to talk about Isearch, I don&amp;rsquo;t realise how powerful it is compared to when using to the other editors out of the box and when you customize it.</description>
+      <description>Introduction It has been a long time since I have blogged about Emacs. I still enjoy using it as when I started from day one (around 1998). I did made some changes I have now moved out of the Emacs keybindings toward using the evil keybinding and have become proficient using Neovim (for terminal editing) or Vscode (for the debugger) but Emacs is where my &amp;ldquo;home&amp;rdquo; is.
+Today I&amp;rsquo;d like to talk about Isearch, I don&amp;rsquo;t think we realise how powerful isearch is compared to other editors, the experience out of the box is very intuitive and powerful and as anything with Emacs you can customize it exactly the way you want.</description>
     </item>
     <item>
       <title>Trusting self signed certificates with Kubernetes Ingress Controller</title>
