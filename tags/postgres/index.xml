@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>postgres on Chmouel&#39;s blog</title>
+    <title>Postgres on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/postgres/</link>
-    <description>Recent content in postgres on Chmouel&#39;s blog</description>
+    <description>Recent content in Postgres on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Sat, 06 Jan 2007 08:19:23 +0000</lastBuildDate>

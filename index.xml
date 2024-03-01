@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/</link>
     <description>Recent content on Chmouel&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 26 Jan 2024 15:11:55 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2024 10:21:39 +0100</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced usage of Emacs isearch</title>
+      <link>https://blog.chmouel.com/posts/emacs-isearch/</link>
+      <pubDate>Fri, 01 Mar 2024 10:21:39 +0100</pubDate>
+      <guid>https://blog.chmouel.com/posts/emacs-isearch/</guid>
+      <description>It has been a long time since I have blogged about Emacs. I still enjoy using it as day one (around 1998) even tho I have now moved out of the Emacs keybindings to the evil keybinding as long as being proficient using Neovim (for terminal editing) or Vscode (for the debugger).
+Today I&amp;rsquo;d like to talk about Isearch, I don&amp;rsquo;t realise how powerful it is compared to when using to the other editors out of the box and when you customize it.</description>
+    </item>
     <item>
       <title>Trusting self signed certificates with Kubernetes Ingress Controller</title>
       <link>https://blog.chmouel.com/posts/self-signed-certs/</link>
@@ -179,14 +187,6 @@ port=5353 no-resolv interface=eth0 except-interface=lo listen-address=::1,192.16
       <guid>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</guid>
       <description>I write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn only once and some others I write for about 5mn but save me hours of boreness and repetitive task.
 The script showed today, that I am proud of because of its usefulness and probably not of its code, is called &amp;ldquo;batzconverter&amp;rdquo; available on https://github.com/chmouel/batzconverter. What the script is trying to solve is when you work with your team spread around 3/4 timezones, how do you schedule a meeting easily.</description>
-    </item>
-    <item>
-      <title>Building packages for multiple distros on launchpad with docker</title>
-      <link>https://blog.chmouel.com/2021/01/31/building-packages-for-multiple-distros-on-launchpad-with-docker/</link>
-      <pubDate>Sun, 31 Jan 2021 15:59:43 +0000</pubDate>
-      <guid>https://blog.chmouel.com/2021/01/31/building-packages-for-multiple-distros-on-launchpad-with-docker/</guid>
-      <description>I have been trying to build some packages for the ubuntu distros for a new program I have released, gnome-next-meeting-applet
-In short, it what quite painful! if you are quite new to the launchpad and debian packaging ways (which I wasn&amp;rsquo;t and yet It took me some time to figure out) you can get quite lost. I got to say that the fedora copr experience is much smoother. After a couple of frustrated google and stackoverflow searches and multiple tries I finally figured out a script that builds and upload properly to launchpad via docker to make it available to my users.</description>
     </item>
   </channel>
 </rss>
