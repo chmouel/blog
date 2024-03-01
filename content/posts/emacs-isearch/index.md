@@ -18,7 +18,7 @@ string and it incrementally search for it. If you press Enter then the search
 finishes.
 
 There is multiple keys you can press to do more after that search, for example
-if you press C-s again without any input it will search for the next occurrence
+if you press `C-s` again without any input it will search for the next occurrences
 of the string you already searched you can read about all the basics in the
 manual:
 
@@ -155,7 +155,7 @@ automatically select that symbol for search.
 
 Emacs has a [builtin
 way](https://www.gnu.org/software/emacs/manual/html_node/emacs/Symbol-Search.html)
-to do this using `M-s .` but I find both way too slow.
+to do this using `M-s .` but I find both way too cumbersome to type.
 
 I remapped the key in isearch mode to `C-d` to make this easier since close to
 `C-s`, I can just do `C-s C-d` and I'll get that symbol filled:
@@ -174,7 +174,7 @@ I remapped the key in isearch mode to `C-d` to make this easier since close to
 Sometime I want to have a interactive way to jump into the current search word,
 you can use `consult-line` from the [consult](https://github.com/minad/consult)
 package to jump interactively. But if you want to jump from the current isearch
-term you can just use that simple function from earlier and add consult-line
+term you can just use that simple function from earlier and add `consult-line`
 like this:
 
 ```elisp
@@ -239,7 +239,9 @@ that word to something else.
 
 ## Conclusion
 
-There is other multiple way to supercharge the Emacs Search and it's probably
-just a glimpsee of what I do for my search need. There is as well the fantastic
-[deadgrep](https://github.com/Wilfred/deadgrep) package which I use often with
-the `deadgrep-edit-mode` function to do quick replacement over a project.
+There is other ways to supercharge the Emacs Search and it's probably
+just a tiny glimpsee of what I know or what I need for my Emacs searching.
+
+There is as well the fantastic [deadgrep](https://github.com/Wilfred/deadgrep)
+package which I use often with the `deadgrep-edit-mode` function to do quick
+replacement over a project.
