@@ -2,6 +2,7 @@
 title: "Advanced usage of Emacs isearch"
 date: 2024-03-01T10:21:39+01:00
 ---
+## Introduction
 
 It has been a long time since I have blogged about Emacs. I still enjoy using it
 as day one (around 1998) even tho I have now moved out of the Emacs keybindings
@@ -23,7 +24,8 @@ manual:
 
 <https://www.gnu.org/software/emacs/manual/html_node/emacs/Search.html>
 
-I have added some customization to isearch which I find really nice.
+I have added some customizations to isearch which I find really nice and have
+them listem in this blog post.
 
 ### Directly jump into occur from a search
 
