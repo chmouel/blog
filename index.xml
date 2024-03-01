@@ -13,7 +13,7 @@
       <link>https://blog.chmouel.com/posts/emacs-isearch/</link>
       <pubDate>Fri, 01 Mar 2024 10:21:39 +0100</pubDate>
       <guid>https://blog.chmouel.com/posts/emacs-isearch/</guid>
-      <description>It has been a long time since I have blogged about Emacs. I still enjoy using it as day one (around 1998) even tho I have now moved out of the Emacs keybindings to the evil keybinding as long as being proficient using Neovim (for terminal editing) or Vscode (for the debugger).
+      <description>Introduction It has been a long time since I have blogged about Emacs. I still enjoy using it as day one (around 1998) even tho I have now moved out of the Emacs keybindings to the evil keybinding as long as being proficient using Neovim (for terminal editing) or Vscode (for the debugger).
 Today I&amp;rsquo;d like to talk about Isearch, I don&amp;rsquo;t realise how powerful it is compared to when using to the other editors out of the box and when you customize it.</description>
     </item>
     <item>
