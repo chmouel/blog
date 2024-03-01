@@ -5,37 +5,40 @@ date: 2024-03-01T10:21:39+01:00
 ## Introduction
 
 It has been a long time since I have blogged about Emacs. I still enjoy using it
-as day one (around 1998) even tho I have now moved out of the Emacs keybindings
-to the evil keybinding as long as being proficient using Neovim (for terminal
-editing) or Vscode (for the debugger).
+as when I started from day one (around 1998). I did made some changes I have now
+moved out of the Emacs keybindings toward using the evil keybinding and have
+become proficient using Neovim (for terminal editing) or Vscode (for the
+debugger) but Emacs is where my "home" is.
 
-Today I'd like to talk about Isearch, I don't realise how powerful it is
-compared to when using to the other editors out of the box and when you
-customize it.
+Today I'd like to talk about Isearch, I don't think we realise how powerful
+isearch is compared to other editors, the experience out of the box is very
+intuitive and powerful and as anything with Emacs you can customize it exactly
+the way you want.
 
-Isearch by the basics of it, search incrementally. You press C-s you press a
-string and it incrementally search for it. If you press Enter then the search
-finishes.
+The basic of Isearch is to search incrementally for something in your current
+buffer. You press `C-s` you press a string and it incrementally search for it. If
+you press `Enter` then the search finishes.
 
 There is multiple keys you can press to do more after that search, for example
-if you press `C-s` again without any input it will search for the next occurrences
-of the string you already searched you can read about all the basics in the
-manual:
+if you press `C-s` again and you don't have any inputs it will search for the
+next occurrences of the string of the previous search, you can read about all
+the basics in the manual:
 
 <https://www.gnu.org/software/emacs/manual/html_node/emacs/Search.html>
 
-I have added some customizations to isearch which I find really nice and have
+I have made some customizations to isearch which I find really nice and have
 them listed in this blog post.
 
 ### Directly jump into occur from a search
 
-When you search a buffer with word it may become tedious to jump around with
-`C-s`, you can use the key `M-s o` in isearch to automatically have the overview
-of all the occurrence in a the [occur](https://www.gnu.org/software/emacs/manual/html_node/emacs/Other-Repeating-Search.html) buffer.
+When you search a buffer with a word it may become tedious to jump around with
+`C-s`, you can use the key combo `M-s o` in isearch to automatically have an
+overview of all the occurrences in the
+[occur](https://www.gnu.org/software/emacs/manual/html_node/emacs/Other-Repeating-Search.html)
+buffer.
 
-The only problem is that I like to keep that buffer and have the `isearch` mode exited.
-
-I have a little function that does it:
+I like to keep that buffer and have the `isearch` mode exited. To be able to do
+this I have a little function that does it, which I have added via [use-package](https://www.gnu.org/software/emacs/manual/html_node/use-package/index.html):
 
 ```elisp
 (use-package isearch
@@ -56,16 +59,17 @@ I have a little function that does it:
         ("C-o" . my-occur-from-isearch)))
 ```
 
-I simply press `C-s` a search term and then `C-o` and I'll get a nice window of
-all occurrences
-of that search in the current buffer,
+With this configuration I simply press `C-s` to start a search, type something I
+want to find and then press `C-o` to get a nice window of all occurrences of
+that search in the current buffer.
 
 ![isearch-occur](./isearch-occur.png)
 
-Since I have configured my `display-buffer-alist` variable the occur windows
+Since I have configured my `display-buffer-alist` variable, the occur window
 automatically get focused and I can just press a `n`, `p` to go to the next or
-previous occurrence and `q` to discard the window. Here is a snippet of my
-configuration:
+previous occurrence and `q` to discard the window.
+
+Here is a snippet of my configuration for display-buffer-alist:
 
 ```elisp
 (defun my-select-window (window &rest _)
@@ -79,17 +83,18 @@ configuration:
          (preserve-size . (t . t)))))
 ```
 
-As a side note, I never really understood how `display-buffer-alist` worked before
-watching prot's excellent video and blog post available here:
+As a side note, I never really understood how `display-buffer-alist` worked
+before watching prot excellent video and blog post about it which is available
+here:
 
 <https://protesilaos.com/codelog/2024-02-08-emacs-window-rules-display-buffer-alist/>
 
 ### Do a project search from a search term
 
-Now that little function which I used for occur could be generalised and
+Now that little function which I used for `occur` could be generalised and
 extended for other type of search.
 
-For example you can do a project search out of the current search word instead of
+For example, you can do a project search out of the current search word instead of
 limiting ourselves to the current buffer:
 
 ```elisp
@@ -111,25 +116,29 @@ limiting ourselves to the current buffer:
         ("C-f" . my-project-search-from-isearch)))
 ```
 
-you search a term and you press `C-f` and it will instead do a
-`project-find-regexp`
+you search a term and you press the `C-f` keys and it will instead do a
+search across your current
+[project](https://www.gnu.org/software/emacs/manual/html_node/emacs/Projects.html)
+with the `project-find-regexp` function.
 
 ![isearch-project](./isearch-project.png)
 
-Note that not much as changed between those two functions, and you can easily
+Note that not much as changed between those functions, and you can easily
 generalise this with a
 [macro](https://www.gnu.org/software/emacs/manual/html_node/elisp/Macros.html)
-or a function.
+or a function, but i'll keep this obvious to make it easy to copy and paste in
+your configuration.
 
 ### Use the current selection for the initial search (if set)
 
-This comes from an idea on a rather old reddit post here:
+This comes from an idea of a rather old reddit post:
 
 <https://www.reddit.com/r/emacs/comments/2amn1v/isearch_selected_text/cixq7zx/>
 
-This uses the current selection for the initial selection. I can use evil
-operator to do any sort of selection and then press `C-s` and it will use that
-selection to do the search:
+This uses the current selection for the initial selection. I do a selection via
+for example an evil operator or via the
+[easy-mark function from the easy-kill](https://github.com/leoliu/easy-kill) library and then press `C-s`
+to use that selection for the initial search input:
 
 ```elisp
   ;; use selection to search
@@ -146,19 +155,26 @@ selection to do the search:
       ad-do-it))
 ```
 
+I may need to edit that search term, the best way to do edit is to go to the
+*edit mode* using the `M-e` key which is bound to the `isearch-edit-string`
+function and let you edit the search term with a cursor (ie: not incrementally).
+
 ### Select the current symbol at point easily for the search
 
-Usually you want to select the current symbol to start the search, there is
+Many times you want to select the current symbol to start the search, there is
 multiple way to do this. In `evil` I can do a selection with `vio` to select the
 current symbol and thanks to the defadvice in the previous tip it would
 automatically select that symbol for search.
 
 Emacs has a [builtin
 way](https://www.gnu.org/software/emacs/manual/html_node/emacs/Symbol-Search.html)
-to do this using `M-s .` but I find both way too cumbersome to type.
+to do this using `M-s .` or since Emacs 28 you can use the function
+`isearch-forward-thing-at-point` to directly start a search with the current
+symbol.
 
-I remapped the key in isearch mode to `C-d` to make this easier since close to
-`C-s`, I can just do `C-s C-d` and I'll get that symbol filled:
+I find it easier for me to remap the `C-d` key in isearch mode since I find it
+easier being close to `C-s` on a qwerty keyboard. I can then just do `C-s C-d`
+and I'll get that symbol filled, here is the snippet of my config:
 
 ```elisp
 (use-package isearch
@@ -174,7 +190,7 @@ I remapped the key in isearch mode to `C-d` to make this easier since close to
 Sometime I want to have a interactive way to jump into the current search word,
 you can use `consult-line` from the [consult](https://github.com/minad/consult)
 package to jump interactively. But if you want to jump from the current isearch
-term you can just use that simple function from earlier and add `consult-line`
+term you can just use that same simple function from earlier and instead `consult-line`
 like this:
 
 ```elisp
@@ -194,7 +210,7 @@ like this:
 ```
 
 I start a search and press `C-l` and it jumps directly to `consult-line` which I
-can further do things with it:
+can further do things with it with preview.
 
 ![isearch-consult](./isearch-consult.png)
 
