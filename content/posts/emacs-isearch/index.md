@@ -25,7 +25,7 @@ manual:
 <https://www.gnu.org/software/emacs/manual/html_node/emacs/Search.html>
 
 I have added some customizations to isearch which I find really nice and have
-them listem in this blog post.
+them listed in this blog post.
 
 ### Directly jump into occur from a search
 
