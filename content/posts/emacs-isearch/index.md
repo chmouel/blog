@@ -29,7 +29,7 @@ the basics in the manual:
 I have made some customizations to isearch which I find really nice and have
 them listed in this blog post.
 
-### Directly jump into occur from a search
+## Directly jump into occur from a search
 
 When you search a buffer with a word it may become tedious to jump around with
 `C-s`, you can use the key combo `M-s o` in isearch to automatically have an
@@ -89,7 +89,7 @@ here:
 
 <https://protesilaos.com/codelog/2024-02-08-emacs-window-rules-display-buffer-alist/>
 
-### Do a project search from a search term
+## Do a project search from a search term
 
 Now that little function which I used for `occur` could be generalised and
 extended for other type of search.
@@ -129,7 +129,7 @@ generalise this with a
 or a function, but i'll keep this obvious to make it easy to copy and paste in
 your configuration.
 
-### Use the current selection for the initial search (if set)
+## Use the current selection for the initial search (if set)
 
 This comes from an idea of a rather old reddit post:
 
@@ -159,7 +159,7 @@ I may need to edit that search term, the best way to do edit is to go to the
 *edit mode* using the `M-e` key which is bound to the `isearch-edit-string`
 function and let you edit the search term with a cursor (ie: not incrementally).
 
-### Select the current symbol at point easily for the search
+## Select the current symbol at point easily for the search
 
 Many times you want to select the current symbol to start the search, there is
 multiple way to do this. In `evil` I can do a selection with `vio` to select the
@@ -185,7 +185,7 @@ and I'll get that symbol filled, here is the snippet of my config:
         ("C-d" . isearch-forward-symbol-at-point)))
 ```
 
-### Use consult to jump onto the search occurrence
+## Use consult to jump onto the search occurrence
 
 Sometime I want to have a interactive way to jump into the current search word,
 you can use `consult-line` from the [consult](https://github.com/minad/consult)
@@ -214,7 +214,7 @@ can further do things with it with preview.
 
 ![isearch-consult](./isearch-consult.png)
 
-### Use avy to jump to the search results on screen
+## Use avy to jump to the search results on screen
 
 [Avy](https://github.com/abo-abo/avy) let you jump to words and other things via
 labels, I use for all sort of things (my favourite way is combined with evil
@@ -233,7 +233,7 @@ multiples `C-s`.
 
 ![isearch-avy](./isearch-avy.png)
 
-### Use anzu to replace the current search term across the buffer
+## Use anzu to replace the current search term across the buffer
 
 [anzu](https://github.com/emacsorphanage/anzu) is a pretty nice library to do
 interactive replacement in Emacs. I combine it with isearch, replacing the
@@ -249,10 +249,13 @@ builtin `isearch-query-replace`:
    ("C-h"                                . anzu-isearch-query-replace)))
 ```
 
-I start a search and do a `C-h` and it will ask me for a new name to replace
-that word to something else.
+I can then start from a search hit the `C-h` key combo and it will ask me for a
+new name to replace the searched word to something else.
 
 ![isearch-anzu](./isearch-anzu.png)
+
+On the left is the old word being changed and on the right the new word, it's
+pretty simple but pretty neat to be able to do this visually.
 
 ## Conclusion
 
