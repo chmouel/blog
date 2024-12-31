@@ -6,13 +6,15 @@ languageCode: "en-GB"
 defaultContentLanguage: "en"
 pluralizelisttitles: false
 removePathAccents: true
-paginate: 10
-paginatePath: "page"
 rssLimit: 20
-
+ignoreLogs: ["warning-goldmark-raw-html"]
 minify:
   disableXML: true
   minifyOutput: true
+
+pagination:
+  pagerSize: 10
+  path: "page"
 
 params:
   author: "Chmouel Boudjnah"
