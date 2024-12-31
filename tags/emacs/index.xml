@@ -4,7 +4,7 @@
     <title>Emacs on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/emacs/</link>
     <description>Recent content in Emacs on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Wed, 07 Sep 2016 07:45:03 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
@@ -13,160 +13,274 @@
       <link>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</link>
       <pubDate>Wed, 07 Sep 2016 07:45:03 +0000</pubDate>
       <guid>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</guid>
-      <description>Sometime ago or at least when I started doing programming in the late 90s XML was all the rage, it promised to be the panacea for everything from data to storage to data presentation and processing. People realized that it was just complexity as Joel Spolski points out an attempt to make the complex seem accessible to ordinary people.. Really people were annoyed to write all those tags as those &amp;lsquo;&amp;lt;&amp;rsquo; and &amp;lsquo;&amp;gt;&amp;rsquo; are hard to reach on a qwerty keyboard.</description>
+      <description>&lt;p&gt;Sometime ago or at least when I started doing programming in the late 90s &lt;strong&gt;XML&lt;/strong&gt; was all the rage, it promised to be the panacea for everything from data to storage to data presentation and processing. People &lt;a href=&#34;http://discuss.fogcreek.com/joelonsoftware/default.asp?cmd=show&amp;amp;ixPost=953&#34;&gt;realized&lt;/a&gt; that it was just complexity as Joel Spolski points out &lt;em&gt;an attempt to make the complex seem accessible to ordinary people.&lt;/em&gt;. Really people were annoyed to write all those tags as those &amp;lsquo;&amp;lt;&amp;rsquo; and &amp;lsquo;&amp;gt;&amp;rsquo; are hard to reach on a qwerty keyboard.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Announcing the (Paris (Emacs) Meetup) Group</title>
       <link>https://blog.chmouel.com/2014/03/31/paris-emacs-meetup-group/</link>
       <pubDate>Mon, 31 Mar 2014 18:22:15 +0000</pubDate>
       <guid>https://blog.chmouel.com/2014/03/31/paris-emacs-meetup-group/</guid>
-      <description>I am lucky to sit in front of Julien Danjou at work and as the sole Emacs users on the side of our office it was come to our attention that we needed as emacsian to unite ourselves to preach the good parole of the church of Emacs and sexy mens.
-It was quite obvious that the only way to convince those in the unkown was to find an excuse for drinks good food between good people and set-up a meetup.</description>
+      <description>&lt;p&gt;I am lucky to sit in front of &lt;a href=&#34;http://julien.danjou.info/&#34;&gt;Julien Danjou&lt;/a&gt; at work and as the sole Emacs users on the side of our office it was come to our attention that we needed as emacsian to unite ourselves to preach the good parole of the &lt;a href=&#34;http://churchofemacs.org/&#34;&gt;church of Emacs&lt;/a&gt; and &lt;a href=&#34;http://rms.sexy&#34;&gt;sexy mens.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It was quite obvious that the only way to convince those in the unkown was to find an excuse for drinks good food between good people and set-up a meetup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How do I manage my copyright headers in Emacs</title>
       <link>https://blog.chmouel.com/2014/03/14/how-do-i-manage-my-copyright-headers-in-emacs/</link>
       <pubDate>Fri, 14 Mar 2014 07:07:41 +0000</pubDate>
       <guid>https://blog.chmouel.com/2014/03/14/how-do-i-manage-my-copyright-headers-in-emacs/</guid>
-      <description>My day to day being work or personal is to create OpenSource code. As an habit I have taken lately I am adding licenses to all new files I am creating.
-I have historically used the `auto-insert-mode with a default template. For example for my newly created python files I would have this for configration :
-;AutoInsert (auto-insert-mode &amp;#39;t) (setq auto-insert-alist &amp;#39;((python-mode . &amp;#34;python.py&amp;#34;))) and in my `auto-insert-directory directory there would be a python.</description>
+      <description>&lt;p&gt;My day to day being work or personal is to create &lt;a href=&#34;http://openstack.org&#34;&gt;OpenSource&lt;/a&gt; code. As an habit I have taken lately I am adding licenses to all new files I am creating.&lt;/p&gt;
+&lt;p&gt;I have historically used the &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/autotype/Autoinserting.html&#34;&gt;`auto-insert-mode&lt;/a&gt; with a default template. For example for my newly created python files I would have this for configration :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;;AutoInsert&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;auto-insert-mode&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;t&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#ff79c6&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;auto-insert-alist&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#39;&lt;/span&gt;((&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;python-mode&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;python.py&amp;#34;&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and in my &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;`auto-insert-directory&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; directory there would be a python.py template with my license files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>emacs anything with magit</title>
       <link>https://blog.chmouel.com/2013/02/10/emacs-anything-with-magit/</link>
       <pubDate>Sun, 10 Feb 2013 21:48:33 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/02/10/emacs-anything-with-magit/</guid>
-      <description>I have been using quite a bit the anything-mode for Emacs, it&amp;rsquo;s basically a Quicksilver/Alfred or Gnome-do for Emacs and allow to configure a lot of different sources to complete some chosen &amp;lsquo;source&amp;rsquo;with different actions.
-With my work on OpenStack I have found myself jumping a lot between git directories and due configured the variable &amp;lsquo;magit-repo-dirs for easy access to most of them easily.
-Plugging those two just seemed natural I had already this in my emacs to quickly open those magit repository directories :</description>
+      <description>&lt;p&gt;I have been using quite a bit the &lt;a href=&#34;http://www.emacswiki.org/emacs/Anything&#34;&gt;anything-mode&lt;/a&gt; for Emacs, it&amp;rsquo;s basically a &lt;a href=&#34;http://qsapp.com/&#34; title=&#34;Quicksilver&#34;&gt;Quicksilver&lt;/a&gt;/&lt;a href=&#34;www.alfredapp.com&#34;&gt;Alfred&lt;/a&gt; or &lt;a href=&#34;http://do.cooperteam.net/&#34; title=&#34;Gnome-do&#34;&gt;Gnome-do&lt;/a&gt; for Emacs and allow to configure a lot of different sources to complete some chosen &amp;lsquo;source&amp;rsquo;with different actions.&lt;/p&gt;
+&lt;p&gt;With my work on &lt;a href=&#34;http://openstack.org&#34;&gt;OpenStack&lt;/a&gt; I have found myself jumping a lot between git directories and due configured the variable &lt;strong&gt;&amp;lsquo;magit-repo-dirs&lt;/strong&gt; for easy access to most of them easily.&lt;/p&gt;
+&lt;p&gt;Plugging those two just seemed natural I had already this in my emacs to quickly open those magit repository directories :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emacs and nosetests</title>
       <link>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</link>
       <pubDate>Sun, 14 Oct 2012 14:19:07 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</guid>
-      <description>Sometime you just need a long trans atlantic flight and a stupidly long stop-over in a random city to do some of those task that can improve your day to day but you never take some time to do it.
-When using emacs I wanted a simple way to launch a nosetests on the current function my cursor is in Emacs. The syntax on nosetests is a bit tricky and I actually always have to look at my shell history to know the proper syntax (nosetests directory/filename.</description>
+      <description>&lt;p&gt;Sometime you just need a long trans atlantic flight and a stupidly long stop-over in a random city to do some of those task that can improve your day to day but you never take some time to do it.&lt;/p&gt;
+&lt;p&gt;When using emacs I wanted a simple way to launch a nosetests on the current function my cursor is in Emacs. The syntax on nosetests is a bit tricky and I actually always have to look at my shell history to know the proper syntax (nosetests directory/filename.py:Class.function).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Customize face at point in Emacs</title>
       <link>https://blog.chmouel.com/2009/12/22/customize-face-at-point-in-emacs/</link>
       <pubDate>Tue, 22 Dec 2009 16:58:02 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/12/22/customize-face-at-point-in-emacs/</guid>
-      <description>It&amp;rsquo;s probably interesting only for the hardcore Emacs users but the last CVS version of emacs (2009-12-17) get a nifty new improvement if you need to customize a face property.
-If you point on the text where you want to customize it will detect it automatically which face point you are on and ask you if this is what you want to customize (after launching the command M-x customize-face). No guessing around with list-face-displays anymore.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.chmouel.com/wp-content/uploads/2009/12/Screenshot-1.png&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s probably interesting only for the hardcore Emacs users but the last CVS version of emacs (2009-12-17) get a nifty new improvement if you need to customize a face property.&lt;/p&gt;
+&lt;p&gt;If you point on the text where you want to customize it will detect it automatically which face point you are on and ask you if this is what you want to customize (after launching the command M-x customize-face). No guessing around with list-face-displays anymore.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emacs transparency with mouse wheel</title>
       <link>https://blog.chmouel.com/2009/09/16/emacs-and-transparency-mouse-wheel/</link>
       <pubDate>Wed, 16 Sep 2009 02:52:22 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/09/16/emacs-and-transparency-mouse-wheel/</guid>
-      <description>Emacs is playing fancy on the latest version (since emacs 23) it has now support for transparency at least on Linux when you have a composited Windows Manager.
-As explained on the Emacs wiki here everything is controlled by this frame parameter like this :
-(set-frame-parameter (selected-frame) &amp;#39;alpha &amp;#39;(85 50)) I have automated the thing to allow the transparency to increase or decrease when combined with the alt key just put this code somewhere in your $HOME/.</description>
+      <description>&lt;p&gt;Emacs is playing fancy on the latest version (since emacs 23) it has now support for transparency at least on Linux when you have a &lt;a href=&#34;http://en.wikipedia.org/wiki/Compositing_window_manager&#34;&gt;composited Windows Manager.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As explained on the Emacs wiki &lt;a href=&#34;http://www.emacswiki.org/emacs/TransparentEmacs&#34;&gt;here&lt;/a&gt; everything is controlled by this frame parameter like this :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;set-frame-parameter&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;selected-frame&lt;/span&gt;) &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;alpha&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#bd93f9&#34;&gt;85&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;50&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I have automated the thing to allow the transparency to increase or decrease when combined with the alt key just put this code somewhere in your $HOME/.emacs or $HOME/.emacs.d/init.el :&lt;/p&gt;</description>
     </item>
     <item>
       <title>python syntax warning in emacs</title>
       <link>https://blog.chmouel.com/2009/08/31/python-syntax-warning-in-emacs/</link>
       <pubDate>Mon, 31 Aug 2009 05:04:28 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/08/31/python-syntax-warning-in-emacs/</guid>
-      <description>One of the best feature to have with Emacs when doing python development is to have a real time syntax error/warning check highlighted in your code to avoid many errors or superfluous code.
-This code is taken from the brillant Emacswiki python page.
-You need to install pyflakes first which should be available on your linux distro by default in a package or for the other OS you may follow the procedure from the pyflakes webpage.</description>
+      <description>&lt;p&gt;One of the best feature to have with Emacs when doing python development is to have a real time syntax error/warning check highlighted in your code to avoid many errors or superfluous code.&lt;/p&gt;
+&lt;p&gt;This code is taken from the brillant Emacswiki &lt;a href=&#34;http://www.emacswiki.org/cgi-bin/wiki/PythonMode&#34;&gt;python page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You need to install pyflakes first which should be available on your linux distro by default in a package or for the other OS you may follow the procedure from the &lt;a href=&#34;http://www.divmod.org/trac/wiki/DivmodPyflakes&#34;&gt;pyflakes webpage&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>emacs daemon and Xdefaults</title>
       <link>https://blog.chmouel.com/2009/08/11/emacs-daemon-and-xdefaults/</link>
       <pubDate>Tue, 11 Aug 2009 09:27:21 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/08/11/emacs-daemon-and-xdefaults/</guid>
-      <description>It does not seems that emacs started with &amp;ndash;daemon read the .Xdefauls resource it seems that the only way setting it is by the default-frame-alist variable.
-I have my setup like this :
-(setq default-frame-alist &amp;#39;((font-backend . &amp;#34;xft&amp;#34;) (font . &amp;#34;Inconsolata-14&amp;#34;) (vertical-scroll-bars) (left-fringe . -1) (right-fringe . -1) (fullscreen . fullboth) (menu-bar-lines . 0) (tool-bar-lines . 0) )) PS: inconsolata font can be installed from the package ttf-inconsolata</description>
+      <description>&lt;p&gt;It does not seems that emacs started with &amp;ndash;daemon read the .Xdefauls resource it seems that the only way setting it is by the &lt;em&gt;default-frame-alist&lt;/em&gt; variable.&lt;/p&gt;
+&lt;p&gt;I have my setup like this :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#ff79c6&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;default-frame-alist&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#39;&lt;/span&gt;((&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-backend&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;xft&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Inconsolata-14&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;vertical-scroll-bars&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;left-fringe&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;-1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;right-fringe&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;-1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;fullscreen&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;fullboth&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;menu-bar-lines&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;tool-bar-lines&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                            ))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;PS: inconsolata font can be installed from the package ttf-inconsolata&lt;/p&gt;</description>
     </item>
     <item>
       <title>Update Emacs/VIM tags with inotify</title>
       <link>https://blog.chmouel.com/2009/07/03/update-emacsvim-tags-with-inotify/</link>
       <pubDate>Fri, 03 Jul 2009 18:12:30 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/07/03/update-emacsvim-tags-with-inotify/</guid>
-      <description>When you use the tags interface for Emacs or with VIM you have to generate your tag file everytime you have a new class or things get changed. Would not be cool to have inotify monitoring your project directory and run the etags command to generate it.
-With incron you have cron that can watch some portion of the filesystem and generate an action if certain event appears. So after installed (aptitude/urpmi) it I have configured this incrontab entry :</description>
+      <description>&lt;p&gt;When you use the tags interface for &lt;a href=&#34;http://www.emacswiki.org/emacs/EmacsTags&#34;&gt;Emacs&lt;/a&gt; or with &lt;a href=&#34;http://www.vim.org/htmldoc/tagsrch.html#tags&#34;&gt;VIM&lt;/a&gt; you have to generate your tag file everytime you have a new class or things get changed.  Would not be cool to have inotify monitoring your project directory and run the etags command to generate it.&lt;/p&gt;
+&lt;p&gt;With &lt;a href=&#34;http://inotify.aiken.cz/?section=incron&amp;amp;page=doc&amp;amp;lang=en&#34;&gt;incron&lt;/a&gt; you have cron that can watch some portion of the filesystem and generate an action if certain event appears.  So after installed (aptitude/urpmi) it I have configured this incrontab entry :&lt;/p&gt;</description>
     </item>
     <item>
       <title>FFAP and Ruby in Emacs</title>
       <link>https://blog.chmouel.com/2008/05/04/ffap-and-ruby-in-emacs/</link>
       <pubDate>Sun, 04 May 2008 19:13:41 +0000</pubDate>
       <guid>https://blog.chmouel.com/2008/05/04/ffap-and-ruby-in-emacs/</guid>
-      <description>If you want to use FFAP (find-file-at-point) in ruby-mode you can add this to your .emacs
-(defvar ruby-program-name &amp;#34;ruby&amp;#34;) (defun ruby-module-path(module) (shell-command-to-string (concat ruby-program-name &amp;#34; -e &amp;#34; &amp;#34;\&amp;#34;ret=&amp;#39;()&amp;#39;;$LOAD_PATH.each{|p| &amp;#34; &amp;#34;x=p+&amp;#39;/&amp;#39;+ARGV[0].gsub(&amp;#39;.rb&amp;#39;, &amp;#39;&amp;#39;)+&amp;#39;.rb&amp;#39;;&amp;#34; &amp;#34;ret=File.expand_path(x)&amp;#34; &amp;#34;if(File.exist?(x))};printf ret\&amp;#34; &amp;#34; module))) (eval-after-load &amp;#34;ffap&amp;#34; &amp;#39;(push &amp;#39;(ruby-mode . ruby-module-path) ffap-alist)) When you do ffap (i bind it to C-x f) near a require &amp;lsquo;PP&amp;rsquo; for example it will find it in your ruby path.</description>
+      <description>&lt;p&gt;If you want to use FFAP (find-file-at-point) in ruby-mode you can add this to your .emacs&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defvar ruby&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;program&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;ruby&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun ruby&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;module&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;path(module)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (shell&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;command&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;to&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;string
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (concat
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      ruby&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;program&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34; -e &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;ret=&amp;#39;()&amp;#39;;$LOAD_PATH.each{|p| &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;x=p+&amp;#39;/&amp;#39;+ARGV[0].gsub(&amp;#39;.rb&amp;#39;, &amp;#39;&amp;#39;)+&amp;#39;.rb&amp;#39;;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;ret=File.expand_path(x)&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;if(File.exist?(x))};printf ret&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt; &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      module)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;eval&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;after&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;load&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;ffap&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;(push &amp;#39;&lt;/span&gt;(ruby&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;mode &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; ruby&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;module&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;path) ffap&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;alist))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When you do ffap (i bind it to C-x f) near a require &amp;lsquo;PP&amp;rsquo; for example it will find it in your ruby path.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emacs config</title>
       <link>https://blog.chmouel.com/2007/09/07/emacs-config/</link>
       <pubDate>Fri, 07 Sep 2007 07:57:34 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/09/07/emacs-config/</guid>
-      <description>To anyone interested my extensive Emacs configuration is available here :
-http://code.google.com/p/chmouel/source
-And here is the usual screen shot :</description>
+      <description>&lt;p&gt;To anyone interested my extensive Emacs configuration is available here :&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://code.google.com/p/chmouel/source&#34;&gt;http://code.google.com/p/chmouel/source&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;And here is the usual screen shot :&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Always search before coding</title>
       <link>https://blog.chmouel.com/2007/02/11/always-search-before-coding/</link>
       <pubDate>Sun, 11 Feb 2007 11:47:39 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/02/11/always-search-before-coding/</guid>
-      <description>This is a annoying, even if it take 5mn to code thing like that :
-(defun my-dired-rm-rf() &amp;#34;Rm -rf directories&amp;#34; (interactive) (let ((sel (selected-window))) (dolist (curFile (dired-get-marked-files)) (if (yes-or-no-p (concat &amp;#34;Do you want to remove \&amp;#34;&amp;#34; (file-name-nondirectory curFile) &amp;#34;\&amp;#34; ? &amp;#34;)) (progn (shell-command (concat &amp;#34;rm -rvf &amp;#34; curFile) &amp;#34;*Removing Directories*&amp;#34;) (kill-buffer &amp;#34;*Removing Directories*&amp;#34;) (select-window sel) (revert-buffer) ) )) )) you discover after a litlle while that if you have did a lilt bit of searching before, you will have discovered a variable call `dired-recursive-deletes` that would do the thing in a much better way.</description>
+      <description>&lt;p&gt;This is a annoying, even if it take 5mn to code thing like that :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;my-dired-rm-rf&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Rm -rf directories&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;interactive&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#ff79c6&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;sel&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;selected-window&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;dolist&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;curFile&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;dired-get-marked-files&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  (&lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#50fa7b&#34;&gt;yes-or-no-p&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Do you want to remove \&amp;#34;&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;file-name-nondirectory&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;curFile&lt;/span&gt;) &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\&amp;#34; ? &amp;#34;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		  (&lt;span style=&#34;color:#ff79c6&#34;&gt;progn&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;shell-command&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;rm -rvf &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;curFile&lt;/span&gt;) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;*Removing Directories*&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;kill-buffer&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;*Removing Directories*&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;select-window&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;sel&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;revert-buffer&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;you discover after a litlle while that if you have did a lilt bit of searching before, you will have discovered a variable call &lt;strong&gt;`dired-recursive-deletes`&lt;/strong&gt; that would do the thing in a much better way.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emacs nighly cvs snapshot with xft on Ubuntu Edgy</title>
       <link>https://blog.chmouel.com/2007/01/21/emacs-nighly-cvs-snapshot-with-xft-on-ubuntu-edgy/</link>
       <pubDate>Sun, 21 Jan 2007 12:32:54 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/01/21/emacs-nighly-cvs-snapshot-with-xft-on-ubuntu-edgy/</guid>
-      <description>I wanted to try the latest cvs snapshot with XFT support, since i did not want to screw up more my workstation i have used packages instead of make install blindy.
-Basically i have a script called ./build.sh
-#!/bin/bash set -e d=$(date &amp;#39;+%Y%m%d&amp;#39;) debpatch=20061218-1 mkdir -p cvs pushd cvs &amp;gt;/dev/null &amp;amp;&amp;amp; { cvs -Q -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/emacs co -r emacs-unicode-2 emacs } &amp;amp;&amp;amp; popd &amp;gt;/dev/null mkdir -p build [[ -d build/emacs-${d} ]] &amp;amp;&amp;amp; rm -rf build/emacs-${d} cp -al cvs/emacs build/emacs-${d} zcat patches/emacs-snapshot_${debpatch}.</description>
+      <description>&lt;p&gt;I wanted to try the latest cvs snapshot with XFT support, since i did not want to screw up more my workstation i have used packages instead of make install blindy.&lt;/p&gt;
+&lt;p&gt;Basically i have a script called ./build.sh&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;set&lt;/span&gt; -e
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;$(&lt;/span&gt;date &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;+%Y%m%d&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;debpatch&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;20061218-1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir -p cvs
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;pushd&lt;/span&gt; cvs &amp;gt;/dev/null &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cvs -Q -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/emacs co -r emacs-unicode-2 emacs
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;popd&lt;/span&gt; &amp;gt;/dev/null
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir -p build
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;[[&lt;/span&gt; -d build/emacs-&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -rf build/emacs-&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -al cvs/emacs build/emacs-&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zcat patches/emacs-snapshot_&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;debpatch&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;.diff.gz|patch -p1 -d build/emacs-&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat patches/with-font.patch|patch --silent -p1 -d build/emacs-&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;pushd&lt;/span&gt; build/emacs-&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt; &amp;gt;/dev/null &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    chmod +x debian/rules
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    dch -v &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1:&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;-1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;New snapshot.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    dch &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Build with xft.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    fakeroot dpkg-buildpackage -b
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;popd&lt;/span&gt; &amp;gt;/dev/null
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;in patches/with-font.patch i have :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rename bunch of file via regexp</title>
       <link>https://blog.chmouel.com/2007/01/06/rename-bunch-of-file-via-regexp/</link>
       <pubDate>Sun, 07 Jan 2007 02:48:46 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/01/06/rename-bunch-of-file-via-regexp/</guid>
-      <description>To rename bunch of files via regexp i was using before a homegrown python script call rename-regexp.py{#p38} to change bunch of files with a regexp.
-But since then i discovered wdired which is pretty fantastic to use that from emacs. With the extended ``query-replace-regexp`` from Emacs22 stuff are much easier to rename.</description>
+      <description>&lt;p&gt;To rename bunch of files via regexp i was using before a homegrown python script call &lt;a href=&#34;http://www.chmouel.com/blog/wp-content/uploads/2007/01/rename-regexppy1.txt&#34;&gt;rename-regexp.py&lt;/a&gt;{#p38} to change bunch of files with a regexp.&lt;/p&gt;
+&lt;p&gt;But since then i discovered &lt;a href=&#34;http://cris.ukrweb.net/documentation/editors/emacs/gnu_emacs/Wdired.html&#34;&gt;wdired&lt;/a&gt; which is pretty fantastic to use that from emacs. With the &lt;a href=&#34;http://steve-yegge.blogspot.com/2006/06/shiny-and-new-emacs-22.html&#34;&gt;extended&lt;/a&gt; &lt;em&gt;``query-replace-regexp``&lt;/em&gt; from Emacs22 stuff are much easier to rename.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My first webpage</title>
       <link>https://blog.chmouel.com/2006/12/30/my-first-webpage/</link>
       <pubDate>Sat, 30 Dec 2006 18:01:43 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/12/30/my-first-webpage/</guid>
-      <description>Classic my first webpage is still on the web that was back in 98 and that was about Emacs :)
-http://membres.lycos.fr/crblinux/html/xemacs.html
-It is in french thought.</description>
+      <description>&lt;p&gt;Classic my first webpage is still on the web that was back in 98 and that was about Emacs :)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://membres.lycos.fr/crblinux/html/xemacs.html&#34;&gt;http://membres.lycos.fr/crblinux/html/xemacs.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It is in french thought.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Xterm like Control-L in Eshell</title>
       <link>https://blog.chmouel.com/2006/12/27/xterm-like-control-l-in-eshell/</link>
       <pubDate>Thu, 28 Dec 2006 00:00:15 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/12/27/xterm-like-control-l-in-eshell/</guid>
-      <description>If you want to emulate Control-L in Eshell (the Emacs Shell) like in Xterm, you can use this :
-(defun eshell-show-minimum-output () (interactive) (goto-char (eshell-beginning-of-output)) (set-window-start (selected-window) (save-excursion (goto-char (point-max)) (line-beginning-position))) (eshell-end-of-output)) And add a key bind to it in your custom hook :
-(local-set-key &amp;#34;\C-l&amp;#34; &amp;#39;eshell-show-minimum-output)&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; </description>
+      <description>&lt;p&gt;If you want to emulate Control-L in Eshell (the Emacs Shell) like in Xterm, you can use this :&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;eshell-show-minimum-output&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;interactive&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;goto-char&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;eshell-beginning-of-output&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;set-window-start&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;selected-window&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		    (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;save-excursion&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		      (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;goto-char&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;point-max&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		      (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;line-beginning-position&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;eshell-end-of-output&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And add a key bind to it in your custom hook :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;local-set-key&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\C-l&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;eshell-show-minimum-output&lt;/span&gt;)&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Cheetah Mode for Emacs</title>
       <link>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</link>
       <pubDate>Mon, 31 Jul 2006 23:35:09 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</guid>
-      <description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.
-(define-derived-mode cheetah-mode html-mode &amp;#34;Cheetah&amp;#34; (make-face &amp;#39;cheetah-variable-face) (font-lock-add-keywords nil &amp;#39;( (&amp;#34;\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\&amp;gt;&amp;#34; 1 font-lock-type-face) (&amp;#34;\\(#\\(from\\|for\\|end\\)\\).*\\&amp;lt;\\(for\\|import\\|if\\|in\\)\\&amp;gt;&amp;#34; 3 font-lock-type-face) (&amp;#34;\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)&amp;#34; 1 font-lock-variable-name-face)) ) (font-lock-mode 1) ) (setq auto-mode-alist (cons &amp;#39;( &amp;#34;\\.tmpl\\&amp;#39;&amp;#34; . cheetah-mode ) auto-mode-alist )) </description>
+      <description>&lt;p&gt;Here is a simple html derived mode for &lt;a href=&#34;http://www.cheetahtemplate.org/&#34;&gt;Cheetah&lt;/a&gt; templates files. The font-locking regexp can be improved thought but thatâ€™s a start.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;define-derived-mode&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cheetah-mode&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;html-mode&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Cheetah&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;make-face&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;cheetah-variable-face&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-add-keywords&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   nil
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#39;&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-type-face&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\\(#\\(from\\|for\\|end\\)\\).*\\&amp;lt;\\(for\\|import\\|if\\|in\\)\\&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-type-face&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-variable-name-face&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-mode&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#ff79c6&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;auto-mode-alist&lt;/span&gt; (&lt;span style=&#34;color:#50fa7b&#34;&gt;cons&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#39;&lt;/span&gt;( &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\\.tmpl\\&amp;#39;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cheetah-mode&lt;/span&gt; ) &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;auto-mode-alist&lt;/span&gt; ))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Access Gajim within Emacs</title>
       <link>https://blog.chmouel.com/2006/07/31/access-gajim-within-emacs/</link>
       <pubDate>Mon, 31 Jul 2006 09:28:56 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/07/31/access-gajim-within-emacs/</guid>
-      <description>Here is some function to launch a gajim window from Emacs :
-(defvar gajim-remote &amp;#34;/usr/bin/gajim-remote&amp;#34;) (defvar gajim-user-list ()) (defun my-gajim-get-list() (save-excursion (with-temp-buffer (call-process gajim-remote nil t nil &amp;#34;list_contacts&amp;#34;) (goto-char (point-min)) (while (re-search-forward &amp;#34;^jid[ ]*:[ ]*\\(.*\\)$&amp;#34; (point-max) t ) (setq gajim-user-list (append gajim-user-list (list (match-string-no-properties 1))))))) gajim-user-list) (defun my-gajim-talk() (interactive) (let* ((ff (if (not gajim-user-list)(my-gajim-get-list) gajim-user-list)) (answer (completing-read &amp;#34;Jabber: &amp;#34; (mapcar (lambda (tt)(list tt)) ff)))) (message answer) (start-process &amp;#34;*GAJIM*&amp;#34; nil gajim-remote &amp;#34;open_chat&amp;#34; answer) ) ) (global-set-key &amp;#39;[(control x)(j)] &amp;#39;my-gajim-talk) If Emacs had a dbus support that would have been cool.</description>
+      <description>&lt;p&gt;Here is some function to launch a gajim window from Emacs :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;defvar&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-remote&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/usr/bin/gajim-remote&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;defvar&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-user-list&lt;/span&gt; ())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;my-gajim-get-list&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;save-excursion&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;with-temp-buffer&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;call-process&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-remote&lt;/span&gt; nil t nil &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;list_contacts&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;goto-char&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;point-min&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;re-search-forward&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;^jid[ ]*:[ ]*\\(.*\\)$&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;point-max&lt;/span&gt;) t )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        (&lt;span style=&#34;color:#ff79c6&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-user-list&lt;/span&gt; (&lt;span style=&#34;color:#50fa7b&#34;&gt;append&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-user-list&lt;/span&gt; (&lt;span style=&#34;color:#50fa7b&#34;&gt;list&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;match-string-no-properties&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;)))))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-user-list&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;my-gajim-talk&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;interactive&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#ff79c6&#34;&gt;let*&lt;/span&gt; ((&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;ff&lt;/span&gt; (&lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#50fa7b&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-user-list&lt;/span&gt;)(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;my-gajim-get-list&lt;/span&gt;) &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-user-list&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;         (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;answer&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;completing-read&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Jabber: &amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#50fa7b&#34;&gt;mapcar&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;lambda&lt;/span&gt; (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;tt&lt;/span&gt;)(&lt;span style=&#34;color:#50fa7b&#34;&gt;list&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;tt&lt;/span&gt;)) &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;ff&lt;/span&gt;))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;answer&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;start-process&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;*GAJIM*&amp;#34;&lt;/span&gt; nil &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gajim-remote&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;open_chat&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;answer&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;global-set-key&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;[&lt;/span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;control&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;x&lt;/span&gt;)(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;j&lt;/span&gt;)&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;my-gajim-talk&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If Emacs had a dbus support that would have been cool.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

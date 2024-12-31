@@ -4,7 +4,7 @@
     <title>Scripts on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/scripts/</link>
     <description>Recent content in Scripts on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Thu, 22 Sep 2016 10:27:27 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/scripts/index.xml" rel="self" type="application/rss+xml" />
@@ -13,131 +13,198 @@
       <link>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</link>
       <pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate>
       <guid>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</guid>
-      <description>I have been meaning to get this blog SSL protected for a while and since solution like letsencrypt makes it easy I have generated some SSL keys for my domain and configured it in apache.
-So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using varnish for quite some time or I would get out of memory quickly some the kernel OOM killer kicking1 it.</description>
+      <description>&lt;p&gt;I have been meaning to get this blog SSL protected for a while and since solution like &lt;a href=&#34;https://letsencrypt.org&#34;&gt;letsencrypt&lt;/a&gt; makes it easy I have generated some SSL keys for my domain  and configured it in apache.&lt;/p&gt;
+&lt;p&gt;So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using &lt;a href=&#34;https://varnish-cache.org/&#34;&gt;varnish&lt;/a&gt; for quite some time or I would get out of memory quickly some the kernel OOM killer kicking&lt;a href=&#34;https://letsencrypt.org&#34;&gt;1&lt;/a&gt; it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upload to Rackspace Cloud Files in a shell script</title>
       <link>https://blog.chmouel.com/2010/06/09/upload-to-rackspace-cloud-files-in-a-shell-script/</link>
       <pubDate>Wed, 09 Jun 2010 18:56:54 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/06/09/upload-to-rackspace-cloud-files-in-a-shell-script/</guid>
-      <description>I don&amp;rsquo;t really use much the GUI and always the command line so I don&amp;rsquo;t really use the Cloud File plugin I created for nautilus.
-So here is a shell script to upload to Rackspace Cloud Files and give you back a shortened URL of the public URL file. Great for quick sharing&amp;hellip; You have to install the zenity binary first..
-[Update: this is now available here https://github.com/chmouel/upcs]</description>
+      <description>&lt;p&gt;I don&amp;rsquo;t really use much the GUI and always the command line so I don&amp;rsquo;t really use the Cloud File plugin I created for nautilus.&lt;/p&gt;
+&lt;p&gt;So here is a shell script to upload to Rackspace Cloud Files and give you back a shortened URL of the public URL file. Great for quick sharing&amp;hellip; You have to install the zenity binary first..&lt;/p&gt;
+&lt;p&gt;[Update: this is now available here &lt;a href=&#34;https://github.com/chmouel/upcs&#34;&gt;https://github.com/chmouel/upcs&lt;/a&gt;]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Unit conversion from zsh</title>
       <link>https://blog.chmouel.com/2010/06/06/unit-conversion-from-zsh/</link>
       <pubDate>Sun, 06 Jun 2010 17:58:31 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/06/06/unit-conversion-from-zsh/</guid>
-      <description>Quick conversion from shell :</description>
+      <description>&lt;p&gt;Quick conversion from shell :&lt;/p&gt;</description>
     </item>
     <item>
       <title>rsync like backup to Rackspace Cloud File with duplicity</title>
       <link>https://blog.chmouel.com/2009/09/02/rsync-like-backup-to-rackspace-cloud-file-with-duplicity/</link>
       <pubDate>Wed, 02 Sep 2009 20:09:15 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/09/02/rsync-like-backup-to-rackspace-cloud-file-with-duplicity/</guid>
-      <description>It seems that there is no much documentation about how to do rsync like backup with duplicty so here it is :
-Install python-cloudfiles from here http://github.com/rackspace/python-cloudfiles #!/bin/bash UPLOAD_TO_CONTAINER=&amp;#34;backup&amp;#34; #adjust it as you like export CLOUDFILES_USERNAME=Your Username export CLOUDFILES_APIKEY=API_KEY_YOU_GOT export PASSPHRASE=The Passphrase for your encrypted backup duplicity /full/path cf+http://${UPLOAD_TO_CONTAINER} This should take care to upload the backup files to the backup container. It does that incrementally and detect the changes to your file system to upload.</description>
+      <description>&lt;p&gt;It seems that there is no much documentation about how to do rsync like backup with &lt;!-- raw HTML omitted --&gt;duplicty&lt;!-- raw HTML omitted --&gt; so here it is :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install python-cloudfiles from here &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://github.com/rackspace/python-cloudfiles&#34;&gt;http://github.com/rackspace/python-cloudfiles&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;UPLOAD_TO_CONTAINER&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;backup&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#adjust it as you like&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;CLOUDFILES_USERNAME&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;Your Username
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;CLOUDFILES_APIKEY&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;API_KEY_YOU_GOT
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;PASSPHRASE&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;The Passphrase &lt;span style=&#34;color:#ff79c6&#34;&gt;for&lt;/span&gt; your encrypted backup
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;duplicity /full/path cf+http://&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;UPLOAD_TO_CONTAINER&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This should take care to upload the backup files to the backup container. It does that incrementally and detect the changes to your file system to upload. There is much more option for duplicity look at the manpage for more info.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upload to Rackspace Cloud files from GNOME nautilus</title>
       <link>https://blog.chmouel.com/2009/09/02/upload-to-rackspace-cloud-files-from-gnome-nautilus/</link>
       <pubDate>Wed, 02 Sep 2009 16:49:30 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/09/02/upload-to-rackspace-cloud-files-from-gnome-nautilus/</guid>
-      <description>After seeing this script http://overhrd.com/?p=106 which allow to upload files with the file manager (finder) of MacosX to Rackspace Cloud Files, I have made a nautilus script that doe the same for us Gnome/Unix users.
-Available here :
-http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master</description>
+      <description>&lt;p&gt;After seeing this script &lt;a href=&#34;http://overhrd.com/?p=106&#34;&gt;http://overhrd.com/?p=106&lt;/a&gt; which allow to upload files with the file manager (finder) of MacosX to Rackspace Cloud Files, I have made a nautilus script that doe the same for us Gnome/Unix users.&lt;/p&gt;
+&lt;p&gt;Available here :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master&#34;&gt;http://github.com/chmouel/nautilus-rackspace-cloud-file/tree/master&lt;/a&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Using ProxyCommand with OpenSSH and a Bastion server.</title>
       <link>https://blog.chmouel.com/2009/02/08/proxycommand-ssh-bastion-proxy/</link>
       <pubDate>Sun, 08 Feb 2009 12:21:38 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/02/08/proxycommand-ssh-bastion-proxy/</guid>
-      <description>So at work we have to use a bastion host for all our connections to servers to be able to get called PCI compliant. This kind of stuff could be a pain to use when you have to use another host to do RSYNC/SCP or other stuff that need direct transfer to workstation.
-Thankfully OpenSSH is very flexible and have multiple options to easy the pain. If you add this to your ~/.</description>
+      <description>&lt;p&gt;So at work we have to use a &lt;!-- raw HTML omitted --&gt;bastion host&lt;!-- raw HTML omitted --&gt; for all our connections to servers to be able to get called &lt;a href=&#34;http://www.pcicomplianceguide.org/&#34;&gt;PCI&lt;/a&gt; compliant. This kind of stuff could be a pain to use when you have to use another host to do RSYNC/SCP or other stuff that need direct transfer to workstation.&lt;/p&gt;
+&lt;p&gt;Thankfully OpenSSH is very flexible and have multiple options to easy the pain. If you add this to your ~/.ssh/config :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generating md5 encrypted password for chpasswd</title>
       <link>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</link>
       <pubDate>Fri, 17 Aug 2007 07:11:38 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</guid>
-      <description>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
-[code lang=&amp;ldquo;bash&amp;rdquo;]
-echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin
-[/code]
-If you want to generate in pure python you can do it like that :
-[code lang=&amp;ldquo;python&amp;rdquo;]
-def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):
-import md5
-m = md5.new()
-m.update(password + magic + salt)
-# /* Then just as many characters of the MD5(pw,salt,pw) */</description>
+      <description>&lt;p&gt;If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :&lt;br&gt;
+[code lang=&amp;ldquo;bash&amp;rdquo;]&lt;br&gt;
+echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin&lt;br&gt;
+[/code]&lt;br&gt;
+If you want to generate in pure python you can do it like that :&lt;br&gt;
+[code lang=&amp;ldquo;python&amp;rdquo;]&lt;br&gt;
+def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):&lt;br&gt;
+import md5&lt;br&gt;
+m = md5.new()&lt;br&gt;
+m.update(password + magic + salt)&lt;/p&gt;
+&lt;p&gt;# /* Then just as many characters of the MD5(pw,salt,pw) */&lt;br&gt;
+mixin = md5.md5(password + salt + password).digest()&lt;br&gt;
+for i in range(0, len(password)):&lt;br&gt;
+m.update(mixin[i % 16])&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatic best resolution with xrandr</title>
       <link>https://blog.chmouel.com/2007/07/31/automatic-best-resolution-with-xrandr/</link>
       <pubDate>Tue, 31 Jul 2007 22:23:32 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/07/31/automatic-best-resolution-with-xrandr/</guid>
-      <description>If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :
-[code lang=&amp;ldquo;bash&amp;rdquo;]
-#!/bin/bash
-function get_resolutions() {
-xrandr|while read -a line;do
-RES=&amp;quot;${line[1]}x${line[3]} &amp;quot;
-[[ ${RES} != [0-9]* ]] &amp;amp;&amp;amp; continue
-echo ${RES}
-done
-}
-_BEST_RES=0
-BEST_RES=
-for res in $(get_resolutions);do
-_res=${res/x/}
-[[ $_res -ge ${_BEST_RES} ]] &amp;amp;&amp;amp; {
-BEST_RES=${res}</description>
+      <description>&lt;p&gt;If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :&lt;/p&gt;
+&lt;p&gt;[code lang=&amp;ldquo;bash&amp;rdquo;]&lt;br&gt;
+#!/bin/bash&lt;/p&gt;
+&lt;p&gt;function get_resolutions() {&lt;br&gt;
+xrandr|while read -a line;do&lt;br&gt;
+RES=&amp;quot;${line[1]}x${line[3]} &amp;quot;&lt;br&gt;
+[[ ${RES} != [0-9]* ]] &amp;amp;&amp;amp; continue&lt;br&gt;
+echo ${RES}&lt;br&gt;
+done&lt;br&gt;
+}&lt;/p&gt;
+&lt;p&gt;_BEST_RES=0&lt;br&gt;
+BEST_RES=&lt;br&gt;
+for res in $(get_resolutions);do&lt;br&gt;
+_res=${res/x/}&lt;br&gt;
+[[ $_res -ge ${_BEST_RES} ]] &amp;amp;&amp;amp; {&lt;br&gt;
+BEST_RES=${res}&lt;br&gt;
+_BEST_RES=${_res}&lt;br&gt;
+}&lt;br&gt;
+done&lt;br&gt;
+xrandr -s ${BEST_RES}&lt;br&gt;
+[/code]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automate SSH known_hosts cleanup</title>
       <link>https://blog.chmouel.com/2007/05/30/automate-ssh-known_hosts-cleanup/</link>
       <pubDate>Wed, 30 May 2007 22:33:40 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/05/30/automate-ssh-known_hosts-cleanup/</guid>
-      <description>If you like me, you have to do a lot of installs1 of the same test machine with the same IP and have to ssh it you will notice this annoying message :
-IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY! Someone could be eavesdropping on you right now (man-in-the-middle attack)! It is also possible that the RSA host key has just been changed. The fingerprint for the RSA key sent by the remote host is 54:9d:c0:37:3a:80:48:6c:82:ec:d1:84:93:61:24.</description>
+      <description>&lt;p&gt;If you like me, you have to do a lot of installs&lt;a href=&#34;http://www.informatik.uni-koeln.de/fai/&#34;&gt;1&lt;/a&gt; of the same test machine with the same IP and have to ssh it you will notice this annoying message :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;It is also possible that the RSA host key has just been changed.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;The fingerprint for the RSA key sent by the remote host is
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;54:9d:c0:37:3a:80:48:6c:82:ec:d1:84:93:61:24.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Please contact your system administrator.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Add correct host key in /home/cboudjnah/.ssh/known_hosts
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;to get rid of this message.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Offending key in /home/cboudjnah/.ssh/known_hosts:595
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Password authentication is disabled to avoid
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; man-in-the-middle attacks.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Keyboard-interactive authentication is disabled to avoid
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;man-in-the-middle attacks.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Agent forwarding is disabled to avoid man-in-the-middle attacks.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I have automated the cleanup by a script :&lt;br&gt;
+[code lang=&amp;ldquo;bash&amp;rdquo;]&lt;br&gt;
+#!/bin/bash&lt;br&gt;
+H=$1&lt;/p&gt;</description>
     </item>
     <item>
       <title>SVN Diff against changes in the remote repository.</title>
       <link>https://blog.chmouel.com/2007/02/06/svn-diff-against-changes-in-the-remote-repository/</link>
       <pubDate>Wed, 07 Feb 2007 03:02:26 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/02/06/svn-diff-against-changes-in-the-remote-repository/</guid>
-      <description>A useful svn wrapper scripts. Get a diff of your local repostitory against the upstream repository changes. I wonder why it is not builtins though like a svn status -u but for dif.
-#!/bin/bash IFS=&amp;#34; &amp;#34; for line in `svn status -u`;do [[ $line != &amp;#34; &amp;#34;* ]] &amp;amp;&amp;amp; continue rev=`echo $line|awk &amp;#39;{print $2}&amp;#39;` ff=`echo $line|awk &amp;#39;{print $3}&amp;#39;` svn diff -r${rev}:HEAD $ff done </description>
+      <description>&lt;p&gt;A useful svn wrapper scripts. Get a diff of your local repostitory against the upstream repository changes. I wonder why it is not builtins though like a svn status -u but for dif.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;IFS&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;for&lt;/span&gt; line in &lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;svn status -u&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;;&lt;span style=&#34;color:#ff79c6&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$line&lt;/span&gt; !&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;   &amp;#34;&lt;/span&gt;* &lt;span style=&#34;color:#ff79c6&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;rev&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$line&lt;/span&gt;|awk &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;{print $2}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;ff&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$line&lt;/span&gt;|awk &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;{print $3}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    svn diff -r&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;rev&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;:HEAD &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$ff&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>History expansion and substitions in ZSH</title>
       <link>https://blog.chmouel.com/2007/01/10/history-expansion-and-substitions-in-zsh/</link>
       <pubDate>Thu, 11 Jan 2007 05:05:50 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/01/10/history-expansion-and-substitions-in-zsh/</guid>
-      <description>I better to keep that somewhere since i always forget that thing, to do a search and replace from the command line in zsh. you just have to do the :s^FOO^BAR after your expansion
-For example you just have typed the long command line :
-blah bar FOO=1 FOO=3 FOO=6 cnt=1 you can just type :
-!blah:s^FOO^VALUE^:G and it will be expanded to :
-blah bar VALUE=1 VALUE=3 VALUE=6 cnt=1 </description>
+      <description>&lt;p&gt;I better to keep that somewhere since i always forget that thing, to do a search and replace from the command line in zsh. you just have to do the :s^FOO^BAR after your expansion&lt;/p&gt;
+&lt;p&gt;For example you just have typed the long command line :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;blah bar FOO=1 FOO=3 FOO=6 cnt=1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;you can just type :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;!blah:s^FOO^VALUE^:G 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and it will be expanded to :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;blah bar VALUE=1 VALUE=3 VALUE=6 cnt=1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Get size of Postgres DB from filesystem</title>
       <link>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</link>
       <pubDate>Mon, 05 Jun 2006 08:26:55 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</guid>
-      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :
-#!/bin/bash /usr/lib/postgresql/8.1/bin/oid2name -U postgres|while read -a e;do name=${e[1]} oid=${e[0]} [[ $oid == &amp;#34;All&amp;#34; || $oid == &amp;#34;Oid&amp;#34; || -z $oid || -z $name ]] &amp;amp;&amp;amp; continue typeset -a size size=(`du -s /var/lib/postgresql/8.1/main/base/$oid`) size=${size[0]} printf &amp;#34;%-20s %-20s\n&amp;#34; ${name} ${size} done | sort -n -r -k 2 |awk &amp;#39;{printf &amp;#34;%-20s%20d Mb\n&amp;#34;, $1, $2 / 1024}&amp;#39; </description>
+      <description>&lt;p&gt;Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&lt;/span&gt;/usr/lib/postgresql/8.1/bin/oid2name  -U postgres|&lt;span style=&#34;color:#ff79c6&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;read&lt;/span&gt; -a e;&lt;span style=&#34;color:#ff79c6&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;e&lt;/span&gt;[1]&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;oid&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;e&lt;/span&gt;[0]&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$oid&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;All&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$oid&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Oid&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;||&lt;/span&gt; -z &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$oid&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;||&lt;/span&gt; -z &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$name&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;typeset&lt;/span&gt; -a size
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=(&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;du -s /var/lib/postgresql/8.1/main/base/&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$oid&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;size&lt;/span&gt;[0]&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;%-20s %-20s\n&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;done&lt;/span&gt; | sort -n -r -k &lt;span style=&#34;color:#bd93f9&#34;&gt;2&lt;/span&gt; |awk &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;{printf &amp;#34;%-20s%20d Mb\n&amp;#34;, $1, $2 / 1024}&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>svn diff without spaces</title>
       <link>https://blog.chmouel.com/2006/05/25/svn-diff-without-spaces/</link>
       <pubDate>Thu, 25 May 2006 11:26:15 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/05/25/svn-diff-without-spaces/</guid>
-      <description>I am sic of spaces and having svn diff that does not get the spaces removed. So here is a simple script that does the stuff that you can use as your diff-cmd :
-#!/bin/bash for i in $@;do echo $i |grep -q &amp;#34;)&amp;#34; &amp;amp;&amp;amp; continue echo $i |grep -q &amp;#34;(&amp;#34; &amp;amp;&amp;amp; continue t=&amp;#34;$t $i&amp;#34; done diff -bBw $t </description>
+      <description>&lt;p&gt;I am sic of spaces and having svn diff that does not get the spaces removed. So here is a simple script that does the stuff that you can use as your diff-cmd :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$@&lt;/span&gt;;&lt;span style=&#34;color:#ff79c6&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$i&lt;/span&gt; |grep -q &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$i&lt;/span&gt; |grep -q &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;(&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$t&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$i&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;diff -bBw &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

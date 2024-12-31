@@ -4,7 +4,7 @@
     <title>Oracle on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/oracle/</link>
     <description>Recent content in Oracle on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 23 Apr 2010 10:06:24 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
@@ -13,48 +13,71 @@
       <link>https://blog.chmouel.com/2010/04/23/when-oracle-dbstartdbshut-does-not-do-anything/</link>
       <pubDate>Fri, 23 Apr 2010 10:06:24 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/04/23/when-oracle-dbstartdbshut-does-not-do-anything/</guid>
-      <description>If like me you are surprised by the fact that dbstart or dbshut does not do anything when launching it, just make sure to edit the /etc/oratab and have the last char as Y and not N. Like if it is like this :
-change it to this :</description>
+      <description>&lt;p&gt;If like me you are surprised by the fact that dbstart or dbshut does not do anything when launching it, just make sure to edit the /etc/oratab and have the last char as Y and not N. Like if it is like this :&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;change it to this :&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Import Export to different tablespace names with Oracle 9i</title>
       <link>https://blog.chmouel.com/2007/02/07/import-export-to-different-tablespace-names-with-oracle-9i/</link>
       <pubDate>Wed, 07 Feb 2007 09:32:40 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/02/07/import-export-to-different-tablespace-names-with-oracle-9i/</guid>
-      <description>Renaming Oracle Database is a pain, coming from OpenSource DB like
-MySQL or PostGres where we do that all the time i did not think that
-Oracle have to be such a pain.
-My only way i can find.
-If i have the tablespace named tablesp1 and owned by the
-user user1, and i want to import it to another tablespace
-called tablesp2 in an another Oracle 9i tablespace with the user</description>
+      <description>&lt;p&gt;Renaming Oracle Database is a pain, coming from OpenSource DB like&lt;br&gt;
+MySQL or PostGres where we do that all the time i did not think that&lt;br&gt;
+Oracle have to be such a pain.&lt;/p&gt;
+&lt;p&gt;My only way i can find.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If i have the tablespace named &lt;strong&gt;tablesp1&lt;/strong&gt; and owned by the&lt;br&gt;
+user &lt;strong&gt;user1&lt;/strong&gt;, and i want to import it to another tablespace&lt;br&gt;
+called &lt;strong&gt;tablesp2&lt;/strong&gt; in an another Oracle 9i tablespace with the user&lt;br&gt;
+name &lt;strong&gt;user2&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compile tora with oracle</title>
       <link>https://blog.chmouel.com/2007/01/04/compile-tora-with-oracle/</link>
       <pubDate>Thu, 04 Jan 2007 22:19:28 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/01/04/compile-tora-with-oracle/</guid>
-      <description>After installing Oracle instant client, if you have them in /usr/local/lib/instantclient_10_2, this is the command line i use :
-./configure &amp;ndash;with-instant-client=/usr/local/lib/instantclient_10_2 &amp;ndash;with-oracle-includes=/usr/local/lib/instantclient_10_2/sdk/include &amp;ndash;with-oracle-libraries=/usr/local/lib/instantclient_10_2 &amp;ndash;with-oci-version=10G
-Let me know ny email if you want the deb for ubuntu linux.</description>
+      <description>&lt;p&gt;After installing Oracle instant client, if you have them in /usr/local/lib/instantclient_10_2, this is the command line i use :&lt;/p&gt;
+&lt;p&gt;./configure &amp;ndash;with-instant-client=/usr/local/lib/instantclient_10_2 &amp;ndash;with-oracle-includes=/usr/local/lib/instantclient_10_2/sdk/include &amp;ndash;with-oracle-libraries=/usr/local/lib/instantclient_10_2 &amp;ndash;with-oci-version=10G&lt;/p&gt;
+&lt;p&gt;Let me know ny email if you want the deb for ubuntu linux.&lt;/p&gt;</description>
     </item>
     <item>
       <title>sqlplus timeout when connnecting</title>
       <link>https://blog.chmouel.com/2007/01/02/sqlplus-timeout-when-connnecting/</link>
       <pubDate>Wed, 03 Jan 2007 02:24:26 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/01/02/sqlplus-timeout-when-connnecting/</guid>
-      <description>If you are using a pam_ldap or pam_nis environement and it happend that sqlplus does not want to connect as user but it does as root, waiting for :
-socket(PF_FILE, SOCK_STREAM, 0) = 3 connect(3, {sa_family=AF_FILE, path=&amp;#34;/var/run/.nscd_socket&amp;#34;}, 110) = -1 ENOENT (No such file or directory) close(3) = 0 open(&amp;#34;/etc/hosts&amp;#34;, O_RDONLY) = 3 fcntl64(3, F_GETFD) = 0 fcntl64(3, F_SETFD, FD_CLOEXEC) = 0 fstat64(3, {st_mode=S_IFREG|0644, st_size=286, ...}) = 0 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE |MAP_ANONYMOUS, -1, 0) = 0x45b78000 read(3, &amp;#34;127.</description>
+      <description>&lt;p&gt;If you are using a pam_ldap or pam_nis environement and it happend that sqlplus does not want to connect as user but it does as root, waiting for :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;socket(PF_FILE, SOCK_STREAM, &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;)         &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connect(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;, {sa_family&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;AF_FILE, path&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/var/run/.nscd_socket&amp;#34;&lt;/span&gt;}, &lt;span style=&#34;color:#bd93f9&#34;&gt;110&lt;/span&gt;) &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt; ENOENT (No such file &lt;span style=&#34;color:#ff79c6&#34;&gt;or&lt;/span&gt; directory)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;close(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;)                                &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;open(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/etc/hosts&amp;#34;&lt;/span&gt;, O_RDONLY)            &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fcntl64(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;, F_GETFD)                     &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fcntl64(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;, F_SETFD, FD_CLOEXEC)         &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fstat64(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;, {st_mode&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;S_IFREG&lt;span style=&#34;color:#ff79c6&#34;&gt;|&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0644&lt;/span&gt;, st_size&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;286&lt;/span&gt;, &lt;span style=&#34;color:#ff79c6&#34;&gt;...&lt;/span&gt;}) &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mmap2(NULL, &lt;span style=&#34;color:#bd93f9&#34;&gt;4096&lt;/span&gt;, PROT_READ&lt;span style=&#34;color:#ff79c6&#34;&gt;|&lt;/span&gt;PROT_WRITE, MAP_PRIVATE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;|&lt;/span&gt;MAP_ANONYMOUS, &lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0x45b78000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;read(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;127.0.0.1tlocalhost.localdomaint&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;...&lt;/span&gt;, &lt;span style=&#34;color:#bd93f9&#34;&gt;4096&lt;/span&gt;) &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;286&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;read(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#bd93f9&#34;&gt;4096&lt;/span&gt;)                       &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;close(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;)                                &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;munmap(&lt;span style=&#34;color:#bd93f9&#34;&gt;0x45b78000&lt;/span&gt;, &lt;span style=&#34;color:#bd93f9&#34;&gt;4096&lt;/span&gt;)                &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;getpid()                                &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;26002&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;getuid32()                              &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1121&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;futex(&lt;span style=&#34;color:#bd93f9&#34;&gt;0x41239198&lt;/span&gt;, FUTEX_WAIT, &lt;span style=&#34;color:#bd93f9&#34;&gt;2&lt;/span&gt;, NULL &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;&lt;/span&gt;unfinished&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/&lt;/span&gt;unfinished&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You just to have make sure to have nscd up and running. dunno what sqlplus does :(&lt;/p&gt;</description>
     </item>
     <item>
       <title>Error loading native library: libnjni9.so</title>
       <link>https://blog.chmouel.com/2006/12/21/error-loading-native-library-libnjni9so/</link>
       <pubDate>Fri, 22 Dec 2006 00:29:57 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/12/21/error-loading-native-library-libnjni9so/</guid>
-      <description>If you like me when running oracle on x86_64 get that damn :
-Error loading native library: libnjni9.so
-when launching dbca and you have googled the thousands five hundred useless answer. Just add the path of the libs $ORACLE_HOME/lib and $ORACLE_HOME/lib32 to your /etc/ld.so.conf (or /etc/ld.so.conf.d/oracle.conf on RH derivative) and rerun ldconfig.
-If this is during install just jump to a console after you add this line before it launching dbca and run a ldconfig -v as root.</description>
+      <description>&lt;p&gt;If you like me when running oracle on x86_64 get that damn :&lt;/p&gt;
+&lt;p&gt;Error loading native library: libnjni9.so&lt;/p&gt;
+&lt;p&gt;when launching dbca and you have googled the thousands five hundred useless answer. Just add the path of the libs $ORACLE_HOME/lib and $ORACLE_HOME/lib32 to your /etc/ld.so.conf (or /etc/ld.so.conf.d/oracle.conf on RH derivative) and rerun ldconfig.&lt;/p&gt;
+&lt;p&gt;If this is during install just jump to a console after you add this line before it launching dbca and run a ldconfig -v as root.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <title>Misc on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/misc/</link>
     <description>Recent content in Misc on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Thu, 22 Sep 2016 10:27:27 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/misc/index.xml" rel="self" type="application/rss+xml" />
@@ -13,62 +13,71 @@
       <link>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</link>
       <pubDate>Thu, 22 Sep 2016 10:27:27 +0000</pubDate>
       <guid>https://blog.chmouel.com/2016/09/22/the-trick-to-get-your-wordpress-behind-a-reverse-proxy/</guid>
-      <description>I have been meaning to get this blog SSL protected for a while and since solution like letsencrypt makes it easy I have generated some SSL keys for my domain and configured it in apache.
-So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using varnish for quite some time or I would get out of memory quickly some the kernel OOM killer kicking1 it.</description>
+      <description>&lt;p&gt;I have been meaning to get this blog SSL protected for a while and since solution like &lt;a href=&#34;https://letsencrypt.org&#34;&gt;letsencrypt&lt;/a&gt; makes it easy I have generated some SSL keys for my domain  and configured it in apache.&lt;/p&gt;
+&lt;p&gt;So far so good, but the thing is my VM at my hosting provider is pretty small and I have been using &lt;a href=&#34;https://varnish-cache.org/&#34;&gt;varnish&lt;/a&gt; for quite some time or I would get out of memory quickly some the kernel OOM killer kicking&lt;a href=&#34;https://letsencrypt.org&#34;&gt;1&lt;/a&gt; it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>XMPP notification for irssi running in a screen on a remote host</title>
       <link>https://blog.chmouel.com/2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/</link>
       <pubDate>Sun, 20 Dec 2009 15:41:55 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/</guid>
-      <description>Like a lot of people I have my irssi on a server in a screen. This has
-been working great so far but my only concerns are the notifications
-on the desktop when something happening.
-Over the time I have found some different solution with mitigated
-results for me :
-Use fanotify script with the libnotify-bin and SSH like mentioned here.
-Setup your irssi (or other) as irc proxy bouncer and connect with</description>
+      <description>&lt;p&gt;Like a lot of people I have my irssi on a server in a screen. This has&lt;br&gt;
+been working great so far but my only concerns are the notifications&lt;br&gt;
+on the desktop when something happening.&lt;/p&gt;
+&lt;p&gt;Over the time I have found some different solution with mitigated&lt;br&gt;
+results for me :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Use fanotify script with the libnotify-bin and SSH like mentioned &lt;a href=&#34;http://thorstenl.blogspot.com/2007/01/thls-irssi-notification-script.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setup your irssi (or other) as irc proxy bouncer and connect with&lt;br&gt;
+your desktop client (like xchat) to get notification.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Netapp sue Sun</title>
       <link>https://blog.chmouel.com/2007/09/07/netapp-sue-sun/</link>
       <pubDate>Fri, 07 Sep 2007 07:50:24 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/09/07/netapp-sue-sun/</guid>
-      <description>This is fun, theses two CEO of theses big companies are dog fighting each others :
-Dave post:
-http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.html
-Johanthan answer:
-http://blogs.sun.com/jonathan/entry/on_patent_trolling
-but the real (fake) truth about that post is here :
-http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html
-I tend to believe more NetAPP in this case, just because i don&amp;rsquo;t know how many time i have sweared on that bloody ps -aux that does not work on solaris.</description>
+      <description>&lt;p&gt;This is fun, theses two CEO of theses big companies are dog fighting each others :&lt;/p&gt;
+&lt;p&gt;Dave post:&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.html&#34;&gt;http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.html&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;Johanthan answer:&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://blogs.sun.com/jonathan/entry/on_patent_trolling&#34;&gt;http://blogs.sun.com/jonathan/entry/on_patent_trolling&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;but the real (fake) truth about that post is here :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html&#34; title=&#34;http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html&#34;&gt;http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I tend to believe more NetAPP in this case, just because i don&amp;rsquo;t know how many time i have sweared on that bloody ps -aux that does not work on solaris.&lt;/p&gt;</description>
     </item>
     <item>
       <title>chmouel.com is moved.</title>
       <link>https://blog.chmouel.com/2006/07/30/chmouelcom-is-moved/</link>
       <pubDate>Sun, 30 Jul 2006 12:36:14 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/07/30/chmouelcom-is-moved/</guid>
-      <description>I have finally changed chmouel.com over a new provider. The new
-provider is called WebHost and i got a VPS with 50GB of
-bandwith and 2GB of storage for 10US$ a month.
-My first task was to compile python2.4 on that box which look like
-it&amp;rsquo;s based on RH7.3 with heavy customization. Hopefully python really can compile everywhere.
-I would like to thanks Vincent Danen for all his free hosting</description>
+      <description>&lt;p&gt;I have finally changed chmouel.com over a new provider. The new&lt;br&gt;
+provider is called &lt;a href=&#34;http://www.westhost.com/&#34;&gt;WebHost&lt;/a&gt; and i got a &lt;a href=&#34;http://en.wikipedia.org/wiki/Virtual_private_server&#34;&gt;VPS&lt;/a&gt; with 50GB of&lt;br&gt;
+bandwith and 2GB of storage for 10US$ a month.&lt;/p&gt;
+&lt;p&gt;My first task was to compile python2.4 on that box which look like&lt;br&gt;
+it&amp;rsquo;s based on RH7.3 with heavy customization. Hopefully python really can compile everywhere.&lt;/p&gt;
+&lt;p&gt;I would like to thanks &lt;a href=&#34;http://www.danen.ca&#34;&gt;Vincent Danen&lt;/a&gt; for all his free hosting&lt;br&gt;
+during all theses years. He has been answering me every&lt;br&gt;
+questions i had and provided me a nice hosting for all theses years i was in travel.&lt;br&gt;
+I hope to pass by Alberta one day and invite him for the couples&lt;br&gt;
+of hundred beers that i own him now.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jabber/Asterisk and Gajim notification</title>
       <link>https://blog.chmouel.com/2006/05/25/jabberasterisk-and-gajim-notification/</link>
       <pubDate>Thu, 25 May 2006 11:38:43 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/05/25/jabberasterisk-and-gajim-notification/</guid>
-      <description>At work we are using Asterisk and Jabber and i am using Gajim as my client. I did a quick patch to have a notification on my desktop when someone call me and i get my big headphones (not that i like the phone very much but well), here is the patch for people who may wants it :
-http://trac.gajim.org/ticket/1998</description>
+      <description>&lt;p&gt;At work we are using Asterisk and Jabber and i am using Gajim as my client. I did a quick patch to have a notification on my desktop when someone call me and i get my big headphones (not that i like the phone very much but well), here is the patch for people who may wants it :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://trac.gajim.org/ticket/1998&#34;&gt;http://trac.gajim.org/ticket/1998&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>X86_64</title>
       <link>https://blog.chmouel.com/2006/05/11/x86_64/</link>
       <pubDate>Thu, 11 May 2006 06:21:49 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/05/11/x86_64/</guid>
-      <description>On X86_64 VM Emulation works way better with Xen 3.0 than with Vmware. Xen is pretty awesome compared to Vmware for my use. The only thing i have to figure out is how to get rpmstrap get it workin on Debian base system.</description>
+      <description>&lt;p&gt;On X86_64 VM Emulation works way better with Xen 3.0 than with Vmware. Xen is pretty awesome compared to Vmware for my use. The only thing i have to figure out is how to get rpmstrap get it workin on Debian base system.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

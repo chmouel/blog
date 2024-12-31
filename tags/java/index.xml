@@ -4,7 +4,7 @@
     <title>Java on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/java/</link>
     <description>Recent content in Java on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Thu, 17 Jun 2010 04:48:42 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
@@ -13,18 +13,25 @@
       <link>https://blog.chmouel.com/2010/06/17/exclude-git-or-svn-directories-in-eclipse-helios/</link>
       <pubDate>Thu, 17 Jun 2010 04:48:42 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/06/17/exclude-git-or-svn-directories-in-eclipse-helios/</guid>
-      <description>If you are using Ctrl+Shift+T in Eclipse and have .git or .svn directory showing up it is easy to fix it without having to use another plugin for eclipse like subeclipse or egit.
-Open the Properties of your project go to Resource=&amp;gt;Resource Filters and click on Add to add a new filter.
-Now just do like this ScreenShot :
-Change the *.git* to *.svn* if you like for subversion.</description>
+      <description>&lt;p&gt;If  you are using Ctrl+Shift+T in Eclipse and have .git or .svn directory showing up it is easy to fix it without having to use another plugin for eclipse like subeclipse or egit.&lt;/p&gt;
+&lt;p&gt;Open the Properties of your project go to &lt;em&gt;Resource&lt;/em&gt;=&amp;gt;&lt;em&gt;Resource Filters&lt;/em&gt; and click on Add to add a new filter.&lt;/p&gt;
+&lt;p&gt;Now just do like this ScreenShot :&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Change the *.git* to *.svn* if you like for subversion.&lt;/p&gt;</description>
     </item>
     <item>
       <title>connecting to self signed SSL certificate from Java on Debian/Ubuntu</title>
       <link>https://blog.chmouel.com/2010/06/03/connecting-to-self-signed-ssl-certificate-from-java-on-debian-ubuntu/</link>
       <pubDate>Thu, 03 Jun 2010 10:50:43 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/06/03/connecting-to-self-signed-ssl-certificate-from-java-on-debian-ubuntu/</guid>
-      <description>You want to connect to self signed SSL certificate from Java using the standard HttpsURLConnection and you are getting this error, because the self signed certificate is obviously not recognized by Java :
-SEVERE: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1639) at sun.</description>
+      <description>&lt;p&gt;You want to connect to self signed SSL certificate from Java using the standard &lt;a href=&#34;http://java.sun.com/j2se/1.4.2/docs/api/javax/net/ssl/HttpsURLConnection.html&#34;&gt;HttpsURLConnection&lt;/a&gt; and you are getting this error, because the self signed certificate is obviously not recognized by Java :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SEVERE: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1639)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:215)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:209)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;it seems that there is a lot of &amp;lsquo;solutions&amp;rsquo; (read hack) or workaround around the web which is resumed well on &lt;a href=&#34;http://stackoverflow.com/questions/875467/java-client-certificates-over-https-ssl&#34;&gt;this&lt;/a&gt; stack overflow article.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

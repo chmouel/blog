@@ -4,7 +4,7 @@
     <title>Python on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/python/</link>
     <description>Recent content in Python on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Mon, 08 Sep 2014 00:56:43 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -13,184 +13,255 @@
       <link>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</link>
       <pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate>
       <guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid>
-      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Monty started to mention on the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
-The idea of dox is like the name imply is to slightly behave like the tox tool but instead of running virtualenvs you are using docker containers.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.chmouel.com/wp-content/uploads/2014/09/dox-diagram-fix.png&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sometime there is some ideas that are just obvious that they are good ideas. When &lt;!-- raw HTML omitted --&gt;Monty&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;started to mention&lt;!-- raw HTML omitted --&gt; on the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On trying to be pylint compatible</title>
       <link>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</link>
       <pubDate>Thu, 11 Apr 2013 09:35:29 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/04/11/trying-to-be-pylint-compatible/</guid>
-      <description>How I feel when I try to address all pylint warning/errors:
-Adapted from http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards</description>
+      <description>&lt;p&gt;How I feel when I try to address all pylint warning/errors:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.chmouel.com/wp-content/uploads/2013/04/tumblr_inline_mk6xomQvzf1qz4rgp.gif&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Adapted from &lt;a href=&#34;http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards&#34;&gt;http://devopsreactions.tumblr.com/post/47690154351/trying-to-code-to-w3c-standards&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emacs and nosetests</title>
       <link>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</link>
       <pubDate>Sun, 14 Oct 2012 14:19:07 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</guid>
-      <description>Sometime you just need a long trans atlantic flight and a stupidly long stop-over in a random city to do some of those task that can improve your day to day but you never take some time to do it.
-When using emacs I wanted a simple way to launch a nosetests on the current function my cursor is in Emacs. The syntax on nosetests is a bit tricky and I actually always have to look at my shell history to know the proper syntax (nosetests directory/filename.</description>
+      <description>&lt;p&gt;Sometime you just need a long trans atlantic flight and a stupidly long stop-over in a random city to do some of those task that can improve your day to day but you never take some time to do it.&lt;/p&gt;
+&lt;p&gt;When using emacs I wanted a simple way to launch a nosetests on the current function my cursor is in Emacs. The syntax on nosetests is a bit tricky and I actually always have to look at my shell history to know the proper syntax (nosetests directory/filename.py:Class.function).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Debugging python-novaclient on the command line.</title>
       <link>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</link>
       <pubDate>Fri, 02 Sep 2011 03:00:13 +0000</pubDate>
       <guid>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</guid>
-      <description>I have done lately quite a bit of work with python-novaclient the (nova/keystone) openstack client. I often experiment it with ipython in the console.
-There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :
-This would give you the details of the session showing you the REST requests and responses including the headers.</description>
+      <description>&lt;p&gt;I have done lately quite a bit of work with &lt;!-- raw HTML omitted --&gt;python-novaclient&lt;!-- raw HTML omitted --&gt; the (nova/keystone) openstack client. I often experiment it with &lt;!-- raw HTML omitted --&gt;ipython&lt;!-- raw HTML omitted --&gt; in the console.&lt;/p&gt;
+&lt;p&gt;There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing python-cloudfiles from pypi</title>
       <link>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</link>
       <pubDate>Wed, 16 Feb 2011 05:41:33 +0000</pubDate>
       <guid>https://blog.chmouel.com/2011/02/16/installing-python-cloudfiles-from-pypi/</guid>
-      <description>I have just uploaded python-cloudfiles to pypi available here
-This make things easy to add as a dependence of your project like you can have something like this in your setup.py :
-requirements = [&#39;python-cloudfiles&#39;]
-and it will automatically download it as part of the dependence with easy_install or pip.
-cool kids on latest debian/ubuntu can do stuff like this (from python-stdeb package) :
-pypi-install python-cloudfiles
-which would automatically download the tarball from pypi and install it as a packages (like the way it should be for prod machine!</description>
+      <description>&lt;p&gt;I have just uploaded &lt;a href=&#34;https://github.com/rackspace/python-cloudfiles&#34;&gt;python-cloudfiles&lt;/a&gt; to pypi available &lt;a href=&#34;http://pypi.python.org/pypi/python-cloudfiles/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This make things easy to add as a dependence of your project like you can have something like this in your setup.py :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;requirements = [&#39;python-cloudfiles&#39;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and it will automatically download it as part of the dependence with easy_install or pip.&lt;/p&gt;
+&lt;p&gt;cool kids on latest debian/ubuntu can do stuff like this (from &lt;a href=&#34;http://packages.debian.org/sid/python-stdeb&#34;&gt;python-stdeb&lt;/a&gt; package) :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pypi-install python-cloudfiles&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;which would automatically download the tarball from pypi and install it as a packages (like the way it should be for prod machine!)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python decorator to argument checking</title>
       <link>https://blog.chmouel.com/2010/07/29/python-decorator-to-argument-checking/</link>
       <pubDate>Thu, 29 Jul 2010 19:03:57 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/07/29/python-decorator-to-argument-checking/</guid>
-      <description>I am sure there is billions or more people who already done that but I needed this quickly for my project and was not feeling googling around :</description>
+      <description>&lt;p&gt;I am sure there is billions or more people who already done that but I needed this quickly for my project and was not feeling googling around :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Get Facebook albums with python</title>
       <link>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</link>
       <pubDate>Sat, 09 Jan 2010 14:42:19 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</guid>
-      <description>Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.
-#!/usr/bin/python import os import urllib from facebook import Facebook # see http://developers.facebook.com/get_started.php # Your API key API_KEY=&amp;#34;YOUR_API_KEY&amp;#34; # Application secret key SECRET_KEY=&amp;#34;YOUR_SECRET_KEY&amp;#34; cnx = Facebook(API_KEY, SECRET_KEY) cnx.auth.createToken() cnx.login() cnx.auth.getSession() def choose_albums(cnx): cnt = 1 ret={} bigthing=cnx.</description>
+      <description>&lt;p&gt;Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;#!/usr/bin/python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;import&lt;/span&gt; os
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;import&lt;/span&gt; urllib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;from&lt;/span&gt; facebook &lt;span style=&#34;color:#ff79c6&#34;&gt;import&lt;/span&gt; Facebook
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;# see http://developers.facebook.com/get_started.php&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;# Your API key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;API_KEY&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;YOUR_API_KEY&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;# Application secret key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SECRET_KEY&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;YOUR_SECRET_KEY&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cnx &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; Facebook(API_KEY, SECRET_KEY)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cnx&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;auth&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;createToken()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cnx&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;login()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cnx&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;auth&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;getSession()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;choose_albums&lt;/span&gt;(cnx):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    cnt &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ret&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;{}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    bigthing&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;cnx&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;photos&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;getAlbums(cnx&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;uid)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;for&lt;/span&gt; row &lt;span style=&#34;color:#ff79c6&#34;&gt;in&lt;/span&gt; bigthing:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ret[cnt] &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; row[&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;], row[&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;aid&amp;#39;&lt;/span&gt;], row[&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;link&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;) &lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt; - &lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;%&lt;/span&gt; (cnt, row[&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;], row[&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;link&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        cnt &lt;span style=&#34;color:#ff79c6&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ans &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; raw_input(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Choose albums (separated by ,): &amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; [ret[&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;int&lt;/span&gt;(row)] &lt;span style=&#34;color:#ff79c6&#34;&gt;for&lt;/span&gt; row &lt;span style=&#34;color:#ff79c6&#34;&gt;in&lt;/span&gt; ans&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;, &amp;#39;&lt;/span&gt;) ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chosen_albums &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; choose_albums(cnx)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;for&lt;/span&gt; album &lt;span style=&#34;color:#ff79c6&#34;&gt;in&lt;/span&gt; chosen_albums:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    name, aid, _ &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;  album
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Album: &amp;#34;&lt;/span&gt;, (name)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ddir &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;fbgallery/&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;%&lt;/span&gt; name
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;not&lt;/span&gt; os&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;exists(ddir):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        os&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;makedirs(ddir)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;for&lt;/span&gt; photo &lt;span style=&#34;color:#ff79c6&#34;&gt;in&lt;/span&gt; cnx&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;photos&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;get(aid&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;aid):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        url &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; photo[&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;src_big&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        dest&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;.jpg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;%&lt;/span&gt; (ddir, photo[&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;pid&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;not&lt;/span&gt; os&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;exists(dest):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Getting: &amp;#34;&lt;/span&gt;, url
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            urllib&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;urlretrieve(url, dest)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Twitter notification of replies by Email</title>
       <link>https://blog.chmouel.com/2010/01/07/twitter-notification-of-replies-by-email/</link>
       <pubDate>Thu, 07 Jan 2010 14:40:25 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/01/07/twitter-notification-of-replies-by-email/</guid>
-      <description>I don&amp;rsquo;t check very often my twitter to know when someone replies and I find it hard to figure out what&amp;rsquo;s going on when i check a couple of days after even using a client showing only the reply (my client of choice lately is the Emacs twittering mode client)
-I have made a script who&amp;rsquo;s checking your direct reply and email it to you. This is to setup via a cron on a server who has a mail server configured locally.</description>
+      <description>&lt;p&gt;I don&amp;rsquo;t check very often my twitter to know when someone replies and I find it hard to figure out what&amp;rsquo;s going on when i check a couple of days after even using a client showing only the reply (my client of choice lately is the &lt;a href=&#34;http://www.emacswiki.org/emacs/TwitteringMode&#34;&gt;Emacs twittering&lt;/a&gt; mode client)&lt;/p&gt;
+&lt;p&gt;I have made a script who&amp;rsquo;s checking your direct reply and email it to you. This is to setup via a cron on a server who has a mail server configured locally. You can get it from here :&lt;/p&gt;</description>
     </item>
     <item>
       <title>XMPP notification for irssi running in a screen on a remote host</title>
       <link>https://blog.chmouel.com/2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/</link>
       <pubDate>Sun, 20 Dec 2009 15:41:55 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/12/20/xmpp-notification-for-irssi-running-in-a-screen-on-a-remote-host/</guid>
-      <description>Like a lot of people I have my irssi on a server in a screen. This has
-been working great so far but my only concerns are the notifications
-on the desktop when something happening.
-Over the time I have found some different solution with mitigated
-results for me :
-Use fanotify script with the libnotify-bin and SSH like mentioned here.
-Setup your irssi (or other) as irc proxy bouncer and connect with</description>
+      <description>&lt;p&gt;Like a lot of people I have my irssi on a server in a screen. This has&lt;br&gt;
+been working great so far but my only concerns are the notifications&lt;br&gt;
+on the desktop when something happening.&lt;/p&gt;
+&lt;p&gt;Over the time I have found some different solution with mitigated&lt;br&gt;
+results for me :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Use fanotify script with the libnotify-bin and SSH like mentioned &lt;a href=&#34;http://thorstenl.blogspot.com/2007/01/thls-irssi-notification-script.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setup your irssi (or other) as irc proxy bouncer and connect with&lt;br&gt;
+your desktop client (like xchat) to get notification.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Accessing to Rackspace Cloud Files via servicenet (update)</title>
       <link>https://blog.chmouel.com/2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/</link>
       <pubDate>Tue, 20 Oct 2009 18:47:49 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/10/20/accessing-to-rackspace-cloud-files-via-servicenet-update/</guid>
-      <description>Last week I have posted an article explaining how to connect to Rackspace Cloud Files via Rackspace ServiceNET but I actually got it wrong as pointed by my great colleague exlt so I had to take it down until figured out how to fix it.
-I have add that feature properly to the PHP and Python API in version 1.5.0 to add a &amp;lsquo;servicenet&amp;rsquo; argument to the connection and updated the blog post here :</description>
+      <description>&lt;p&gt;Last week I have posted an article explaining how to connect to Rackspace Cloud Files via Rackspace ServiceNET but I actually got it wrong as pointed by my great colleague &lt;a href=&#34;http://12.am/&#34;&gt;exlt&lt;/a&gt; so I had to take it down until figured out how to fix it.&lt;/p&gt;
+&lt;p&gt;I have add that feature properly to the PHP and Python API in version 1.5.0 to add a &amp;lsquo;servicenet&amp;rsquo; argument to the connection and updated the blog post here :&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to connect to Rackspace Cloud Files via ServiceNET</title>
       <link>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</link>
       <pubDate>Wed, 14 Oct 2009 00:47:27 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/10/14/how-to-connect-to-rackspace-cloud-files-via-servicenet/</guid>
-      <description>If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.
-The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.</description>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;If you are a Rackspace customer and you are are planning to use Rackspace Cloud Files via it&amp;rsquo;s internal network (ServiceNet) so you don&amp;rsquo;t get billed for the bandwidth going over Cloud Files this is how you can do.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;The first thing is to make sure with your support team if your servers are connected to ServiceNet and if you have that connection then there is a small change to do in your code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>python syntax warning in emacs</title>
       <link>https://blog.chmouel.com/2009/08/31/python-syntax-warning-in-emacs/</link>
       <pubDate>Mon, 31 Aug 2009 05:04:28 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/08/31/python-syntax-warning-in-emacs/</guid>
-      <description>One of the best feature to have with Emacs when doing python development is to have a real time syntax error/warning check highlighted in your code to avoid many errors or superfluous code.
-This code is taken from the brillant Emacswiki python page.
-You need to install pyflakes first which should be available on your linux distro by default in a package or for the other OS you may follow the procedure from the pyflakes webpage.</description>
+      <description>&lt;p&gt;One of the best feature to have with Emacs when doing python development is to have a real time syntax error/warning check highlighted in your code to avoid many errors or superfluous code.&lt;/p&gt;
+&lt;p&gt;This code is taken from the brillant Emacswiki &lt;a href=&#34;http://www.emacswiki.org/cgi-bin/wiki/PythonMode&#34;&gt;python page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You need to install pyflakes first which should be available on your linux distro by default in a package or for the other OS you may follow the procedure from the &lt;a href=&#34;http://www.divmod.org/trac/wiki/DivmodPyflakes&#34;&gt;pyflakes webpage&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Yum Force Exclude List</title>
       <link>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</link>
       <pubDate>Thu, 20 Mar 2008 09:36:06 +0000</pubDate>
       <guid>https://blog.chmouel.com/2008/03/20/yum-force-exclude-list/</guid>
-      <description>While talking with my fellow colleague Darren Birkett about what seems a design limitation
-of yum to not be able to force listing the excludes from yum. I had a
-shoot to make a yum plugin to force listing the excludes.
-Here is how it works :
-root@centos5:~&amp;gt; grep exclude /etc/yum.conf
-exclude=rpm*
-root@centos5:~&amp;gt; yum install rpm-devel
-Loading &amp;ldquo;installonlyn&amp;rdquo; plugin
-Loading &amp;ldquo;changelog&amp;rdquo; plugin
-Loading &amp;ldquo;chmouel&amp;rdquo; plugin
-Loading &amp;ldquo;priorities&amp;rdquo; plugin
-Setting up Install Process</description>
+      <description>&lt;p&gt;While talking with my fellow colleague Darren Birkett about what seems a design limitation&lt;br&gt;
+of yum to not be able to force listing the excludes from yum. I had a&lt;br&gt;
+shoot to make a yum plugin to force listing the excludes.&lt;/p&gt;
+&lt;p&gt;Here is how it works :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;root@centos5:&lt;del&gt;&amp;gt; grep exclude /etc/yum.conf&lt;br&gt;
+exclude=rpm*&lt;br&gt;
+root@centos5:&lt;/del&gt;&amp;gt; yum install rpm-devel&lt;br&gt;
+Loading &amp;ldquo;installonlyn&amp;rdquo; plugin&lt;br&gt;
+Loading &amp;ldquo;changelog&amp;rdquo; plugin&lt;br&gt;
+Loading &amp;ldquo;chmouel&amp;rdquo; plugin&lt;br&gt;
+Loading &amp;ldquo;priorities&amp;rdquo; plugin&lt;br&gt;
+Setting up Install Process&lt;br&gt;
+Setting up repositories&lt;br&gt;
+Reading repository metadata in from local files&lt;br&gt;
+Excluding Packages in global exclude list&lt;br&gt;
+Finished&lt;br&gt;
+0 packages excluded due to repository priority protections&lt;br&gt;
+Parsing package install arguments&lt;br&gt;
+Nothing to do&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generating md5 encrypted password for chpasswd</title>
       <link>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</link>
       <pubDate>Fri, 17 Aug 2007 07:11:38 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</guid>
-      <description>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
-[code lang=&amp;ldquo;bash&amp;rdquo;]
-echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin
-[/code]
-If you want to generate in pure python you can do it like that :
-[code lang=&amp;ldquo;python&amp;rdquo;]
-def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):
-import md5
-m = md5.new()
-m.update(password + magic + salt)
-# /* Then just as many characters of the MD5(pw,salt,pw) */</description>
+      <description>&lt;p&gt;If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :&lt;br&gt;
+[code lang=&amp;ldquo;bash&amp;rdquo;]&lt;br&gt;
+echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin&lt;br&gt;
+[/code]&lt;br&gt;
+If you want to generate in pure python you can do it like that :&lt;br&gt;
+[code lang=&amp;ldquo;python&amp;rdquo;]&lt;br&gt;
+def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):&lt;br&gt;
+import md5&lt;br&gt;
+m = md5.new()&lt;br&gt;
+m.update(password + magic + salt)&lt;/p&gt;
+&lt;p&gt;# /* Then just as many characters of the MD5(pw,salt,pw) */&lt;br&gt;
+mixin = md5.md5(password + salt + password).digest()&lt;br&gt;
+for i in range(0, len(password)):&lt;br&gt;
+m.update(mixin[i % 16])&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cheetah Mode for Emacs</title>
       <link>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</link>
       <pubDate>Mon, 31 Jul 2006 23:35:09 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</guid>
-      <description>Here is a simple html derived mode for Cheetah templates files. The font-locking regexp can be improved thought but thatâ€™s a start.
-(define-derived-mode cheetah-mode html-mode &amp;#34;Cheetah&amp;#34; (make-face &amp;#39;cheetah-variable-face) (font-lock-add-keywords nil &amp;#39;( (&amp;#34;\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\&amp;gt;&amp;#34; 1 font-lock-type-face) (&amp;#34;\\(#\\(from\\|for\\|end\\)\\).*\\&amp;lt;\\(for\\|import\\|if\\|in\\)\\&amp;gt;&amp;#34; 3 font-lock-type-face) (&amp;#34;\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)&amp;#34; 1 font-lock-variable-name-face)) ) (font-lock-mode 1) ) (setq auto-mode-alist (cons &amp;#39;( &amp;#34;\\.tmpl\\&amp;#39;&amp;#34; . cheetah-mode ) auto-mode-alist )) </description>
+      <description>&lt;p&gt;Here is a simple html derived mode for &lt;a href=&#34;http://www.cheetahtemplate.org/&#34;&gt;Cheetah&lt;/a&gt; templates files. The font-locking regexp can be improved thought but thatâ€™s a start.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;define-derived-mode&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cheetah-mode&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;html-mode&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Cheetah&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;make-face&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;cheetah-variable-face&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-add-keywords&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   nil
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#39;&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\\(#\\(from\\|else\\|include\\|set\\|import\\|for\\|if\\|end\\)+\\)\\&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-type-face&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\\(#\\(from\\|for\\|end\\)\\).*\\&amp;lt;\\(for\\|import\\|if\\|in\\)\\&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-type-face&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\\(\\$\\(?:\\sw\\|}\\|{\\|\\s_\\)+\\)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-variable-name-face&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-mode&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#ff79c6&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;auto-mode-alist&lt;/span&gt; (&lt;span style=&#34;color:#50fa7b&#34;&gt;cons&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#39;&lt;/span&gt;( &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;\\.tmpl\\&amp;#39;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cheetah-mode&lt;/span&gt; ) &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;auto-mode-alist&lt;/span&gt; ))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Assignement in Python with list.extend()</title>
       <link>https://blog.chmouel.com/2006/07/31/assignement-in-python-with-listextend/</link>
       <pubDate>Mon, 31 Jul 2006 06:54:13 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/07/31/assignement-in-python-with-listextend/</guid>
-      <description>This is weird for me :
-d = [&amp;#39;foo&amp;#39;, &amp;#39;bar&amp;#39;, &amp;#39;ba&amp;#39;, &amp;#39;c&amp;#39;] print d f = d f.extend(d) print d give me the result
-python &amp;ldquo;/tmp/a.py&amp;rdquo;
-[&amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;]
-[&amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;, &amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;]
-Compilation finished at Mon Jul 31 16:49:4
-It seems that extend assign as well the non extended part (d) which is confusing because to merge list i need to use temporary variable.</description>
+      <description>&lt;p&gt;This is weird for me :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;ba&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt; d
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; d
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;extend(d)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt; d
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;give me the result&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;python &amp;ldquo;/tmp/a.py&amp;rdquo;&lt;br&gt;
+[&amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;]&lt;br&gt;
+[&amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;, &amp;lsquo;foo&amp;rsquo;, &amp;lsquo;bar&amp;rsquo;, &amp;lsquo;ba&amp;rsquo;, &amp;lsquo;c&amp;rsquo;]&lt;/p&gt;
+&lt;p&gt;Compilation finished at Mon Jul 31 16:49:4&lt;/p&gt;
+&lt;p&gt;It seems that extend assign as well the non extended part (d) which is confusing because to merge list i need to use temporary variable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jabber/Asterisk and Gajim notification</title>
       <link>https://blog.chmouel.com/2006/05/25/jabberasterisk-and-gajim-notification/</link>
       <pubDate>Thu, 25 May 2006 11:38:43 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/05/25/jabberasterisk-and-gajim-notification/</guid>
-      <description>At work we are using Asterisk and Jabber and i am using Gajim as my client. I did a quick patch to have a notification on my desktop when someone call me and i get my big headphones (not that i like the phone very much but well), here is the patch for people who may wants it :
-http://trac.gajim.org/ticket/1998</description>
+      <description>&lt;p&gt;At work we are using Asterisk and Jabber and i am using Gajim as my client. I did a quick patch to have a notification on my desktop when someone call me and i get my big headphones (not that i like the phone very much but well), here is the patch for people who may wants it :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://trac.gajim.org/ticket/1998&#34;&gt;http://trac.gajim.org/ticket/1998&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python 2.5 Beta</title>
       <link>https://blog.chmouel.com/2006/04/09/python-25-beta/</link>
       <pubDate>Sun, 09 Apr 2006 06:07:50 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/04/09/python-25-beta/</guid>
-      <description>I have been looking at the What&amp;rsquo;s new __of Python 2.5. There is some cool features inside it :
-Conditional Expressions:
-This stuff basically allow to do standard C idiom (that we found in every kind of derivative language) like
-a = condition ? &amp;ldquo;true&amp;rdquo; : &amp;ldquo;false&amp;rdquo;
-the weird part is that Guido Van-Rossum implemented this syntax :
-x = true_value if condition else false_value
-which we will have to get use to.</description>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;I have been looking at the &lt;!-- raw HTML omitted --&gt;&lt;em&gt;&lt;a href=&#34;http://docs.python.org/dev/whatsnew/whatsnew25.html&#34; title=&#34;Whats new in Python 2.5&#34;&gt;&lt;!-- raw HTML omitted --&gt;What&amp;rsquo;s new&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;/em&gt; __&lt;!-- raw HTML omitted --&gt;of Python 2.5. There is some cool features inside it :&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://docs.python.org/dev/whatsnew/node2.html&#34;&gt;&lt;!-- raw HTML omitted --&gt;Conditional Expressions:&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;/strong&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;This stuff basically allow to do standard C idiom (that we found in every kind of derivative language) like&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

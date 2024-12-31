@@ -4,7 +4,7 @@
     <title>OpenShift on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/openshift/</link>
     <description>Recent content in OpenShift on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Mon, 07 Mar 2022 08:04:02 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/openshift/index.xml" rel="self" type="application/rss+xml" />
@@ -13,79 +13,91 @@
       <link>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</link>
       <pubDate>Mon, 07 Mar 2022 08:04:02 +0000</pubDate>
       <guid>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</guid>
-      <description>Expanding on my previous blog post on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.
-On OpenShift Pipelines we made the conscious decision to run all the TaskRuns and Pipelinerun by default under a custom ServiceAccount called pipelines.
-That&amp;rsquo;s it, unless overridden by the user in its pipelinerun or taskrun, it will use the pipelines ServiceAccount which has a few elevated privileges.</description>
+      <description>&lt;p&gt;Expanding on my &lt;a href=&#34;https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/&#34; title=&#34; previous blog post&#34;&gt;previous blog post&lt;/a&gt; on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.&lt;/p&gt;
+&lt;p&gt;On OpenShift Pipelines we made the conscious decision to run all the TaskRuns and Pipelinerun by default under a custom ServiceAccount called &lt;code&gt;pipelines&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it, unless overridden by the user in its pipelinerun or taskrun, it will use the &lt;code&gt;pipelines&lt;/code&gt; ServiceAccount which has a few elevated privileges..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deploying minishift on a remote laptop.</title>
       <link>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</link>
       <pubDate>Fri, 09 Jun 2017 13:31:28 +0000</pubDate>
       <guid>https://blog.chmouel.com/2017/06/09/deploying-minishift-on-a-remote-laptop/</guid>
-      <description>Part of my new job working with Fabric8 is to having it deployed via minishift.
-Everything is nice and working (try it it&amp;rsquo;s awesome https://fabric8.io/guide/getStarted/gofabric8.html) as long you deploy it on your local workstation.
-The thing is that my desktop macosx laptop has only 8GB of RAM and is not very well up to the task to get all the services being deployed when I have my web browser and other stuff hogging the memory.</description>
+      <description>&lt;p&gt;Part of my new job working with Fabric8 is to having it deployed via minishift.&lt;br&gt;
+Everything is nice and working (try it it&amp;rsquo;s awesome &lt;a href=&#34;https://fabric8.io/guide/getStarted/gofabric8.html&#34;&gt;https://fabric8.io/guide/getStarted/gofabric8.html&lt;/a&gt;) as long you deploy it on your local workstation.&lt;/p&gt;
+&lt;p&gt;The thing is that my desktop macosx laptop has only 8GB of RAM and is not very well up to the task to get all the services being deployed when I have my web browser and other stuff hogging the memory. I would not do on a remote VM since I want to avoid the nested virtualisationt part that may slow down things even more.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting a letsencrypt SSL certificate for the OpenShift console and API</title>
       <link>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</link>
       <pubDate>Thu, 29 Sep 2016 08:22:48 +0000</pubDate>
       <guid>https://blog.chmouel.com/2016/09/29/getting-a-letsencrypt-ssl-certificate-for-the-openshift-console-and-api/</guid>
-      <description>By default when you install an OpenShift install it would automatically generate its own certificates.
-It uses those certificates for communication between nodes and as well to automatically auth the admin account. By default those same certificates are the one provided for the OpenShift console and API.
-Since it is auto generated you will when connecting to the website with you webbrowser get an ugly error message :
-and as the error message says that&amp;rsquo;s not very secure #sadpanda.</description>
+      <description>&lt;p&gt;By default when you install an OpenShift install it would automatically generate its own certificates.&lt;/p&gt;
+&lt;p&gt;It uses those certificates for communication between nodes and as well to automatically auth the admin account. By default those same certificates are the one provided for the OpenShift console and API.&lt;/p&gt;
+&lt;p&gt;Since it is auto generated you will when connecting  to the website with you webbrowser get an ugly error message :&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.chmouel.com/wp-content/uploads/2016/09/2016-09-28__23-40-01-20126.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;and as the error message says that&amp;rsquo;s not very secure #sadpanda.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using python to drive OpenShift REST API</title>
       <link>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</link>
       <pubDate>Mon, 19 Sep 2016 08:19:50 +0000</pubDate>
       <guid>https://blog.chmouel.com/2016/09/19/using-python-to-drive-openshift-rest-api/</guid>
-      <description>I have been meaning to automate my deployment directly from my small python application without having to use the openshift client (oc) directly.
-OpenShift use a REST API and the oc client uses it to communicate with the server, you can actually see all the REST operation the oc client is doing if you specify the &amp;ndash;loglevel=7 (it goes to 10 to get even more debug info) :
-$ oc --loglevel=7 get pod 2&amp;gt;&amp;amp;1 |head -10 I0919 09:59:20.</description>
+      <description>&lt;p&gt;I have been meaning to automate my deployment directly from my small python application without having to use the openshift client (oc) directly.&lt;/p&gt;
+&lt;p&gt;OpenShift use a REST API and the oc client uses it to communicate with the server, you can actually see all the REST operation the oc client is doing if you specify the &amp;ndash;loglevel=7 (it goes to 10 to get even more debug info) :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;$&lt;/span&gt; oc &lt;span style=&#34;color:#ff79c6&#34;&gt;--&lt;/span&gt;loglevel&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;7&lt;/span&gt; get pod &lt;span style=&#34;color:#bd93f9&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;|&lt;/span&gt;head &lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.047350&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; loader&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;329&lt;/span&gt;] Config loaded from file &lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;Users&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;chmouel&lt;span style=&#34;color:#ff79c6&#34;&gt;/.&lt;/span&gt;kube&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.048149&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;296&lt;/span&gt;] GET https:&lt;span style=&#34;color:#ff79c6&#34;&gt;//&lt;/span&gt;openshift:&lt;span style=&#34;color:#bd93f9&#34;&gt;8443&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;oapi
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.048158&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;303&lt;/span&gt;] Request Headers:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.048162&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;306&lt;/span&gt;]     User&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;Agent: oc&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;v1&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;4.0&lt;/span&gt; (darwin&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;amd64) openshift&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;85&lt;/span&gt;eb37b
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.048175&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;306&lt;/span&gt;]     Authorization: Bearer FOOBAR
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.048180&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;306&lt;/span&gt;]     Accept: application&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;json, &lt;span style=&#34;color:#ff79c6&#34;&gt;*/*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.095239&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;321&lt;/span&gt;] Response Status: &lt;span style=&#34;color:#bd93f9&#34;&gt;200&lt;/span&gt; OK &lt;span style=&#34;color:#ff79c6&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;47&lt;/span&gt; milliseconds
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.096056&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;296&lt;/span&gt;] GET https:&lt;span style=&#34;color:#ff79c6&#34;&gt;//&lt;/span&gt;openshift:&lt;span style=&#34;color:#bd93f9&#34;&gt;8443&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;version
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.096078&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;303&lt;/span&gt;] Request Headers:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I0919 &lt;span style=&#34;color:#bd93f9&#34;&gt;09&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;59&lt;/span&gt;:&lt;span style=&#34;color:#bd93f9&#34;&gt;20.096084&lt;/span&gt;   &lt;span style=&#34;color:#bd93f9&#34;&gt;77328&lt;/span&gt; round_trippers&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;go:&lt;span style=&#34;color:#bd93f9&#34;&gt;306&lt;/span&gt;]     User&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;Agent: oc&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;v1&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;4.0&lt;/span&gt; (darwin&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;amd64) openshift&lt;span style=&#34;color:#ff79c6&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;85&lt;/span&gt;eb37b
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I was thinking to come up with my own python rest wrapper since a google quick search didn&amp;rsquo;t come up with any binding. But since openshift is build on kubernetes and fully compatible with it (i.e: no fork or changes that make it incompatible) it was as easy as using the tools provided for kube.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting openshift origin “cluster up” working with xhyve</title>
       <link>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</link>
       <pubDate>Mon, 19 Sep 2016 06:00:54 +0000</pubDate>
       <guid>https://blog.chmouel.com/2016/09/19/getting-openshift-origin-cluster-up-working-with-xhyve/</guid>
-      <description>In latest openshift client (oc) there is a nifty (relatively) new feature to get you a OpenShift cluster starting (very) quickly. It&amp;rsquo;s a pretty nice way to get you a new openshift origin environment on your laptop without the hassle.
-On macosx there is a (as well relatively) new lightweight virtualization solution called xhyve it&amp;rsquo;s a bit like KVM in the sense of being lightweight and does not need like virtualbox or vmware to get a UI running.</description>
+      <description>&lt;p&gt;In latest openshift client (oc) there is a nifty (relatively) new feature to get you a OpenShift cluster starting (very) quickly. It&amp;rsquo;s a pretty nice way to get you a new openshift origin environment on your laptop  without the hassle.&lt;/p&gt;
+&lt;p&gt;On macosx there is a (as well relatively) new lightweight virtualization solution called &lt;a href=&#34;https://github.com/mist64/xhyve&#34;&gt;xhyve&lt;/a&gt; it&amp;rsquo;s a bit like KVM in the sense of being lightweight and does not need like virtualbox or vmware to get a UI running. It seemed to be a perfect fit to try those two together.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The best ways to work with yaml files in Emacs</title>
       <link>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</link>
       <pubDate>Wed, 07 Sep 2016 07:45:03 +0000</pubDate>
       <guid>https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/</guid>
-      <description>Sometime ago or at least when I started doing programming in the late 90s XML was all the rage, it promised to be the panacea for everything from data to storage to data presentation and processing. People realized that it was just complexity as Joel Spolski points out an attempt to make the complex seem accessible to ordinary people.. Really people were annoyed to write all those tags as those &amp;lsquo;&amp;lt;&amp;rsquo; and &amp;lsquo;&amp;gt;&amp;rsquo; are hard to reach on a qwerty keyboard.</description>
+      <description>&lt;p&gt;Sometime ago or at least when I started doing programming in the late 90s &lt;strong&gt;XML&lt;/strong&gt; was all the rage, it promised to be the panacea for everything from data to storage to data presentation and processing. People &lt;a href=&#34;http://discuss.fogcreek.com/joelonsoftware/default.asp?cmd=show&amp;amp;ixPost=953&#34;&gt;realized&lt;/a&gt; that it was just complexity as Joel Spolski points out &lt;em&gt;an attempt to make the complex seem accessible to ordinary people.&lt;/em&gt;. Really people were annoyed to write all those tags as those &amp;lsquo;&amp;lt;&amp;rsquo; and &amp;lsquo;&amp;gt;&amp;rsquo; are hard to reach on a qwerty keyboard.&lt;/p&gt;</description>
     </item>
     <item>
       <title>openshift-sdn with OpenStack SDN and MTU</title>
       <link>https://blog.chmouel.com/2015/09/25/openshift-sdn-with-openstack-sdn-and-mtu/</link>
       <pubDate>Fri, 25 Sep 2015 14:16:12 +0000</pubDate>
       <guid>https://blog.chmouel.com/2015/09/25/openshift-sdn-with-openstack-sdn-and-mtu/</guid>
-      <description>I am lucky enough to have a cloud available to me for free it obviously runs OpenStack and I can kick VM like I want.
-Since I am playing with OpenShift a lot lately I have seen issues in that cloud where pushing an image to the internal registry was just randomly failing.
-Networking is definitely not my pedigree but I could definitely sense it was a networking issue. Since I could nost just blame the underlying cloud (hey it&amp;rsquo;s free!</description>
+      <description>&lt;p&gt;I am lucky enough to have a cloud available to me for free it obviously runs OpenStack and I can kick VM like I want.&lt;/p&gt;
+&lt;p&gt;Since I am playing with OpenShift a lot lately I have seen issues in that cloud where pushing an image to the internal registry was just randomly failing.&lt;/p&gt;
+&lt;p&gt;Networking is definitely not my pedigree but I could definitely sense it was a networking issue. Since I could nost just blame the underlying cloud (hey it&amp;rsquo;s free!) I had to investigate a bit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deploy openshift router and registry only on a master nodes with no others</title>
       <link>https://blog.chmouel.com/2015/09/23/openshift-default-router-on-master-nodes-but-no-others/</link>
       <pubDate>Wed, 23 Sep 2015 11:31:07 +0000</pubDate>
       <guid>https://blog.chmouel.com/2015/09/23/openshift-default-router-on-master-nodes-but-no-others/</guid>
-      <description>Something that has come up when using OpenShift and that was tricky enough to be shared on a blog post.
-On OpenShift you have this routers and registry which by default are on the master nodes and that&amp;rsquo;s fine. Things get tricky if you don&amp;rsquo;t want anything else in there.
-I finally figured this out after digging in some internal mailing lists and this is actually not too difficult. The key thing is to have this on the &amp;lsquo;default&amp;rsquo; namespace annotations :</description>
+      <description>&lt;p&gt;Something that has come up when using OpenShift and that was tricky enough to be shared on a blog post.&lt;/p&gt;
+&lt;p&gt;On OpenShift you have this routers  and registry which by default are on the master nodes and that&amp;rsquo;s fine. Things get tricky if you don&amp;rsquo;t want &lt;em&gt;anything else&lt;/em&gt; in there.&lt;/p&gt;
+&lt;p&gt;I finally figured this out after digging in some internal mailing lists and this is actually not too difficult. The key thing is to have this on the &amp;lsquo;&lt;strong&gt;default&lt;/strong&gt;&amp;rsquo; namespace annotations :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using yaml for OpenShift v3 templates</title>
       <link>https://blog.chmouel.com/2015/03/24/using-yaml-for-openshift-v3-templates/</link>
       <pubDate>Tue, 24 Mar 2015 10:54:53 +0000</pubDate>
       <guid>https://blog.chmouel.com/2015/03/24/using-yaml-for-openshift-v3-templates/</guid>
-      <description>I have been experimenting a lot with OpenShift v3 and love how everything work well together plugging Kubernetes and Docker with a PAAS workflow.
-One of the thing that I don&amp;rsquo;t get is to have to write manually verbose json templates, it&amp;rsquo;s wonderful for machines and to parse but writing it can get as painful as (dear I said it) XML.
-OpenShift natively support very nicely yaml files and it&amp;rsquo;s a straight conversion of what you would have in json format.</description>
+      <description>&lt;p&gt;I have been experimenting a lot with &lt;a href=&#34;github.com/openshift/origin&#34;&gt;OpenShift v3&lt;/a&gt; and love how everything work well together plugging Kubernetes and Docker with a &lt;a href=&#34;http://openshiftv3-cmorgancloud.rhcloud.com/&#34;&gt;PAAS workflow.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;One of the thing that I don&amp;rsquo;t get is to have to write manually verbose json templates, it&amp;rsquo;s wonderful for machines and to parse but writing it can get as painful as (dear I said it) XML.&lt;/p&gt;
+&lt;p&gt;OpenShift natively support very nicely yaml files and it&amp;rsquo;s a straight conversion of what you would have in json format.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

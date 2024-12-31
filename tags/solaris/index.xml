@@ -4,7 +4,7 @@
     <title>Solaris on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/solaris/</link>
     <description>Recent content in Solaris on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 07 Sep 2007 07:50:24 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/solaris/index.xml" rel="self" type="application/rss+xml" />
@@ -13,41 +13,44 @@
       <link>https://blog.chmouel.com/2007/09/07/netapp-sue-sun/</link>
       <pubDate>Fri, 07 Sep 2007 07:50:24 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/09/07/netapp-sue-sun/</guid>
-      <description>This is fun, theses two CEO of theses big companies are dog fighting each others :
-Dave post:
-http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.html
-Johanthan answer:
-http://blogs.sun.com/jonathan/entry/on_patent_trolling
-but the real (fake) truth about that post is here :
-http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html
-I tend to believe more NetAPP in this case, just because i don&amp;rsquo;t know how many time i have sweared on that bloody ps -aux that does not work on solaris.</description>
+      <description>&lt;p&gt;This is fun, theses two CEO of theses big companies are dog fighting each others :&lt;/p&gt;
+&lt;p&gt;Dave post:&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.html&#34;&gt;http://blogs.netapp.com/dave/2007/09/netapp-sues-sun.html&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;Johanthan answer:&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://blogs.sun.com/jonathan/entry/on_patent_trolling&#34;&gt;http://blogs.sun.com/jonathan/entry/on_patent_trolling&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;but the real (fake) truth about that post is here :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html&#34; title=&#34;http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html&#34;&gt;http://fakeschwartz.blogspot.com/2007/09/bring-it-cowboy.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I tend to believe more NetAPP in this case, just because i don&amp;rsquo;t know how many time i have sweared on that bloody ps -aux that does not work on solaris.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generating md5 encrypted password for chpasswd</title>
       <link>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</link>
       <pubDate>Fri, 17 Aug 2007 07:11:38 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</guid>
-      <description>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
-[code lang=&amp;ldquo;bash&amp;rdquo;]
-echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin
-[/code]
-If you want to generate in pure python you can do it like that :
-[code lang=&amp;ldquo;python&amp;rdquo;]
-def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):
-import md5
-m = md5.new()
-m.update(password + magic + salt)
-# /* Then just as many characters of the MD5(pw,salt,pw) */</description>
+      <description>&lt;p&gt;If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :&lt;br&gt;
+[code lang=&amp;ldquo;bash&amp;rdquo;]&lt;br&gt;
+echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin&lt;br&gt;
+[/code]&lt;br&gt;
+If you want to generate in pure python you can do it like that :&lt;br&gt;
+[code lang=&amp;ldquo;python&amp;rdquo;]&lt;br&gt;
+def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):&lt;br&gt;
+import md5&lt;br&gt;
+m = md5.new()&lt;br&gt;
+m.update(password + magic + salt)&lt;/p&gt;
+&lt;p&gt;# /* Then just as many characters of the MD5(pw,salt,pw) */&lt;br&gt;
+mixin = md5.md5(password + salt + password).digest()&lt;br&gt;
+for i in range(0, len(password)):&lt;br&gt;
+m.update(mixin[i % 16])&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mixing 64 bytes and 32 Bytes Libraries on Solaris</title>
       <link>https://blog.chmouel.com/2006/04/29/mixing-64-bytes-and-32-bytes-libraries-on-solaris/</link>
       <pubDate>Sat, 29 Apr 2006 22:54:06 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/04/29/mixing-64-bytes-and-32-bytes-libraries-on-solaris/</guid>
-      <description>Remind to myself to use the switch -64 on solaris with crle to tell
-the linker on solaris to get the linker &amp;lsquo;seeing&amp;rsquo; 64 libraries.
-I wonder why everything is not as simple as linux thought where we
-have everything in one place with /etc/ld.so.config</description>
+      <description>&lt;p&gt;Remind to myself to use the switch -64 on solaris with crle to tell&lt;br&gt;
+the linker on solaris to get the linker &amp;lsquo;seeing&amp;rsquo; 64 libraries.&lt;/p&gt;
+&lt;p&gt;I wonder why everything is not as simple as linux thought where we&lt;br&gt;
+have everything in one place with /etc/ld.so.config&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

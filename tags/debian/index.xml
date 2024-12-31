@@ -4,7 +4,7 @@
     <title>Debian on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/debian/</link>
     <description>Recent content in Debian on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 30 Oct 2009 08:55:53 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/debian/index.xml" rel="self" type="application/rss+xml" />
@@ -13,27 +13,40 @@
       <link>https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/</link>
       <pubDate>Fri, 30 Oct 2009 08:55:53 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/</guid>
-      <description>Spent a bit of time to configure my Nokia mobile to teethering wih my Linux and T-Mobile. Here is some steps that may help the others :
-If you don&amp;rsquo;t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven&amp;rsquo;t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the driver (manually not via the setup.</description>
+      <description>&lt;p&gt;Spent a bit of time to configure my Nokia mobile to teethering wih my Linux and T-Mobile. Here is some steps that may help the others :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you don&amp;rsquo;t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven&amp;rsquo;t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the &lt;a href=&#34;http://support.dell.com/support/downloads/download.aspx?c=ca&amp;amp;l=en&amp;amp;s=gen&amp;amp;releaseid=R155172&amp;amp;SystemID=LATITUDE%20D630&amp;amp;servicetag=&amp;amp;os=WW1&amp;amp;osl=en&amp;amp;deviceid=13911&amp;amp;devlib=0&amp;amp;typecnt=0&amp;amp;vercnt=1&amp;amp;catid=-1&amp;amp;impid=-1&amp;amp;formatcnt=1&amp;amp;libid=5&amp;amp;fileid=206919&#34; title=&#34;Dell Latitude Driver&#34;&gt;driver&lt;/a&gt; (manually not via the setup.exe) enabled bluetooth.&lt;/li&gt;
+&lt;li&gt;Switched on bluetooth on the Phone and attached to the laptop via gnome bluetooth applet thingy.&lt;/li&gt;
+&lt;li&gt;Get my phone device number from hcitool scan.&lt;/li&gt;
+&lt;li&gt;And did this (as root) :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;cat &amp;lt;/etc/bluetooth/rfcomm.conf&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network manager and iwl3945 not showing network</title>
       <link>https://blog.chmouel.com/2009/08/10/network-manager-and-iwl3945-not-showing-network/</link>
       <pubDate>Mon, 10 Aug 2009 15:11:57 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/08/10/network-manager-and-iwl3945-not-showing-network/</guid>
-      <description>So if you have network-manager not detecting wireless networks it is probably because lately the driver need to be set as up to get the thing going.
-On my Debian I have added this to make it works :
-echo &amp;quot;/sbin/ip link set wlan0 up&amp;quot;|sudo tee /etc/default/NetworkManager</description>
+      <description>&lt;p&gt;So if you have network-manager not detecting wireless networks it is probably because lately the driver need to be set as up to get the thing going.&lt;/p&gt;
+&lt;p&gt;On my Debian I have added this to make it works :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;echo &amp;quot;/sbin/ip link set wlan0 up&amp;quot;|sudo tee /etc/default/NetworkManager&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Debian Lenny on Dell Optiplex 760</title>
       <link>https://blog.chmouel.com/2009/06/16/debian-lenny-on-dell-optiflex-760/</link>
       <pubDate>Tue, 16 Jun 2009 21:15:30 +0000</pubDate>
       <guid>https://blog.chmouel.com/2009/06/16/debian-lenny-on-dell-optiflex-760/</guid>
-      <description>So if you get that shiny new Dell desktop and ACPI spit bunch of message at the install time and the network driver does not get detected you can follow these steps to have it working.
-Continue the install without the network until you reboot to grub.
-Add hpet=disable at the end of the boot kernel parameter and get into the system.
-Download the latest kernel for your architecture on :</description>
+      <description>&lt;p&gt;So if you get that shiny new Dell desktop and ACPI spit bunch of message at the install time and the network driver does not get detected you can follow these steps to have it working.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Continue the install without the network until you reboot to grub.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add hpet=disable at the end of the boot kernel parameter and get into the system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the latest kernel for your architecture on :&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

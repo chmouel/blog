@@ -4,7 +4,7 @@
     <title>Postgres on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/postgres/</link>
     <description>Recent content in Postgres on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Sat, 06 Jan 2007 08:19:23 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/postgres/index.xml" rel="self" type="application/rss+xml" />
@@ -13,20 +13,33 @@
       <link>https://blog.chmouel.com/2007/01/06/postgres-options-using-pgbench-tps/</link>
       <pubDate>Sat, 06 Jan 2007 08:19:23 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/01/06/postgres-options-using-pgbench-tps/</guid>
-      <description>pgbench is not the best tools to benchmark postgres but it&amp;rsquo;s
-the one shipped by default with postgres.
-It does not do a good job for benchmarking your &amp;ldquo;web apps&amp;rdquo; SQL wise, it will give you some
-good indication about how fast is your server for postgres.
-Here are some results we have collected using theses options :
-pgbench -Uuser -s 10 -c 10 -t 3000 benchmark We configure servers with RAID 1+0 with write-cache and a battery</description>
+      <description>&lt;p&gt;&lt;strong&gt;pgbench&lt;/strong&gt; is not the best tools to benchmark postgres but it&amp;rsquo;s&lt;br&gt;
+the one shipped by default with postgres.&lt;br&gt;
+It does not do a good job for benchmarking your &amp;ldquo;web apps&amp;rdquo; SQL wise, it will give you some&lt;br&gt;
+good indication about how fast is your server for postgres.&lt;/p&gt;
+&lt;p&gt;Here are some results we have collected using theses options :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pgbench -Uuser  -s 10 -c 10 -t 3000 benchmark
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We configure servers with RAID 1+0 with write-cache and a battery&lt;br&gt;
+backup, we have tested with postgres 8.1.5 and here are the best&lt;br&gt;
+results for different type of servers :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Get size of Postgres DB from filesystem</title>
       <link>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</link>
       <pubDate>Mon, 05 Jun 2006 08:26:55 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/06/05/get-size-of-postgres-db-from-filesystem/</guid>
-      <description>Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :
-#!/bin/bash /usr/lib/postgresql/8.1/bin/oid2name -U postgres|while read -a e;do name=${e[1]} oid=${e[0]} [[ $oid == &amp;#34;All&amp;#34; || $oid == &amp;#34;Oid&amp;#34; || -z $oid || -z $name ]] &amp;amp;&amp;amp; continue typeset -a size size=(`du -s /var/lib/postgresql/8.1/main/base/$oid`) size=${size[0]} printf &amp;#34;%-20s %-20s\n&amp;#34; ${name} ${size} done | sort -n -r -k 2 |awk &amp;#39;{printf &amp;#34;%-20s%20d Mb\n&amp;#34;, $1, $2 / 1024}&amp;#39; </description>
+      <description>&lt;p&gt;Get the size accurately from postgres local filesystem, i guess there is some sql stuff that can do that but that does the job as well for me :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&lt;/span&gt;/usr/lib/postgresql/8.1/bin/oid2name  -U postgres|&lt;span style=&#34;color:#ff79c6&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;read&lt;/span&gt; -a e;&lt;span style=&#34;color:#ff79c6&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;e&lt;/span&gt;[1]&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;oid&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;e&lt;/span&gt;[0]&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$oid&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;All&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$oid&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Oid&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;||&lt;/span&gt; -z &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$oid&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;||&lt;/span&gt; -z &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$name&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;typeset&lt;/span&gt; -a size
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=(&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;du -s /var/lib/postgresql/8.1/main/base/&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$oid&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;size&lt;/span&gt;[0]&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;%-20s %-20s\n&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;done&lt;/span&gt; | sort -n -r -k &lt;span style=&#34;color:#bd93f9&#34;&gt;2&lt;/span&gt; |awk &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;{printf &amp;#34;%-20s%20d Mb\n&amp;#34;, $1, $2 / 1024}&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

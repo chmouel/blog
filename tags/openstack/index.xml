@@ -4,7 +4,7 @@
     <title>Openstack on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/openstack/</link>
     <description>Recent content in Openstack on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Mon, 10 Nov 2014 20:58:01 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/openstack/index.xml" rel="self" type="application/rss+xml" />
@@ -13,187 +13,207 @@
       <link>https://blog.chmouel.com/2014/11/10/use-cases-for-docker-driven-development/</link>
       <pubDate>Mon, 10 Nov 2014 20:58:01 +0000</pubDate>
       <guid>https://blog.chmouel.com/2014/11/10/use-cases-for-docker-driven-development/</guid>
-      <description>So the trend these days is to talk about container all the things that usually involve Docker, it even has a now its own verb, people are now using the word &amp;lsquo;containerizing&amp;rsquo; to describe packaging their application with Docker.
-A lot of the things happening lately in the Docker world is to solve how to get those containers in real production environments, there is people working on taking the &amp;lsquo;containerization&amp;rsquo; philosophy to storage, networking or getting orchestration right</description>
+      <description>&lt;p&gt;So the trend these days is to talk about container all the things that usually involve Docker, it even has a now its own verb, people are now using the word &amp;lsquo;containerizing&amp;rsquo; to describe packaging their application with Docker.&lt;/p&gt;
+&lt;p&gt;A lot of the things happening lately in the Docker world is to solve how to get those containers in real &lt;a href=&#34;http://www.projectatomic.io/&#34;&gt;production environments,&lt;/a&gt; there is people working on taking the &amp;lsquo;containerization&amp;rsquo; philosophy to &lt;a href=&#34;https://clusterhq.com/&#34;&gt;storage,&lt;/a&gt; &lt;a href=&#34;https://github.com/zettio/weave&#34;&gt;networking&lt;/a&gt; or getting &lt;a href=&#34;https://github.com/GoogleCloudPlatform/kubernetes&#34;&gt;orchestration&lt;/a&gt; right&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dox a tool that run python (or others) tests in a docker container</title>
       <link>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</link>
       <pubDate>Mon, 08 Sep 2014 00:56:43 +0000</pubDate>
       <guid>https://blog.chmouel.com/2014/09/08/dox-a-tool-that-run-python-or-others-tests-in-a-docker-container/</guid>
-      <description>Sometime there is some ideas that are just obvious that they are good ideas. When Monty started to mention on the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.
-The idea of dox is like the name imply is to slightly behave like the tox tool but instead of running virtualenvs you are using docker containers.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.chmouel.com/wp-content/uploads/2014/09/dox-diagram-fix.png&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sometime there is some ideas that are just obvious that they are good ideas. When &lt;!-- raw HTML omitted --&gt;Monty&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;started to mention&lt;!-- raw HTML omitted --&gt; on the OpenStack development mailing list about a tool he was hacking on allowing to integrate docker containers to do the testing it was obvious it was those ideas that everybody was thinking about that it would be awesome if it was implemented and started to get used.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How do I manage my copyright headers in Emacs</title>
       <link>https://blog.chmouel.com/2014/03/14/how-do-i-manage-my-copyright-headers-in-emacs/</link>
       <pubDate>Fri, 14 Mar 2014 07:07:41 +0000</pubDate>
       <guid>https://blog.chmouel.com/2014/03/14/how-do-i-manage-my-copyright-headers-in-emacs/</guid>
-      <description>My day to day being work or personal is to create OpenSource code. As an habit I have taken lately I am adding licenses to all new files I am creating.
-I have historically used the `auto-insert-mode with a default template. For example for my newly created python files I would have this for configration :
-;AutoInsert (auto-insert-mode &amp;#39;t) (setq auto-insert-alist &amp;#39;((python-mode . &amp;#34;python.py&amp;#34;))) and in my `auto-insert-directory directory there would be a python.</description>
+      <description>&lt;p&gt;My day to day being work or personal is to create &lt;a href=&#34;http://openstack.org&#34;&gt;OpenSource&lt;/a&gt; code. As an habit I have taken lately I am adding licenses to all new files I am creating.&lt;/p&gt;
+&lt;p&gt;I have historically used the &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/autotype/Autoinserting.html&#34;&gt;`auto-insert-mode&lt;/a&gt; with a default template. For example for my newly created python files I would have this for configration :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;;AutoInsert&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;auto-insert-mode&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;t&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#ff79c6&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;auto-insert-alist&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#39;&lt;/span&gt;((&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;python-mode&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;python.py&amp;#34;&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and in my &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;`auto-insert-directory&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; directory there would be a python.py template with my license files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The life of an OpenStack contributor checking for Jenkins failures</title>
       <link>https://blog.chmouel.com/2013/12/24/life-of-openstack-contributor-jenkins-failure/</link>
       <pubDate>Tue, 24 Dec 2013 20:36:40 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/12/24/life-of-openstack-contributor-jenkins-failure/</guid>
-      <description>We have all been there, we are committing a two character change in a project and send our review all happy and dandy with the review tool full of hope that our change is rock solid :
-You now that a two character change cannot fail. This is a tiny change in some arcane part of the Swift code that can never get passed by the tests launched in Jenkins and should just be a straightforward commit.</description>
+      <description>&lt;p&gt;We have all been there, we are committing a two character change in a project and send our review all happy and dandy with the review tool full of hope that our change is rock solid :&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blog.chmouel.com/wp-content/uploads/2013/12/Screenshot-2013-12-24-20.33.54.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You now that a two character change cannot fail. This is a tiny change in some arcane part of the &lt;a href=&#34;http://swift.openstack.org/&#34;&gt;Swift&lt;/a&gt; code that can never get passed by the tests launched in Jenkins and should just be a straightforward commit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to access Rackspace Cloud with latest novaclient/swiftclient</title>
       <link>https://blog.chmouel.com/2013/09/27/how-to-access-rackspace-cloud-with-latest-swiftclient-novaclient/</link>
       <pubDate>Fri, 27 Sep 2013 03:50:51 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/09/27/how-to-access-rackspace-cloud-with-latest-swiftclient-novaclient/</guid>
-      <description>I spent too much time trying to figure out how to use the latest swiftclient/novaclient with Rackspace Cloud that I thought I would have to document it somewhere to avoid the pain for others.
-Assuming you don&amp;rsquo;t want to use pyrax and no OS_AUTH_SYSTEM plugin but just pure OpenStack python-novaclient/swiftclient on Rackspace cloud then you just need to export those variables in your shell :
-export OS_REGION_NAME=ORD export OS_USERNAME=username export OS_TENANT_NAME=&amp;#34; &amp;#34; export OS_PASSWORD=password export OS_AUTH_URL=https://identity.</description>
+      <description>&lt;p&gt;I spent too much time trying to figure out how to use the latest swiftclient/novaclient with Rackspace Cloud that I thought I would have to document it somewhere to avoid the pain for others.&lt;/p&gt;
+&lt;p&gt;Assuming you don&amp;rsquo;t want to use &lt;a href=&#34;https://github.com/rackspace/pyrax&#34;&gt;pyrax&lt;/a&gt; and no &lt;a href=&#34;https://blog.chmouel.com/2012/08/17/using-python-novaclient-against-rackspace-cloud-next-generation-powered-by-openstack/&#34;&gt;OS_AUTH_SYSTEM&lt;/a&gt; plugin but just pure OpenStack python-novaclient/swiftclient on Rackspace cloud then you just need to export those variables in your shell :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;OS_REGION_NAME&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;ORD
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;OS_USERNAME&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;username
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;OS_TENANT_NAME&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;OS_PASSWORD&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;password
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;OS_AUTH_URL&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;https://identity.api.rackspacecloud.com/v2.0/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;so now the region is ORD here (Chicago) but this can be SYD/IAD/DFW or whatever new datacenter/region from Rackspace. If you wanted to use the UK region you would need &lt;strong&gt;another&lt;/strong&gt; username/password which is tighted to the LON datacenter (yes that&amp;rsquo;s an another legacy weirdness).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quick Swift Tip: How to remove a header with Curl</title>
       <link>https://blog.chmouel.com/2013/07/17/quick-swift-tip-how-to-remove-a-header-with-curl/</link>
       <pubDate>Wed, 17 Jul 2013 10:07:50 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/07/17/quick-swift-tip-how-to-remove-a-header-with-curl/</guid>
-      <description>curl is obviously an extremely popular way to experiment a REST API. Unfortunately one of its shortcoming is not able to remove a custom header but just to modify or add it. In swift if you prefix your Meta header with X-remove it would then just do that and remove the header.
-For example when I wanted to remove the account quota header from an account with a reseller admin token I had just to do that :</description>
+      <description>&lt;p&gt;curl is obviously an extremely popular way to experiment a REST API. Unfortunately one of its shortcoming is not able to remove a custom header but just to modify or add it. In swift if you prefix your Meta header with &lt;strong&gt;X-remove&lt;/strong&gt; it would then just do that and remove the header.&lt;/p&gt;
+&lt;p&gt;For example when I wanted to remove the &lt;a href=&#34;https://blog.chmouel.com/2013/03/08/swift-and-quotas-in-upcoming-1-8-0-grizzly-release/&#34;&gt;account quota&lt;/a&gt; header from an account with a reseller admin token I had just to do that :&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to launch the Swift functional test suite with Keystone</title>
       <link>https://blog.chmouel.com/2013/06/14/how-to-launch-the-swift-functional-test-suite-with-keystone/</link>
       <pubDate>Fri, 14 Jun 2013 15:46:19 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/06/14/how-to-launch-the-swift-functional-test-suite-with-keystone/</guid>
-      <description>It is easy to launch the swift functional tests with v2 auth (Keystone).
-Assuming you have a recent version of python-swiftclient, python-keystoneclient and swift you need to first add a few users which is easily done with this script :
-Assuming you have already your OS_* variables configured with an admin, you can just launch it and it will :
-add a tenant/user named test/tester. add a tenant/user name test2/tester2. add a user tester3 belonging to test2 but not operator on that tenant.</description>
+      <description>&lt;p&gt;It is easy to launch the swift functional tests with v2 auth (Keystone).&lt;/p&gt;
+&lt;p&gt;Assuming you have a recent version of python-swiftclient, python-keystoneclient and swift you need to first add a few users which is easily done with this script :&lt;/p&gt;
+&lt;p&gt;Assuming you have already your OS_* variables configured with an admin, you can just launch it and it will :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;add a tenant/user named test/tester.&lt;/li&gt;
+&lt;li&gt;add a tenant/user name test2/tester2.&lt;/li&gt;
+&lt;li&gt;add a user tester3 belonging to test2 but not operator on that tenant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and it will create a /etc/swift/swift.conf for testing. You can adjust the keystone host in auth_host there (default to 127.0.0.1)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keystone and PKI tokens overview</title>
       <link>https://blog.chmouel.com/2013/05/02/keystone-pki-tokens-overview/</link>
       <pubDate>Thu, 02 May 2013 08:00:15 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/05/02/keystone-pki-tokens-overview/</guid>
-      <description>PKI tokens has been implemented in keystone by [Adam Young][1] and others and was shipped for the OpenStack grizlly release. It is available since the version 2.0 API of keystone.
-PKI is a beautiful acronym to [Public-key infrastructure][2] which according to wikipedia defines it like this :
-Public-key cryptography is a cryptographic technique that enables users to securely communicate on an insecure public network, and reliably verify the identity of a user via digital signatures.</description>
+      <description>&lt;p&gt;PKI tokens has been implemented in keystone by [Adam Young][1] and others and was shipped for the OpenStack grizlly release. It is available since the version 2.0 API of keystone.&lt;/p&gt;
+&lt;p&gt;PKI is a beautiful acronym to [Public-key infrastructure][2] which according to wikipedia defines it like this :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Public-key cryptography is a cryptographic technique that enables users to securely communicate on an insecure public network, and reliably verify the identity of a user via digital signatures.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Howto revoke a token with keystone and PKI (v2.0 API)</title>
       <link>https://blog.chmouel.com/2013/04/22/howto-revoke-a-token-with-keystone-and-pki-v2-0-api/</link>
       <pubDate>Mon, 22 Apr 2013 22:38:27 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/04/22/howto-revoke-a-token-with-keystone-and-pki-v2-0-api/</guid>
-      <description>This is something I have been asked and I was at first under impression it was only available in v3, digging a bit more into the code there is actually a way to do that in v2 when you are using PKI tokens. Since I could not find much documentation online here is a description of the steps how to do it.
-Let first get a PKI token, you can do it the hard way by sending a json blob to the keystone url and parse the json results like this :</description>
+      <description>&lt;p&gt;This is something I have been asked and I was at first under impression it was only available in v3, digging a bit more into the code there is actually a way to do that in v2 when you are using PKI tokens. Since I could not find much documentation online here is a description of the steps how to do it.&lt;/p&gt;
+&lt;p&gt;Let first get a PKI token, you can do it the hard way by sending a json blob to the keystone url and parse the json results like this :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upload to OpenStack Swift via CORS/HTML5 request.</title>
       <link>https://blog.chmouel.com/2013/02/01/swift-with-cors-request/</link>
       <pubDate>Fri, 01 Feb 2013 12:06:23 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/02/01/swift-with-cors-request/</guid>
-      <description>One of our client at eNovance had a need to be able to upload to Swift directly from a web browser without going via a PHP proxy.
-Things in browser-land are not exactly the same as what we have in user-land, it is a bit more restricted to ensure the end-user security and there is a few hoops to jump through to get it working.
-To be able to do a xmlrpc upload to another server (swift in this case) there is a &amp;lsquo;standard/recommendation&amp;rsquo; document made by W3C about it located here :</description>
+      <description>&lt;p&gt;One of our client at &lt;a href=&#34;http://enovance.com&#34;&gt;eNovance&lt;/a&gt; had a need to be able to upload to Swift directly from a web browser without going via a PHP proxy.&lt;/p&gt;
+&lt;p&gt;Things in browser-land are not exactly the same as what we have in user-land, it is a bit more restricted to ensure the end-user security and there is a few hoops to jump through to get it working.&lt;/p&gt;
+&lt;p&gt;To be able to do a xmlrpc upload to another server (swift in this case) there is a &amp;lsquo;standard/recommendation&amp;rsquo; document made by W3C about it located here :&lt;/p&gt;</description>
     </item>
     <item>
       <title>In belgium for Fosdem this weekend.</title>
       <link>https://blog.chmouel.com/2013/01/31/in-belgium-for-fosdem-this-weekend/</link>
       <pubDate>Thu, 31 Jan 2013 22:04:45 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/01/31/in-belgium-for-fosdem-this-weekend/</guid>
-      <description>With a team of colleagues from enovance we are going to be this week-end (2/3 Feb 2013) in Brussels for Fosdem.
-Feel free to catch me if you want to have a chat about Swift or OpenStack in general. I will be wearing a enovance woodie/t-shirt.
-See you there!</description>
+      <description>&lt;p&gt;With a team of colleagues from &lt;a href=&#34;http://enovance.com&#34;&gt;enovance&lt;/a&gt; we are going to be this week-end (2/3 Feb 2013) in Brussels for Fosdem.&lt;/p&gt;
+&lt;p&gt;Feel free to catch me if you want to have a chat about Swift or OpenStack in general. I will be wearing a enovance woodie/t-shirt.&lt;/p&gt;
+&lt;p&gt;See you there!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emacs and nosetests</title>
       <link>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</link>
       <pubDate>Sun, 14 Oct 2012 14:19:07 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/10/14/emacs-and-nosetests/</guid>
-      <description>Sometime you just need a long trans atlantic flight and a stupidly long stop-over in a random city to do some of those task that can improve your day to day but you never take some time to do it.
-When using emacs I wanted a simple way to launch a nosetests on the current function my cursor is in Emacs. The syntax on nosetests is a bit tricky and I actually always have to look at my shell history to know the proper syntax (nosetests directory/filename.</description>
+      <description>&lt;p&gt;Sometime you just need a long trans atlantic flight and a stupidly long stop-over in a random city to do some of those task that can improve your day to day but you never take some time to do it.&lt;/p&gt;
+&lt;p&gt;When using emacs I wanted a simple way to launch a nosetests on the current function my cursor is in Emacs. The syntax on nosetests is a bit tricky and I actually always have to look at my shell history to know the proper syntax (nosetests directory/filename.py:Class.function).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using python-novaclient against Rackspace Cloud next generation (powered by OpenStack)</title>
       <link>https://blog.chmouel.com/2012/08/17/using-python-novaclient-against-rackspace-cloud-next-generation-powered-by-openstack/</link>
       <pubDate>Fri, 17 Aug 2012 10:09:42 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/08/17/using-python-novaclient-against-rackspace-cloud-next-generation-powered-by-openstack/</guid>
-      <description>With the modular auth plugin system merged into python-novaclient it is now very easy to use nova CLI against the Rackspace Public Cloud powered by OpenStack.
-we even have a metapackage that would install all the needed bits. This should be easy as doing this :
-and all dependencies and extensions will be installed. To actually use the CLI you just need to specify the right arguments (or via env variable see nova &amp;ndash;help) like this :</description>
+      <description>&lt;p&gt;With the &lt;a href=&#34;https://github.com/openstack/python-novaclient/commit/86c713b17ac8984b54ff767d83ab41037e7a7833&#34;&gt;modular auth plugin system&lt;/a&gt; merged into python-novaclient it is now very easy to use nova CLI against the Rackspace Public Cloud powered by OpenStack.&lt;/p&gt;
+&lt;p&gt;we even have a metapackage that would install all the needed bits. This should be easy as doing this :&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;and all dependencies and extensions will be installed. To actually use the CLI you just need to specify the right arguments (or via env variable see nova &amp;ndash;help) like this :&lt;/p&gt;</description>
     </item>
     <item>
       <title>swift.common.client library and swift CLI has moved to its own project</title>
       <link>https://blog.chmouel.com/2012/06/13/swift-common-client-library-and-swift-cli-has-moved-to-its-own-project/</link>
       <pubDate>Wed, 13 Jun 2012 12:50:56 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/06/13/swift-common-client-library-and-swift-cli-has-moved-to-its-own-project/</guid>
-      <description>Historically if you wanted to write software in python against OpenStack swift, people would have use the python-cloudfiles library or swift.common.client shipped with Swift.
-python-cloudfiles was made mostly for Rackspace CloudFiles before even Swift existed and does a lot of extra stuff not needed for OpenStack Swift (i.e: CDN).
-swift.common.client was designed for OpenStack Swift from the ground up but is included with Swift which made people having to download the full Swift repository if they wanted to use or tests against it.</description>
+      <description>&lt;p&gt;Historically if you wanted to write software in python against OpenStack swift, people would have use the python-cloudfiles library or swift.common.client shipped with Swift.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rackspace/python-cloudfiles&#34;&gt;python-cloudfiles&lt;/a&gt; was made mostly for Rackspace CloudFiles before even Swift existed and does a lot of extra stuff not needed for OpenStack Swift (i.e: CDN).&lt;/p&gt;
+&lt;p&gt;swift.common.client was designed for OpenStack Swift from the ground up but is included with Swift which made people having to download the full Swift repository if they wanted to use or tests against it. (i.e: OpenStack glance).&lt;/p&gt;</description>
     </item>
     <item>
       <title>S3 emulation to OpenStack Swift has moved</title>
       <link>https://blog.chmouel.com/2012/05/24/s3-emulation-to-openstack-swift-has-moved/</link>
       <pubDate>Thu, 24 May 2012 15:09:59 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/05/24/s3-emulation-to-openstack-swift-has-moved/</guid>
-      <description>A little note about swift3 the S3 emulation layer to OpenStack Swift
-As from this review we have removed it from Swift since the decision1 was made that only the official OpenStack API would be supported in Swift. The development will be continued in fujita&amp;rsquo;s repository on github at this URL :
-https://github.com/fujita/swift3
-Feel free to grab the middle-ware or report issue from fujita&amp;rsquo;s repository.
-1 Globally for OpenStack not just for Swift.</description>
+      <description>&lt;p&gt;A little note about swift3 the S3 emulation layer to OpenStack Swift&lt;/p&gt;
+&lt;p&gt;As from this &lt;a href=&#34;https://review.openstack.org/#/c/7628/&#34;&gt;review&lt;/a&gt; we have removed it from Swift since the decision&lt;a href=&#34;https://review.openstack.org/#/c/7628/&#34;&gt;1&lt;/a&gt; was made that only the official OpenStack API would be supported in Swift. The development will be continued in fujita&amp;rsquo;s repository on github at this URL :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/fujita/swift3&#34;&gt;https://github.com/fujita/swift3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Feel free to grab the middle-ware or report issue from fujita&amp;rsquo;s repository.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://review.openstack.org/#/c/7628/&#34;&gt;1&lt;/a&gt; Globally for OpenStack not just for Swift.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Swift integration with other OpenStack components in Essex.</title>
       <link>https://blog.chmouel.com/2012/04/25/swift-integration-with-other-openstack-components-in-essex/</link>
       <pubDate>Wed, 25 Apr 2012 15:11:58 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/04/25/swift-integration-with-other-openstack-components-in-essex/</guid>
-      <description>During the development for OpenStack Essex a lot of work has been done to make Swift working well with the other OpenStack components, this is a list of the work that has been done.
-MIDDLEWARE To make Swift behaving well in the &amp;lsquo;stack&amp;rsquo; we had to get a rock solid keystone middleware and make sure most of the features provided by Swift would be supported by the middleware.
-The middleware is currently located in the keystone essex repository and was entirely rewritten from the Diablo release to allow support these Swift features :</description>
+      <description>&lt;p&gt;During the development for OpenStack Essex a lot of work has been done to make Swift working well with the other OpenStack components, this is a list of the work that has been done.&lt;/p&gt;
+&lt;h4 id=&#34;middleware&#34;&gt;&lt;strong&gt;MIDDLEWARE&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;To make Swift behaving well in the &amp;lsquo;stack&amp;rsquo; we had to get a rock solid keystone middleware and make sure most of the features provided by Swift would be supported by the middleware.&lt;/p&gt;
+&lt;p&gt;The middleware is currently &lt;!-- raw HTML omitted --&gt;located&lt;!-- raw HTML omitted --&gt; in the keystone essex repository and was entirely rewritten from the Diablo release to allow support these Swift features :&lt;/p&gt;</description>
     </item>
     <item>
       <title>How does a PUT to a swift object server look like.</title>
       <link>https://blog.chmouel.com/2012/02/06/anatomy-of-a-swift-put-query-to-object-server/</link>
       <pubDate>Mon, 06 Feb 2012 10:00:33 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/02/06/anatomy-of-a-swift-put-query-to-object-server/</guid>
-      <description>I have been trying lately to get a better understanding of the Swift code base, and I found the best way to know it was to read it from top to bottom and document it along the way. Here is some of my notes, hopefully more will come.
-I am starting with an object PUT when the request is coming from the proxy server. The request in the log-file will look like this :</description>
+      <description>&lt;p&gt;I have been trying lately to get a better understanding of the Swift code base, and I found the best way to know it was to read it from top to bottom and document it along the way. Here is some of my notes, hopefully more will come.&lt;/p&gt;
+&lt;p&gt;I am starting with an object &lt;strong&gt;PUT&lt;/strong&gt; when the request is coming from the proxy server. The request in the log-file will look like this :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Audit a swift cluster</title>
       <link>https://blog.chmouel.com/2012/02/01/audit-a-swift-cluster/</link>
       <pubDate>Wed, 01 Feb 2012 10:18:11 +0000</pubDate>
       <guid>https://blog.chmouel.com/2012/02/01/audit-a-swift-cluster/</guid>
-      <description>Swift integrity tools.
-There is quite a bit of tools shipped with Swift to ensure you have the right object on your cluster.
-At first there is the basic :
-swift-object-info
-It will take a swift object stored on the filesystem and print some infos about it, like this :
-swift@storage01:0/016/0b221bab535ac1b8f0d91e394f225016$ swift-object-info 1327991417.01411.data
-Path: /AUTH_root/foobar/file.txt
-Account: AUTH_root
-Container: foobar
-Object: file.txt
-Object hash: 0b221bab535ac1b8f0d91e394f225016
-Ring locations:
-192.168.254.12:6000 - /srv/node/sdb1/objects/0/016/0b221bab535ac1b8f0d91e394f225016/1327991417.01411.data
-Content-Type: text/plain</description>
+      <description>&lt;p&gt;Swift integrity tools.&lt;/p&gt;
+&lt;p&gt;There is quite a bit of tools shipped with Swift to ensure you have the right object on your cluster.&lt;/p&gt;
+&lt;p&gt;At first there is the basic :&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;swift-object-info&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It will take a swift object stored on the filesystem and print some infos about it, like this :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;swift@storage01:0/016/0b221bab535ac1b8f0d91e394f225016$ swift-object-info 1327991417.01411.data&lt;br&gt;
+Path: /AUTH_root/foobar/file.txt&lt;br&gt;
+Account: AUTH_root&lt;br&gt;
+Container: foobar&lt;br&gt;
+Object: file.txt&lt;br&gt;
+Object hash: 0b221bab535ac1b8f0d91e394f225016&lt;br&gt;
+Ring locations:&lt;br&gt;
+192.168.254.12:6000 - /srv/node/sdb1/objects/0/016/0b221bab535ac1b8f0d91e394f225016/1327991417.01411.data&lt;br&gt;
+Content-Type: text/plain&lt;br&gt;
+Timestamp: 2012-01-31 06:30:17.014110 (1327991417.01411)&lt;br&gt;
+ETag: 053a0f8516a5023b9af76c49ca917d3e (valid)&lt;br&gt;
+Content-Length: 24 (valid)&lt;br&gt;
+User Metadata: {&amp;lsquo;X-Object-Meta-Mtime&amp;rsquo;: &amp;lsquo;1327968327.21&amp;rsquo;}&lt;/p&gt;</description>
     </item>
     <item>
       <title>Swift and Keystone middleware</title>
       <link>https://blog.chmouel.com/2011/11/24/swift-and-keystone-middleware-part1/</link>
       <pubDate>Thu, 24 Nov 2011 09:20:39 +0000</pubDate>
       <guid>https://blog.chmouel.com/2011/11/24/swift-and-keystone-middleware-part1/</guid>
-      <description>[NB: Much things has changed since I have written this article but keeping it here for info]
-It seems that integrating Swift and Keystone together present some challenges to people and this is absolutely normal as there is a lot of changes going on. This is my attempt to document how everything is plugged together.
-I am not going to explain how a middleware is supposed to work as this is nicely documented on Wikipedia :</description>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;[NB: Much things has changed since I have written this article but keeping it here for info]&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;It seems that integrating &lt;!-- raw HTML omitted --&gt;Swift&lt;!-- raw HTML omitted --&gt; and &lt;!-- raw HTML omitted --&gt;Keystone&lt;!-- raw HTML omitted --&gt; together present some challenges to people and this is absolutely normal as there is a lot of changes going on. This is my attempt to document how everything is plugged together.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Debugging python-novaclient on the command line.</title>
       <link>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</link>
       <pubDate>Fri, 02 Sep 2011 03:00:13 +0000</pubDate>
       <guid>https://blog.chmouel.com/2011/09/02/debugging-python-novaclient-on-the-command-line/</guid>
-      <description>I have done lately quite a bit of work with python-novaclient the (nova/keystone) openstack client. I often experiment it with ipython in the console.
-There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :
-This would give you the details of the session showing you the REST requests and responses including the headers.</description>
+      <description>&lt;p&gt;I have done lately quite a bit of work with &lt;!-- raw HTML omitted --&gt;python-novaclient&lt;!-- raw HTML omitted --&gt; the (nova/keystone) openstack client. I often experiment it with &lt;!-- raw HTML omitted --&gt;ipython&lt;!-- raw HTML omitted --&gt; in the console.&lt;/p&gt;
+&lt;p&gt;There is a nice debugging facility in novaclient which you can see while using &amp;ndash;debug argument on the command line and if you wanted to use it with ipython you could have that at the beginning of your session :&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

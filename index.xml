@@ -4,7 +4,7 @@
     <title>Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/</link>
     <description>Recent content on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 01 Mar 2024 10:21:39 +0100</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
@@ -13,180 +13,273 @@
       <link>https://blog.chmouel.com/posts/emacs-isearch/</link>
       <pubDate>Fri, 01 Mar 2024 10:21:39 +0100</pubDate>
       <guid>https://blog.chmouel.com/posts/emacs-isearch/</guid>
-      <description>Introduction It has been a long time since I have blogged about Emacs. I still enjoy using it as when I started from day one (around 1998). I did made some changes I have now moved out of the Emacs keybindings toward using the evil keybinding and have become proficient using Neovim (for terminal editing) or Vscode (for the debugger) but Emacs is where my &amp;ldquo;home&amp;rdquo; is.
-Today I&amp;rsquo;d like to talk about Isearch, I don&amp;rsquo;t think we realise how powerful isearch is compared to other editors, the experience out of the box is very intuitive and powerful and as anything with Emacs you can customize it exactly the way you want.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;It has been a long time since I have blogged about Emacs. I still enjoy using it
+as when I started from day one (around 1998). I did made some changes I have now
+moved out of the Emacs keybindings toward using the evil keybinding and have
+become proficient using Neovim (for terminal editing) or Vscode (for the
+debugger) but Emacs is where my &amp;ldquo;home&amp;rdquo; is.&lt;/p&gt;
+&lt;p&gt;Today I&amp;rsquo;d like to talk about Isearch, I don&amp;rsquo;t think we realise how powerful
+isearch is compared to other editors, the experience out of the box is very
+intuitive and powerful and as anything with Emacs you can customize it exactly
+the way you want.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trusting self signed certificates with Kubernetes Ingress Controller</title>
       <link>https://blog.chmouel.com/posts/self-signed-certs/</link>
       <pubDate>Fri, 26 Jan 2024 15:11:55 +0100</pubDate>
       <guid>https://blog.chmouel.com/posts/self-signed-certs/</guid>
-      <description>I have a very complicated development environment, which spins up a local Kubernetes cluster on Kind and then deploys a bunch of services to it.
-Some of the services gets accessed by the browser and until late I was deploying everything on localhost which so far did not cause any issues, since the browser are good at trusting localhost.
-But since my laptop was getting slower and slower and I had a new raspberry pi 5 unused with a SSD, I decided to made it my local Kubernetes cluster.</description>
+      <description>&lt;p&gt;I have a very complicated development environment, which spins up a local
+Kubernetes cluster on Kind and then deploys a bunch of services to it.&lt;/p&gt;
+&lt;p&gt;Some of the services gets accessed by the browser and until late I was deploying
+everything on localhost which so far did not cause any issues, since the browser
+are good at trusting localhost.&lt;/p&gt;
+&lt;p&gt;But since my laptop was getting slower and slower and I had a new raspberry pi 5
+unused with a SSD, I decided to made it my local Kubernetes cluster.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gosmee Webhook Forwarder and Relayer</title>
       <link>https://blog.chmouel.com/posts/gosmee-webhook-forwarder-relayer/</link>
       <pubDate>Wed, 20 Dec 2023 13:22:06 +0100</pubDate>
       <guid>https://blog.chmouel.com/posts/gosmee-webhook-forwarder-relayer/</guid>
-      <description>I use &amp;ldquo;Webhook&amp;rdquo; every day; it&amp;rsquo;s a simple mechanism used by most web applications to send payloads on events. It&amp;rsquo;s great and all, but since it needs to send you data, it has to be exposed to the internet. And that&amp;rsquo;s where it gets tricky. If you are in development mode and want to test the webhook, you can&amp;rsquo;t just expose your local machine to the internet; you need some sort of solution for that.</description>
+      <description>&lt;p&gt;I use &amp;ldquo;Webhook&amp;rdquo; every day; it&amp;rsquo;s a simple mechanism used by most web
+applications to send payloads on events. It&amp;rsquo;s great and all, but since it needs to
+send you data, it has to be exposed to the internet. And that&amp;rsquo;s where it gets
+tricky. If you are in development mode and want to test the webhook, you can&amp;rsquo;t
+just expose your local machine to the internet; you need some sort of
+solution for that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to debug GitHub Workflow with Tmate</title>
       <link>https://blog.chmouel.com/posts/debugging-github-workflow/</link>
       <pubDate>Wed, 20 Dec 2023 11:40:45 +0100</pubDate>
       <guid>https://blog.chmouel.com/posts/debugging-github-workflow/</guid>
-      <description>GitHub workflow is great but can be a bit of a black box when things go wrong.
-When the YAML cannot be validated, GitHub offers a handy feature to debug the workflow with additional logging.
-But sometimes your deployment or tests, or whatever you are doing in your workflow, fail when running on CI but not locally, and you are bound to end up in the git push/commit Outer-Loop hell:</description>
+      <description>&lt;p&gt;GitHub workflow is great but can be a bit of a black box when things go wrong.&lt;/p&gt;
+&lt;p&gt;When the YAML cannot be validated, GitHub offers a handy feature to debug the
+workflow with &lt;a href=&#34;https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging&#34;&gt;additional logging&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But sometimes your deployment or tests, or whatever you are doing in your
+workflow, fail when running on CI but not locally, and you are bound to end up
+in the git push/commit Outer-Loop hell:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;📝 vi file/to/add/debug.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;🎹 git commit -a &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;debug ignore&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;🫸 git push
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;👀 &lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;watch logs failures&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;♻️ &lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;repeat&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;🔞 &lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;swear&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;🤦 &lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;hope that things start to work but no it&amp;#39;s just another random timeout&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;😭 &lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;distress&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I &lt;strong&gt;hate&lt;/strong&gt; this loop; it’s time-consuming, stupid, and wastes resources and energy
+for the planet and everyone.&lt;/p&gt;</description>
     </item>
     <item>
       <title>qmk space cadet plus</title>
       <link>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</link>
       <pubDate>Tue, 25 Apr 2023 09:00:56 +0200</pubDate>
       <guid>https://blog.chmouel.com/posts/qmk-space-cadet-plus-plus/</guid>
-      <description>I enjoy the space cadet feature of QMK :
-https://docs.qmk.fm/#/feature_space_cadet
-The feature is simple but yet powerful, when you hit one press you send a parenthese open or close form the other side and if you hold it you have shift.
-I am not sure what happened to my config, but I could not get it to work with the default macros offered SC_LSPO and SC_RSPO.
-I dug into the process_record_user() function hook to replicate the feature and add one other &amp;rsquo;thing&amp;rsquo; where if you press another shift at the same time of the keypress it will do a right bracket.</description>
+      <description>&lt;p&gt;I enjoy the space cadet feature of &lt;a href=&#34;https://docs.qmk.fm/&#34;&gt;QMK&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.qmk.fm/#/feature_space_cadet&#34;&gt;https://docs.qmk.fm/#/feature_space_cadet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The feature is simple but yet powerful, when you hit one press you send a
+parenthese open or close form the other side and if you hold it you have shift.&lt;/p&gt;
+&lt;p&gt;I am not sure what happened to my config, but I could not get it to work with
+the default macros offered &lt;code&gt;SC_LSPO&lt;/code&gt; and &lt;code&gt;SC_RSPO&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I dug into the &lt;code&gt;process_record_user()&lt;/code&gt; function hook to replicate the feature and
+add one other &amp;rsquo;thing&amp;rsquo; where if you press another shift at the same time of the
+keypress it will do a right bracket.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Selecting files in ZSH With fzf and exa</title>
       <link>https://blog.chmouel.com/posts/selecting-files-in-zsh-with-fzf/</link>
       <pubDate>Wed, 11 Jan 2023 15:41:47 +0100</pubDate>
       <guid>https://blog.chmouel.com/posts/selecting-files-in-zsh-with-fzf/</guid>
-      <description>Sometime the tiniest optimization makes a huge difference. When I am not using Emacs and dired I usually just use the shell with zsh to do all my file management.
-This is fine and great but sometime when I need to select multiple files with different names, I would have to do a lot of tabs and selection or copy and paste to select properly the list of files I want to do operations on.</description>
+      <description>&lt;p&gt;Sometime the tiniest optimization makes a huge difference. When I am not using
+Emacs and dired I usually just use the shell with zsh to do all my file
+management.&lt;/p&gt;
+&lt;p&gt;This is fine and great but sometime when I need to select multiple
+files with different names, I would have to do a lot of tabs and selection or
+copy and paste to select properly the list of files I want to do operations on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>shell completions with go cobra library</title>
       <link>https://blog.chmouel.com/posts/cobra-completions/</link>
       <pubDate>Tue, 22 Nov 2022 09:00:56 +0200</pubDate>
       <guid>https://blog.chmouel.com/posts/cobra-completions/</guid>
-      <description>Every time I press the [TAB] key in my shell, it bothers me that nothing happens.
-I&amp;rsquo;m not very smart, so I often press the [TAB] key multiple times, hoping that maybe the seventh time will magically produce the completion that I expect.
-However, magic is not a computer function, and if a user or command line interface (CLI) author has not provided a completion function, nothing will ever happen.</description>
+      <description>&lt;p&gt;Every time I press the &lt;code&gt;[TAB]&lt;/code&gt; key in my shell, it bothers me that nothing happens.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not very smart, so I often press the &lt;code&gt;[TAB]&lt;/code&gt; key multiple times, hoping that
+maybe the seventh time will magically produce the completion that I expect.&lt;/p&gt;
+&lt;p&gt;However, magic is not a computer function, and if a user or command line
+interface (CLI) author has not provided a completion function, nothing will ever
+happen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Snazy - a snazzy json log viewer</title>
       <link>https://blog.chmouel.com/posts/snazy-log-viewer/</link>
       <pubDate>Sat, 05 Nov 2022 09:00:56 +0200</pubDate>
       <guid>https://blog.chmouel.com/posts/snazy-log-viewer/</guid>
-      <description>I have been meaning to write an article about tools that I have developed lately to make it easier for my day to day life work.
-Being a so called &amp;ldquo;Kubernetes cloud native developer&amp;rdquo; (don&amp;rsquo;t laugh at the title because I do) I have to watch a log of controller logs. Most controller logs output in JSON format which is a nice tool for computers but not straightforward to parse to the eyes of the mere mortals.</description>
+      <description>&lt;p&gt;I have been meaning to write an article about tools that I have developed
+lately to make it easier for my day to day life work.&lt;/p&gt;
+&lt;p&gt;Being a so called &amp;ldquo;Kubernetes cloud native developer&amp;rdquo; (don&amp;rsquo;t laugh at the title
+because I do) I have to watch a log of controller logs. Most controller logs
+output in JSON format which is a nice tool for computers but not straightforward to
+parse to the eyes of the mere mortals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Error chaining with Rust and Go</title>
       <link>https://blog.chmouel.com/posts/rust-errorhandling/</link>
       <pubDate>Fri, 20 May 2022 09:54:31 +0200</pubDate>
       <guid>https://blog.chmouel.com/posts/rust-errorhandling/</guid>
-      <description>I was talking with a colleague about Rust and we were wondering (since we are both learning the language) how error handling compares to Go.
-Chaining error in Go Go&amp;rsquo;s best practice when you want to chain multiple errors is to &amp;ldquo;wrap&amp;rdquo; them.
-For example let&amp;rsquo;s say you have this function returning an error:
-func do_something() err { value := &amp;#34;value&amp;#34; if value != &amp;#34;expected&amp;#34; { return fmt.Errorf(&amp;#34;this was not expected&amp;#34;) } } when we call the function do_something() from another function, we want to add context to it and to do so we will wrap it around it with the &amp;ldquo;%w&amp;rdquo; directive:</description>
+      <description>&lt;p&gt;I was talking with a &lt;a href=&#34;https://www.sebastien-han.fr/blog/&#34;&gt;colleague&lt;/a&gt; about Rust
+and we were wondering (since we are both learning the language) how error
+handling compares to Go.&lt;/p&gt;
+&lt;h2 id=&#34;chaining-error-in-go&#34;&gt;Chaining error in Go&lt;/h2&gt;
+&lt;p&gt;Go&amp;rsquo;s best practice when you want to chain multiple errors is to &amp;ldquo;wrap&amp;rdquo; them.&lt;/p&gt;
+&lt;p&gt;For example let&amp;rsquo;s say you have this function returning an error:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;do_something&lt;/span&gt;() err {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; value &lt;span style=&#34;color:#ff79c6&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; value &lt;span style=&#34;color:#ff79c6&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;expected&amp;#34;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; fmt.&lt;span style=&#34;color:#50fa7b&#34;&gt;Errorf&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;this was not expected&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;when we call the function &lt;code&gt;do_something()&lt;/code&gt; from another function, we want to
+add context to it and to do so we will wrap it around it with the &amp;ldquo;%w&amp;rdquo;
+directive:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generating Preview Environments with Tekton</title>
       <link>https://blog.chmouel.com/posts/generating-preview-environment-with-tekton/</link>
       <pubDate>Thu, 07 Apr 2022 20:50:00 +0200</pubDate>
       <guid>https://blog.chmouel.com/posts/generating-preview-environment-with-tekton/</guid>
-      <description>On Pipelines as Code we started to get a nice documentation website on :
-https://pipelinesascode.com
-The website is statically generated with Hugo and hosted on CloudFares Pages using the markdown files from the repository.
-So far that&amp;rsquo;s a pretty standard stack, but what we wanted is to be able to get preview URLS like on Netlify or other CIs
-There is a nice check box, that says &amp;ldquo;Generate Preview URL on Pull Request&amp;rdquo; which seems to do what we want but it doesn&amp;rsquo;t.</description>
+      <description>&lt;p&gt;On &lt;a href=&#34;htps://github.com/openshift-pipelines/pipelines-as-code&#34;&gt;Pipelines as
+Code&lt;/a&gt; we started to
+get a nice documentation website on :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pipelinesascode.com&#34;&gt;https://pipelinesascode.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The website is statically generated with
+&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and hosted on &lt;a href=&#34;https://pages.cloudfare.com&#34;&gt;CloudFares
+Pages&lt;/a&gt; using the markdown files from the
+repository.&lt;/p&gt;
+&lt;p&gt;So far that&amp;rsquo;s a pretty standard stack, but what we wanted is to be able to get
+preview URLS like on &lt;a href=&#34;https://docs.netlify.com/site-deploys/deploy-previews/&#34;&gt;Netlify&lt;/a&gt;
+or other &lt;a href=&#34;https://docs.gitlab.com/ee/ci/review_apps/&#34;&gt;CI&lt;/a&gt;s&lt;/p&gt;
+&lt;p&gt;There is a nice check box, that says &amp;ldquo;Generate Preview URL on Pull Request&amp;rdquo;
+which seems to do what we want but it doesn&amp;rsquo;t. So far it seems that &lt;code&gt;Pull Request&lt;/code&gt; coming from forks are not processed only the one from branch coming
+from the same repository where the pull request is.&lt;/p&gt;</description>
     </item>
     <item>
       <title>vtplug a very dumb and tiny zsh plugin manager</title>
       <link>https://blog.chmouel.com/2022/03/18/vtplug-a-very-dumb-and-tiny-zsh-plugin-manager/</link>
       <pubDate>Fri, 18 Mar 2022 11:06:19 +0000</pubDate>
       <guid>https://blog.chmouel.com/2022/03/18/vtplug-a-very-dumb-and-tiny-zsh-plugin-manager/</guid>
-      <description>There is a lot of zsh plugin manager around :
-https://github.com/unixorn/awesome-zsh-plugins#frameworks
-They all allow you to add cool new features to your shell easily and for authors to easily share their plugin with users and frameworks.
-While a lot of people are probably using frameworks like oh-my-zsh which does everything for them with minimal setup.
-But since I have been using zsh since much before than those frameworks existed, I always ran my custom config.</description>
+      <description>&lt;p&gt;There is a lot of zsh plugin manager around :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/unixorn/awesome-zsh-plugins#frameworks&#34;&gt;https://github.com/unixorn/awesome-zsh-plugins#frameworks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;They all allow you to add cool new features to your shell easily and for authors to
+easily share their plugin with users and frameworks.&lt;/p&gt;
+&lt;p&gt;While a lot of people are probably using frameworks like &lt;code&gt;oh-my-zsh&lt;/code&gt; which does
+everything for them with minimal setup.&lt;/p&gt;
+&lt;p&gt;But since I have been using zsh since &lt;a href=&#34;https://zsh.sourceforge.io/Etc/changelog-4.0.html&#34;&gt;much before&lt;/a&gt; than those frameworks
+existed, I always ran my custom config.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Show plugins list to a CLI when using go’s cobra library</title>
       <link>https://blog.chmouel.com/2022/03/18/show-plugins-list-to-a-cli-when-using-gos-cobra-library/</link>
       <pubDate>Fri, 18 Mar 2022 08:53:02 +0000</pubDate>
       <guid>https://blog.chmouel.com/2022/03/18/show-plugins-list-to-a-cli-when-using-gos-cobra-library/</guid>
-      <description>With the TektonCD CLI we have a system of &amp;ldquo;plugins&amp;rdquo;, it&amp;rsquo;s the same very simple CLI plugin system you have with git or kubectl, if you do a :
-kubectl blah foo --bar
-since kubectl knows it doesn&amp;rsquo;t have the blah command will try to go over the filesystem paths in your $PATH environment and sees if there is a binary called kubectl-blah and if it finds it will pass the arguments to the binary which effectively become :</description>
+      <description>&lt;p&gt;With the TektonCD CLI we have a system of &amp;ldquo;plugins&amp;rdquo;, it&amp;rsquo;s the same very simple CLI plugin system you have with git or kubectl, if you do a :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;kubectl blah foo --bar&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;since kubectl knows it doesn&amp;rsquo;t have the blah command will try to go over the
+filesystem paths in your &lt;code&gt;$PATH&lt;/code&gt; environment and sees if there is a binary
+called &lt;code&gt;kubectl-blah&lt;/code&gt; and if it finds it will pass the arguments to the binary
+which effectively become :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running tasks as non root on OpenShift Pipelines</title>
       <link>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</link>
       <pubDate>Mon, 07 Mar 2022 08:04:02 +0000</pubDate>
       <guid>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</guid>
-      <description>Expanding on my previous blog post on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.
-On OpenShift Pipelines we made the conscious decision to run all the TaskRuns and Pipelinerun by default under a custom ServiceAccount called pipelines.
-That&amp;rsquo;s it, unless overridden by the user in its pipelinerun or taskrun, it will use the pipelines ServiceAccount which has a few elevated privileges.</description>
+      <description>&lt;p&gt;Expanding on my &lt;a href=&#34;https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/&#34; title=&#34; previous blog post&#34;&gt;previous blog post&lt;/a&gt; on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.&lt;/p&gt;
+&lt;p&gt;On OpenShift Pipelines we made the conscious decision to run all the TaskRuns and Pipelinerun by default under a custom ServiceAccount called &lt;code&gt;pipelines&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it, unless overridden by the user in its pipelinerun or taskrun, it will use the &lt;code&gt;pipelines&lt;/code&gt; ServiceAccount which has a few elevated privileges..&lt;/p&gt;</description>
     </item>
     <item>
       <title>User namespaces with Buildah and OpenShift Pipelines</title>
       <link>https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/</link>
       <pubDate>Tue, 25 Jan 2022 10:07:07 +0000</pubDate>
       <guid>https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/</guid>
-      <description>In 2022 one of the hottest topic around CI is how to secure it every steps along the way.
-The so-called supply chain attacks have been more and more an attack vector for bad actor whereas providers need to make sure every piece of the Integration is secure.
-One area that was identified as something we can improve with Openshift and containers in general is when running as root on the container may expose the host and process in that container may be able to mingle with other resources.</description>
+      <description>&lt;p&gt;In 2022 one of the hottest topic around CI is how to secure it every steps along the way.&lt;/p&gt;
+&lt;p&gt;The so-called supply chain attacks have been more and more an attack vector for bad actor whereas providers need to make sure every piece of the Integration is secure.&lt;/p&gt;
+&lt;p&gt;One area that was identified as something we can improve with Openshift and containers in general is when running as root on the container &lt;em&gt;may&lt;/em&gt; expose the host and process in that container may be able to mingle with other resources.&lt;/p&gt;</description>
     </item>
     <item>
       <title>For the love of centered windows gnome extension edition</title>
       <link>https://blog.chmouel.com/2021/11/19/for-the-love-of-centered-windows-gnome-extension-edition/</link>
       <pubDate>Fri, 19 Nov 2021 11:41:54 +0000</pubDate>
       <guid>https://blog.chmouel.com/2021/11/19/for-the-love-of-centered-windows-gnome-extension-edition/</guid>
-      <description>Feels weird or great or stupid or pretty smart or whatever to be wrong. Just when I wrote that previous blog post : https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/ that I realize that shelll script doesn&amp;rsquo;t work great on wayland.
-I didn&amp;rsquo;t really understood how Wayland works and just assumed that my tiny scripts just works. But experiencing not working on a native Wayland application and understanding how wayland works: https://wayland.freedesktop.org/docs/html/ch05.html it obviously needed a better way to do that if I have to keep up with the modern world of a linux desktop.</description>
+      <description>&lt;p&gt;Feels weird or great or stupid or pretty smart or whatever to be wrong. Just
+when I wrote that previous blog post :
+&lt;a href=&#34;https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/&#34;&gt;https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/&lt;/a&gt; that I
+realize that shell script doesn&amp;rsquo;t work great on wayland.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t really understood how Wayland works and just assumed that my tiny scripts just works. But experiencing not working on a native Wayland application and understanding how wayland works: &lt;a href=&#34;https://wayland.freedesktop.org/docs/html/ch05.html&#34;&gt;https://wayland.freedesktop.org/docs/html/ch05.html&lt;/a&gt; it obviously needed a better way to do that if I have to keep up with the modern world of a linux desktop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>For the love of centered windows</title>
       <link>https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/</link>
       <pubDate>Sun, 14 Nov 2021 06:36:06 +0000</pubDate>
       <guid>https://blog.chmouel.com/2021/11/14/for-the-love-of-centered-windows/</guid>
-      <description>Sometime over a 2020 confinement my work decided to give us some money to buy some work from home office items.
-I didn&amp;rsquo;t need much at that time since I was already settled with everything I needed in a work from home office but decided to go for a fancy new screen since well why not and the other one (a standard 24&amp;quot; display) could find some good use for my teenage gamer son.</description>
+      <description>&lt;p&gt;Sometime over a 2020 confinement my work decided to give us some money to buy some work from home office items.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t need much at that time since I was already settled with everything I needed in a work from home office but decided to go for a fancy new screen since well why not and the other one (a standard 24&amp;quot; display) could find some good use for my teenage gamer son.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to make a release pipeline with Pipelines as Code</title>
       <link>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</link>
       <pubDate>Thu, 01 Jul 2021 12:44:25 +0000</pubDate>
       <guid>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</guid>
-      <description>One of the early goal of Pipelines as Code on Tekton is to make sure we were able to have the project CI running with itself.
-The common user case of validating pull request was quickly implemented and you can find more information about it in this walkthough video :
-For slightly more advanced use case here is how we made a release pipeline for the project.
-The goal is when we tag a release and push the tags to the GitHUB repo it will</description>
+      <description>&lt;p&gt;One of the early goal of &lt;!-- raw HTML omitted --&gt;Pipelines as Code&lt;!-- raw HTML omitted --&gt; on Tekton is to make sure we were able to have the project CI running with itself.&lt;/p&gt;
+&lt;p&gt;The common user case of validating pull request was quickly implemented and you can find more information about it in this walkthough video :&lt;/p&gt;
+
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/Uh1YhOGPOes?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;For slightly more advanced use case here is how we made a release pipeline for the project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speed up your tekton pipeline caching the hacky way</title>
       <link>https://blog.chmouel.com/2021/05/25/speed-up-your-tekton-pipeline-caching-the-hacky-way/</link>
       <pubDate>Tue, 25 May 2021 08:51:33 +0000</pubDate>
       <guid>https://blog.chmouel.com/2021/05/25/speed-up-your-tekton-pipeline-caching-the-hacky-way/</guid>
-      <description>There is one thing that can get your wind up when you try to iterate quickly in a PR is to have a slow CI.
-While working on a go project with a comprehensive test suite it was usually taking over 20 to 30 minutes to run and being as patient as a kid waiting for her candy floss to be ready I am eagerly waiting that my pipeline is Green or not.</description>
+      <description>&lt;p&gt;There is one thing that can get your wind up when you try to iterate quickly in a PR is to have a slow CI.&lt;/p&gt;
+&lt;p&gt;While working on a go project with a comprehensive test suite it was usually taking over 20 to 30 minutes to run and being as patient as a kid waiting for her candy floss to be ready I am eagerly waiting that my pipeline is Green or not.&lt;/p&gt;</description>
     </item>
     <item>
       <title>NextDNS &#43; DNSMasq DHCP and local names</title>
       <link>https://blog.chmouel.com/2021/04/19/nextdns-dnsmasq-dhcp-and-local-names/</link>
       <pubDate>Mon, 19 Apr 2021 07:42:47 +0000</pubDate>
       <guid>https://blog.chmouel.com/2021/04/19/nextdns-dnsmasq-dhcp-and-local-names/</guid>
-      <description>Took me a little bit a while to figure out so here is some documentation,
-My router from my ISP which is generally pretty good, doesn&amp;rsquo;t support local dns names which is annoying in itself. Combined with NextDNS, I have no way to identify the devices on my network.
-So there I went configured dnsmasq on my tiny raspbery-pi :
-port=5353 no-resolv interface=eth0 except-interface=lo listen-address=::1,192.168.0.3 no-dhcp-interface= bind-interfaces cache-size=10000 local-ttl=2 log-async log-queries bogus-priv server=192.</description>
+      <description>&lt;p&gt;Took me a little bit a while to figure out so here is some documentation,&lt;/p&gt;
+&lt;p&gt;My &lt;a href=&#34;https://en.wikipedia.org/wiki/Freebox&#34;&gt;router from my ISP&lt;/a&gt; which is generally pretty good, doesn&amp;rsquo;t support local dns names which is annoying in itself. Combined with NextDNS, I have no way to identify the devices on my network.&lt;/p&gt;
+&lt;p&gt;So there I went configured dnsmasq on my tiny raspbery-pi :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;port=5353
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;no-resolv
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;interface=eth0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;except-interface=lo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;listen-address=::1,192.168.0.3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;no-dhcp-interface=
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind-interfaces
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cache-size=10000
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;local-ttl=2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;log-async
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;log-queries
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bogus-priv
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;server=192.168.0.3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add-mac
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add-subnet=32,128
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This would have the dnsmasq service listening on 192.168.0.3:5353 and forward everything to 192.168.0.3.&lt;/p&gt;</description>
     </item>
     <item>
       <title>batzconverter – A multiple timezone converter</title>
       <link>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</link>
       <pubDate>Sun, 31 Jan 2021 16:42:14 +0000</pubDate>
       <guid>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</guid>
-      <description>I write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn only once and some others I write for about 5mn but save me hours of boreness and repetitive task.
-The script showed today, that I am proud of because of its usefulness and probably not of its code, is called &amp;ldquo;batzconverter&amp;rdquo; available on https://github.com/chmouel/batzconverter. What the script is trying to solve is when you work with your team spread around 3/4 timezones, how do you schedule a meeting easily.</description>
+      <description>&lt;p&gt;I write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn only once and some others I write for about 5mn but save me hours of boreness and repetitive task.&lt;/p&gt;
+&lt;p&gt;The script showed today, that I am proud of because of its usefulness and probably not of its code, is called &lt;strong&gt;&amp;ldquo;batzconverter&amp;rdquo;&lt;/strong&gt; available on &lt;a href=&#34;https://github.com/chmouel/batzconverter&#34;&gt;https://github.com/chmouel/batzconverter&lt;/a&gt;. What the script is trying to solve is when you work with your team spread around 3/4 timezones, how do you schedule a meeting easily.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

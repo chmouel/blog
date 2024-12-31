@@ -4,7 +4,7 @@
     <title>Keystone on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/keystone/</link>
     <description>Recent content in Keystone on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 14 Jun 2013 15:46:19 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/keystone/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,33 @@
       <link>https://blog.chmouel.com/2013/06/14/how-to-launch-the-swift-functional-test-suite-with-keystone/</link>
       <pubDate>Fri, 14 Jun 2013 15:46:19 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/06/14/how-to-launch-the-swift-functional-test-suite-with-keystone/</guid>
-      <description>It is easy to launch the swift functional tests with v2 auth (Keystone).
-Assuming you have a recent version of python-swiftclient, python-keystoneclient and swift you need to first add a few users which is easily done with this script :
-Assuming you have already your OS_* variables configured with an admin, you can just launch it and it will :
-add a tenant/user named test/tester. add a tenant/user name test2/tester2. add a user tester3 belonging to test2 but not operator on that tenant.</description>
+      <description>&lt;p&gt;It is easy to launch the swift functional tests with v2 auth (Keystone).&lt;/p&gt;
+&lt;p&gt;Assuming you have a recent version of python-swiftclient, python-keystoneclient and swift you need to first add a few users which is easily done with this script :&lt;/p&gt;
+&lt;p&gt;Assuming you have already your OS_* variables configured with an admin, you can just launch it and it will :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;add a tenant/user named test/tester.&lt;/li&gt;
+&lt;li&gt;add a tenant/user name test2/tester2.&lt;/li&gt;
+&lt;li&gt;add a user tester3 belonging to test2 but not operator on that tenant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and it will create a /etc/swift/swift.conf for testing. You can adjust the keystone host in auth_host there (default to 127.0.0.1)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keystone and PKI tokens overview</title>
       <link>https://blog.chmouel.com/2013/05/02/keystone-pki-tokens-overview/</link>
       <pubDate>Thu, 02 May 2013 08:00:15 +0000</pubDate>
       <guid>https://blog.chmouel.com/2013/05/02/keystone-pki-tokens-overview/</guid>
-      <description>PKI tokens has been implemented in keystone by [Adam Young][1] and others and was shipped for the OpenStack grizlly release. It is available since the version 2.0 API of keystone.
-PKI is a beautiful acronym to [Public-key infrastructure][2] which according to wikipedia defines it like this :
-Public-key cryptography is a cryptographic technique that enables users to securely communicate on an insecure public network, and reliably verify the identity of a user via digital signatures.</description>
+      <description>&lt;p&gt;PKI tokens has been implemented in keystone by [Adam Young][1] and others and was shipped for the OpenStack grizlly release. It is available since the version 2.0 API of keystone.&lt;/p&gt;
+&lt;p&gt;PKI is a beautiful acronym to [Public-key infrastructure][2] which according to wikipedia defines it like this :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Public-key cryptography is a cryptographic technique that enables users to securely communicate on an insecure public network, and reliably verify the identity of a user via digital signatures.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Swift and Keystone middleware</title>
       <link>https://blog.chmouel.com/2011/11/24/swift-and-keystone-middleware-part1/</link>
       <pubDate>Thu, 24 Nov 2011 09:20:39 +0000</pubDate>
       <guid>https://blog.chmouel.com/2011/11/24/swift-and-keystone-middleware-part1/</guid>
-      <description>[NB: Much things has changed since I have written this article but keeping it here for info]
-It seems that integrating Swift and Keystone together present some challenges to people and this is absolutely normal as there is a lot of changes going on. This is my attempt to document how everything is plugged together.
-I am not going to explain how a middleware is supposed to work as this is nicely documented on Wikipedia :</description>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;[NB: Much things has changed since I have written this article but keeping it here for info]&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;It seems that integrating &lt;!-- raw HTML omitted --&gt;Swift&lt;!-- raw HTML omitted --&gt; and &lt;!-- raw HTML omitted --&gt;Keystone&lt;!-- raw HTML omitted --&gt; together present some challenges to people and this is absolutely normal as there is a lot of changes going on. This is my attempt to document how everything is plugged together.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

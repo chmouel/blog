@@ -4,7 +4,7 @@
     <title>Tekton on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/tekton/</link>
     <description>Recent content in Tekton on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Mon, 07 Mar 2022 08:04:02 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/tekton/index.xml" rel="self" type="application/rss+xml" />
@@ -13,17 +13,17 @@
       <link>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</link>
       <pubDate>Mon, 07 Mar 2022 08:04:02 +0000</pubDate>
       <guid>https://blog.chmouel.com/2022/03/07/running-tasks-as-non-root-on-openshift-pipelines/</guid>
-      <description>Expanding on my previous blog post on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.
-On OpenShift Pipelines we made the conscious decision to run all the TaskRuns and Pipelinerun by default under a custom ServiceAccount called pipelines.
-That&amp;rsquo;s it, unless overridden by the user in its pipelinerun or taskrun, it will use the pipelines ServiceAccount which has a few elevated privileges.</description>
+      <description>&lt;p&gt;Expanding on my &lt;a href=&#34;https://blog.chmouel.com/2022/01/25/user-namespaces-with-buildah-and-openshift-pipelines/&#34; title=&#34; previous blog post&#34;&gt;previous blog post&lt;/a&gt; on getting buildah to run with user namespaces or as rootless. There is another important security topic to talk about is how to run everything on OpenShift Pipeline as non root and not just the buildah task.&lt;/p&gt;
+&lt;p&gt;On OpenShift Pipelines we made the conscious decision to run all the TaskRuns and Pipelinerun by default under a custom ServiceAccount called &lt;code&gt;pipelines&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it, unless overridden by the user in its pipelinerun or taskrun, it will use the &lt;code&gt;pipelines&lt;/code&gt; ServiceAccount which has a few elevated privileges..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tekton yaml templates and script feature</title>
       <link>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</link>
       <pubDate>Tue, 28 Jul 2020 08:55:07 +0000</pubDate>
       <guid>https://blog.chmouel.com/2020/07/28/tekton-yaml-templates-and-script-feature/</guid>
-      <description>Don&amp;rsquo;t you love &amp;ldquo;yaml&amp;rdquo;, yes you do ! or at least that&amp;rsquo;s what the industry told you to love!
-When you were in school your teacher told you about &amp;ldquo;XML&amp;rdquo; and how it will solve all the industry problems (and there was many in the late 90s). But you learned that you hate reaching to your &amp;quot;&amp;lt;&amp;quot; and&amp;quot; &amp;quot;&amp;gt;&amp;quot; keys and rather have something else. So then the industry came up with &amp;ldquo;json&amp;rdquo; so computer or yourself can talk to each others, that&amp;rsquo;s nice for computers but actually not so nice for yourself it was actually a lie and was not made for yourself to read and write but only for comptures.</description>
+      <description>&lt;p&gt;Don&amp;rsquo;t you love &amp;ldquo;yaml&amp;rdquo;, yes you do ! or at least that&amp;rsquo;s what the industry told you to love!&lt;/p&gt;
+&lt;p&gt;When you were in school your teacher told you about &amp;ldquo;XML&amp;rdquo; and how it will solve all the industry problems (and there was many in the late 90s). But you learned that you hate reaching to your &lt;strong&gt;&amp;quot;&amp;lt;&amp;quot;&lt;/strong&gt; and&amp;quot; &lt;strong&gt;&amp;quot;&amp;gt;&amp;quot;&lt;/strong&gt; keys and rather have something else. So then the industry came up with &amp;ldquo;json&amp;rdquo; so computer or yourself can talk to each others, that&amp;rsquo;s nice for computers but actually not so nice for yourself it was actually a lie and was not made for yourself to read and write but only for comptures. So then the &amp;ldquo;industry&amp;rdquo; came up with &lt;strong&gt;yaml&lt;/strong&gt;, indentation based? you get it and that&amp;rsquo;s humm all about it, now you are stuck counting whitespaces in a 3000 lines file trying to figure out where goes where&amp;hellip;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

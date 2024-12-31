@@ -4,7 +4,7 @@
     <title>Travel on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/travel/</link>
     <description>Recent content in Travel on Chmouel&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Tue, 29 Jul 2008 06:14:49 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/travel/index.xml" rel="self" type="application/rss+xml" />
@@ -13,26 +13,29 @@
       <link>https://blog.chmouel.com/2008/07/29/tflgovuk-and-mozilla-quick-search/</link>
       <pubDate>Tue, 29 Jul 2008 06:14:49 +0000</pubDate>
       <guid>https://blog.chmouel.com/2008/07/29/tflgovuk-and-mozilla-quick-search/</guid>
-      <description>If you want to bookmark a quick mozilla search from your house to another postcode you can use this URI :
-http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&amp;amp;sessionID=0&amp;amp;type_destination=locator&amp;amp;name_destination=DESTINATION_POSTCODE&amp;amp;type_origin=locator&amp;amp;name_origin=ORIGIN_POSTCODE&amp;amp;place_origin=London&amp;amp;place_destination=London
-just change the DESTINATION and ORIGIN_POSTCODE to %s if you like or make it as static bookmark.</description>
+      <description>&lt;p&gt;If you want to bookmark a  quick mozilla search from your house to another postcode you can use this URI :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://journeyplanner.tfl.gov.uk/user/XSLT&#34;&gt;http://journeyplanner.tfl.gov.uk/user/XSLT&lt;/a&gt;_TRIP_REQUEST2?language=en&amp;amp;sessionID=0&amp;amp;type_destination=locator&amp;amp;name_destination=DESTINATION_POSTCODE&amp;amp;type_origin=locator&amp;amp;name_origin=ORIGIN_POSTCODE&amp;amp;place_origin=London&amp;amp;place_destination=London&lt;/p&gt;
+&lt;p&gt;just change the DESTINATION and ORIGIN_POSTCODE to %s if you like or make it as static bookmark.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generating md5 encrypted password for chpasswd</title>
       <link>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</link>
       <pubDate>Fri, 17 Aug 2007 07:11:38 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/08/17/generating-md5-encrypted-password-for-chpasswd/</guid>
-      <description>If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
-[code lang=&amp;ldquo;bash&amp;rdquo;]
-echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin
-[/code]
-If you want to generate in pure python you can do it like that :
-[code lang=&amp;ldquo;python&amp;rdquo;]
-def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):
-import md5
-m = md5.new()
-m.update(password + magic + salt)
-# /* Then just as many characters of the MD5(pw,salt,pw) */</description>
+      <description>&lt;p&gt;If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :&lt;br&gt;
+[code lang=&amp;ldquo;bash&amp;rdquo;]&lt;br&gt;
+echo &amp;ldquo;encryptedpassword&amp;rdquo;|openssl passwd -1 -stdin&lt;br&gt;
+[/code]&lt;br&gt;
+If you want to generate in pure python you can do it like that :&lt;br&gt;
+[code lang=&amp;ldquo;python&amp;rdquo;]&lt;br&gt;
+def md5crypt(password, salt, magic=&amp;rsquo;$1$&amp;rsquo;):&lt;br&gt;
+import md5&lt;br&gt;
+m = md5.new()&lt;br&gt;
+m.update(password + magic + salt)&lt;/p&gt;
+&lt;p&gt;# /* Then just as many characters of the MD5(pw,salt,pw) */&lt;br&gt;
+mixin = md5.md5(password + salt + password).digest()&lt;br&gt;
+for i in range(0, len(password)):&lt;br&gt;
+m.update(mixin[i % 16])&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
