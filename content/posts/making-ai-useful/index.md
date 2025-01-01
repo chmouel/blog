@@ -1,6 +1,6 @@
 ---
 title: "Making AI Useful"
-date: 2024-01-01T00:00:48+01:00
+date: 2025-01-01T00:00:48+01:00
 ---
 
 I haven’t fully jumped on the AI hype train, but I’ve kept an eye on the
