@@ -38,6 +38,20 @@ are good at trusting localhost.&lt;/p&gt;
 unused with a SSD, I decided to made it my local Kubernetes cluster.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Making AI Useful</title>
+      <link>https://blog.chmouel.com/posts/making-ai-useful/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:48 +0100</pubDate>
+      <guid>https://blog.chmouel.com/posts/making-ai-useful/</guid>
+      <description>&lt;p&gt;I haven’t fully jumped on the AI hype train, but I’ve kept an eye on the
+evolving technologies of the past two decades. It used to be that Cloud was the
+buzzword, then Containers, and maybe blockchain (never got into this one), and
+now AI.&lt;/p&gt;
+&lt;p&gt;At first, AI felt like a nice gimmick—discussing things with a chatbot felt a
+bit like doing a Google search but with a conversational twist. The problem with
+chatbots was that funny feeling you’d get when it seemed like they were just
+making things up.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Gosmee Webhook Forwarder and Relayer</title>
       <link>https://blog.chmouel.com/posts/gosmee-webhook-forwarder-relayer/</link>
       <pubDate>Wed, 20 Dec 2023 13:22:06 +0100</pubDate>
@@ -272,14 +286,6 @@ realize that shell script doesn&amp;rsquo;t work great on wayland.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add-mac
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add-subnet=32,128
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This would have the dnsmasq service listening on 192.168.0.3:5353 and forward everything to 192.168.0.3.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>batzconverter – A multiple timezone converter</title>
-      <link>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</link>
-      <pubDate>Sun, 31 Jan 2021 16:42:14 +0000</pubDate>
-      <guid>https://blog.chmouel.com/2021/01/31/batzconverter-a-multiple-timezone-converter/</guid>
-      <description>&lt;p&gt;I write a lot of scripts to automate my day to day workflow, some of them I just wrote for 3h to save me 5mn only once and some others I write for about 5mn but save me hours of boreness and repetitive task.&lt;/p&gt;
-&lt;p&gt;The script showed today, that I am proud of because of its usefulness and probably not of its code, is called &lt;strong&gt;&amp;ldquo;batzconverter&amp;rdquo;&lt;/strong&gt; available on &lt;a href=&#34;https://github.com/chmouel/batzconverter&#34;&gt;https://github.com/chmouel/batzconverter&lt;/a&gt;. What the script is trying to solve is when you work with your team spread around 3/4 timezones, how do you schedule a meeting easily.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
