@@ -6,8 +6,22 @@
     <description>Recent content on Chmouel&#39;s blog</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 01 Mar 2024 10:21:39 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:48 +0100</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making AI Useful</title>
+      <link>https://blog.chmouel.com/posts/making-ai-useful/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:48 +0100</pubDate>
+      <guid>https://blog.chmouel.com/posts/making-ai-useful/</guid>
+      <description>&lt;p&gt;I haven’t fully jumped on the AI hype train, but I’ve kept an eye on the
+evolving technologies of the past two decades. It used to be that Cloud was the
+buzzword, then Containers, and maybe blockchain (never got into this one), and
+now AI.&lt;/p&gt;
+&lt;p&gt;At first, AI felt like a nice gimmick—discussing things with a chatbot felt a
+bit like doing a Google search but with a conversational twist. The problem with
+chatbots was that funny feeling you’d get when it seemed like they were just
+making things up.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Advanced usage of Emacs isearch</title>
       <link>https://blog.chmouel.com/posts/emacs-isearch/</link>
@@ -36,20 +50,6 @@ everything on localhost which so far did not cause any issues, since the browser
 are good at trusting localhost.&lt;/p&gt;
 &lt;p&gt;But since my laptop was getting slower and slower and I had a new raspberry pi 5
 unused with a SSD, I decided to made it my local Kubernetes cluster.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Making AI Useful</title>
-      <link>https://blog.chmouel.com/posts/making-ai-useful/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:48 +0100</pubDate>
-      <guid>https://blog.chmouel.com/posts/making-ai-useful/</guid>
-      <description>&lt;p&gt;I haven’t fully jumped on the AI hype train, but I’ve kept an eye on the
-evolving technologies of the past two decades. It used to be that Cloud was the
-buzzword, then Containers, and maybe blockchain (never got into this one), and
-now AI.&lt;/p&gt;
-&lt;p&gt;At first, AI felt like a nice gimmick—discussing things with a chatbot felt a
-bit like doing a Google search but with a conversational twist. The problem with
-chatbots was that funny feeling you’d get when it seemed like they were just
-making things up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gosmee Webhook Forwarder and Relayer</title>
