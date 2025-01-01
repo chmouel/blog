@@ -76,7 +76,12 @@ bindsym $super+x exec copyq selection | $HOME/go/src/gitlab.com/chmouel/aichmou/
 
 Here is a little demo of it in action:
 
-![aichmou demo](./demo.gif)
+{{< rawhtml >}}
+<video width=100% controls autoplay>
+    <source src="https://github.com/user-attachments/assets/fa848c99-776d-42d3-9d1e-9bc68a42341e">
+    Your browser does not support the video tag.
+</video>
+{{< /rawhtml >}}
 
 ### Conclusion
 
