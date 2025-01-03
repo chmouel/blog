@@ -46,7 +46,7 @@ place them half the time. So, when I write to family or friends in French from
 my computer, it always looks weird.
 
 To address this, I built a little tool called
-[aichmou](https://gitlab.com/chmouel/aichmou) to help. It plugs into Sway on
+[aichmou](https://github.com/chmouel/aichmou) to help. It plugs into Sway on
 Linux and also works with Alfred on macOS.
 
 ### How It Works
@@ -61,7 +61,7 @@ Here’s how I use it:
 - Sway intercepts it with this configuration:
 
 ```config
-bindsym $super+x exec copyq selection | $HOME/go/src/gitlab.com/chmouel/aichmou/.venv/bin/python3 $HOME/go/src/gitlab.com/chmouel/aichmou/ai -N spell && wtype -M ctrl -M shift v
+bindsym $super+x exec copyq selection | $HOME/go/src/github.com/chmouel/aichmou/.venv/bin/python3 $HOME/go/src/github.com/chmouel/aichmou/ai -N spell && wtype -M ctrl -M shift v
 ```
 
 - Launching [CopyQ](https://hluk.github.io/CopyQ/) to grab the current
@@ -90,6 +90,6 @@ on this for some other use cases on that tool if needed in the future.
 
 Here is the link to the tool:
 
-- AIChmou - <https://gitlab.com/chmouel/aichmou>
+- AIChmou - <https://github.com/chmouel/aichmou>
 - My Emacs and Copilot config - <https://gitlab.com/chmouel/emacs-config/-/blob/main/lisp/init-copilot.el?ref_type=heads#L31>
 - My Emacs and LLM config - <https://gitlab.com/chmouel/emacs-config/-/blob/main/lisp/init-llm.el?ref_type=heads>
