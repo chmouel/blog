@@ -38,6 +38,13 @@ so I didn’t need to do much there except some
 configuration<https://gitlab.com/chmouel/emacs-config/-/blob/main/lisp/init-copilot.el?ref_type=heads#L31>
 for it.
 
+{{< rawhtml >}}
+<video width=100% controls autoplay>
+    <source src="https://github.com/user-attachments/assets/1f137a2e-c4cd-47a0-8f70-e6a7685c7b4f">
+    Your browser does not support the video tag.
+</video>
+{{< /rawhtml >}}
+
 Another thing that’s always annoyed me is writing French accents on my English
 keyboard. On Linux, I need to use Right-ALT and do mental gymnastics to type
 them. I have a custom keyboard with macros that make it easier, but I still
