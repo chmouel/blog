@@ -1,5 +1,5 @@
 ---
-title: "Making AI Useful to me with a AI spellchecker"
+title: "Making AI Useful to me with an AI spellchecker"
 date: 2025-01-01T00:00:48+01:00
 ---
 
