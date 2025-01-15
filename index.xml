@@ -241,18 +241,18 @@ realize that shell script doesn&amp;rsquo;t work great on wayland.&lt;/p&gt;
 &lt;p&gt;I didn&amp;rsquo;t need much at that time since I was already settled with everything I needed in a work from home office but decided to go for a fancy new screen since well why not and the other one (a standard 24&amp;quot; display) could find some good use for my teenage gamer son.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How to make a release pipeline with Pipelines as Code</title>
+      <title>How to Make a Release Pipeline with Pipelines as Code</title>
       <link>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</link>
       <pubDate>Thu, 01 Jul 2021 12:44:25 +0000</pubDate>
       <guid>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</guid>
-      <description>&lt;p&gt;One of the early goal of &lt;!-- raw HTML omitted --&gt;Pipelines as Code&lt;!-- raw HTML omitted --&gt; on Tekton is to make sure we were able to have the project CI running with itself.&lt;/p&gt;
-&lt;p&gt;The common user case of validating pull request was quickly implemented and you can find more information about it in this walkthough video :&lt;/p&gt;
+      <description>&lt;p&gt;One of the early goals of &lt;a href=&#34;https://github.com/openshift-pipelines/pipelines-as-code/&#34;&gt;Pipelines as Code&lt;/a&gt; on Tekton was to ensure the project’s CI could run using itself.&lt;/p&gt;
+&lt;p&gt;The common use case of validating pull requests was quickly implemented, and you can find more information about it in this walkthrough video:&lt;/p&gt;
 
     &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
       &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/cNOqPgpRXQY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
     &lt;/div&gt;
 
-&lt;p&gt;For slightly more advanced use case here is how we made a release pipeline for the project.&lt;/p&gt;</description>
+&lt;p&gt;For slightly more advanced use cases, here is how we created a release pipeline for the project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speed up your tekton pipeline caching the hacky way</title>
