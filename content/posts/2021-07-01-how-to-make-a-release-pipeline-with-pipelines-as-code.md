@@ -1,83 +1,85 @@
 ---
-title: How to make a release pipeline with Pipelines as Code
-author: chmouel
+title: How to Make a Release Pipeline with Pipelines as Code
+author: Chmouel
 date: 2021-07-01T12:44:25+00:00
 url: /2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/
 ---
-One of the early goal of <a href="https://github.com/openshift-pipelines/pipelines-as-code/" data-type="URL" data-id="https://github.com/openshift-pipelines/pipelines-as-code/">Pipelines as Code</a> on Tekton is to make sure we were able to have the project CI running with itself.
 
-The common user case of validating pull request was quickly implemented and you can find more information about it in this walkthough video :
+One of the early goals of [Pipelines as Code](https://github.com/openshift-pipelines/pipelines-as-code/) on Tekton was to ensure the project’s CI could run using itself.
 
+The common use case of validating pull requests was quickly implemented, and you can find more information about it in this walkthrough video:
 
 {{< youtube cNOqPgpRXQY >}}
 
-For slightly more advanced use case here is how we made a release pipeline for the project.
+For slightly more advanced use cases, here is how we created a release pipeline for the project.
 
-The goal is when we tag a release and push the tags to the GitHUB repo it will
+The goal is that when we tag a release and push the tags to the GitHub repository, it will:
 
-  * Generate the release.yaml file for that version for user to automatically _`kubectl apply -f-`_ it.
-  * Upload that release.yaml to a `release-${version} branch`
-  * Generate the `tkn-pac` binaries for the different Operating Systems
-  * Generate the GitHUB release.
+- Generate the `release.yaml` file for that version, allowing users to automatically run `_kubectl apply -f-_`.
+- Upload the `release.yaml` to a `release-${version}` branch.
+- Generate the `tkn-pac` binaries for different operating systems.
+- Create the GitHub release.
 
-To be able to do so, I created a Repository CR in the `pipelines-as-code-ci` namespace:
+## Repository Configuration
+
+To achieve this, I created a `Repository` Custom Resource (CR) in the `pipelines-as-code-ci` namespace:
 
 ```yaml
 apiVersion: pipelinesascode.tekton.dev/v1alpha1
 kind: Repository
 metadata:
-  name: pipelines-as-code-ci-make-release
-  namespace: pipelines-as-code-ci
+  name: pipelines-as-code
 spec:
-  branch: refs/tags/*
-  event_type: push
-  namespace: pipelines-as-code-ci
   url: https://github.com/openshift-pipelines/pipelines-as-code
 ```
 
-The key part is the `branch` and `event_type` spec fields, where in plain
-english means I want to have all the tags push handled and run in the namespace
-`pipelines-as-code-ci`
+The key part is the `branch` and `event_type` fields, which specify that all pushed tags should be handled and run in the `pipelines-as-code-ci` namespace.
 
-I then created a [release-pipeline.yaml][3] PipelineRun in my `.tekton`
-directory with the annotations needed:
+## PipelineRun Configuration
+
+Next, I created a [release-pipeline.yaml](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.tekton/release-pipeline.yaml) `PipelineRun` in the `.tekton` directory, adding the necessary annotations:
 
 ```yaml
 pipelinesascode.tekton.dev/on-event: "[push]"
 pipelinesascode.tekton.dev/on-target-branch: "[refs/tags/*]"
 ```
 
-```
+This configuration ensures the `PipelineRun` handles all push tag events.
 
-Which mean in pain english that this pipelinerun will handle all on push tags events.
+## Tasks
 
-In my tasks I need the git-clone tasks and a custom version of the goreleaser
-task located inside my repository in [.tekton/task/goreleaser.yaml][4].
+In the tasks, I included the `git-clone` task and a custom version of the `goreleaser` task, located in the repository at `.tekton/task/goreleaser.yaml`.
 
-The annotation for this looks like this :
+The annotation for these tasks looks like this:
 
 ```yaml
 pipelinesascode.tekton.dev/task: "[git-clone, .tekton/tasks/goreleaser.yaml]"
 ```
 
-[Goreleaser](https://goreleaser.com/) takes care of a lot of things for us, it compiles all binary and make a release in GitHub, it as well has the ability to generate a [homebrew](https://brew.sh) release in [openshift-pipelines/homebrew-pipelines-as-code/](https://github.com/openshift-pipelines/homebrew-pipelines-as-code/) so user on OSX or LinuxBrew can easily just do :
+[Goreleaser](https://goreleaser.com/) simplifies many tasks for us. It compiles binaries, creates a GitHub release, and can generate a [Homebrew](https://brew.sh) release in the [openshift-pipelines/homebrew-pipelines-as-code](https://github.com/openshift-pipelines/homebrew-pipelines-as-code/) repository. This allows users on macOS or LinuxBrew to easily install it:
 
 ```shell
 brew install openshift-pipelines/pipelines-as-code/tektoncd-pac
 ```
 
-Uploading the release.yaml si done with a Python script I wrote for it :
+## Uploading the Release
+
+Uploading the `release.yaml` is handled by a Python script I wrote:
 
 <https://github.com/openshift-pipelines/pipelines-as-code/blob/main/hack/upload-file-to-github.py>
 
-It will fetch the tag SHA and create a branch release-${tagversion} and push the file into it. This gives a stable branch with all the artifacts specifique to that version.
+The script fetches the tag SHA, creates a `release-${tagversion}` branch, and pushes the file into it. This provides a stable branch with all artifacts specific to that version.
 
-After all of that, I just need to edit the release and change a few fields to make it a bit nicer and set it as release (by default goreleaser do a prerelease)
+## Final Steps
 
-![](/wp-content/uploads/2021/07/image-1024x354.png)
+After everything is in place, I edit the GitHub release, update a few fields for a nicer presentation, and set it as a release (by default, Goreleaser creates a prerelease).
 
-Here is the link to all the files :
+![GitHub Release Screenshot](/wp-content/uploads/2021/07/image-1024x354.png)
 
-* [.gorelease.yaml](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.goreleaser.yml) the configuration file for goreleaser
-* [upload-file-to-github.py](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/hack/upload-file-to-github.py) - The python script to upload a file to GitHub directly
-* [.tekton/release-pipeline.yaml](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.tekton/release-pipeline.yaml) - The tekton release pipeline
+## Useful Links
+
+Here are links to all the related files:
+
+- [.goreleaser.yaml](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.goreleaser.yml) - The configuration file for Goreleaser.
+- [upload-file-to-github.py](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/hack/upload-file-to-github.py) - The Python script to upload files directly to GitHub.
+- [.tekton/release-pipeline.yaml](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.tekton/release-pipeline.yaml) - The Tekton release pipeline.
