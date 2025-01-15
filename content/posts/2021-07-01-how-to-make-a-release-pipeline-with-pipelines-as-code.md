@@ -9,7 +9,7 @@ One of the early goal of <a href="https://github.com/openshift-pipelines/pipelin
 The common user case of validating pull request was quickly implemented and you can find more information about it in this walkthough video :
 
 
-{{< youtube Uh1YhOGPOes >}}
+{{< youtube cNOqPgpRXQY >}}
 
 For slightly more advanced use case here is how we made a release pipeline for the project.
 
