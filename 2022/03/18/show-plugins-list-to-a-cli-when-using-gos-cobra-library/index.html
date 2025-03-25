@@ -28,16 +28,16 @@ which effectively become :</p><p><code>kubectl-blah foo --bar</code></p><p>all v
 </span></span></code></pre></div><p>The <code>pluginList</code> template variable is a slice of plugins which is discovered in this function :</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#8be9fd;font-style:italic>func</span> <span style=color:#50fa7b>addPluginsToHelp</span>() {
 </span></span><span style=display:flex><span>	pluginlist <span style=color:#ff79c6>:=</span> []<span style=color:#8be9fd>string</span>{}
 </span></span><span style=display:flex><span>	paths <span style=color:#ff79c6>:=</span> strings.<span style=color:#50fa7b>Split</span>(os.<span style=color:#50fa7b>Getenv</span>(<span style=color:#f1fa8c>&#34;PATH&#34;</span>), <span style=color:#f1fa8c>&#34;:&#34;</span>)
-</span></span><span style=display:flex><span>	<span style=color:#6272a4>// go over all paths in the PATH environment
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>	<span style=color:#6272a4>// and add them to the completion command
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>	<span style=color:#ff79c6>for</span> _, path <span style=color:#ff79c6>:=</span> <span style=color:#ff79c6>range</span> paths {
-</span></span><span style=display:flex><span>		<span style=color:#6272a4>// list all files in path
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>		files, err <span style=color:#ff79c6>:=</span> ioutil.<span style=color:#50fa7b>ReadDir</span>(path)
+</span></span><span style=display:flex><span>	<span style=color:#6272a4>// go over all paths in the PATH environment</span>
+</span></span><span style=display:flex><span>	<span style=color:#6272a4>// and add them to the completion command</span>
+</span></span><span style=display:flex><span>	<span style=color:#ff79c6>for</span> _, path <span style=color:#ff79c6>:=</span> <span style=color:#ff79c6>range</span> paths {
+</span></span><span style=display:flex><span>		<span style=color:#6272a4>// list all files in path</span>
+</span></span><span style=display:flex><span>		files, err <span style=color:#ff79c6>:=</span> ioutil.<span style=color:#50fa7b>ReadDir</span>(path)
 </span></span><span style=display:flex><span>		<span style=color:#ff79c6>if</span> err <span style=color:#ff79c6>!=</span> <span style=color:#ff79c6>nil</span> {
 </span></span><span style=display:flex><span>			<span style=color:#ff79c6>continue</span>
 </span></span><span style=display:flex><span>		}
-</span></span><span style=display:flex><span>		<span style=color:#6272a4>// add all files that start with tkn-
-</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>		<span style=color:#ff79c6>for</span> _, file <span style=color:#ff79c6>:=</span> <span style=color:#ff79c6>range</span> files {
+</span></span><span style=display:flex><span>		<span style=color:#6272a4>// add all files that start with tkn-</span>
+</span></span><span style=display:flex><span>		<span style=color:#ff79c6>for</span> _, file <span style=color:#ff79c6>:=</span> <span style=color:#ff79c6>range</span> files {
 </span></span><span style=display:flex><span>			<span style=color:#ff79c6>if</span> strings.<span style=color:#50fa7b>HasPrefix</span>(file.<span style=color:#50fa7b>Name</span>(), <span style=color:#f1fa8c>&#34;tkn-&#34;</span>) {
 </span></span><span style=display:flex><span>				basep <span style=color:#ff79c6>:=</span> strings.<span style=color:#50fa7b>ReplaceAll</span>(file.<span style=color:#50fa7b>Name</span>(), <span style=color:#f1fa8c>&#34;tkn-&#34;</span>, <span style=color:#f1fa8c>&#34;&#34;</span>)
 </span></span><span style=display:flex><span>				fpath <span style=color:#ff79c6>:=</span> filepath.<span style=color:#50fa7b>Join</span>(path, file.<span style=color:#50fa7b>Name</span>())

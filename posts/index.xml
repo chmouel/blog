@@ -4,10 +4,25 @@
     <title>Posts on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/posts/</link>
     <description>Recent content in Posts on Chmouel&#39;s blog</description>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 01 Jan 2025 00:00:48 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 25 Mar 2025 00:54:49 +0200</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Navigating the pull_request_target conundrum in GitHub Actions with Pipelines as Code</title>
+      <link>https://blog.chmouel.com/posts/github-workflows-pull_request_target/</link>
+      <pubDate>Tue, 25 Mar 2025 00:54:49 +0200</pubDate>
+      <guid>https://blog.chmouel.com/posts/github-workflows-pull_request_target/</guid>
+      <description>&lt;p&gt;GitHub&amp;rsquo;s &lt;a href=&#34;https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target&#34;&gt;&lt;code&gt;pull_request_target&lt;/code&gt;&lt;/a&gt;
+event presents a significant security challenge due to its access to the pull
+request within the &lt;em&gt;target&lt;/em&gt; repository&amp;rsquo;s context. This can expose sensitive
+secrets to untrusted users submitting pull requests.&lt;/p&gt;
+&lt;p&gt;For projects like Pipelines-as-Code (PAC), where interaction with multiple
+upstream providers (Bitbucket, GitLab, GitHub) is essential, this risk is
+amplified. Access to repository secrets is vital for E2E testing across these
+platforms, yet arbitrary pull requests triggering secret-laden workflows is
+unacceptable.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Making AI useful to me with an AI spellchecker</title>
       <link>https://blog.chmouel.com/posts/making-ai-useful/</link>
@@ -247,8 +262,7 @@ realize that shell script doesn&amp;rsquo;t work great on wayland.&lt;/p&gt;
       <guid>https://blog.chmouel.com/2021/07/01/how-to-make-a-release-pipeline-with-pipelines-as-code/</guid>
       <description>&lt;p&gt;One of the early goals of &lt;a href=&#34;https://github.com/openshift-pipelines/pipelines-as-code/&#34;&gt;Pipelines as Code&lt;/a&gt; on Tekton was to ensure the project’s CI could run using itself.&lt;/p&gt;
 &lt;p&gt;The common use case of validating pull requests was quickly implemented, and you can find more information about it in this walkthrough video:&lt;/p&gt;
-
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
       &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube-nocookie.com/embed/cNOqPgpRXQY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
     &lt;/div&gt;
 
@@ -261,31 +275,6 @@ realize that shell script doesn&amp;rsquo;t work great on wayland.&lt;/p&gt;
       <guid>https://blog.chmouel.com/2021/05/25/speed-up-your-tekton-pipeline-caching-the-hacky-way/</guid>
       <description>&lt;p&gt;There is one thing that can get your wind up when you try to iterate quickly in a PR is to have a slow CI.&lt;/p&gt;
 &lt;p&gt;While working on a go project with a comprehensive test suite it was usually taking over 20 to 30 minutes to run and being as patient as a kid waiting for her candy floss to be ready I am eagerly waiting that my pipeline is Green or not.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NextDNS &#43; DNSMasq DHCP and local names</title>
-      <link>https://blog.chmouel.com/2021/04/19/nextdns-dnsmasq-dhcp-and-local-names/</link>
-      <pubDate>Mon, 19 Apr 2021 07:42:47 +0000</pubDate>
-      <guid>https://blog.chmouel.com/2021/04/19/nextdns-dnsmasq-dhcp-and-local-names/</guid>
-      <description>&lt;p&gt;Took me a little bit a while to figure out so here is some documentation,&lt;/p&gt;
-&lt;p&gt;My &lt;a href=&#34;https://en.wikipedia.org/wiki/Freebox&#34;&gt;router from my ISP&lt;/a&gt; which is generally pretty good, doesn&amp;rsquo;t support local dns names which is annoying in itself. Combined with NextDNS, I have no way to identify the devices on my network.&lt;/p&gt;
-&lt;p&gt;So there I went configured dnsmasq on my tiny raspbery-pi :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;port=5353
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;no-resolv
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;interface=eth0
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;except-interface=lo
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;listen-address=::1,192.168.0.3
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;no-dhcp-interface=
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind-interfaces
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cache-size=10000
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;local-ttl=2
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;log-async
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;log-queries
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bogus-priv
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;server=192.168.0.3
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add-mac
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;add-subnet=32,128
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This would have the dnsmasq service listening on 192.168.0.3:5353 and forward everything to 192.168.0.3.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

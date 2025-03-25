@@ -106,7 +106,7 @@ here</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background
 </span></span></span><span style=display:flex><span><span style=color:#f1fa8c>      (bash_completion/&#34;${BINARY_NAME}&#34;).write output
 </span></span></span><span style=display:flex><span><span style=color:#f1fa8c>      output = Utils.popen_read(&#34;SHELL=zsh #{bin}/${BINARY_NAME} completion zsh&#34;)
 </span></span></span><span style=display:flex><span><span style=color:#f1fa8c>      (zsh_completion/&#34;_${BINARY_NAME}&#34;).write output
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>      prefix.install_metafiles</span>      
+</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>      prefix.install_metafiles</span>
 </span></span><span style=display:flex><span><span style=color:#ff79c6>aurs</span>: <span style=color:#6272a4># arch package</span>
 </span></span><span style=display:flex><span>- <span style=color:#ff79c6>name</span>: ${BINARY_NAME}
 </span></span><span style=display:flex><span>[....]
@@ -119,7 +119,7 @@ here</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background
 </span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    ./${BINARY_NAME} completion bash &gt; ${BINARY_NAME}.bash
 </span></span></span><span style=display:flex><span><span style=color:#f1fa8c>
 </span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    install -Dm644 &#34;${BINARY_NAME}.bash&#34; &#34;${pkgdir}/usr/share/bash-completion/completions/${BINARY_NAME}&#34;
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    install -Dm644 &#34;${BINARY_NAME}.zsh&#34; &#34;${pkgdir}/usr/share/zsh/site-functions/_${BINARY_NAME}&#34;</span>    
+</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    install -Dm644 &#34;${BINARY_NAME}.zsh&#34; &#34;${pkgdir}/usr/share/zsh/site-functions/_${BINARY_NAME}&#34;</span>
 </span></span></code></pre></div><h2 id=other-libraries>Other libraries<a hidden class=anchor aria-hidden=true href=#other-libraries>#</a></h2><p>I have successfully added completion to other CLIs using other library.</p><ul><li>with the <a href=https://github.com/urfave/cli>urfave/cli</a> library on the <a href=https://github.com/chmouel/gosmee>gosmee</a>
 binary. I have defined a completion command
 <a href=https://github.com/chmouel/gosmee/blob/adaa13e318d0a5b81026ed5aaf0e7a983494bb9d/gosmee/app.go#L142>here</a>
