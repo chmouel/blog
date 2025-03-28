@@ -129,6 +129,8 @@ is established. This approach allows for maintaining a balance between
 security and the ability to accept contributions from external developers,
 while automating the triggering process.
 
+![pipelines and cat](./cat-and-pipe.jpg)
+
 ## Links
 
 - Our E2E testing workflow: [e2e.yaml](https://github.com/openshift-pipelines/pipelines-as-code/blob/main/.github/workflows/e2e.yaml)
