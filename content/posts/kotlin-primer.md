@@ -1,7 +1,6 @@
 ---
 title: "Kotlin in a hurry (and Why You Might Actually Like It)"
 date: 2025-10-18T20:14:10+02:00
-draft: true
 ---
 
 You’ve seen Kotlin mentioned in passing.
