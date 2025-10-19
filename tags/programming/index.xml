@@ -4,7 +4,7 @@
     <title>Programming on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/programming/</link>
     <description>Recent content in Programming on Chmouel&#39;s blog</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en-GB</language>
     <lastBuildDate>Thu, 22 Sep 2016 10:27:27 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
@@ -189,7 +189,7 @@ python-cloudfiles works. It is all available here :&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;end&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; __FILE__ &lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;font-style:italic&#34;&gt;__FILE__&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  f &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; SELF_SSL&lt;span style=&#34;color:#ff79c6&#34;&gt;::&lt;/span&gt;XMLRPC_Client&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;new2(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://url&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;puts&lt;/span&gt; f&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;call(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;method&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;arg&amp;#39;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;end&lt;/span&gt;
