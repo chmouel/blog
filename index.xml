@@ -13,7 +13,12 @@
       <link>https://blog.chmouel.com/posts/kotlin-primer/</link>
       <pubDate>Sat, 18 Oct 2025 20:14:10 +0200</pubDate>
       <guid>https://blog.chmouel.com/posts/kotlin-primer/</guid>
-      <description>&lt;p&gt;You’ve seen Kotlin mentioned in passing.&lt;/p&gt;
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; This article was partly generated with AI while I was learning Kotlin.&lt;br&gt;
+It started as personal notes but turned into something readable enough to share.&lt;br&gt;
+Also, Hugo renders it better than my text editor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You’ve seen Kotlin mentioned in passing.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;“Modern Java,” they said.&lt;/li&gt;
 &lt;li&gt;“Null-safe,” they promised.&lt;/li&gt;
@@ -22,9 +27,7 @@
 &lt;p&gt;So here’s the deal: we’ll learn Kotlin quickly and swiftly (&lt;strong&gt;did you see the pun
 here? hahah so funny&lt;/strong&gt;). No corporate slides, no Android Studio screenshots, no
 JetBrains marketing.  Just the language, the vibe, and a bit of sarcasm to keep
-you awake.&lt;/p&gt;
-&lt;h2 id=&#34;the-quick-pitch&#34;&gt;The quick pitch&lt;/h2&gt;
-&lt;p&gt;Kotlin is:&lt;/p&gt;</description>
+you awake.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Navigating the pull_request_target conundrum in GitHub Actions with Pipelines as Code</title>
