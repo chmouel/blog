@@ -2,6 +2,9 @@
 title: "Kotlin in a hurry (and Why You Might Actually Like It)"
 date: 2025-10-18T20:14:10+02:00
 ---
+> *Note:* This article was partly generated with AI while I was learning Kotlin.  
+> It started as personal notes but turned into something readable enough to share.  
+> Also, Hugo renders it better than my text editor.
 
 You’ve seen Kotlin mentioned in passing.
 
