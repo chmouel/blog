@@ -9,13 +9,13 @@
     <lastBuildDate>Sat, 18 Oct 2025 20:14:10 +0200</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Kotlin in a hurry (and Why You Might Actually Like It)</title>
+      <title>Kotlin in a hurry (and why you might actually like it)</title>
       <link>https://blog.chmouel.com/posts/kotlin-primer/</link>
       <pubDate>Sat, 18 Oct 2025 20:14:10 +0200</pubDate>
       <guid>https://blog.chmouel.com/posts/kotlin-primer/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; This article was partly generated with AI while I was learning Kotlin.&lt;br&gt;
-It started as personal notes but turned into something readable enough to share.&lt;br&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; This article was partly generated with AI while I was learning Kotlin.
+It started as personal notes but turned into something readable enough to share.
 Also, Hugo renders it better than my text editor.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;You’ve seen Kotlin mentioned in passing.&lt;/p&gt;
@@ -24,10 +24,7 @@ Also, Hugo renders it better than my text editor.&lt;/p&gt;
 &lt;li&gt;“Null-safe,” they promised.&lt;/li&gt;
 &lt;li&gt;“Works on the JVM, Android, browser, fridge, whatever,” they muttered.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;So here’s the deal: we’ll learn Kotlin quickly and swiftly (&lt;strong&gt;did you see the pun
-here? hahah so funny&lt;/strong&gt;). No corporate slides, no Android Studio screenshots, no
-JetBrains marketing.  Just the language, the vibe, and a bit of sarcasm to keep
-you awake.&lt;/p&gt;</description>
+&lt;p&gt;Here’s the deal: we’ll learn Kotlin quickly and directly. No corporate slides, no Android Studio screenshots, no JetBrains marketing.  Just the language, the essentials, and a bit of personality to keep you interested.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Navigating the pull_request_target conundrum in GitHub Actions with Pipelines as Code</title>
