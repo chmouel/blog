@@ -4,7 +4,7 @@
     <title>Python on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/python/</link>
     <description>Recent content in Python on Chmouel&#39;s blog</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Mon, 08 Sep 2014 00:56:43 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -67,7 +67,7 @@
       <pubDate>Sat, 09 Jan 2010 14:42:19 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/01/09/get-facebook-albums-with-python/</guid>
       <description>&lt;p&gt;Since I haven&amp;rsquo;t see much script like this around the web here is a quick script to suck bunch of albums from facebooks (your own) nothing fancy just something to get you started with pyfacebook.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;#!/usr/bin/python&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;#!/usr/bin/python&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;import&lt;/span&gt; os
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;import&lt;/span&gt; urllib
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;from&lt;/span&gt; facebook &lt;span style=&#34;color:#ff79c6&#34;&gt;import&lt;/span&gt; Facebook
@@ -213,7 +213,7 @@ m.update(mixin[i % 16])&lt;/p&gt;</description>
       <pubDate>Mon, 31 Jul 2006 23:35:09 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/07/31/cheetah-mode-for-emacs/</guid>
       <description>&lt;p&gt;Here is a simple html derived mode for &lt;a href=&#34;http://www.cheetahtemplate.org/&#34;&gt;Cheetah&lt;/a&gt; templates files. The font-locking regexp can be improved thought but thatâ€™s a start.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;define-derived-mode&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cheetah-mode&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;html-mode&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Cheetah&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;define-derived-mode&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cheetah-mode&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;html-mode&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Cheetah&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;make-face&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;cheetah-variable-face&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;font-lock-add-keywords&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   nil
@@ -233,7 +233,7 @@ m.update(mixin[i % 16])&lt;/p&gt;</description>
       <pubDate>Mon, 31 Jul 2006 06:54:13 +0000</pubDate>
       <guid>https://blog.chmouel.com/2006/07/31/assignement-in-python-with-listextend/</guid>
       <description>&lt;p&gt;This is weird for me :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;ba&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;ba&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt; d
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; d
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;extend(d)

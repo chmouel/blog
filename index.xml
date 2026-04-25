@@ -4,7 +4,7 @@
     <title>Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/</link>
     <description>Recent content on Chmouel&#39;s blog</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Sat, 18 Oct 2025 20:14:10 +0200</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/index.xml" rel="self" type="application/rss+xml" />
@@ -27,7 +27,7 @@ Also, Hugo renders it better than my text editor.&lt;/p&gt;
 &lt;p&gt;Here’s the deal: we’ll learn Kotlin quickly and directly. No corporate slides, no Android Studio screenshots, no JetBrains marketing.  Just the language, the essentials, and a bit of personality to keep you interested.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Navigating the pull_request_target conundrum in GitHub Actions with Pipelines as Code</title>
+      <title>Trying to workaround the pull_request_target issue in GitHub Actions with Pipelines as Code</title>
       <link>https://blog.chmouel.com/posts/github-workflows-pull_request_target/</link>
       <pubDate>Tue, 25 Mar 2025 00:54:49 +0200</pubDate>
       <guid>https://blog.chmouel.com/posts/github-workflows-pull_request_target/</guid>
@@ -107,7 +107,7 @@ workflow with &lt;a href=&#34;https://docs.github.com/en/actions/monitoring-and-
 &lt;p&gt;But sometimes your deployment or tests, or whatever you are doing in your
 workflow, fail when running on CI but not locally, and you are bound to end up
 in the git push/commit Outer-Loop hell:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;📝 vi file/to/add/debug.sh
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;📝 vi file/to/add/debug.sh
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;🎹 git commit -a &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;debug ignore&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;🫸 git push
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;👀 &lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;watch logs failures&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
@@ -180,7 +180,7 @@ handling compares to Go.&lt;/p&gt;
 &lt;h2 id=&#34;chaining-error-in-go&#34;&gt;Chaining error in Go&lt;/h2&gt;
 &lt;p&gt;Go&amp;rsquo;s best practice when you want to chain multiple errors is to &amp;ldquo;wrap&amp;rdquo; them.&lt;/p&gt;
 &lt;p&gt;For example let&amp;rsquo;s say you have this function returning an error:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;do_something&lt;/span&gt;() err {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;do_something&lt;/span&gt;() err {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; value &lt;span style=&#34;color:#ff79c6&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; value &lt;span style=&#34;color:#ff79c6&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;expected&amp;#34;&lt;/span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; fmt.&lt;span style=&#34;color:#50fa7b&#34;&gt;Errorf&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;this was not expected&amp;#34;&lt;/span&gt;)

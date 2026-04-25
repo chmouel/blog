@@ -4,7 +4,7 @@
     <title>Java on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/java/</link>
     <description>Recent content in Java on Chmouel&#39;s blog</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Thu, 17 Jun 2010 04:48:42 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
@@ -25,7 +25,7 @@
       <pubDate>Thu, 03 Jun 2010 10:50:43 +0000</pubDate>
       <guid>https://blog.chmouel.com/2010/06/03/connecting-to-self-signed-ssl-certificate-from-java-on-debian-ubuntu/</guid>
       <description>&lt;p&gt;You want to connect to self signed SSL certificate from Java using the standard &lt;a href=&#34;http://java.sun.com/j2se/1.4.2/docs/api/javax/net/ssl/HttpsURLConnection.html&#34;&gt;HttpsURLConnection&lt;/a&gt; and you are getting this error, because the self signed certificate is obviously not recognized by Java :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SEVERE: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SEVERE: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1639)

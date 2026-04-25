@@ -4,7 +4,7 @@
     <title>Ruby on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/ruby/</link>
     <description>Recent content in Ruby on Chmouel&#39;s blog</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 21 Mar 2008 16:56:05 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +16,7 @@
       <description>&lt;p&gt;If you use the XMLRPC client in ruby over a self certified SSL you have this warning :&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;warning: peer certificate won&amp;rsquo;t be verified in this SSL session&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;You can get override that warning cleanly (i have seen some people who just comment the message in the standard library) like that :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;require&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;xmlrpc/client&amp;#39;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;require&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;xmlrpc/client&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;require&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;net/https&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;require&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;openssl&amp;#39;&lt;/span&gt;

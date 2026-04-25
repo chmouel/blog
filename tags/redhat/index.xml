@@ -4,7 +4,7 @@
     <title>RedHat on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/redhat/</link>
     <description>Recent content in RedHat on Chmouel&#39;s blog</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Thu, 20 Mar 2008 09:36:06 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/redhat/index.xml" rel="self" type="application/rss+xml" />
@@ -41,7 +41,7 @@ Nothing to do&lt;/p&gt;</description>
       <guid>https://blog.chmouel.com/2006/12/20/how-to-get-bright-ls-colors-on-redhat-with-dark-background/</guid>
       <description>&lt;p&gt;Something that i haven&amp;rsquo;t find via goole. By default on RedHat (and derivatives) if you get a dark background the colored ls will be seen really humm bold from a xterm (since i guess there default gnome-terminal has been configured to have a white background ).&lt;/p&gt;
 &lt;p&gt;The solution is to&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp /etc/DIR_COLORS /etc/DIR_COLORS.xterm
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp /etc/DIR_COLORS /etc/DIR_COLORS.xterm
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or to redefine your dircolors to get the /etc/DIR_COLORS files instead of /etc/DIR_COLORS.xterm in your shell init configuration.&lt;/p&gt;</description>
     </item>
   </channel>

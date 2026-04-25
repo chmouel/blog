@@ -4,7 +4,7 @@
     <title>Oracle on Chmouel&#39;s blog</title>
     <link>https://blog.chmouel.com/tags/oracle/</link>
     <description>Recent content in Oracle on Chmouel&#39;s blog</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 23 Apr 2010 10:06:24 +0000</lastBuildDate>
     <atom:link href="https://blog.chmouel.com/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
@@ -49,7 +49,7 @@ name &lt;strong&gt;user2&lt;/strong&gt;.&lt;/p&gt;</description>
       <pubDate>Wed, 03 Jan 2007 02:24:26 +0000</pubDate>
       <guid>https://blog.chmouel.com/2007/01/02/sqlplus-timeout-when-connnecting/</guid>
       <description>&lt;p&gt;If you are using a pam_ldap or pam_nis environement and it happend that sqlplus does not want to connect as user but it does as root, waiting for :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;socket(PF_FILE, SOCK_STREAM, &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;)         &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;socket(PF_FILE, SOCK_STREAM, &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;)         &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connect(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;, {sa_family&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;AF_FILE, path&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/var/run/.nscd_socket&amp;#34;&lt;/span&gt;}, &lt;span style=&#34;color:#bd93f9&#34;&gt;110&lt;/span&gt;) &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt; ENOENT (No such file &lt;span style=&#34;color:#ff79c6&#34;&gt;or&lt;/span&gt; directory)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;close(&lt;span style=&#34;color:#bd93f9&#34;&gt;3&lt;/span&gt;)                                &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;
