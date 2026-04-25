@@ -1,5 +1,5 @@
 ---
-title: "Navigating the pull_request_target conundrum in GitHub Actions with Pipelines as Code"
+title: "Trying to workaround the pull_request_target issue in GitHub Actions with Pipelines as Code"
 date: 2025-03-25T00:54:49+02:00
 draft: false
 ---
