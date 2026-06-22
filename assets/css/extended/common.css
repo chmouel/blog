@@ -46,7 +46,7 @@ body.dark .post-content a {
 
 .nav {
   justify-content: center;
-  text-align: center;
+  flex-wrap: nowrap;
 }
 
 body.dark #menu span {
@@ -58,12 +58,12 @@ body.dark #menu span {
 }
 
 #menu img {
-    margin-top: 20px;
+    vertical-align: middle;
 }
 
 
 #menu svg {
-    margin-top: 20px;
+    vertical-align: middle;
     width: 20px;
     height: 20px;
 }
