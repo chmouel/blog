@@ -12,6 +12,12 @@ minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 pagination:
   pagerSize: 10
   path: "page"
@@ -25,6 +31,10 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   disableSpecial1stPost: true
+  ShowReadingTime: true
+  homeInfoParams:
+    Title: "Hi, I'm Chmouel! 👋"
+    Content: "I'm a Software Engineer at Red Hat. I write about Kubernetes, Tekton, Emacs, Python, Go, and other tech adventures."
   # label:
   #   icon: logo/chmouel.png
   #   iconHeight: 40
@@ -45,6 +55,10 @@ markup:
 
 menus:
   main:
+    - name: "search"
+      url: "search/"
+    - name: "archive"
+      url: "archives/"
     - name: "camera"
       url: "https://photos.chmouel.com"
       pre: Photos
