@@ -2,7 +2,7 @@
 title: "Chmouel's blog"
 baseURL: "https://blog.chmouel.com/"
 theme: "PaperMod"
-languageCode: "en-GB"
+locale: "en-GB"
 defaultContentLanguage: "en"
 pluralizelisttitles: false
 removePathAccents: true
