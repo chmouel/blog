@@ -39,7 +39,7 @@ _BEST_RES=${_res}
 done
 xrandr -s ${BEST_RES}
 [/code]'><meta property="og:locale" content="en_GB"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2007-07-31T22:23:32+00:00"><meta property="article:modified_time" content="2007-07-31T22:23:32+00:00"><meta property="article:tag" content="Life"><meta property="article:tag" content="Scripts"><meta name=twitter:card content="summary"><meta name=twitter:title content="Automatic best resolution with xrandr"><meta name=twitter:description content='If you like me you have a big screen with your laptop and wants to automate when your X session start to get the best resolution, you can use that script :
-[code lang=“bash”]
+[code lang=&ldquo;bash&rdquo;]
 #!/bin/bash
 function get_resolutions() {
 xrandr|while read -a line;do

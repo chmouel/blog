@@ -25,12 +25,12 @@ m.update(password + magic + salt)
 mixin = md5.md5(password + salt + password).digest()
 for i in range(0, len(password)):
 m.update(mixin[i % 16])"><meta property="og:locale" content="en_GB"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2007-08-17T07:11:38+00:00"><meta property="article:modified_time" content="2007-08-17T07:11:38+00:00"><meta property="article:tag" content="Programming"><meta property="article:tag" content="Python"><meta property="article:tag" content="Scripts"><meta property="article:tag" content="Solaris"><meta property="article:tag" content="Travel"><meta name=twitter:card content="summary"><meta name=twitter:title content="Generating md5 encrypted password for chpasswd"><meta name=twitter:description content="If you want to generate properly encrypted password to feed to chpasswd, the most easier and proper way is to do that from command line :
-[code lang=“bash”]
-echo “encryptedpassword”|openssl passwd -1 -stdin
+[code lang=&ldquo;bash&rdquo;]
+echo &ldquo;encryptedpassword&rdquo;|openssl passwd -1 -stdin
 [/code]
 If you want to generate in pure python you can do it like that :
-[code lang=“python”]
-def md5crypt(password, salt, magic=’$1$’):
+[code lang=&ldquo;python&rdquo;]
+def md5crypt(password, salt, magic=&rsquo;$1$&rsquo;):
 import md5
 m = md5.new()
 m.update(password + magic + salt)
