@@ -76,3 +76,10 @@ html,
 body {
   font-family: "JetBrains Mono", monospace;
 }
+
+.menu-separator {
+  color: var(--secondary);
+  padding: 0 4px;
+  pointer-events: none;
+  user-select: none;
+}
