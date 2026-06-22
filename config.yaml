@@ -55,24 +55,32 @@ markup:
 
 menus:
   main:
-    - name: "search"
-      url: "search/"
-    - name: "archive"
-      url: "archives/"
     - name: "camera"
       url: "https://photos.chmouel.com"
       pre: Photos
+      weight: 10
     - name: "GitHub"
       url: "https://github.com/chmouel/"
+      weight: 20
     - name: "Mastodon"
       url: "https://fosstodon.org/@chmouel"
+      weight: 30
     - name: "Twitter"
       url: "https://twitter.com/chmouel"
+      weight: 40
     - name: "Strava"
       url: "https://app.strava.com/athletes/126695"
+      weight: 50
     - name: "redhat"
       url: "https://redhat.com"
       pre: Red Hat
+      weight: 60
+    - name: "archive"
+      url: "archives/"
+      weight: 70
+    - name: "search"
+      url: "search/"
+      weight: 80
 privacy:
   youtube:
     privacyEnhanced: true

@@ -86,15 +86,15 @@
         </div>
         {{- $currentPage := . }}
         <ul id="menu" class="menu">
-            {{- $separatorAdded := false }}
+            {{- $internalSepAdded := false }}
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             {{- $is_external := findRE "://" .URL }}
-            {{- if (and $is_external (not $separatorAdded)) }}
+            {{- if (and (not $is_external) (not $internalSepAdded)) }}
             <li class="menu-separator" aria-hidden="true">|</li>
-            {{- $separatorAdded = true }}
+            {{- $internalSepAdded = true }}
             {{- end }}
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
