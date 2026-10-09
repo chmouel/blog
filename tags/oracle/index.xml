@@ -32,7 +32,21 @@ Oracle have to be such a pain.&lt;/p&gt;
 &lt;p&gt;If i have the tablespace named &lt;strong&gt;tablesp1&lt;/strong&gt; and owned by the&lt;br&gt;
 user &lt;strong&gt;user1&lt;/strong&gt;, and i want to import it to another tablespace&lt;br&gt;
 called &lt;strong&gt;tablesp2&lt;/strong&gt; in an another Oracle 9i tablespace with the user&lt;br&gt;
-name &lt;strong&gt;user2&lt;/strong&gt;.&lt;/p&gt;</description>
+name &lt;strong&gt;user2&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I import the tablesp1 in an Oracle 10 (if you are lucky to have&lt;br&gt;
+one).&lt;/li&gt;
+&lt;li&gt;Make sure i create the user2 in the Oracle10 DB.&lt;/li&gt;
+&lt;li&gt;I connect as DBA access and i rename the tablespace with :&lt;br&gt;
+[code lang=&amp;ldquo;sql&amp;rdquo;]&lt;br&gt;
+ALTER TABLESPACE tablesp1 RENAME TO tablesp2&lt;br&gt;
+ALTER TABLESPACE tablesp2 OWNER TO user2&lt;br&gt;
+[/code]&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;Export the Oracle10 tablespace with Oracle 9 exp.&lt;br&gt;
+Sometime sometime you may encounter that famous error &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Compile tora with oracle</title>

@@ -21,7 +21,66 @@
 &lt;li&gt;And did this (as root) :&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;cat &amp;lt;/etc/bluetooth/rfcomm.conf&lt;/p&gt;</description>
+&lt;p&gt;cat &amp;lt;/etc/bluetooth/rfcomm.conf&lt;/p&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;p&gt;# RFCOMM configuration file.&lt;/p&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;p&gt;rfcomm0 {&lt;br&gt;
+# Automatically bind the device at startup&lt;br&gt;
+bind yes;&lt;/p&gt;
+&lt;p&gt;# Bluetooth address of the device&lt;br&gt;
+device YOUR:PHONE:DEVICE:NUMBER;&lt;/p&gt;
+&lt;p&gt;# RFCOMM channel for the connection&lt;br&gt;
+channel 4;&lt;/p&gt;
+&lt;p&gt;# Description of the connection&lt;br&gt;
+comment &amp;ldquo;Nokia N95&amp;rdquo;;&lt;br&gt;
+}&lt;br&gt;
+EOF&lt;/p&gt;
+&lt;p&gt;/etc/init.d/bluetooth restart&lt;/p&gt;
+&lt;p&gt;cat &amp;lt;/etc/ppp/chat-tmobile&lt;br&gt;
+ABORT BUSY&lt;br&gt;
+ABORT &amp;lsquo;NO CARRIER&amp;rsquo;&lt;br&gt;
+ABORT &amp;lsquo;NO ANSWER&amp;rsquo;&lt;br&gt;
+ABORT ERROR&lt;br&gt;
+REPORT CONNECT&lt;br&gt;
+SAY &amp;lsquo;Calling t-mobile&amp;hellip;\n&amp;rsquo;&lt;br&gt;
+&amp;quot;&amp;quot; &amp;lsquo;ATZ&amp;rsquo;&lt;br&gt;
+OK &amp;lsquo;ATE0V1&amp;amp;D2&amp;amp;C1S0=0+IFC=2,2&amp;rsquo;&lt;br&gt;
+SAY &amp;lsquo;Modem reset.\n&amp;rsquo;&lt;br&gt;
+SAY &amp;lsquo;Setting APN&amp;hellip;&amp;rsquo;&lt;br&gt;
+OK &amp;lsquo;AT+cgdcont=1,&amp;ldquo;IP&amp;rdquo;,&amp;ldquo;general.t-mobile.uk&amp;rdquo;&amp;rsquo;&lt;br&gt;
+SAY &amp;lsquo;APN set\n&amp;rsquo;&lt;br&gt;
+SAY &amp;lsquo;Dialling&amp;hellip;\n&amp;rsquo;&lt;br&gt;
+OK &amp;lsquo;ATDT*99#&amp;rsquo;&lt;br&gt;
+TIMEOUT 30&lt;br&gt;
+CONNECT &amp;quot;&amp;quot;&lt;br&gt;
+EOF&lt;/p&gt;
+&lt;p&gt;cat &amp;lt;/etc/ppp/peers/t-mobile&lt;br&gt;
+/dev/rfcomm0&lt;br&gt;
+460800&lt;br&gt;
+idle 7200&lt;br&gt;
+modem&lt;br&gt;
+noauth&lt;br&gt;
+lock&lt;br&gt;
+crtscts&lt;br&gt;
+defaultroute&lt;br&gt;
+user &amp;ldquo;user&amp;rdquo;&lt;br&gt;
+password &amp;ldquo;pass&amp;rdquo;&lt;br&gt;
+noipdefault&lt;br&gt;
+usepeerdns&lt;br&gt;
+updetach&lt;br&gt;
+noccp&lt;br&gt;
+nobsdcomp&lt;br&gt;
+#novj&lt;br&gt;
+ipcp-restart 10&lt;br&gt;
+ipcp-accept-local&lt;br&gt;
+ipcp-accept-remote&lt;br&gt;
+lcp-echo-interval 65535&lt;br&gt;
+lcp-echo-failure 10&lt;br&gt;
+lcp-max-configure 10&lt;br&gt;
+connect &amp;ldquo;/usr/sbin/chat -v -f /etc/ppp/chat-tmobile&amp;rdquo;&lt;br&gt;
+EOF&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Network manager and iwl3945 not showing network</title>
@@ -46,7 +105,9 @@
 &lt;p&gt;Add hpet=disable at the end of the boot kernel parameter and get into the system.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Download the latest kernel for your architecture on :&lt;/p&gt;</description>
+&lt;p&gt;Download the latest kernel for your architecture on :&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

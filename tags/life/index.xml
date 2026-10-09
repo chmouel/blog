@@ -49,7 +49,8 @@
 (WW) Dec 03 17:00:19 NVIDIA(0): from CRT-0&amp;rsquo;s EDID.&lt;br&gt;
 (==) Dec 03 17:00:19 NVIDIA(0): DPI set to (75, 75); computed from built-in default&lt;br&gt;
 (==) Dec 03 17:00:19 NVIDIA(0): Enabling 32-bit ARGB GLX visuals.&lt;br&gt;
-(&amp;ndash;) Depth 24 pixmap format is 32 bpp&lt;/p&gt;</description>
+(&amp;ndash;) Depth 24 pixmap format is 32 bpp&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Automatic best resolution with xrandr</title>

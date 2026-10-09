@@ -10,6 +10,62 @@
 <span></span></a></li><li><a href=https://blog.chmouel.com/search/ title="search (Alt + /)" accesskey=/><svg fill="currentColor" viewBox="0 0 512 512"><title>Search</title><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8.0 45.3s-32.8 12.5-45.3.0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9.0 208S93.1.0 208 0 416 93.1 416 208zM208 352a144 144 0 100-288 144 144 0 100 288z"/></svg>
 <span></span></a></li></ul></nav></header><main class=main><header class=page-header><h1>Debian</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Nokia N95 bluetooth teethering with T-Mobile under Linux and Delll Latitude D630</h2></header><div class=entry-content><p>Spent a bit of time to configure my Nokia mobile to teethering wih my Linux and T-Mobile. Here is some steps that may help the others :
 If you don’t have that blue bluetooth led switched on on your Dell Latitude D630 Laptop you have to enable it. I haven’t find any way to do that via the Linux Kernel module but with Windows under Vmware Player (3.0) enabling Bluetooth and installing the driver (manually not via the setup.exe) enabled bluetooth. Switched on bluetooth on the Phone and attached to the laptop via gnome bluetooth applet thingy. Get my phone device number from hcitool scan. And did this (as root) : cat &lt;/etc/bluetooth/rfcomm.conf
+# RFCOMM configuration file.
+rfcomm0 {
+# Automatically bind the device at startup
+bind yes;
+# Bluetooth address of the device
+device YOUR:PHONE:DEVICE:NUMBER;
+# RFCOMM channel for the connection
+channel 4;
+# Description of the connection
+comment “Nokia N95”;
+}
+EOF
+/etc/init.d/bluetooth restart
+cat &lt;/etc/ppp/chat-tmobile
+ABORT BUSY
+ABORT ‘NO CARRIER’
+ABORT ‘NO ANSWER’
+ABORT ERROR
+REPORT CONNECT
+SAY ‘Calling t-mobile…\n’
+"" ‘ATZ’
+OK ‘ATE0V1&amp;D2&amp;C1S0=0+IFC=2,2’
+SAY ‘Modem reset.\n’
+SAY ‘Setting APN…’
+OK ‘AT+cgdcont=1,“IP”,“general.t-mobile.uk”’
+SAY ‘APN set\n’
+SAY ‘Dialling…\n’
+OK ‘ATDT*99#’
+TIMEOUT 30
+CONNECT ""
+EOF
+cat &lt;/etc/ppp/peers/t-mobile
+/dev/rfcomm0
+460800
+idle 7200
+modem
+noauth
+lock
+crtscts
+defaultroute
+user “user”
+password “pass”
+noipdefault
+usepeerdns
+updetach
+noccp
+nobsdcomp
+#novj
+ipcp-restart 10
+ipcp-accept-local
+ipcp-accept-remote
+lcp-echo-interval 65535
+lcp-echo-failure 10
+lcp-max-configure 10
+connect “/usr/sbin/chat -v -f /etc/ppp/chat-tmobile”
+EOF
 ...</p></div><footer class=entry-footer><span title='2009-10-30 08:55:53 +0000 UTC'>30 October 2009</span>&nbsp;·&nbsp;<span>2 min</span></footer><a class=entry-link aria-label="post link to Nokia N95 bluetooth teethering with T-Mobile under Linux and Delll Latitude D630" href=https://blog.chmouel.com/2009/10/30/nokia-n95-bluetooth-teethering-with-t-mobile-under-linux-and-delll-latitude-d630/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Network manager and iwl3945 not showing network</h2></header><div class=entry-content><p>So if you have network-manager not detecting wireless networks it is probably because lately the driver need to be set as up to get the thing going.
 On my Debian I have added this to make it works :
 echo "/sbin/ip link set wlan0 up"|sudo tee /etc/default/NetworkManager</p></div><footer class=entry-footer><span title='2009-08-10 15:11:57 +0000 UTC'>10 August 2009</span>&nbsp;·&nbsp;<span>1 min</span></footer><a class=entry-link aria-label="post link to Network manager and iwl3945 not showing network" href=https://blog.chmouel.com/2009/08/10/network-manager-and-iwl3945-not-showing-network/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Debian Lenny on Dell Optiplex 760</h2></header><div class=entry-content><p>So if you get that shiny new Dell desktop and ACPI spit bunch of message at the install time and the network driver does not get detected you can follow these steps to have it working.

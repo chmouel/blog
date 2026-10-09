@@ -134,7 +134,9 @@ results for me :&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Setup your irssi (or other) as irc proxy bouncer and connect with&lt;br&gt;
-your desktop client (like xchat) to get notification.&lt;/p&gt;</description>
+your desktop client (like xchat) to get notification.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Accessing to Rackspace Cloud Files via servicenet (update)</title>
@@ -185,7 +187,8 @@ Excluding Packages in global exclude list&lt;br&gt;
 Finished&lt;br&gt;
 0 packages excluded due to repository priority protections&lt;br&gt;
 Parsing package install arguments&lt;br&gt;
-Nothing to do&lt;/p&gt;</description>
+Nothing to do&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Generating md5 encrypted password for chpasswd</title>

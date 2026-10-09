@@ -41,7 +41,9 @@ results for me :&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Setup your irssi (or other) as irc proxy bouncer and connect with&lt;br&gt;
-your desktop client (like xchat) to get notification.&lt;/p&gt;</description>
+your desktop client (like xchat) to get notification.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Vmware vmplayer and kernel 2.6.32</title>
@@ -63,7 +65,8 @@ CC [M] /tmp/vmware-root/modules/vmnet-only/vnetUserListener.o&lt;br&gt;
 make[2]: *** [/tmp/vmware-root/modules/vmnet-only/vnetUserListener.o] Error 1&lt;br&gt;
 make[1]: *** [_module_/tmp/vmware-root/modules/vmnet-only] Error 2&lt;br&gt;
 make[1]: Leaving directory `/opt/temp/linux-2.6.32&amp;rsquo;&lt;br&gt;
-make: *** [vmnet.ko] Error 2&lt;/p&gt;</description>
+make: *** [vmnet.ko] Error 2&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Toshiba Regza 32AV615DB blank screen HDMI Linux</title>
@@ -78,7 +81,8 @@ make: *** [vmnet.ko] Error 2&lt;/p&gt;</description>
 (WW) Dec 03 17:00:19 NVIDIA(0): from CRT-0&amp;rsquo;s EDID.&lt;br&gt;
 (==) Dec 03 17:00:19 NVIDIA(0): DPI set to (75, 75); computed from built-in default&lt;br&gt;
 (==) Dec 03 17:00:19 NVIDIA(0): Enabling 32-bit ARGB GLX visuals.&lt;br&gt;
-(&amp;ndash;) Depth 24 pixmap format is 32 bpp&lt;/p&gt;</description>
+(&amp;ndash;) Depth 24 pixmap format is 32 bpp&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Nokia N95 bluetooth teethering with T-Mobile under Linux and Delll Latitude D630</title>
@@ -93,7 +97,66 @@ make: *** [vmnet.ko] Error 2&lt;/p&gt;</description>
 &lt;li&gt;And did this (as root) :&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;cat &amp;lt;/etc/bluetooth/rfcomm.conf&lt;/p&gt;</description>
+&lt;p&gt;cat &amp;lt;/etc/bluetooth/rfcomm.conf&lt;/p&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;p&gt;# RFCOMM configuration file.&lt;/p&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;p&gt;rfcomm0 {&lt;br&gt;
+# Automatically bind the device at startup&lt;br&gt;
+bind yes;&lt;/p&gt;
+&lt;p&gt;# Bluetooth address of the device&lt;br&gt;
+device YOUR:PHONE:DEVICE:NUMBER;&lt;/p&gt;
+&lt;p&gt;# RFCOMM channel for the connection&lt;br&gt;
+channel 4;&lt;/p&gt;
+&lt;p&gt;# Description of the connection&lt;br&gt;
+comment &amp;ldquo;Nokia N95&amp;rdquo;;&lt;br&gt;
+}&lt;br&gt;
+EOF&lt;/p&gt;
+&lt;p&gt;/etc/init.d/bluetooth restart&lt;/p&gt;
+&lt;p&gt;cat &amp;lt;/etc/ppp/chat-tmobile&lt;br&gt;
+ABORT BUSY&lt;br&gt;
+ABORT &amp;lsquo;NO CARRIER&amp;rsquo;&lt;br&gt;
+ABORT &amp;lsquo;NO ANSWER&amp;rsquo;&lt;br&gt;
+ABORT ERROR&lt;br&gt;
+REPORT CONNECT&lt;br&gt;
+SAY &amp;lsquo;Calling t-mobile&amp;hellip;\n&amp;rsquo;&lt;br&gt;
+&amp;quot;&amp;quot; &amp;lsquo;ATZ&amp;rsquo;&lt;br&gt;
+OK &amp;lsquo;ATE0V1&amp;amp;D2&amp;amp;C1S0=0+IFC=2,2&amp;rsquo;&lt;br&gt;
+SAY &amp;lsquo;Modem reset.\n&amp;rsquo;&lt;br&gt;
+SAY &amp;lsquo;Setting APN&amp;hellip;&amp;rsquo;&lt;br&gt;
+OK &amp;lsquo;AT+cgdcont=1,&amp;ldquo;IP&amp;rdquo;,&amp;ldquo;general.t-mobile.uk&amp;rdquo;&amp;rsquo;&lt;br&gt;
+SAY &amp;lsquo;APN set\n&amp;rsquo;&lt;br&gt;
+SAY &amp;lsquo;Dialling&amp;hellip;\n&amp;rsquo;&lt;br&gt;
+OK &amp;lsquo;ATDT*99#&amp;rsquo;&lt;br&gt;
+TIMEOUT 30&lt;br&gt;
+CONNECT &amp;quot;&amp;quot;&lt;br&gt;
+EOF&lt;/p&gt;
+&lt;p&gt;cat &amp;lt;/etc/ppp/peers/t-mobile&lt;br&gt;
+/dev/rfcomm0&lt;br&gt;
+460800&lt;br&gt;
+idle 7200&lt;br&gt;
+modem&lt;br&gt;
+noauth&lt;br&gt;
+lock&lt;br&gt;
+crtscts&lt;br&gt;
+defaultroute&lt;br&gt;
+user &amp;ldquo;user&amp;rdquo;&lt;br&gt;
+password &amp;ldquo;pass&amp;rdquo;&lt;br&gt;
+noipdefault&lt;br&gt;
+usepeerdns&lt;br&gt;
+updetach&lt;br&gt;
+noccp&lt;br&gt;
+nobsdcomp&lt;br&gt;
+#novj&lt;br&gt;
+ipcp-restart 10&lt;br&gt;
+ipcp-accept-local&lt;br&gt;
+ipcp-accept-remote&lt;br&gt;
+lcp-echo-interval 65535&lt;br&gt;
+lcp-echo-failure 10&lt;br&gt;
+lcp-max-configure 10&lt;br&gt;
+connect &amp;ldquo;/usr/sbin/chat -v -f /etc/ppp/chat-tmobile&amp;rdquo;&lt;br&gt;
+EOF&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>
